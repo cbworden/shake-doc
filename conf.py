@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # ShakeMap Manual documentation build configuration file, created by
-# sphinx-quickstart on Sat Nov 14 17:50:14 2015.
+# sphinx-quickstart on Thu Nov 12 12:58:36 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -76,7 +76,7 @@ release = '2.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = []
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
