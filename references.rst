@@ -2,4 +2,6 @@
 References
 ####################
 
-Here we list all of the references and provide links.
+.. [Worden2010]:
+
+Worden, C. B., Wald, D. J., Cua, G. (2010) A revised interpolation scheme for ShakeMap. `Bull. Seism. Soc. Am. <http://earthquake.usgs.gov>`_.
