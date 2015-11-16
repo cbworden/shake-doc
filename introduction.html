@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html" />
     <link rel="next" title="Technical Guide" href="technical_guide.html" />
-    <link rel="prev" title="Welcome to the ShakeMap Manual" href="index.html" /> 
+    <link rel="prev" title="Welcome to the ShakeMap Manual (test)" href="index.html" /> 
   </head>
   <body>
 
@@ -43,7 +43,7 @@
           <a href="technical_guide.html" title="Technical Guide"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Welcome to the ShakeMap Manual"
+          <a href="index.html" title="Welcome to the ShakeMap Manual (test)"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
@@ -55,7 +55,7 @@
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
   <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to the ShakeMap Manual</a></p>
+                        title="previous chapter">Welcome to the ShakeMap Manual (test)</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="technical_guide.html"
                         title="next chapter">Technical Guide</a></p>
@@ -87,9 +87,83 @@
             
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>This is the ShakeMap manual. It contains much useful information and some
-stuff we just made up.</p>
-<p>You are invited to add to it by writing things about ShakeMap.</p>
+<div class="figure align-center">
+<a class="reference external image-reference" href="NapaShakeMapExample(URIorreferencename)"><img alt="ShakeMap Napa" src="_images/Napa.ShakeMap.cover.png" style="width: 403.0px; height: 439.5px;" /></a>
+<p class="caption">Napa, California, earthquake intensity ShakeMap</p>
+</div>
+<p><a class="reference external" href="http://earthquake.usgs.gov/shakemap/">ShakeMap</a> ®,
+developed by the U.S. Geological Survey, facilitates communication of
+earthquake information beyond just magnitude and location. By rapidly mapping out
+earthquake ground motions, ShakeMap portrays the distribution and severity of shaking,
+information critical for gauging the extent of the areas affected, determining which areas
+are potentially hardest hit, and allowing for rapid estimation of losses. Key to
+ShakeMap&#8217;s success, algorithms were developed that take advantage of any high-quality
+recorded ground motions, and any available macroseismic intensity data, to provide
+ground-truth constraints on shaking. Yet, ShakeMap also utilizes best-practice methods
+for both interpolating between recordings—and critically—providing estimates of
+shaking in areas where observations are sparse or non-existent. Thus, ShakeMap portrays
+the best possible description of shaking by employing a combination of recorded and
+estimated shaking values.</p>
+<p>The ShakeMap Manual (2015), a significant update <a class="footnote-reference" href="#id2" id="id1">[1]</a> of the original (Wald et al., 2005)
+ShakeMap Manual. The ShakeMap manual is now dynamic and served online. We demote the notion of a static,
+stand-alone document in favor up-to-date web pages. The Manual provides background on technical aspects of ShakeMap, describes
+the wide range of products and formats ShakeMap produces, and provides guidance for
+ShakeMap developers and operators. Readers interested in understanding how
+ShakeMaps works can skip to Section 1: Technical Background. Those who want to use
+ShakeMap products and understand their varied formats can jump to Section 2: User&#8217;s
+Guide. If your goal is to install and operate ShakeMap, see Section 3: Implementation
+Guide. Section 3 also points users to the ShakeMap software distribution and Software
+Guide.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Such a map is not strictly necessary: It can be produced “on the fly” by ShakeMap using a regional or global Digital Elevation Model (DEM) and slope-based topography (e.g., Wald and Allen, 2007). Nevertheless most regions will want more control over the site map, and will opt for a fixed Vs30 map.</td></tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>Intensity       Red     Green   Blue    Intensity       Red     Green   Blue
+0       255     255     255     1       255     255     255
+1       255     255     255     2       191     204     255
+2       191     204     255     3       160     230     255
+3       160     230     255     4       128     255     255
+4       128     255     255     5       122     255     147
+5       122     255     147     6       255     255     0
+6       255     255     0       7       255     200     0
+7       255     200     0       8       255     145     0
+8       255     145     0       9       255     0       0
+9       255     0       0       10      200     0       0
+10      200     0       0       13      128     0       0</p>
+<p>Table 1.1  Color Mapping Table for Instrumental Intensity. This is a portion of the Generic Mapping Tools (GMT) “cpt” file. Color values for intermediate intensities are linearly interpolated from the Red, Green, and Blue (RGB) values in columns 2-4 to columns 6-8.</p>
 </div>
 
 
@@ -108,7 +182,7 @@ stuff we just made up.</p>
           <a href="technical_guide.html" title="Technical Guide"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Welcome to the ShakeMap Manual"
+          <a href="index.html" title="Welcome to the ShakeMap Manual (test)"
              >previous</a> |</li>
         <li><a href="index.html">home</a>|&nbsp;</li>
         <li><a href="search.html">search</a>|&nbsp;</li>
