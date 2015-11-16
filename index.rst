@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the ShakeMap Manual
+Welcome to the ShakeMap Manual (test)
 ===========================================
 
 This is a work in progress. Please ignore it until this message
