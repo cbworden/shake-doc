@@ -18,6 +18,7 @@ Contents:
    technical_guide.rst
    users_guide.rst
    software_guide.rst
+   references.rst
 
 
 
