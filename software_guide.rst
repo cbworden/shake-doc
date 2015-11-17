@@ -1,3 +1,5 @@
+.. _software-guide:
+
 ####################
 Software Guide
 ####################

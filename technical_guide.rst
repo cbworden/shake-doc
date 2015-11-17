@@ -1,3 +1,5 @@
+.. _technical-guide:
+
 ####################
 Technical Guide
 ####################
