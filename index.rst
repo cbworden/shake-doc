@@ -6,10 +6,16 @@
 Welcome to the ShakeMap Manual
 ===========================================
 
-This is a work in progress. Please ignore it until this message
-is removed.
+.. This is a work in progress. Please ignore it until this message
+   is removed.
 
-Contents:
+.. figure::  _static/Napa.ShakeMap.cover.*
+   :scale: 40 %
+   :alt: ShakeMap Napa
+   :align: right
+   :target: Napa ShakeMap Example (URI or reference name)
+
+   2014 M6.0 Napa, CA intensity ShakeMap 
 
 .. toctree::
    :maxdepth: 2
@@ -21,11 +27,10 @@ Contents:
    references.rst
 
 
+.. Indices and tables
+.. ==================
 
-Indices and tables
-==================
-
-* :ref:`genindex`
+.. * :ref:`genindex`
 
 .. * :ref:`modindex`
 .. * :ref:`search`
