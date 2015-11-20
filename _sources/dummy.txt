@@ -1,0 +1,20 @@
+.. _dummy:
+
+##############
+Math test
+##############
+
+
+.. math::
+
+   a^2 + b^2 = c^2 
+   :label: pythag
+
+See equation :eq:`pythag`
+
+.. math:: e^{i\pi} + 1 = 0
+   :label: euler
+
+
+Euler's identity, equation :eq:`euler`, was elected one of the most
+beautiful mathematical formulas.
