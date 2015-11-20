@@ -11,6 +11,8 @@ Abrahamson, N., Atkinson, G., Boore, D., Bozorgnia, Y., Campbell, K., Chiou, B.,
 and R. Youngs (2008).  Comparisons of the NGA ground-motion relations, Earthq. Spectra, v. 24, n. 1, 
 pp. 45-66.
 
+.. _abrahamson2014:
+
 Abrahamson, N et al 2014 NGA West 2
 
 Akkar, S. and J.J. Bommer (2010). Empirical equations for the prediction of PGA, PGV and spectral 
@@ -33,6 +35,8 @@ Golden, Colorado.
 Allen, T.I., Wald, D.J., Earle, P.S., Marano, K.D., Hotovec, A.J., Lin, K. W. and Hearne, M. J. (2009a). An 
 Atlas of ShakeMaps and population exposure catalog for earthquake loss modeling: Bulletin of 
 Earthquake Engineering, v. 7, p. 701-718.
+
+.. _allen2009b:
 
 Allen, T., and D. J. Wald (2009b). On the use of high-resolution topographic data as a proxy for seismic 
 site conditions (VS30), Bull. Seism. Soc. Am., 99 (2A), 935-943.
@@ -135,6 +139,8 @@ Boore, D. M., and W. B. Joyner, (1991). Estimation of ground motion at deep-soil
 America. Bulletin of the Seismological Society of America, 81 (6), 2167-2185.
 
 Boore . RotD050
+
+.. _borcherdt1994:
 
 Borcherdt, R. D. (1994). Estimates of site-dependent response spectra for design (methodology and 
 justification), Earthquake Spectra, 10, 617-654. 
@@ -373,11 +379,18 @@ Spudich, P., W.B. Joyner, A.G. Lindh, D.M. Boore, B.M. Margaris, and J.B. Fletch
 revised ground-motion prediction relation for use in extensional tectonic regimes, Bull. Seism. Soc. Am., 
 89, 1156-1170.
 
+.. _thompson2012:
+
 Thompson, E, and D. J Wald (2012). Developing Vs30 Site-Condition Maps By Combining Observations 
 With Geologic And Topographic Constraints, Proc. 15th World Conf. on Eq. Eng., Lisbon, 9 pp.
 
+.. _thompson2014:
+
 Thompson, E.M., Wald, D.J., and C.B. Worden (2014).  A VS30 map for California with geologic and 
 topographic constraints, Bull. Seism. Soc. Am., v. 104, n. 5, pp. 2313-2321.
+
+Turner, Loren L., D. J. Wald, and K. Lin (2010). ShakeCast - Developing a Tool for Rapid Post-Earthquake 
+Response, Final Report No. CA09-0734, 325 pp. 
 
 .. _usgs1999:
 
@@ -436,6 +449,8 @@ Wald, D. J., P. S. Earle, K. Lin, V. Quitoriano, and B. Worden (2006a). Challeng
 Motion Estimation for the Prompt Assessment of Global Urban Earthquakes, Bull. Earthq. Res. Inst., 
 Tokyo, October, 25-27, 273-281.
 
+.. _wald2007:
+
 Wald, D.J., and T.I. Allen (2007). Topographic slope as a proxy for seismic site conditions and 
 amplification, Bull. Seism. Soc. Am, 97 (5), 1379-1395.
 
@@ -461,11 +476,9 @@ Hazards Review, posted ahead of print at http://dx.doi.org/10.1061/(ASCE)NH.1527
 Wald, D.J., Quitoriano, V., Worden, C.B., Hopper, M., and Dewey, J.W. (2011c). USGS "Did You Feel It?" 
 internet-based macroseismic intensity maps. Annals of Geophysics 54:6, 688-709.
 
+.. _wald2012:
+
 Wald et al 2012. Vs30 
-
-
-Turner, Loren L., D. J. Wald, and K. Lin (2010). ShakeCast - Developing a Tool for Rapid Post-Earthquake 
-Response, Final Report No. CA09-0734, 325 pp. 
 
 .. _gmt_ref:
 
@@ -476,6 +489,8 @@ WGCEP (Working Group on California Earthquake Probabilities) (2003). Earthquake 
 San Francisco Bay Region: 2003 to 2031, U.S. Geological Survey Open-File Report 03-214.
 
 Wells and Coppersmith, 1994.
+
+.. _wills2000:
 
 Wills, C. J., M. D. Petersen, W. A. Bryant, M. S. Reichle, G. J. Saucedo, S. S. Tan, G. C. Taylor, and J. A. 
 Treiman (2000). A site-conditions map for California based on geology and shear wave velocity, Bull. 
@@ -490,8 +505,6 @@ mapping, Calif. Geo. Sur. Final Tech. Rept., 20 pp. (Award No. 07HQGR0061).
 Wood, H. O. and Neumann (1931). Modified Mercalli intensity scale of 1931, Bull. Seism. Soc. Am. 21, 
 277-283. 
 
-Worden et al SSA Abstract Vs30 Global
-
 .. _worden2010:
 
 Worden, C.B., Wald, D.J., Allen, T.I., Lin, K.W., Garcia, D., and Cua, G. (2010). A revised ground-motion 
@@ -502,6 +515,10 @@ and intensity interpolation scheme for ShakeMap, Bull. Seism. Soc. Am., 100:6, 3
 Worden, C.B., Gerstenberger, M.C., Rhoades, D.A., and Wald, D.J. (2012). Probabilistic relationships 
 between ground-motion parameters and Modified Mercalli intensity in California. Bull. Seism. Soc. Am. 
 102:1, 204- 221. doi: 10.1785/0120110156.
+
+.. _worden2015:
+
+Worden et al (2015). SSA Abstract Vs30 Global
 
 Yamakawa, K. (1998). The Prime Minister and the earthquake: Emergency Management Leadership of 
 Prime Minister Marayama on the occasion of the Great Hanshin-Awaji earthquake disaster, Kansai 
@@ -524,7 +541,9 @@ Yong, A., A. Martin, K. Stokoe, and J. Diehl (2013). ARRA-funded VS30 measuremen
 technique approach at California and central-eastern United States strong motion stations, USGS Open-
 File Report 2013-1102. 
 
-Yong et al. SSA Abstract Vs30 Database
+.. _yong2015:
+
+Yong et al. (2015). SSA Abstract Vs30 Database
 
 Youngs, R. R., S.-J. Chiou, W. J. Silva, and J. R. Humphrey (1997). Strong ground-motion relationships 
 for subduction zones, Seism. Res. Letters, 68, No.1, 58-73.
