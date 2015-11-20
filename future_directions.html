@@ -1,0 +1,255 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Future Directions &mdash; ShakeMap Manual 2.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html"/>
+        <link rel="next" title="References &amp; Bibliography" href="references.html"/>
+        <link rel="prev" title="Software &amp; Implementation Guide" href="software_guide.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ShakeMap Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_guide.html">Technical Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="users_guide.html">User&#8217;s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_guide.html">Software &amp; Implementation Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Future Directions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ShakeMap Manual</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Future Directions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/future_directions.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="future-directions">
+<span id="id1"></span><h1>Future Directions<a class="headerlink" href="#future-directions" title="Permalink to this headline">¶</a></h1>
+<p>Limitations and shortcomings. Known, unknown. Potential areas of improvement include:
+Listing of topics:</p>
+<ul class="simple">
+<li>Planned Improvements</li>
+<li>L&amp;L grid</li>
+<li>PGV-&gt; intensity at high M/PGV (including simulated ground motions)</li>
+</ul>
+<p>Naturally though, we are most concerned about accurately portraying the highest intensities.
+For example, approximately 86 percent of the residential losses in the Northridge earthquake
+occurred in the intensity VII-IX region (Kircher et al., 1997, p. 714). Intensity IX was the
+largest mapped value for that event. Despite this data, and data from a few other damaging
+earthquakes, the PGM-Intensity relationship is not well constrained at the highest levels
+of shaking. While intensities up to VIII are reasonably well represented, above this
+level there are still very few intensity observations that are closely paired with ground-motion
+recordings. While the existing GMICE assume a linear continuation of the PGM-Intensity
+relationships (from V/VI to VIII) to higher levels of shaking, it remains to be seen if
+these relationships hold, or even if PGM alone is sufficient to characterize the highest
+macroseismic intensities.</p>
+<ul class="simple">
+<li>Virtualize Machine/CLOUD-based operations</li>
+<li>GMT5/Python</li>
+<li>Spatial variability</li>
+<li>Kriging</li>
+<li>Canned GMPE libraries: GEM</li>
+<li>Interactive maps</li>
+<li>Rendering Info.xml</li>
+<li>Dynamic plots (Regression, bias, outliers, stations amplitudes,</li>
+<li>Directivity (SPudich et al 2014)</li>
+<li>Improved and additional site amplification approaches and tables (e.g., Choi and Stewart, 2005)</li>
+<li>Basin terms for NGA-West 2 GMPEs</li>
+<li>Consideration of vector PGM’s, duration.</li>
+</ul>
+<p>We are constantly re-evaluating or considering the use of additional ground-motion parameters,
+or intensity measures, for ShakeMap.  However, any such additions cannot be made lightly.
+In part, this is due to the fact that the seismic network processing streams that produce
+parametric data for ShakeMap in different ANSS regions vary significantly. Indeed, even
+within the southern California region, ShakeMap data is produced both in real time with
+recursive filtering as well as with rapid post-processing, and this is done by three
+different agencies. Mandating changes in such systems is not straightforward. Likewise,
+the addition of parameters in the processing stream not only takes more processing time,
+but we also like to limit the number of maps due to computational, bookkeeping, and
+storage efficiency considerations.</p>
+<p>Candidates for additional parameters include energy or comparable measures (like
+cumulative average velocity, CAV) that include effects of duration and vector-based
+measures (e.g., Safak, 2000), and static displacement. However, ongoing engineering
+and loss-estimation research has not led to a obvious candidate that would justify
+overcoming the aforementioned obstacles so they have not warranted serious consideration
+at this time.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="references.html" class="btn btn-neutral float-right" title="References &amp; Bibliography" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="software_guide.html" class="btn btn-neutral" title="Software &amp; Implementation Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, C. Bruce Worden, David Wald.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

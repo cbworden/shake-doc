@@ -31,7 +31,7 @@
 
   
     <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html"/>
-        <link rel="next" title="References &amp; Bibliography" href="references.html"/>
+        <link rel="next" title="Future Directions" href="future_directions.html"/>
         <link rel="prev" title="User’s Guide" href="users_guide.html"/> 
 
   
@@ -100,6 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#software-availability-software-guide">Software Availability &amp; Software Guide</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
 </ul>
 
@@ -236,8 +237,8 @@ operator must select the proper GMPE or GMPEs for the region, and specify under 
 conditions they will be used. An appropriate Ground-Motion/Intensity Conversion
 equation must likewise be chosen. The operator may also elect to use an Intensity
 Prediction Equation (IPE), or to use the default virtual IPE. For best results, the operator
-will need to provide a Vs30 grid, and while the USGS&#8217;s Vs30 server can supply such a
-grid based on topographic slope, and grid based on regional geology is preferable. The
+will need to provide a Vs30 grid, and while the <a class="reference external" href="http://earthquake.usgs.gov/hazards/apps/vs30/">USGS&#8217;s Vs30 server</a> can supply such a
+grid based on topographic slope, and grid based on regional geology is preferable <a class="footnote-reference" href="#id2" id="id1">[1]</a>. The
 user must also decide whether to use GMPE-native or Borcherdt-style site correction
 factors. This is just a partial list of configuration choices, there are numerous other
 configurable parameters - grid spacing, bias parameters, outlier detection and flagging,
@@ -501,6 +502,17 @@ Macintosh computers running MAC OSX. Others have been successful with FreeBSD
 and Solaris. Again, we strongly recommend that you not use Ubuntu Linux &#8211; it has proven
 problematic for a number of users, and we cannot provide support. Windows
 is not supported. See the Software Guide for more information.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><p class="first">The VS30 server currently provides GMT grd files in pixel node registration and
+ShakeMap works in gridline node registration. You can fix your Vs30 file by:</p>
+<p>grdsample your_vs30_grid.grd -Gnew_file_name.grd –T</p>
+<p class="last">You then configure grind.conf to look at &#8220;new_file_name.grd&#8221; and it should work.
+See grind.conf for details.</p>
+</td></tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -511,7 +523,7 @@ is not supported. See the Software Guide for more information.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="references.html" class="btn btn-neutral float-right" title="References &amp; Bibliography" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="future_directions.html" class="btn btn-neutral float-right" title="Future Directions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="users_guide.html" class="btn btn-neutral" title="User’s Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
