@@ -204,8 +204,8 @@ since they can then be derived through the use of a suitable Ground-Motion/Inten
 Conversion Equation (GMICE). Because a GMICE represents a statistical (probabilistic) 
 relationship, the conversion to and from intensity has a higher uncertainty than direct 
 ground-motion observation. ShakeMap accounts for this higher uncertainty by down 
-weighting converted observations in the interpolation process, as discussed in Section 
-1.8.3.
+weighting converted observations in the interpolation process, as discussed in the 
+:ref:`interpolation` section.
 
 A variety of GMICE are available with the ShakeMap software distribution, both for 
 MMI based on :ref:`Wald, et al. \(1999b\) <wald1999b>`, :ref:`Worden, et al. \(2012\) <worden2012>`, 
@@ -384,7 +384,7 @@ due to the very wide range of ground motions that produce MMIs less than III or 
    Figure 1.1. Intensity ShakeMap from the Aug. 24, 2014, M6.0 American Canyon (Napa Valley), 
    California, earthquake. Strong motion data (triangles) and intensity data (circles are color-coded 
    according to their intensity value, either as observed (for macroseismic data) or as converted as 
-   derived by Wald et al. (1999) as shown in the legend. The north-south black line indicates the 
+   derived by :ref:`Wald et al. \(1999b\) <wald1999b>` as shown in the legend. The north-south black line indicates the 
    fault location, which nucleated near the epicenter (red star). Note: Map Version Number reflects 
    separate offline processing for this Manual. 
  
@@ -396,7 +396,7 @@ due to the very wide range of ground motions that produce MMIs less than III or 
    Figure 1.2. Peak acceleration ShakeMap from the Aug. 24, 2014, M6.0 American Canyon (Napa 
    Valley), California, earthquake. Strong motion data (triangles) and intensity data (circles are 
    color-coded according to their intensity value, either as observed (for macroseismic data) or as 
-   converted as derived by Wald et al. (1999) as shown in the legend. The north-south black line 
+   converted as derived by :ref:`Wald et al. \(1999b\) <wald1999b>` as shown in the legend. The north-south black line 
    indicates the fault location, which nucleated near the epicenter (red star). Note: Map Version 
    Number reflects separate offline processing for this Manual. 
  
@@ -410,7 +410,7 @@ due to the very wide range of ground motions that produce MMIs less than III or 
    Figure 1.3. Intensity ShakeMap from the Oct. 15, 2006, M6.7 Kahola Bay, Hawaii, earthquake. 
    Contours indicate intensities; strong motion data (triangles) and intensity data (circles are color-
    coded according to their intensity value, either as observed (for macroseismic data) or as 
-   converted as derived by Worden et al. (2012). Inset on lower map shows pop-up station 
+   converted as derived by :ref:`Worden et al. \(2012\) <worden2012>`. Inset on lower map shows pop-up station 
    information. 
 
 
@@ -424,9 +424,9 @@ vary greatly, we first remove the effects of near-surface amplification from our
 perform the interpolation to a uniform grid at bedrock conditions, and then apply the site 
 amplifications to each point in the grid, based on each site's characteristics. 
 
-A commonly used proxy used to account for site effects (e.g., Borcherdt, 1994) is Vs30, 
+A commonly used proxy used to account for site effects (e.g., :ref:`Borcherdt, 1994 <borcherdt1994>`) is Vs30, 
 the time-averaged shear wave velocity to 30 meters depth. Vs30 is also a fundamental 
-explanatory variable for modern GMPEs (e.g., Abrahamson et al., 2014).  Since the use 
+explanatory variable for modern GMPEs (e.g., :ref:`Abrahamson et al., 2014 <abrahamson2014>`).  Since the use 
 of GMPEs for ground motion estimation is fundamental to ShakeMap, we follow this 
 convention and use Vs30-based amplification terms for accounting for site amplification. 
 In Section 4 (Future Directions), we suggest alternative approaches that require additional 
@@ -439,7 +439,7 @@ Each region wishing to implement ShakeMap should have a Vs30 map that covers the
 entire area they wish to map.  Using the 1994, Northridge (southern California) 
 earthquake ShakeMap as an example, we present, in :ref:`Figure 1.5 <figure1.5>`, the Vs30 map used. Up 
 through 2015, the California site-condition map was based on geologic base maps as 
-introduced by Wills et al. (2000), and modified by Howard Bundock and Linda Seekins 
+introduced by :ref:`Wills et al. \(2000\) <wills2000>`, and modified by Howard Bundock and Linda Seekins 
 of the USGS Menlo Park (H. Bundock, written comm., 2002). The Wills' map extent is 
 that of the State boundary; however, ShakeMap requires a rectangular grid, so fixed 
 velocity regions were inserted to fill the grid areas representing the ocean and land 
@@ -454,7 +454,7 @@ m.  This results in continuity of our site correction across the international b
 Other ShakeMap operators have employed existing geotechnically- or geology-based 
 Vs30 maps, or have developed their own Vs30 map for the area covered by their 
 ShakeMap. For regions lacking such maps, including most of globe, operators often 
-employ the approach of Wald and Allen (2007; revised by Allen and Wald, 2009b), 
+employ the approach of :ref:`Wald and Allen \(2007\) <wald2007>`; revised by :ref:`Allen and Wald, \(2009b\) <allen2009b>`, 
 which provides estimates of Vs30 as a function of more readily available topographic 
 slope data. Wald and Allen's slope-based Vs30-mapping proxy is employed by the Global 
 ShakeMap (GSM) system. 
@@ -467,7 +467,7 @@ ShakeMap (GSM) system.
    Figure 1.4. PGA ShakeMap reprocessed with data from the M6.7 Northridge, CA, with a finite 
    fault (red rectangle), strong motion data (triangles) and intensity data (circles). Stations and 
    macroseismic data are color-coded according to their intensity value, either as observed (for 
-   macroseismic data) or as converted as derived by Worden et al. (2012) and indicated by the scale 
+   macroseismic data) or as converted as derived by :ref:`Worden et al. \(2012\) <worden2012>` and indicated by the scale 
    shown. 
  
 .. _figure1.5:
@@ -481,28 +481,28 @@ ShakeMap (GSM) system.
    in m/sec.
 
 
-Recent developments by Wald et al. (2012) and Thompson et al. (2012; 2014) provide a 
+Recent developments by :ref:`Wald et al. \(2012\) <wald2012>` and :ref:`Thompson et al. \(2012 <thompson2012>`; :ref:`2014 <thompson2014>`) provide a 
 basis for refining Vs30 maps when Vs30 data constraints are abundant. Their method 
 employs not only geologic units and topographic slope, but also explicitly constrains map 
 values near Vs30 observations using kriging-with-a-trend to introduce the level of spatial 
-variations seen in the Vs30 data (Thompson et al., 2014).  An example of Vs30 for 
+variations seen in the Vs30 data (:ref:`Thompson et al., 2014 <thompson2014>`).  An example of Vs30 for 
 California using this approach is provided in :ref:`Figure 1.6 <figure1.6>`. Thompson et al. describe how 
 differences among Vs30 base maps translate into variations in site amplification in 
 ShakeMap. 
 
-Worden et al. (2015) further consolidate readily-available Vs30 map grids used for 
+:ref:`Worden et al. \(2015\) <worden2015>` further consolidate readily-available Vs30 map grids used for 
 ShakeMaps at regional seismic networks of the ANSS with background, Thompson et 
 al.'s California Vs30 map, and the topographic-based Vs30 proxy to develop a 
 consistently-scaled, mosaic of Vs30 maps with smooth transitions from tile to tile.  It is 
 anticipated that aggregated Vs30 data provided by 
-Yong et al. (2015) will facilitate further map development of other portions of the U.S. 
+:ref:`Yong et al. \(2015\) <yong2015>` will facilitate further map development of other portions of the U.S. 
  
 .. _figure1.6:
 
 .. figure:: _static/Figure_1_6.*
    :align: left
 
-   Figure 1.6. Revised California Vs30 Map (Thompson et al., 2014). This map combines geology, 
+   Figure 1.6. Revised California Vs30 Map (:ref:`Thompson et al., 2014 <thompson2014>`). This map combines geology, 
    topographic slope and constrains map values near Vs30 observations using kriging-with-a-trend. 
    Inset shows Los Angeles region with Los Angeles Basin indicating low Vs30 velocities. 
 
@@ -511,7 +511,7 @@ Amplification Factors
 
 ShakeMap provides two operator-selectable methods for determining the factors used to 
 amplify and de-amplify ground motions based on Vs30. The first is to apply the 
-frequency- and amplitude-dependent factors determined by Borcherdt (1994). 
+frequency- and amplitude-dependent factors determined by :ref:`Borcherdt \(1994\) <borcherdt1994>`. 
 Amplification of PGA employs Borcherdt's short-period factors; PGV uses mid-period 
 factors and PSA at 0.3, 1.0, and 3.0 sec uses the short- mid- and long-period factors, 
 respectively. The second method uses the site correction terms supplied with the user's 
@@ -598,6 +598,8 @@ affects the map wherever ground motion estimates dominate (away from the station
 
 **CORRESPONDING PLOT REG FIGURE**
 
+.. _interpolation:
+
 Interpolation
 ===============
 
@@ -632,28 +634,34 @@ Because a point in the output may be closer or farther from the source than a ne
 contributing observation, the observation is scaled by the ratio of the GMPE (or IPE) 
 estimates at the output point and the observation point:
 
-       ,	(1)
+.. math::
 
-where   is the observation, and   and   are the ground-motion predictions 
-at the observation point and the point (x,y), respectively. This scaling is also applied to 
+   Y_{obs,xy} = Y_{obs} \times \left(\frac{Y_{\text{GMPE},xy}}{Y_{\text{GMPE},obs}}\right),         (1)
+
+where :math:`Y_{obs}` is the observation, and :math:`Y_{\text{GMPE},obs}` and :math:`Y_{\text{GMPE},xy}` are the ground-motion predictions 
+at the observation point and the point *(x,y)*, respectively. This scaling is also applied to 
 the converted observations with the obvious substitutions. Note that the application of 
 this term also accounts for any geometric terms (such as directivity or source geometry) 
 that the ground-motion estimates may include.
 
 The formula for the estimated ground motion,  , at a point (x,y) is then given by:
 
-       ,	(2)
+.. math::
 
-where   and   are the amplitude and variance, respectively, at the point (x,y) 
-as given by the GMPE,  are the observed amplitudes scaled to the point (x,y), 
-is the variance associated with observation i at the point (x,y),   are the 
-converted amplitudes scaled to the point (x,y), and   is the variance associated 
-with converted observation j at the point (x,y).
+   \overline{Y_{xy}} = \frac{\displaystyle\frac{Y_{\text{GMPE},xy}}{\sigma_{\text{GMPE}}^2} + \displaystyle\sum_{i=1}^{n}\frac{Y_{obs,xy,i}}{\sigma_{obs,xy,i}^2} + \displaystyle\sum_{j=1}^{n}\frac{Y_{conv,xy,j}}{\sigma_{conv,xy,j}^2}}{\displaystyle\frac{1}{\sigma_{\text{GMPE}}^2} + \displaystyle\sum_{i=1}^{n}\frac{1}{\sigma_{obs,xy,i}^2} + \displaystyle\sum_{j=1}^{n}\frac{1}{\sigma_{conv,xy,j}^2}},       (2)
+
+where :math:`Y_{\text{GMPE},xy}` and :math:`\sigma_{\text{GMPE}}^2` are the amplitude and variance, respectively, at the point *(x,y)* 
+as given by the GMPE, :math:`Y_{obs,xy,i}` are the observed amplitudes scaled to the point (x,y), 
+:math:`\sigma_{obs,xy,i}^2` is the variance associated with observation *i* at the point *(x,y)*, :math:`Y_{conv,xy,j}` are the 
+converted amplitudes scaled to the point *(x,y)*, and :math:`\sigma_{conv,xy,j}^2` is the variance associated 
+with converted observation *j* at the point *(x,y)*.
 
 We can then compute Equation 2 for every point in the output grid. Note that the 
-reciprocal of the denominator of Equation 2 is the total variance at each point-a useful 
-byproduct of the interpolation process. Again, Worden et al. (2010) provides additional 
+reciprocal of the denominator of Equation 2 is the total variance at each point--a useful 
+byproduct of the interpolation process. Again, :ref:`Worden et al. \(2010\) <worden2010>` provides additional 
 details.
+
+.. _amplify_ground_motions:
 
 Amplify Ground Motions
 ========================
@@ -662,7 +670,7 @@ At this point ShakeMap has produced interpolated grids of ground motions (and
 intensities) at a site class specified as "rock." If the operator has specified the -basement 
 option to grind (and supplied the necessary depth-to-basement file), the basin 
 amplification function (Field et al., 2000) is applied to the grids. Then, if the user has 
-specified -qtm, site amplifications are applied to the grids, creating the final output.
+specified *-qtm*, site amplifications are applied to the grids, creating the final output.
 
 Differences handling MMI
 ================================
@@ -1090,7 +1098,7 @@ can then estimate the ground shaking at all locations over a chosen area surroun
 fault and produce a full suite of data products just as if event were a real earthquake. 
 Ground-motions are usually estimated using GMPEs to compute peak ground-motions on 
 rock conditions; however, the operator may also supply ground motion estimates from 
-external programs in the form of GMT grid files. As described in Section 1.8.4, 
+external programs in the form of GMT grid files. As described in :ref:`amplify_ground_motions`
 ShakeMap corrects the amplitudes based on the local site soil conditions unless 
 configured otherwise. 
 
