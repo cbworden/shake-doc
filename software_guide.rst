@@ -106,8 +106,8 @@ operator must select the proper GMPE or GMPEs for the region, and specify under 
 conditions they will be used. An appropriate Ground-Motion/Intensity Conversion 
 equation must likewise be chosen. The operator may also elect to use an Intensity 
 Prediction Equation (IPE), or to use the default virtual IPE. For best results, the operator 
-will need to provide a Vs30 grid, and while the USGS's Vs30 server can supply such a 
-grid based on topographic slope, and grid based on regional geology is preferable. The 
+will need to provide a Vs30 grid, and while the `USGS's Vs30 server <http://earthquake.usgs.gov/hazards/apps/vs30/>`_ can supply such a 
+grid based on topographic slope, and grid based on regional geology is preferable [#]_. The 
 user must also decide whether to use GMPE-native or Borcherdt-style site correction 
 factors. This is just a partial list of configuration choices, there are numerous other 
 configurable parameters - grid spacing, bias parameters, outlier detection and flagging, 
@@ -396,3 +396,12 @@ Macintosh computers running MAC OSX. Others have been successful with FreeBSD
 and Solaris. Again, we strongly recommend that you not use Ubuntu Linux -- it has proven 
 problematic for a number of users, and we cannot provide support. Windows 
 is not supported. See the Software Guide for more information.
+
+.. [#] The VS30 server currently provides GMT grd files in pixel node registration and 
+       ShakeMap works in gridline node registration. You can fix your Vs30 file by:
+
+       grdsample your_vs30_grid.grd -Gnew_file_name.grd –T
+
+       You then configure grind.conf to look at "new_file_name.grd" and it should work. 
+       See grind.conf for details.
+
