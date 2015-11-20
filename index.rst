@@ -24,6 +24,7 @@ Welcome to the ShakeMap Manual
    technical_guide.rst
    users_guide.rst
    software_guide.rst
+   future_directions.rst
    references.rst
 
 

@@ -4,6 +4,8 @@
 References & Bibliography
 #########################
 
+.. _abrahamson2008:
+
 Abrahamson, N.A., and W.J. Silva (2008). Summary of the Abrahamson & Silva NGA ground motion 
 relations, Earthquake Spectra, 24, 67-97.
 
@@ -19,7 +21,11 @@ Akkar, S. and J.J. Bommer (2010). Empirical equations for the prediction of PGA,
 accelerations in Europe, the Mediterranean region and the Middle East, Seism Res. Ltrs, 81 (2), 195-
 206.
 
+.. _akkar2013:
+
 Akkar, S. and J.J. Bommer (2013).
+
+.. _allen2006:
 
 Allen, R.M., (2006). Probabilistic Warning Times for Earthquake Ground Shaking in the San Francisco 
 Bay Area, Seism. Res. Lett., 77, No. 3, 371-376.
@@ -110,6 +116,8 @@ Beyer, K., and Bommer, J. (2006). Relationships between Median Values and betwee
 Variabilities for Different Definitions of the Horizontal Component of Motion, Bull. Seism. Soc. Am., 96, 
 No. 4A, pp. 1512-1522.
 
+.. _bommer2012:
+
 Bommer JJ, Akkar S (2012). Consistent source-to-site distance metrics in ground-motion prediction 
 equations and seismic source models for PSHA. Earthq Spectra 28:1-15
 
@@ -137,6 +145,8 @@ Res. Lett., 68, 128-153.
 
 Boore, D. M., and W. B. Joyner, (1991). Estimation of ground motion at deep-soil sites in eastern North 
 America. Bulletin of the Seismological Society of America, 81 (6), 2167-2185.
+
+.. _boore2010:
 
 Boore . RotD050
 
@@ -203,7 +213,11 @@ http://www.globalquakemodel.org/node/747.
 Dai, F. C., C. Xu, X. Yao, L. Xu, X. B. Tu, and Q. M. Gong (2010). Spatial distribution of landslides 
 triggered by the 2008 MS 8.0 Wenchuan earthquake, China, J. Asian Earth Sci. 40, 883-895. 
 
+.. _dengler1998:
+
 Dengler and Dewey (1998).
+
+.. _dewey1995:
 
 Dewey et al., 1995. 
 
@@ -217,8 +231,12 @@ Eguchi, R.T., Goltz, J.D., Seligson, H.A., Flores, P.J., Blais, N.C., Heaton, T.
 The Early Post-Earthquake Damage Assessment Tool (EPEDAT), Earthquake Spectra, Vol. 13, No. 4, 
 Oakland, California, pp. 815-832.
 
+.. _epri1991:
+
 EPRI (1991). Standardization of cumulative absolute velocity, EPRI TR100082 (Tier 1), Palo Alto, 
 California, Electric Power Research Institute, prepared by Yankee Atomic Electric Company.
+
+.. _epri2003:
 
 EPRI, 2003. CEUS Ground Motion Project: Model Development and Results, EPRI Report 1008910, 
 EPRI, Palo Alto, CA, 105 pp.
@@ -230,6 +248,8 @@ Faenza and Michilini (2010)
 Federal Emergency Management Agency, 2006, HAZUS-MH MR2 Technical Manual: Washington, D.C., 
 Federal Emergency Management Agency, last accessed August 22, 2008, at 
 http://www.fema.gov/plan/prevent/hazus/hz_manuals.shtm.
+
+.. _field2000:
 
 Field, E.H. (2000). A modified ground-motion attenuation relationship for southern California that 
 accounts for detailed site classification and a basin-depth effect, Bull. Seism. Soc. Am., 90, S209-S221.
@@ -249,12 +269,18 @@ So, and D. Wald (2012a). ShakeMap Atlas 2.0: An Improved Suite of Recent Histori
 ShakeMaps for Global Hazard Analyses and Loss Models, Proc. 15th World Conf. on Eq. Eng., 
 Lisbon, 10p.
 
+.. _garcia2012b:
+
 Garcia, D., D. J. Wald, and M. G. Hearne (2012b). A Global Earthquake Discrimination Scheme to 
 Optimize Ground-Motion Prediction Equation Selection, Bull Seism. Soc. Am., 102, 185-203.
+
+.. _godt2008:
 
 Godt, J., Wener, B., Verdin, K., Wald, D., Earle, P., Harp, E., and Jibson, R. (2008). Rapid assessment of 
 earthquake-induced landsliding. Proc. of the First World Landslide Forum, Tokyo, Japan, Parallel 
 Sessions Volume, International Program on Landslides.
+
+.. _grunthel1998:
 
 Grunthel et al (1998) EMS
 
@@ -265,8 +291,12 @@ Hauksson et al., 2002
 Jaiswal, K. S., and Wald, D. J. (2010). An Empirical Model for Global Earthquake Fatality Estimation. 
 Earthquake Spectra, 26, No. 4, 1017-1037. 
 
+.. _jaiswal2012:
+
 Jaiswal, K., and D. J. Wald (2012). Estimating Economic Loss from Earthquakes Using an Empirical 
 Approach, Earthquake Spectra, 29, No. 1, 309-324. 
+
+.. _jma1996:
 
 Japan Meteorological Agency (1996). Note on the JMA seismic intensity, JMA report 1996, Gyosei (in 
 Japanese). 
@@ -280,6 +310,8 @@ City, Utah, 43-102.
 
 Joyner, W. B. and Boore, D. M. (1981). Peak horizontal accelerations and velocity from strong-motion 
 records including records from the 1979 Imperial Valley, California, earthquake, 71, 2011-2038. 
+
+.. _kaezashi1997:
 
 Kaezashi and Kaneko, 1997
 
@@ -295,6 +327,8 @@ Kanamori, 1999
 
 Kanno T, A Narita, N Morikawa, H Fujiwara, and Y Fukushima (2006). A new attenuation relation for 
 strong ground motion in Japan based on recorded data, Bull. Seism. Soc. Am, 96(3), 879-897.
+
+.. _knudsen2011:
 
 Knudsen, K.L., and Bott, J.D.J. (2011). Geologic and geomorphic evaluation of liquefaction case histories- 
 toward rapid hazard mapping. Seism. Res. Lett. 82:2, 334-335.
@@ -316,9 +350,13 @@ quantitative analysis for improving rapid loss analyses. Natural Hazards 52, 319
 Mori, J., H. Kanamori, J. Davis, E. Hauksson, R. Clayton, T. Heaton, L. Jones, and A. Shakal (1998). 
 Major improvements in progress for southern California earthquake monitoring, 79, p. 217, 221. 
 
+.. _matsuoka2015:
+
 Matsuoka, M., K. Wakamatsu, M. Hashimoto, S. Senna, and S. Midorikawa (2015). Evaluation of 
 Liquefaction Potential for Large Areas Based on Geomorphologic Classification, Earthquake Spectra, 
 in press.
+
+.. _musson2010:
 
 Musson, R. M. W., Grunthal G, and Stucchi, M. (2010). The comparison of macroseismic intensity scales, 
 Journal of Seismology (2010) 14:413-
@@ -330,11 +368,15 @@ Washington, D.C.
 NIBS (1999), HAZUS Technical Manual, SR2 edition, Vols. I, II, and III, prepared by the National 
 Institute of Building Sciences for the Federal Emergency Management Agency, Washington, D.C.
 
+.. _newmark1982:
+
 Newmark, N. M., and W. J. Hall (1982).  Earthquake spectra and design, Geotechnique, 25, no. 2, 139-160.
 
 Newmark, N. M., and W. J. Hall (1982). Earthquake Spectra and Design, Engineering Monographs on 
 Earthquake Criteria, Structural Design, and Strong Motion Records, Vol. 3, Earthquake Engineering 
 Research Institute, University of California, Berkeley, CA.
+
+.. _nowicki2014:
 
 Nowicki, M. A., D. J. Wald, M. W. Hamburger, M. Hearne, and E. M. Thompson (2014). Development of 
 a Globally Applicable Model for Near Real-Time Prediction of Seismically Induced Landslides, 
@@ -342,6 +384,8 @@ submitted to Engineering Geology.
 
 Pankow, K. L, and J. C. Pechmann (2003). Addedum to SEA99: A new PGV and revised PGA and 
 pseudovelocity  predictive relationship for extensional tectonic regimes, Bull. Seism. Soc. Am. 
+
+.. _petersen2014:
 
 Petersen et al 2014 PSHA USA
 
@@ -351,8 +395,12 @@ Pomonis, A. and So. E. (2011) Guidelines for the Collection of Consequence Data,
 Consequences Database Global Component Project, 71 pp., available online at: 
 http://www.nexus.globalquakemodel.org/gemecd/
 
+.. _powers2008:
+
 Powers, M. Chiou, B., Abrahamson, N., Bozorgnia, Y., Shantz, T.and Roblee, C. (2008). An Overview of 
 the NGA Project, Earthquake Spectra Feb 2008, Vol. 24, No. 1, pp. 3-21.
+
+.. _rowshandel2010:
 
 Rowshandel (2010) Directivity
 
@@ -369,6 +417,8 @@ Proceedings of the 11th European Conference on Earthquake Engineering, A.A. Balk
 
 Smith, W. H. F., and P. Wessel (1990). Gridding with continuous curvature splines in tension, Geophysics 
 55, 293-305. .
+
+.. _so2011:
 
 So et al (2011) GEMECD
 
@@ -485,6 +535,8 @@ Wald et al 2012. Vs30
 Wessel, P., and W. H. F. Smith (1995). New Version of the Generic Mapping Tools Released, EOS Trans. 
 AGU, 76, 329.
 
+.. _wgcep2003:
+
 WGCEP (Working Group on California Earthquake Probabilities) (2003). Earthquake Probabilities in the 
 San Francisco Bay Region: 2003 to 2031, U.S. Geological Survey Open-File Report 03-214.
 
@@ -531,6 +583,8 @@ earthquake, Seism. Res. Lett., 71, 338-343.
 Wu, Y. M., T. C. Chin, and C. H. Chang (2001). Near real-time mapping of peak ground acceleration and 
 peak ground velocity following a strong earthquake, Bull. Seism. Soc. Am., 91, 1218-1228.
 
+.. _wu2003:
+
 Wu, Y. M., T. L. Teng, T. C. Shin, and N. C. Hsiao (2003). Relationship between peak ground 
 acceleration, peak ground velocity and Intensity in Taiwan, Bull. Seism. Soc. Am., 93, 386-396.
 
@@ -555,7 +609,9 @@ Zhao, JX, J Zhang, A Asano, Y Ohno, T Oouchi, T Takahashi, H Ogawa, K Irikura, H
 Somerville, Y Fukushima, and Y Fukushima (2006). Attenuation relations of strong ground motion in 
 Japan using site classification based on predominant period, Bull. Seism. Soc. Am, 96 (3), 898-913.
 
-Zhu, J., Baise, L.G., Thompson, E.M., Wald, D.J., Knudsen, K.L. (2013). A Geospatial Liquefaction 
+.. _zhu2014:
+
+Zhu, J., Baise, L.G., Thompson, E.M., Wald, D.J., Knudsen, K.L. (2014). A Geospatial Liquefaction 
 Model for Rapid Response and Loss Estimation, Eq. Spectra, in press.
 
 
