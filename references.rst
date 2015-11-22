@@ -15,15 +15,18 @@ pp. 45-66.
 
 .. _abrahamson2014:
 
-Abrahamson, N et al 2014 NGA West 2
+Abrahamson, N.A., Silva, W.J., and Kamai, R. (2014). Summary of the ASK14 Ground Motion Relation 
+for Active Crustal Regions. Earthquake Spectra: August 2014, Vol. 30, No. 3, pp. 1025-1055.
 
 Akkar, S. and J.J. Bommer (2010). Empirical equations for the prediction of PGA, PGV and spectral 
 accelerations in Europe, the Mediterranean region and the Middle East, Seism Res. Ltrs, 81 (2), 195-
 206.
 
-.. _akkar2013:
+.. _akkar2014:
 
-Akkar, S. and J.J. Bommer (2013).
+Akkar, S., Sandikkaya, M.A., and Bommer, J.J. (2014). Empirical ground-motion models for point
+and extended-source crustal earathquake scenarios in Europe and the Middle East. Bull. 
+Earthquake Eng., 12:359-387.
 
 .. _allen2006:
 
@@ -32,9 +35,9 @@ Bay Area, Seism. Res. Lett., 77, No. 3, 371-376.
 
 .. _allen2008:
 
-Allen, T.I., Wald, D.J., Hotovec, A.J., Lin, K.W., Earle, P.S., and Marano, K.D. (2008). An Atlas of 
-ShakeMaps for selected global earthquakes. Open-File Report 2008-1236, U.S. Geological Survey, 
-Golden, Colorado.
+Allen, T.I., Wald, D.J., Hotovec, A.J., Lin, K.W., Earle, P.S., and Marano, K.D. (2008). An 
+Atlas of ShakeMaps for selected global earthquakes. Open-File Report 2008-1236, U.S. 
+Geological Survey, Golden, Colorado.
 
 .. _allen2009a:
 
@@ -148,7 +151,8 @@ America. Bulletin of the Seismological Society of America, 81 (6), 2167-2185.
 
 .. _boore2010:
 
-Boore . RotD050
+Boore, D.M. (2010). Orientation-Independent, Nongeometric-Mean Measures of Seismic Intensity 
+from Two Horizontal Components of Motion. Bull. Seism. Soc. Am., Vol. 100, No. 4, pp. 1830–1835.
 
 .. _borcherdt1994:
 
@@ -179,8 +183,9 @@ component of PGA, PGV, PGD and 5% damped linear elastic response spectra for per
 
 .. _caprio2015:
 
-Caprio, M., B. Tarigan, C.B. Worden, D.J. Wald, S. Wiemer (2015). Are relationships between intensity 
-and ground motion regionally dependent?, accepted by Bull. Seism. Soc. Am.
+Caprio, M., B. Tarigan, C.B. Worden, D.J. Wald, S. Wiemer (2015). Ground Motion to Intensity 
+Conversion Equations (GMICEs): A Global Relationship and Evaluation of Regional Dependency.
+Bull. Seism. Soc. Am., Vol. 105, No. 3.
 
 Chiou, B.S.J, and R.R. Youngs (2008a). An NGA model for the average horizontal component of peak 
 ground motion and response spectra, Earthquake Spectra, 24(1): 173-215.
@@ -189,47 +194,52 @@ Chiou, B.S.J. and R.R. Youngs (2008b). Chiou and Youngs PEER-NGA empirical groun
 for the average horizontal component of peak acceleration, peak velocity, and pseudo-spectral 
 acceleration for spectral periods of 0.01 to 10 seconds, Final Report submitted to PEER.
 
-Choi, Y. and J. P. Stewart (2005). Nonlinear Site Amplification as Function of 30 m Shear Wave Velocity, 
-Earthquake Spectra, 21, No. 1, 1-30, 
+Choi, Y. and J. P. Stewart (2005). Nonlinear Site Amplification as Function of 30 m Shear 
+Wave Velocity, Earthquake Spectra, 21, No. 1, 1-30, 
 
 .. _converse1992:
 
-Converse and Brady, 1992
+Converse, A. and Brady, A.G. (1992). BAP basic strong-motion accelerogram processing software 
+version 1.0. U.S. Geological Survey Open-File Report 92-296.
 
 Convertito V., Caccavale M., De Matteis R., Emolo A., Wald, D. J. and A. Zollo (2011). Fault extent 
-estimation for near-real time ground shaking map computation purposes, Bull Seism. Soc. Am, 102, No. 
-2, pp. 661-679. 
+estimation for near-real time ground shaking map computation purposes, Bull Seism. Soc. Am, 102, 
+No.  2, pp. 661-679. 
 
 Cua, G, and D. J. Wald (2008). Calibrating PAGER ("Prompt Assessment of Global Earthquakes for 
 Response") ground shaking and human impact estimation using worldwide earthquake datasets: 
 collaborative research with USGS and the Swiss Seismological Service , NEHRP Final Report (Award 
 number: 06HQGR0062).
 
-Cua, G., D. J. Wald, T. I. Allen, D. Garcia, C. B. Worden, M. Gerstenberger, K. Lin, K. Marano (2010). 
-"Best Practices" for Using Macroseismic Intensity and Ground Motion to Intensity Conversion 
-Equations for Hazard and Loss Models, GEM Technical Report 2010-4, Report Series, 69 pp., 
-http://www.globalquakemodel.org/node/747.
+Cua, G., D. J. Wald, T. I. Allen, D. Garcia, C. B. Worden, M. Gerstenberger, K. Lin, K. Marano 
+(2010).  "Best Practices" for Using Macroseismic Intensity and Ground Motion to Intensity 
+Conversion Equations for Hazard and Loss Models, GEM Technical Report 2010-4, Report Series, 
+69 pp., http://www.globalquakemodel.org/node/747.
 
-Dai, F. C., C. Xu, X. Yao, L. Xu, X. B. Tu, and Q. M. Gong (2010). Spatial distribution of landslides 
-triggered by the 2008 MS 8.0 Wenchuan earthquake, China, J. Asian Earth Sci. 40, 883-895. 
+Dai, F. C., C. Xu, X. Yao, L. Xu, X. B. Tu, and Q. M. Gong (2010). Spatial distribution of 
+landslides triggered by the 2008 MS 8.0 Wenchuan earthquake, China, J. Asian Earth Sci. 40, 
+883-895. 
 
 .. _dengler1998:
 
-Dengler and Dewey (1998).
+Dengler, L.A. and Dewey, J.W. (1998). An Intensity Survey of Households Affected by the 
+Northridge, California, Earthquake of 17 January 1994. Bull. Seism. Soc. Am., Vol. 88, 
+No. 2, pp. 441-462.
 
 .. _dewey1995:
 
 Dewey et al., 1995. 
 
-Dewey, J., D. Wald, and L. Dengler (2000). Relating conventional USGS Modified Mercalli Intensities to 
-intensities assigned with data collected via the Internet. Seismological Research Letters, 71, 264.
+Dewey, J., D. Wald, and L. Dengler (2000). Relating conventional USGS Modified Mercalli 
+Intensities to intensities assigned with data collected via the Internet. Seismological 
+Research Letters, 71, 264.
 
 Ebel, J., and D. J. Wald (2003). Bayesian Estimations of Peak Ground Acceleration and 5% Damped 
 Spectral Acceleration from Modified Mercalli Intensity Data. Earthquake Spectra, 19(3), 511-529.
 
-Eguchi, R.T., Goltz, J.D., Seligson, H.A., Flores, P.J., Blais, N.C., Heaton, T.H., and Bortugno, E. (1997). 
-The Early Post-Earthquake Damage Assessment Tool (EPEDAT), Earthquake Spectra, Vol. 13, No. 4, 
-Oakland, California, pp. 815-832.
+Eguchi, R.T., Goltz, J.D., Seligson, H.A., Flores, P.J., Blais, N.C., Heaton, T.H., and 
+Bortugno, E. (1997).  The Early Post-Earthquake Damage Assessment Tool (EPEDAT), Earthquake 
+Spectra, Vol. 13, No. 4, Oakland, California, pp. 815-832.
 
 .. _epri1991:
 
@@ -243,7 +253,8 @@ EPRI, Palo Alto, CA, 105 pp.
 
 .. _faenza2010:
 
-Faenza and Michilini (2010)
+Faenza, L. and Michilini, A. (2010). Regression analysis of MCS intensity and ground motion 
+parameters in Italy and its application in ShakeMap. Geophys. J. Int. (2010) 180, 1138–1152.
 
 Federal Emergency Management Agency, 2006, HAZUS-MH MR2 Technical Manual: Washington, D.C., 
 Federal Emergency Management Agency, last accessed August 22, 2008, at 
@@ -254,13 +265,13 @@ http://www.fema.gov/plan/prevent/hazus/hz_manuals.shtm.
 Field, E.H. (2000). A modified ground-motion attenuation relationship for southern California that 
 accounts for detailed site classification and a basin-depth effect, Bull. Seism. Soc. Am., 90, S209-S221.
 
-Frankel, A. D., M. D., Petersen, C. S. Mueller, K. M. Haller, R. L. Wheeler, E. V. Leyendecker, R. L. 
-Wesson, S. C. Harmsen, C. H. Cramer, D. M. Perkins, and K. S. Rukstales (2002). Documentation for 
-the 2002 Update of the National Seismic Hazard Maps U.S. U.S. Geological Survey, Open-File Report: 
-02-420. http://pubs.usgs.gov/of/2002/ofr-02-420/OFR-02-420.pdf
+Frankel, A. D., M. D., Petersen, C. S. Mueller, K. M. Haller, R. L. Wheeler, E. V. Leyendecker, 
+R. L.  Wesson, S. C. Harmsen, C. H. Cramer, D. M. Perkins, and K. S. Rukstales (2002). 
+Documentation for the 2002 Update of the National Seismic Hazard Maps U.S. 
+U.S. Geological Survey, Open-File Report: 02-420. http://pubs.usgs.gov/of/2002/ofr-02-420/OFR-02-420.pdf
 
-Garcia, D, SK Singh, M Herraiz, M Ordaz, and JF Pacheco (2005). Inslab earthquakes of central Mexico: 
-Peak ground-motion parameters and response spectra, Bull. Seism. Soc. Am, 95(6), 2272-2282.
+Garcia, D, SK Singh, M Herraiz, M Ordaz, and JF Pacheco (2005). Inslab earthquakes of central 
+Mexico: Peak ground-motion parameters and response spectra, Bull. Seism. Soc. Am, 95(6), 2272-2282.
 
 .. _garcia2012a:
 
@@ -284,7 +295,9 @@ Sessions Volume, International Program on Landslides.
 
 Grunthel et al (1998) EMS
 
-Hauksson et al., 2002
+Hauksson, E., Jones, L.M., Hutton, K. (2002). The 1999 Mw 7.1 Hector Mine, California, 
+Earthquake Sequence: Complex Conjugate Strike-Slip Faulting. Bull. Seism. Soc. Am., 
+Vol. 92, No. 4, pp. 1154–1170.
 
 .. _jaiswal2010:
 
@@ -301,37 +314,41 @@ Approach, Earthquake Spectra, 29, No. 1, 309-324.
 Japan Meteorological Agency (1996). Note on the JMA seismic intensity, JMA report 1996, Gyosei (in 
 Japanese). 
 
-Johnson, K., M., A. M. Nowicki, J. Zhu, R. Mah, D. Garcia, E. Harp, J. Godt, and D. J. Wald (2014). An 
-Atlas of ShakeMaps for Landslide and Liquefaction Modeling, submitted to Earthquake Spectra.
+Johnson, K., M., A. M. Nowicki, J. Zhu, R. Mah, D. Garcia, E. Harp, J. Godt, and 
+D. J. Wald (2014). An Atlas of ShakeMaps for Landslide and Liquefaction Modeling, 
+submitted to Earthquake Spectra.
 
-Joyner, W. B. and Boore, D. M. (1988). Measurement, characterization, and prediction of strong ground-
-motions, in Proc. Conf. on Earthq. Eng. & Soil Dyn. II, Geotechnical vision, Am. Soc. Civil Eng., Park 
-City, Utah, 43-102. 
+Joyner, W. B. and Boore, D. M. (1988). Measurement, characterization, and prediction of 
+strong ground-motions, in Proc. Conf. on Earthq. Eng. & Soil Dyn. II, Geotechnical vision, 
+Am. Soc. Civil Eng., Park City, Utah, 43-102. 
 
-Joyner, W. B. and Boore, D. M. (1981). Peak horizontal accelerations and velocity from strong-motion 
-records including records from the 1979 Imperial Valley, California, earthquake, 71, 2011-2038. 
+Joyner, W. B. and Boore, D. M. (1981). Peak horizontal accelerations and velocity from 
+strong-motion records including records from the 1979 Imperial Valley, California, 
+earthquake, 71, 2011-2038. 
 
 .. _kaezashi1997:
 
 Kaezashi and Kaneko, 1997
 
-Kaka, S. I., and G. M. Atkinson (2004). Relationships between instrumental intensity and ground motion 
-parameters in eastern North America. Bull. Seism. Soc. Am., 94, 1728 - 1736.
+Kaka, S. I., and G. M. Atkinson (2004). Relationships between instrumental intensity and 
+ground motion parameters in eastern North America. Bull. Seism. Soc. Am., 94, 1728 - 1736.
 
-Kaka, S. I., and G. M. Atkinson (2005). Empirical ground-motion relations for ShakeMap applications in 
-southeastern Canada & the northeastern United States, Seism. Research Letters (in press).
+Kaka, S. I., and G. M. Atkinson (2005). Empirical ground-motion relations for ShakeMap 
+applications in southeastern Canada & the northeastern United States, Seism. Research Letters 
+(in press).
 
 .. _kanamori1999:
 
-Kanamori, 1999
+Kanamori, H., Maechling, P., Hauksson, E. (1999). Continuous Monitoring of Ground-Motion 
+Parameters. Bull. Seism. Soc. Am.,  Vol. 89, No. 1, pp. 311-316.
 
 Kanno T, A Narita, N Morikawa, H Fujiwara, and Y Fukushima (2006). A new attenuation relation for 
 strong ground motion in Japan based on recorded data, Bull. Seism. Soc. Am, 96(3), 879-897.
 
 .. _knudsen2011:
 
-Knudsen, K.L., and Bott, J.D.J. (2011). Geologic and geomorphic evaluation of liquefaction case histories- 
-toward rapid hazard mapping. Seism. Res. Lett. 82:2, 334-335.
+Knudsen, K.L., and Bott, J.D.J. (2011). Geologic and geomorphic evaluation of liquefaction 
+case histories- toward rapid hazard mapping. Seism. Res. Lett. 82:2, 334-335.
 
 Lin, K., and D. J. Wald (2008). ShakeCast Manual, U.S. Geol. Survey Open File Rep.  
 2008-1158, 90 pp.
@@ -344,8 +361,9 @@ Lin, K. and D J. Wald (2012). Developing Statistical Fragility Analysis Framewor
 ShakeCast System for Rapid Post-Earthquake Assessment, Proc. 15th World Conf. on Eq. Eng., 
 Lisbon, 10 pp.
 
-Marano, K.D., Wald, D.J., Allen, T.I., 2009. Global earthquake casualties due to secondary effects: a 
-quantitative analysis for improving rapid loss analyses. Natural Hazards 52, 319-328.
+Marano, K.D., Wald, D.J., Allen, T.I., 2009. Global earthquake casualties due to 
+secondary effects: a quantitative analysis for improving rapid loss analyses. Natural 
+Hazards 52, 319-328.
 
 Mori, J., H. Kanamori, J. Davis, E. Hauksson, R. Clayton, T. Heaton, L. Jones, and A. Shakal (1998). 
 Major improvements in progress for southern California earthquake monitoring, 79, p. 217, 221. 
@@ -402,7 +420,8 @@ the NGA Project, Earthquake Spectra Feb 2008, Vol. 24, No. 1, pp. 3-21.
 
 .. _rowshandel2010:
 
-Rowshandel (2010) Directivity
+Rowshandel, B. (2010) Directivity Correction for the Next Generation Attenuation (NGA) 
+Relations. Earthquake Spectra, Volume 26, No. 2, pages 525–559.
 
 Scrivner, C. W., C. B. Worden, and D. J. Wald (2000), Use of TriNet ShakeMap to Manage Earthquake 
 Risk, Proceedings of the Sixth International Conference on Seismic Zonation, Palm Springs.
@@ -439,36 +458,38 @@ With Geologic And Topographic Constraints, Proc. 15th World Conf. on Eq. Eng., L
 Thompson, E.M., Wald, D.J., and C.B. Worden (2014).  A VS30 map for California with geologic and 
 topographic constraints, Bull. Seism. Soc. Am., v. 104, n. 5, pp. 2313-2321.
 
-Turner, Loren L., D. J. Wald, and K. Lin (2010). ShakeCast - Developing a Tool for Rapid Post-Earthquake 
-Response, Final Report No. CA09-0734, 325 pp. 
+Turner, Loren L., D. J. Wald, and K. Lin (2010). ShakeCast - Developing a Tool for Rapid 
+Post-Earthquake Response, Final Report No. CA09-0734, 325 pp. 
 
 .. _usgs1999:
 
 USGS (1999). An assessment of Seismic Monitoring in the United States: Requirements for an Advance 
 National Seismic System, U. S. Geological Survey Circular 1188.
 
-Wald et al 1995 Northridge
+Wald, D.J., Heaton, T.H., Hudnut, K.W. (1996) The Slip History of the 1994 Northridge, 
+California, Earthquake Determined from Strong-Motion, Teleseismic, GPS, and Leveling 
+Data. Bull. Seism. Soc. Am., Vol. 86, No. 1B, pp. S49-S70.
 
-Wald, D. J., T. Heaton, H. Kanamori, P. Maechling, and V. Quitoriano (1997). Research and Development 
-of TriNet "Shake" Maps, EOS, 78, No. 46, p F45. 
+Wald, D. J., T. Heaton, H. Kanamori, P. Maechling, and V. Quitoriano (1997). Research and 
+Development of TriNet "Shake" Maps, EOS, 78, No. 46, p F45. 
 
-Wald, D. J. (1999).  Gathering of Earthquake Shaking and Damage Information in California, Proceedings 
+Wald, D. J. (1999).  Gathering of Earthquake Shaking and Damage Information in California, 
+Proceedings of the 3rd US-JAPAN High Level Policy Forum, Yokohama, Japan.
 
 .. _wald1999a:
 
-Wald, D. J., V. Quitoriano, T. H. Heaton, H. Kanamori, C. W. Scrivner, and C. B. Worden (1999a). TriNet 
-"ShakeMaps": Rapid Generation of Peak Ground-motion and Intensity Maps for Earthquakes in 
+Wald, D. J., V. Quitoriano, T. H. Heaton, H. Kanamori, C. W. Scrivner, and C. B. Worden (1999a). 
+TriNet "ShakeMaps": Rapid Generation of Peak Ground-motion and Intensity Maps for Earthquakes in 
 Southern California, Earthquake Spectra, Vol. 15, No. 3, 537-556.
 
 .. _wald1999b:
 
 Wald, D.J., V. Quitoriano, T.H. Heaton and H. Kanamori (1999b). Relationships between peak ground 
-acceleration, peak ground velocity, and modified Mercalli intensity in California, Earthquake Spectra, 
-15, 557-564.
+acceleration, peak ground velocity, and modified Mercalli intensity in California, Earthquake 
+Spectra, 15, 557-564.
 
-Wald, D. J., V. Quitoriano, L. Dengler, and J. W. Dewey (1999c). Utilization of the Internet for Rapid 
-Community Intensity Maps, Seism. Res. Letters, 70, 680-697.
-of the 3rd US-JAPAN High Level Policy Forum, Yokohama, Japan.
+Wald, D. J., V. Quitoriano, L. Dengler, and J. W. Dewey (1999c). Utilization of the Internet 
+for Rapid Community Intensity Maps, Seism. Res. Letters, 70, 680-697.
 
 Wald, D., L. Wald, J. Goltz, B. Worden, and C. Scrivner (2000). "ShakeMaps": Instant Maps of 
 Earthquake Shaking, U.S. Geological Survey Fact Sheet 103-00. 
@@ -523,8 +544,8 @@ Hazards Review, posted ahead of print at http://dx.doi.org/10.1061/(ASCE)NH.1527
 
 .. _wald2011c:
 
-Wald, D.J., Quitoriano, V., Worden, C.B., Hopper, M., and Dewey, J.W. (2011c). USGS "Did You Feel It?" 
-internet-based macroseismic intensity maps. Annals of Geophysics 54:6, 688-709.
+Wald, D.J., Quitoriano, V., Worden, C.B., Hopper, M., and Dewey, J.W. (2011c). USGS "Did You 
+Feel It?" internet-based macroseismic intensity maps. Annals of Geophysics 54:6, 688-709.
 
 .. _wald2012:
 
@@ -532,45 +553,50 @@ Wald et al 2012. Vs30
 
 .. _gmt_ref:
 
-Wessel, P., and W. H. F. Smith (1995). New Version of the Generic Mapping Tools Released, EOS Trans. 
-AGU, 76, 329.
+Wessel, P., and W. H. F. Smith (1995). New Version of the Generic Mapping Tools Released, 
+EOS Trans.  AGU, 76, 329.
 
 .. _wgcep2003:
 
-WGCEP (Working Group on California Earthquake Probabilities) (2003). Earthquake Probabilities in the 
-San Francisco Bay Region: 2003 to 2031, U.S. Geological Survey Open-File Report 03-214.
+WGCEP (Working Group on California Earthquake Probabilities) (2003). Earthquake Probabilities 
+in the San Francisco Bay Region: 2003 to 2031, U.S. Geological Survey Open-File Report 03-214.
 
-Wells and Coppersmith, 1994.
+Wells, D.L. and Coppersmith K.J. (1994). New Empirical Relationships among Magnitude, 
+Rupture Length, Rupture Width, Rupture Area, and Surface Displacement. Bull. Seism. Soc.
+Am., Vol. 84, No. 4, pp. 974-1002.
 
 .. _wills2000:
 
-Wills, C. J., M. D. Petersen, W. A. Bryant, M. S. Reichle, G. J. Saucedo, S. S. Tan, G. C. Taylor, and J. A. 
-Treiman (2000). A site-conditions map for California based on geology and shear wave velocity, Bull. 
-Seism. Soc. Am., 90, S187-S208.
+Wills, C. J., M. D. Petersen, W. A. Bryant, M. S. Reichle, G. J. Saucedo, S. S. Tan, 
+G. C. Taylor, and J. A.  Treiman (2000). A site-conditions map for California based on 
+geology and shear wave velocity, Bull.  Seism. Soc. Am., 90, S187-S208.
 
-Wills, C.J., and K.B. Clahan (2006). Developing a map of geologically defined site- condition categories 
-for California, Bull. Seism. Soc. Am, 96, 1483-1501.
+Wills, C.J., and K.B. Clahan (2006). Developing a map of geologically defined site- condition 
+categories for California, Bull. Seism. Soc. Am, 96, 1483-1501.
 
-Wills, C.J. and C. Gutierrez (2008). Investigation of geographic rules for im- proving site-conditions 
-mapping, Calif. Geo. Sur. Final Tech. Rept., 20 pp. (Award No. 07HQGR0061).
+Wills, C.J. and C. Gutierrez (2008). Investigation of geographic rules for im- proving 
+site-conditions mapping, Calif. Geo. Sur. Final Tech. Rept., 20 pp. (Award No. 07HQGR0061).
 
-Wood, H. O. and Neumann (1931). Modified Mercalli intensity scale of 1931, Bull. Seism. Soc. Am. 21, 
-277-283. 
+Wood, H. O. and Neumann (1931). Modified Mercalli intensity scale of 1931, Bull. Seism. 
+Soc. Am. 21, 277-283. 
 
 .. _worden2010:
 
-Worden, C.B., Wald, D.J., Allen, T.I., Lin, K.W., Garcia, D., and Cua, G. (2010). A revised ground-motion 
-and intensity interpolation scheme for ShakeMap, Bull. Seism. Soc. Am., 100:6, 3083-3096. 
+Worden, C.B., Wald, D.J., Allen, T.I., Lin, K.W., Garcia, D., and Cua, G. (2010). A revised 
+ground-motion and intensity interpolation scheme for ShakeMap, Bull. Seism. Soc. Am., 
+100:6, 3083-3096. 
 
 .. _worden2012:
 
-Worden, C.B., Gerstenberger, M.C., Rhoades, D.A., and Wald, D.J. (2012). Probabilistic relationships 
-between ground-motion parameters and Modified Mercalli intensity in California. Bull. Seism. Soc. Am. 
-102:1, 204- 221. doi: 10.1785/0120110156.
+Worden, C.B., Gerstenberger, M.C., Rhoades, D.A., and Wald, D.J. (2012). Probabilistic 
+relationships between ground-motion parameters and Modified Mercalli intensity in 
+California. Bull. Seism. Soc. Am.  102:1, 204- 221. doi: 10.1785/0120110156.
 
 .. _worden2015:
 
-Worden et al (2015). SSA Abstract Vs30 Global
+Worden, C.B., Wald, D.J., Thompson, E.M., (2015). Development of an Open-Source Hybrid 
+Global Vs30 Model. SSA Annual Meeting, Pasadena, CA. Seismological Research Letters, 
+Volume 86, Number 2B, p. 713.
 
 Yamakawa, K. (1998). The Prime Minister and the earthquake: Emergency Management Leadership of 
 Prime Minister Marayama on the occasion of the Great Hanshin-Awaji earthquake disaster, Kansai 
@@ -597,10 +623,11 @@ File Report 2013-1102.
 
 .. _yong2015:
 
-Yong et al. (2015). SSA Abstract Vs30 Database
+Yong, A., Thompson, E.M., Wald, D.J., Knudsen, K.L., Odum, J.K., Stephenson, W.J., Haefner, S.
+(2015). A Compilation of VS30 in the United States. SSA Annual Meeting, Pasadena, CA. Seismological Research Letters, Volume 86, Number 2B, p. 713.
 
-Youngs, R. R., S.-J. Chiou, W. J. Silva, and J. R. Humphrey (1997). Strong ground-motion relationships 
-for subduction zones, Seism. Res. Letters, 68, No.1, 58-73.
+Youngs, R. R., S.-J. Chiou, W. J. Silva, and J. R. Humphrey (1997). Strong ground-motion 
+relationships for subduction zones, Seism. Res. Letters, 68, No.1, 58-73.
 
 Zhao, JX (2010). Geometric spreading functions and modeling of volcanic zones for strong-motion 
 attenuation models derived from records in Japan, Bull. Seism. Soc. Am., 100 (2), 712-732.
