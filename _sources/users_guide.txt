@@ -50,12 +50,12 @@ In addition to GIS-formatted maps specifically design for HAZUS, we also make sh
 
 
 Loss Estimation and Financial Decision-Making
------------------------------------------
+-----------------------------------------------
 
  [TBS]
  
 Earthquake Engineering and Seismological Research
------------------------------------------
+-----------------------------------------------------
 For potentially damaging earthquakes, ShakeMap also produces response spectral acceleration values at three periods (0.3, 1.0, and 3.0 s) for use not only in loss estimation as mentioned earlier, but also for earthquake engineering analyses.  Response spectra for a given location are useful for portraying the potential effects of shaking on particular types of buildings and structures.  Following a damaging earthquake, ShakeMaps of spectral response will be key for prioritizing and focusing post-earthquake occupancy and damage inspection by civil engineers.
 
 In addition to providing information on recent events, ShakeMap Web pages provide maps of shaking and ground-motion parameters for past significant earthquakes.  Engineers have found these maps helpful in evaluating the maximum and cumulative effects of seismic loading for the life of any particular structure.  This is particularly relevant given the discovery of the potential damage to column/beam welds in steel buildings following the 1994 Northridge earthquake.
@@ -102,29 +102,43 @@ For each earthquake that warrants generating a ShakeMap, all maps and associated
 ShakeMap products include:
 
 *	**Metadata and Primary ShakeMap Constraint Information**
+
   *	XML file of processing parameters
   *	FGDC-compliant metadata
+
 *	**Input files**
+
   *	XML earthquake and station data file
   *	Fault file(s)
+
 *	**Grids of interpolated ground shaking**
+
   *	XML grid of ground motions
   *	XML grid of ground motions on “rock”
   *	XML grid of ground-motion uncertainty
-  * 	Text grid of ground motions (deprecated)
+  * Text grid of ground motions (deprecated)
+
 *	**GIS files of ground shaking**
+
   *	Shape files of ground motions
   *	Shape files specifically formatted for use in HAZUS
   *	ESRI raster grid files
   *	KML files for Google Earth
+
 *	**Images (JPEG and compressed PostScript)**
+
   *	Macroseismic Intensity
   *	Peak Ground Acceleration, Peak Ground Velocity, and Pseudo-Spectral Acceleration (when appropriate)
   *	Uncertainty
 
 Each of these products is described in more detail in the sections that follow.
 
-**Interpolated Grid File**. As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.
+.. _sec_interpolated_grid_file:
+
+Interpolated Grid Files
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.
 
 **XML Grid**. The ShakeMap XML grid file is the basis for nearly all ShakeMap products, as well as for computerized post-processing in systems such as ShakeCast and PAGER [section refs??]. The XML grid is available as both plain text (grid.xml) and compressed as a zip file (grid.xml.zip).
 
@@ -265,9 +279,9 @@ The grid_field tags are followed by the grid_data tag, the gridded data, and the
 
 The fast index for the coordinates is longitude, the slow index is latitude. Dimensions are from upper left to lower right (i.e., from longitude minimum/latitude maximum to longitude maximum/latitude minimum). The GMT program “xyz2grd” (coupled with “gmtconvert”) is particularly useful for converting the grid.xml data into a usable grid file.
 
-*Rock Grid XML*. The file rock_grid.xml.zip is a zipped XML file containing the interpolated grid without site amplifications applied. The grid has the same structure as grid.xml (see section Error! Reference source not found. above), but Vs30 values and PGA uncertainty values are not supplied. 
+**Rock Grid XML**. The file rock_grid.xml.zip is a zipped XML file containing the interpolated grid without site amplifications applied. The grid has the same structure as grid.xml (see section Error! Reference source not found. above), but Vs30 values and PGA uncertainty values are not supplied. 
 
-*Uncertainty Grid XML*. The file uncertainty.xml.zip is a zipped XML file containing the standard errors for each of the ground-motion parameters at each point in the output grid. It has the same structure as grid.xml (see section Error! Reference source not found. above), with the additional grid_field names:
+**Uncertainty Grid XML**. The file uncertainty.xml.zip is a zipped XML file containing the standard errors for each of the ground-motion parameters at each point in the output grid. It has the same structure as grid.xml (see section Error! Reference source not found. above), with the additional grid_field names:
 
  ::
 
@@ -282,7 +296,11 @@ The standard errors are given in natural log units, except for intensity (linear
 
 No ground motion data or Vs30 values are available in uncertainty.xml.zip; for those, use grid.xml.zip.
 
-.. note:: the use of this file is deprecated. It is difficult to maintain and have it remain backward compatible. All users are urged to use the XML grids instead, and to switch to the XML grids if they are using grid.xyz. grid.xyz may disappear in a future ShakeMap release.
+**Grid XYZ**
+
+grid.xyz is a plain-text, comma-separated, file of gridded ground motions.
+
+.. note:: the use of this file is deprecated. It is difficult to maintain and have it remain backward compatible. All users are urged to use the XML grids instead, and to switch to the XML grids if they are using grid.xyz. grid.xyz will disappear in a future ShakeMap release.
 
 GIS Products
 ^^^^^^^^^^^^^^^^^^^^
@@ -339,11 +357,11 @@ The file <event_id>.kml enables the user to view the ShakeMap within Google Eart
 
  :: 
 
- epicenter.kmz
- fault.kmz
- overlay.kmz (links to ii_overlay.png)
- stations.kmz
- contours.kmz
+  epicenter.kmz
+  fault.kmz
+  overlay.kmz (links to ii_overlay.png)
+  stations.kmz
+  contours.kmz
 
 These files are loaded as network links with reasonable timeouts so the user can expect them to update as new versions of the event’s ShakeMap are produced and updated.
 
@@ -523,6 +541,7 @@ ShakeMap Update Policy
 ---------------------------------------------------
 
 .. warning:: ShakeMaps are preliminary in nature and will be updated as data arrives from a variety of distributed sources. Our practice is to improve the maps as soon as possible, but there are factors beyond our control that can result in delayed updates (see examples below).
+
 * For regions around the world, were there are insufficient near-real time strong motion seismic stations to generate an adequate, strong-ground-motion data-controlled ShakeMap, we can still provide a very useful estimate of the shaking distribution using the ShakeMap software. Site amplification is approximated from a relationship developed between topographic gradient and shear-wave velocity. Additional constraints for these predictive maps come primarily from (1) additional earthquake source information, particularly fault rupture dimensions, (2) observed macroseismic intensities (including via the USGS "Did You Feel It?" system, and (3) observed strong ground motions, when and where available. 
 * There is no formal “final” version of any ShakeMap. Version Control is up to users. ShakeMap version numbers and time stamps are provided on the maps, web pages, and grid files, and metadata.
 * Our strategy is to update ShakeMaps as warranted from a scientific perspective. We reserve the option to update ShakeMaps as needed to add data or to improve scientific merit and/or presentation of the maps in any way beneficial. This most typical update is after new data arrive, finite-fault models get established or revised, magnitude gets revised, or as improved site amplification maps, ground motion prediction equations, or even interpolation or other procedures become available. 

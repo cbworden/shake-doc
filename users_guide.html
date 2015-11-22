@@ -96,6 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#products-and-formats">Products and Formats</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#input-files">Input Files</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output-files">Output Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#interpolated-grid-files">Interpolated Grid Files</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#gis-products">GIS Products</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#google-earth-overlay">Google Earth Overlay</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#map-images">Map Images</a></li>
@@ -129,6 +130,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="software_guide.html">Software &amp; Implementation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">Acknowledgments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
 </ul>
 
@@ -293,7 +295,9 @@
 </ul>
 </div></blockquote>
 <p>Each of these products is described in more detail in the sections that follow.</p>
-<p><strong>Interpolated Grid File</strong>. As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.</p>
+<div class="section" id="interpolated-grid-files">
+<span id="sec-interpolated-grid-file"></span><h4>Interpolated Grid Files<a class="headerlink" href="#interpolated-grid-files" title="Permalink to this headline">¶</a></h4>
+<p>As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.</p>
 <p><strong>XML Grid</strong>. The ShakeMap XML grid file is the basis for nearly all ShakeMap products, as well as for computerized post-processing in systems such as ShakeCast and PAGER [section refs??]. The XML grid is available as both plain text (grid.xml) and compressed as a zip file (grid.xml.zip).</p>
 <p>As XML, the grid is meant to be self-describing, however we describe the format here for the sake of completeness.</p>
 <p>After the XML header, the first line is the shakemap_grid tag:</p>
@@ -429,8 +433,8 @@ ln(cms):     Natural log of centimeters per second.
 </div>
 </div></blockquote>
 <p>The fast index for the coordinates is longitude, the slow index is latitude. Dimensions are from upper left to lower right (i.e., from longitude minimum/latitude maximum to longitude maximum/latitude minimum). The GMT program “xyz2grd” (coupled with “gmtconvert”) is particularly useful for converting the grid.xml data into a usable grid file.</p>
-<p><em>Rock Grid XML</em>. The file rock_grid.xml.zip is a zipped XML file containing the interpolated grid without site amplifications applied. The grid has the same structure as grid.xml (see section Error! Reference source not found. above), but Vs30 values and PGA uncertainty values are not supplied.</p>
-<p><em>Uncertainty Grid XML</em>. The file uncertainty.xml.zip is a zipped XML file containing the standard errors for each of the ground-motion parameters at each point in the output grid. It has the same structure as grid.xml (see section Error! Reference source not found. above), with the additional grid_field names:</p>
+<p><strong>Rock Grid XML</strong>. The file rock_grid.xml.zip is a zipped XML file containing the interpolated grid without site amplifications applied. The grid has the same structure as grid.xml (see section Error! Reference source not found. above), but Vs30 values and PGA uncertainty values are not supplied.</p>
+<p><strong>Uncertainty Grid XML</strong>. The file uncertainty.xml.zip is a zipped XML file containing the standard errors for each of the ground-motion parameters at each point in the output grid. It has the same structure as grid.xml (see section Error! Reference source not found. above), with the additional grid_field names:</p>
 <blockquote>
 <div><div class="highlight-python"><div class="highlight"><pre>STDPGA:       Standard error of peak ground acceleration.
 STDPGV:       Standard error of peak ground velocity.
@@ -443,9 +447,12 @@ STDPSA30:     Standard error of 3.0 s pseudo-spectral acceleration.
 </div></blockquote>
 <p>The standard errors are given in natural log units, except for intensity (linear units). The PSA entries will be available only if the PSA ground motion parameters were mapped (typically only for earthquakes of M ≥ 5.0.</p>
 <p>No ground motion data or Vs30 values are available in uncertainty.xml.zip; for those, use grid.xml.zip.</p>
+<p><strong>Grid XYZ</strong></p>
+<p>grid.xyz is a plain-text, comma-separated, file of gridded ground motions.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">the use of this file is deprecated. It is difficult to maintain and have it remain backward compatible. All users are urged to use the XML grids instead, and to switch to the XML grids if they are using grid.xyz. grid.xyz may disappear in a future ShakeMap release.</p>
+<p class="last">the use of this file is deprecated. It is difficult to maintain and have it remain backward compatible. All users are urged to use the XML grids instead, and to switch to the XML grids if they are using grid.xyz. grid.xyz will disappear in a future ShakeMap release.</p>
+</div>
 </div>
 <div class="section" id="gis-products">
 <h4>GIS Products<a class="headerlink" href="#gis-products" title="Permalink to this headline">¶</a></h4>
@@ -491,11 +498,14 @@ psa30 =  3.0 s pseudo-spectral acceleration
 <h4>Google Earth Overlay<a class="headerlink" href="#google-earth-overlay" title="Permalink to this headline">¶</a></h4>
 <p>The file &lt;event_id&gt;.kml enables the user to view the ShakeMap within Google Earth (or other KML-compliant application). A color-scaled intensity overlay is provided along with a complete station list, contours of intensity and peak ground motion, a fault representation (if provided), epicenter indicator, intensity scale, and a USGS logo. The transparency of the intensity overlay is adjustable by the user, as is the appearance of seismic stations. The KML file automatically links to several other files in the event’s download directory:</p>
 <blockquote>
-<div>epicenter.kmz
+<div><div class="highlight-python"><div class="highlight"><pre>epicenter.kmz
 fault.kmz
 overlay.kmz (links to ii_overlay.png)
 stations.kmz
-contours.kmz</div></blockquote>
+contours.kmz
+</pre></div>
+</div>
+</div></blockquote>
 <p>These files are loaded as network links with reasonable timeouts so the user can expect them to update as new versions of the event’s ShakeMap are produced and updated.</p>
 <p>In addition to the ShakeMap produced KML file, the USGS produces a KML file (linked near the top of the page in the event-centric pages with the title “Google Earth KML”) which contains not only ShakeMap data, but also data from PAGER, Did You Feel It?, and other sources. This file should be the preferred source, as it will have the most up to date links.</p>
 </div>
