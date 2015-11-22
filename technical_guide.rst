@@ -205,7 +205,7 @@ Conversion Equation (GMICE). Because a GMICE represents a statistical (probabili
 relationship, the conversion to and from intensity has a higher uncertainty than direct 
 ground-motion observation. ShakeMap accounts for this higher uncertainty by down 
 weighting converted observations in the interpolation process, as discussed in the 
-:ref:`interpolation` section.
+:ref:`sec_interpolation` section.
 
 A variety of GMICE are available with the ShakeMap software distribution, both for 
 MMI based on :ref:`Wald, et al. \(1999b\) <wald1999b>`, :ref:`Worden, et al. \(2012\) <worden2012>`, 
@@ -474,7 +474,7 @@ ShakeMap (GSM) system.
  
 .. _figure1-5:
 
-.. figure:: _static/Figure_1_5.*
+.. figure:: _static/vs30.*
    :align: left
  
    Vs30 Map produced as a byproduct of ShakeMap for the M6.7 Northridge, CA. The 
@@ -593,16 +593,38 @@ estimates. See the next section for the way the GMPE-based estimates are used.
 The 1994 Northridge earthquake ShakeMap provides an excellent example of the effect 
 of bias correction. Overall, the ground motions for the Northridge earthquake exceed 
 average estimates of existing GMPE's, or in other words, it has a significant positive 
-inter-event bias term. The ShakeMap bias correction accommodates this behavior once 
+inter-event bias term (see :num:`Figure #nr-pga-regr` and :num:`Figure #nr-pgv-regr`). 
+ 
+.. _nr-pga-regr:
+
+.. figure:: _static/northridge_pga_regr.*
+   :align: left
+
+   Plot of 1994 Northridge earthquake peak accelerations as a function of distance. The triangles
+   show recorded ground motions; the red line shows the unbiased :ref:`Boore and Atkinson 
+   \(2008\) <ba2008>` (BA08) GMPE; the dark green lines show BA08 following the bias 
+   correction described in the text; the faint green lines show the biased GMPE +/- three
+   standard deviations.
+ 
+.. _nr-pgv-regr:
+
+.. figure:: _static/northridge_pgv_regr.*
+   :align: left
+
+   Plot of 1994 Northridge earthquake peak velocities as a function of distance. The triangles
+   show recorded ground motions; the red line shows the unbiased :ref:`Boore and Atkinson 
+   \(2008\) <ba2008>` (BA08) GMPE; the dark green lines show BA08 following the bias 
+   correction described in the text; the faint green lines show the biased GMPE +/- three
+   standard deviations.
+
+The ShakeMap bias correction accommodates this behavior once 
 sufficient ground motion or intensity data are added (e.g., :num:`Figure #figure1-9` 
 and :num:`Figure #figure1-10` A and C, 
 show before and after bias correction, respectively). The addition of the stations of course 
 adds shaking constraints to the map at those locations, but the bias correction additionally 
-affects the map wherever ground motion estimates dominate (away from the stations). 
+affects the map wherever ground motion estimates dominate (i.e., away from the stations). 
 
-**CORRESPONDING PLOT REG FIGURE**
-
-.. _interpolation:
+.. _sec_interpolation:
 
 Interpolation
 ===============
@@ -769,7 +791,7 @@ could then be discarded.
 ground-motion prediction equations to be derived and presented in pairs of models, one 
 using the analysts' preferred extended source metric ... -- and another using a point-
 source metric, for which our preference would be hypocentral distance, Rhyp" (from 
-:ref:`Bommer and Akkar, 2012 <bommer2012>`). Indeed, :ref:`Akkar et al. \(2013\) <akkar2013>` provide such multiple coefficients 
+:ref:`Bommer and Akkar, 2012 <bommer2012>`). Indeed, :ref:`Akkar et al. \(2014\) <akkar2014>` provide such multiple coefficients 
 for their GMPEs for the Middle East and Europe. However, despite its utility, this 
 strategy has not been widely mandated among the requirements for modern GMPEs (e.g., 
 :ref:`Powers et al., 2008 <powers2008>`; :ref:`Abrahamson et al., 2008 <abrahamson2008>`; :ref:`2014 <abrahamson2014>`).
@@ -934,7 +956,7 @@ the near-fault areas and diminishing with distance. When a finite fault is avail
 ratio returns to 1.0. In areas where data are available, the ShakeMap uncertainty is less 
 than that of the GMPE (see the section "Interpolation," above), resulting in a ratio less 
 than 1.0. A grid of the uncertainty ratio (and the PGA uncertainty) is provided in the 
-output file grid.xml (see section Error! Reference source not found. for a description of 
+output file grid.xml (see `sec_interpolated_grid_file`_ for a description of 
 this file). The uncertainty ratio is the basis for the uncertainty maps and the grading 
 system described in :ref:`users-guide`.
  
@@ -1459,10 +1481,3 @@ and PGV alone. However, as discussed earlier, a simple intensity map is extremel
 for the overwhelming majority of users, which includes the general public and many 
 people involved with the initial emergency management. 
 
-Such a map is not strictly necessary: It can be produced "on the fly" by ShakeMap using a regional or 
-global Digital Elevation Model (DEM) and slope-based topography (e.g., :ref:`Wald and Allen, 2007 <wald2007>`). 
-Nevertheless most regions will want more control over the site map, and will opt for a fixed Vs30 map.
-         
-**Should we include some plots of log(PGV) vs intensity for various relationships 
-in this section or the next?**
- 
