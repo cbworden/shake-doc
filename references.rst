@@ -405,7 +405,11 @@ pseudovelocity  predictive relationship for extensional tectonic regimes, Bull. 
 
 .. _petersen2014:
 
-Petersen et al 2014 PSHA USA
+Petersen, M.D., Moschetti, M.P., Powers, P.M., Mueller, C.S., Haller, K.M., Frankel, A.D.,
+Zeng, Y., Rezaeian, S., Harmsen, S.C., Boyd, O.S., Field, N., Chen, R., Rukstales, K.S.,
+Luco, N., Wheeler, R.L., Williams, R.A., and Olsen, A.H. (2014). Documentation for the 2014 
+update of the United States national seismic hazard maps: U.S. Geological Survey Open-File 
+Report 2014–1091, 243 p., http://dx.doi.org/10.3133/ofr20141091.
 
 .. _pomonis2011:
 
@@ -465,6 +469,8 @@ Post-Earthquake Response, Final Report No. CA09-0734, 325 pp.
 
 USGS (1999). An assessment of Seismic Monitoring in the United States: Requirements for an Advance 
 National Seismic System, U. S. Geological Survey Circular 1188.
+
+.. _wald1996:
 
 Wald, D.J., Heaton, T.H., Hudnut, K.W. (1996) The Slip History of the 1994 Northridge, 
 California, Earthquake Determined from Strong-Motion, Teleseismic, GPS, and Leveling 
@@ -560,6 +566,8 @@ EOS Trans.  AGU, 76, 329.
 
 WGCEP (Working Group on California Earthquake Probabilities) (2003). Earthquake Probabilities 
 in the San Francisco Bay Region: 2003 to 2031, U.S. Geological Survey Open-File Report 03-214.
+
+.. _wells1994:
 
 Wells, D.L. and Coppersmith K.J. (1994). New Empirical Relationships among Magnitude, 
 Rupture Length, Rupture Width, Rupture Area, and Surface Displacement. Bull. Seism. Soc.
