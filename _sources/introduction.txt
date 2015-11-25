@@ -4,6 +4,14 @@
 Introduction
 ####################
 
+This online ShakeMap Manual (cite: :ref:`Worden et al., 2015 <wordenetal2015>`), a significant update of the
+original (:ref:`Wald et al., 2005 <wald2005>`) ShakeMap Manual. The
+Manual is now dynamic and served online. We employ Python document generator `Sphinx <http://sphinx-doc.org/>`_,
+under `GitHub <http://github.com/>`_ version control. The web pages
+here are HTML rendered with the `sphinx_rtd_theme
+<http://github.com/snide/sphinx_rtd_theme>`_.
+A PDF version is available by [TBS].
+
 .. figure::  _static/Napa.ShakeMap.cover.*
    :scale: 50%
    :alt: ShakeMap Napa
@@ -12,36 +20,25 @@ Introduction
 
    2014 M6.0 Napa, CA, earthquake intensity ShakeMap 
 
-===================
-Background
-===================
-
 `ShakeMap® <http://earthquake.usgs.gov/shakemap/>`_, 
-developed by the U.S. Geological Survey, facilitates communication of 
+developed by the U.S. Geological Survey (USGS), facilitates communication of 
 earthquake information beyond just magnitude and location. By rapidly mapping out 
 earthquake ground motions, ShakeMap portrays the distribution and severity of shaking, 
 information critical for gauging the extent of the areas affected, determining which areas 
 are potentially hardest hit, and allowing for rapid estimation of losses. Key to 
 ShakeMap's success, algorithms were developed that take advantage of any high-quality 
 recorded ground motions, and any available macroseismic intensity data, to provide 
-ground-truth constraints on shaking. Yet, ShakeMap also utilizes best-practice methods 
+ground-truth constraints on shaking. Yet, ShakeMap also utilizes best practices
 for both interpolating between recordings—and critically—providing estimates of 
 shaking in areas where observations are sparse or non-existent. Thus, ShakeMap portrays 
 the best possible description of shaking by employing a combination of recorded and 
 estimated shaking values. 
 
-This online ShakeMap Manual (2015), a significant update of the
-original (:ref:`Wald et al., 2005 <wald2005>`) ShakeMap Manual. The
-Manual is now dynamic and served online. We've demoted the notion of a
-static, stand-alone document in favor up-to-date web pages, though one
-can save these pages in PDF or other forms. 
-
 This Manual provides background on technical aspects of ShakeMap, describes 
 the wide range of products and formats ShakeMap produces, and provides guidance for 
 ShakeMap developers and operators. Readers interested in understanding how 
-ShakeMaps works can skip to the :ref:`technical-guide` section. Those who want to use 
-ShakeMap products and understand their varied forms can jump to
-the :ref:`users-guide`. If your goal is to
-install and operate ShakeMap, see the :ref:`software-guide`. The
+ShakeMaps works can navitage (page left) to the :ref:`technical-guide` section. Those who want to use 
+ShakeMap products and understand their varied forms can jump to the :ref:`users-guide`. 
+If your goal is to install and operate ShakeMap, see the :ref:`software-guide`. The
 :ref:`software-guide` also points users to the ShakeMap software distribution and Software 
 Guide. 

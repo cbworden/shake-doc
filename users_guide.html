@@ -104,7 +104,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#real-time-product-distribution-automatic-access-and-feeds">Real-Time Product Distribution, Automatic Access and Feeds</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#interactive-web-downloads">Interactive Web Downloads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rss-feeds">RSS Feeds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#geojson-feeds">GeoJSON Feeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shakecast-system">ShakeCast System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#product-delivery-layer-pdl-client">Product Delivery Layer (PDL) Client</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#web-mapping-gis-services">Web Mapping (GIS) Services</a></li>
 </ul>
 </li>
@@ -132,6 +136,7 @@
 <li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">Acknowledgments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 
             
@@ -244,57 +249,64 @@
 <h3>Output Files<a class="headerlink" href="#output-files" title="Permalink to this headline">¶</a></h3>
 <p>For each earthquake that warrants generating a ShakeMap, all maps and associated products for that event are available via the “Downloads” link on the earthquake-specific Web pages.</p>
 <p>ShakeMap products include:</p>
-<ul class="simple">
-<li><strong>Metadata and Primary ShakeMap Constraint Information</strong></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
+<ul>
+<li><dl class="first docutils">
+<dt><strong>Metadata and Primary ShakeMap Constraint and Runtime Information</strong></dt>
+<dd><ul class="first last simple">
 <li>XML file of processing parameters</li>
 <li>FGDC-compliant metadata</li>
 </ul>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Input files</strong></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Input files</strong></dt>
+<dd><ul class="first last simple">
 <li>XML earthquake and station data file</li>
 <li>Fault file(s)</li>
 </ul>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Grids of interpolated ground shaking</strong></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Grids of interpolated ground shaking</strong></dt>
+<dd><ul class="first last simple">
 <li>XML grid of ground motions</li>
 <li>XML grid of ground motions on “rock”</li>
 <li>XML grid of ground-motion uncertainty</li>
 <li>Text grid of ground motions (deprecated)</li>
 </ul>
-</div></blockquote>
-<ul class="simple">
-<li><strong>GIS files of ground shaking</strong></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>Shape files of ground motions</li>
-<li>Shape files specifically formatted for use in HAZUS</li>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>GIS files of ground shaking</strong></dt>
+<dd><ul class="first last simple">
+<li>Shapefiles of ground motions</li>
+<li>Shapefiles specifically formatted for use in HAZUS</li>
 <li>ESRI raster grid files</li>
 <li>KML files for Google Earth</li>
 </ul>
-</div></blockquote>
-<ul class="simple">
-<li><strong>Images (JPEG and compressed PostScript)</strong></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Images (JPEG and compressed PostScript)</strong></dt>
+<dd><ul class="first last simple">
 <li>Macroseismic Intensity</li>
 <li>Peak Ground Acceleration, Peak Ground Velocity, and Pseudo-Spectral Acceleration (when appropriate)</li>
 <li>Uncertainty</li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
 <p>Each of these products is described in more detail in the sections that follow.</p>
+<p><strong>Metadata and ShakeMap Constraints and Runtime Information</strong></p>
+<ul class="simple">
+<li>FGDC-compliant metadata. [TBS]</li>
+<li>XML file of processing parameters [TBS]</li>
+</ul>
 <div class="section" id="interpolated-grid-files">
 <span id="sec-interpolated-grid-file"></span><h4>Interpolated Grid Files<a class="headerlink" href="#interpolated-grid-files" title="Permalink to this headline">¶</a></h4>
 <p>As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.</p>
@@ -493,6 +505,17 @@ psa30 =  3.0 s pseudo-spectral acceleration
 <p>The contour intervals are 0.04g for peak ground acceleration (PGA) and the three spectral-acceleration parameters, and 2 cm/s for PGV. The file also includes MMI contour polygons in intervals of 0.2 intensity units.  These shape files have the same units as the online ShakeMaps.</p>
 <p>The archive of files (three files for each of the mapped parameters) is compressed in Zip format, and called shape.zip.  The shape.zip file is available for all events, but the spectral values are generally only included for earthquakes of magnitude 5.0 and larger.</p>
 <p><em>ESRI Raster Files (.fit files)</em>. ESRI raster grids of the ground-motion parameters and their uncertainties are also available. The files are found in a Zipped archive called raster.zip. Each archive contains four files per parameter: &lt;param&gt;.fit and &lt;param&gt;.hdr, which contain the ground-motion data, and &lt;param&gt;_std.fit and &lt;param&gt;_std.hdr, which contain the uncertainties for the ground motions. See grid.xml for information on units. As with the other GIS files, PGA, PGV and MMI are available for all events, while the spectral-acceleration parameters are usually included for earthquakes M5.0 and larger.</p>
+<p>This page lists all of the individual files from each of the products we use to convey information about an earthquake.  A &#8220;product&#8221;, in this context, is something like ShakeMap, PAGER, or Did You Feel It (DYFI), each of which contains various maps, graphs, and data files in various formats. ShakeMap products have the most geospatial data.  For GIS users, the two files you might be the most interested in are the &#8220;GIS Files&#8221; and the &#8220;ESRI Raster Files&#8221;. For FEMA’s HAZUS users, the appropriate files are zipped together in the “hazus.zip” file.</p>
+<p>The GIS Files (zipped) are a collection of shapefiles of contours of the ShakeMap model outputs for each shaking metric: MMI, PGA, PGV, and PSA at three periods.  These vectors should be easily importable into a GIS. The ESRI Raster Files (also zipped) are a collection of ESRI formatted binary files.  It should be relatively easy to convert these to (for example) ArcGIS GRIDS using the standard tools provided with the software. The contours are useful primarily for overlaying with other data for visualization purposes.  If you plan to do analysis, where you need to know the MMI value at a particular point(s), then we would suggest using the raster data.</p>
+<p><strong>Loading ShakeMaps into ArcGIS</strong>.</p>
+<ol class="arabic simple">
+<li>Open the ArcToolbox in ArcMap</li>
+<li>Select Multidimension Tools-&gt;Make NetCDF Raster Layer</li>
+<li>In the dialog that appears, select the input .grd file you downloaded and unzipped, and name the layer appropriately (&#8220;vs30&#8221;, etc.)</li>
+<li>The vs30 layer should appear in your list of layers.</li>
+<li>Note: This layer is ephemeral - if you want to keep the raster version of the data, you&#8217;ll have to save the layer to a file.</li>
+</ol>
+<p>For examples, find the GIS files on the &#8220;Downloads&#8221; tab for the <a class="reference external" href="http://earthquake.usgs.gov/earthquakes/eventpage/usb000kdb4#">Oct 15, 2013 Philippines earthquake</a>.</p>
 </div>
 <div class="section" id="google-earth-overlay">
 <h4>Google Earth Overlay<a class="headerlink" href="#google-earth-overlay" title="Permalink to this headline">¶</a></h4>
@@ -534,16 +557,36 @@ contours.kmz
 </div>
 <div class="section" id="real-time-product-distribution-automatic-access-and-feeds">
 <h3>Real-Time Product Distribution, Automatic Access and Feeds<a class="headerlink" href="#real-time-product-distribution-automatic-access-and-feeds" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div>[TBS] PDL, RSS, GeoJSON</div></blockquote>
-<p>ShakeMap products are distributed by a number of means immediately after they are produced. The intent of these products is to help emergency responders and other responsible parties to effectively manage their post-earthquake activities, and so we make it as easy as possible for users with a variety of technological sophistication and infrastructure to access them.</p>
-<p>The easiest way to obtain ShakeMap products immediately following an earthquake is from the ShakeMap or USGS Earthquake Program web pages. See Section Error! Reference source not found. for a discussion of the web pages and how to access the downloadable products. In addition to recent earthquakes, the ShakeMap web pages archive all past ShakeMaps, ShakeMap scenarios (see section Error! Reference source not found.), and ShakeMap Atlas earthquakes (see section Error! Reference source not found.).</p>
-<p>Most end users who desire near real-time delivery of ShakeMap products will use the ShakeCast or ShakeCast Lite systems. At its simplest, ShakeCast delivers user-specified ShakeMap products to the user’s machine(s), perhaps initiating a program once they arrive. More advanced features of ShakeCast include a complete suite of damage estimation and mapping tools, coupled with sophisticated tools to notify responsible parties within an organization on a per-facility basis.</p>
-<p>Finally, for academic and government users, ShakeMap products (and other earthquake products) are communicated through the USGS’s Product Distribution Layer (PDL)…GeoJSON, Feed page</p>
+<p>ShakeMap products are distributed by a number of means immediately after they are produced. The intent of these products is to help emergency responders and other responsible parties to effectively manage their post-earthquake activities, and so we make it as easy as possible for users with a variety of technological sophistication and infrastructure to access them. The general are: interactive Web downloads, RSS feeds, GeoJSON feeds, ShakeCast, the Product Delivery Layer (PDL) client, and with ArcGIS (Web Mapping) services.</p>
+<div class="section" id="interactive-web-downloads">
+<h4>Interactive Web Downloads<a class="headerlink" href="#interactive-web-downloads" title="Permalink to this headline">¶</a></h4>
+<p>The easiest way to obtain ShakeMap products immediately following an earthquake is from the <a class="reference external" href="http://earthquake.usgs.gov/shakemap/">ShakeMap</a> or <a class="reference external" href="http://earthquake.usgs.gov/">USGS Earthquake Program web pages</a>. The variety of formats for ShakeMap are described in the previous section.</p>
+</div>
+<div class="section" id="rss-feeds">
+<h4>RSS Feeds<a class="headerlink" href="#rss-feeds" title="Permalink to this headline">¶</a></h4>
+<p>USGS Earthquake Program earthquake information <a class="reference external" href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/">Feeds</a> currently include Really Simply Syndication (RSS) feeds. The RSS feeds are being demoted; they will be decommission in 2016.</p>
+</div>
 <div class="section" id="geojson-feeds">
 <h4>GeoJSON Feeds<a class="headerlink" href="#geojson-feeds" title="Permalink to this headline">¶</a></h4>
-<blockquote>
-<div>[TBS]</div></blockquote>
+<p>Automatically Retrieving Earthquake Data and ShakeMap Files
+In order to automatically ingest the above data, then use our automated feeds:
+<a class="reference external" href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php</a></p>
+<p>GeoJSON is an extension of the standard JavaScript Object Notation (JSON) format.  There are JSON parsers in most modern languages, including Python, Perl, Matlab, and R.</p>
+<p>Mike Hearne (USGS), provides <a class="reference external" href="https://github.com/mhearne-usgs/">example python scripts</a>
+(e.g., <em>getevent.py</em>) for querying the USGS M2.5+ 30 day GeoJSON feed, and downloading the most recent version of the event products desired by the user.</p>
+</div>
+<div class="section" id="shakecast-system">
+<h4>ShakeCast System<a class="headerlink" href="#shakecast-system" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference internal" href="#sec-shakecast"><span>ShakeCast</span></a> delivers user-specified
+ShakeMap products to the user’s machine(s), and runs fragility-based damage (or
+inspection priority) calculations for specific portfolios.</p>
+<p>More advanced features of ShakeCast include a complete suite of damage
+estimation and mapping tools, coupled with sophisticated tools to notify
+responsible parties within an organization on a per-facility basis.</p>
+</div>
+<div class="section" id="product-delivery-layer-pdl-client">
+<h4>Product Delivery Layer (PDL) Client<a class="headerlink" href="#product-delivery-layer-pdl-client" title="Permalink to this headline">¶</a></h4>
+<p>Finally, for academic and government users, ShakeMap products (and other earthquake products) are communicated through the USGS’s Product Distribution Layer (PDL)</p>
 </div>
 <div class="section" id="web-mapping-gis-services">
 <h4>Web Mapping (GIS) Services<a class="headerlink" href="#web-mapping-gis-services" title="Permalink to this headline">¶</a></h4>
@@ -556,7 +599,6 @@ contours.kmz
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference external" href="https://tmservices1.esri.com/arcgis/rest/services/LiveFeeds/USGS_Seismic_Data/MapServer">ESRI USGS post-earthquake products Web Mapping Service</a></p>
 </div>
-<p>The USGS Web Mapping Service (WMS) offers a robust method for GIS analysts and developers to interact with ShakeMap. The USGS ShakeMap GIS service contains contour and raster data for MMI, PGA, PGV, PSA03, PSA10, PSA30 values.  Each of these datasets is contained within distinct layers.  Users can leverage the individual layers in web mapping applications or in a desktop GIS. Examples of data access options are detailed in the sidebar.</p>
 <div class="sidebar">
 <p class="first sidebar-title">Related GIS Service Interactions</p>
 <p>Users can access the ShakeMap data behind the GIS service in a variety of ways via the ArcGIS Server REST API. Some examples of commonly used data access options are detailed below.</p>
@@ -601,19 +643,43 @@ Scenarios are of fundamental interest to scientific audiences interested in the 
 </div>
 <div class="section" id="related-systems">
 <h2>Related Systems<a class="headerlink" href="#related-systems" title="Permalink to this headline">¶</a></h2>
-<p>While ShakeMap has met with great success as a standalone product for communicating earthquake effects to the public and the emergency response and recovery community, it is increasingly being incorporated into value-added products that help in the assessment of earthquake impacts for response management and government officials. Two such products, developed by the USGS, are ShakeCast and PAGER.</p>
-<div class="figure align-right" id="id3">
+<p>While ShakeMap has met with success as a standalone product for communicating earthquake effects to the public and the emergency response and recovery community, it is increasingly being incorporated into value-added products that help in the assessment of earthquake impacts for response management and government officials.</p>
+<p>As discussed in detail the <a class="reference internal" href="technical_guide.html#technical-guide"><span>Technical Guide</span></a>, ShakeMap is augmented by DYFI? input for constraining intensities, and from those, estimates of peak ground motions (in some cases, and for some regions), as shown in Figure #related-systems. DYFI? and ShakeMap in conjuction then represent the shaking hazard input for two other primary systems that estimated losses: ShakeCast and PAGER. ShakeCast is intended for specific users to priority response for specific user-centric portfolios of facilities; PAGER is for more general society impact assessments, providing estimated loss-of-life and economic impacts for the region affected.</p>
+<div class="figure align-center" id="id3">
+<a class="reference external image-reference" href="RelatedSystems"><img alt="Related Systems" src="_images/SMap.SCast.DYFI.PAGER.png" style="width: 738.9px; height: 547.2px;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.</span></p>
+</div>
+<div class="figure align-right" id="id4">
 <a class="reference external image-reference" href="IAEAShakeCast"><img alt="IAEA ShakeCast" src="_images/IAEA.ShakeCast.png" style="width: 341.95px; height: 384.3px;" /></a>
-<p class="caption"><span class="caption-text">Figure 1: Interational Atomic Enegery Agency (IAEA) ShakeCast Report</span></p>
+<p class="caption"><span class="caption-text">Figure 2: Interational Atomic Enegery Agency (IAEA) ShakeCast Report</span></p>
 </div>
 <div class="section" id="shakecast">
-<h3>ShakeCast<a class="headerlink" href="#shakecast" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="http://earthquake.usgs.gov/pager/">ShakeCast</a> is a freely available, post-earthquake situational awareness application that automatically retrieves earthquake shaking data from ShakeMap, compares intensity measures against users’ facilities, and generates potential damage assessment notifications, facility damage maps, and other Web-based products for emergency managers and responders.</p>
-<p>ShakeCast, short for ShakeMap Broadcast, is a fully automated system for delivering specific ShakeMap products to critical users and for triggering established post-earthquake response protocols. While ShakeMap was developed and is used primarily for emergency response, loss estimation, and public information, for an informed response to a serious earthquake, critical users must go beyond just looking at ShakeMap, and understand the likely extent and severity of impact on the facilities for which they are responsible. To this end the USGS has developed ShakeCast.</p>
-<p>ShakeCast allows utilities, transportation agencies, businesses, and other large organizations to control and optimize the earthquake information they receive. With ShakeCast, they can automatically determine the shaking value at their facilities, set thresholds for notification of damage states for each facility, and then automatically notify (by pager, cell phone, or email) specified operators and inspectors within their organizations who are responsible for those particular facilities so they can set priorities for response.</p>
-<div class="figure align-right" id="id4">
+<span id="sec-shakecast"></span><h3>ShakeCast<a class="headerlink" href="#shakecast" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://earthquake.usgs.gov/shakecast/">ShakeCast</a> is a freely available,
+post-earthquake situational awareness application that automatically retrieves
+earthquake shaking data from ShakeMap, compares intensity measures against
+users’ facilities, and generates potential damage assessment notifications,
+facility damage maps, and other Web-based products for emergency managers and
+responders.</p>
+<p>ShakeCast, short for ShakeMap Broadcast, is a fully automated system for
+delivering specific ShakeMap products to critical users and for triggering
+established post-earthquake response protocols. While ShakeMap was developed
+and is used primarily for emergency response, loss estimation, and public
+information, for an informed response to a serious earthquake, critical users
+must go beyond just looking at ShakeMap, and understand the likely extent and
+severity of impact on the facilities for which they are responsible. To this
+end the USGS has developed ShakeCast.</p>
+<p>ShakeCast allows utilities, transportation agencies, businesses, and other
+large organizations to control and optimize the earthquake information they
+receive. With ShakeCast, they can automatically determine the shaking value at
+their facilities, set thresholds for notification of damage states for each
+facility, and then automatically notify (by pager, cell phone, or email)
+specified operators and inspectors within their organizations who are
+responsible for those particular facilities so they can set priorities for
+response.</p>
+<div class="figure align-right" id="id5">
 <a class="reference external image-reference" href="NepalOnePAGERAlertExample"><img alt="Nepal onePAGER" src="_images/Nepal.M7.8.onepager.V5.png" style="width: 318.75px; height: 412.5px;" /></a>
-<p class="caption"><span class="caption-text">Figure 2: Nepal OnePAGER Alert Example</span></p>
+<p class="caption"><span class="caption-text">Figure 3: Nepal OnePAGER Alert Example</span></p>
 </div>
 </div>
 <div class="section" id="pager">
@@ -642,8 +708,8 @@ Scenarios are of fundamental interest to scientific audiences interested in the 
 <p class="last">ShakeMaps are preliminary in nature and will be updated as data arrives from a variety of distributed sources. Our practice is to improve the maps as soon as possible, but there are factors beyond our control that can result in delayed updates (see examples below).</p>
 </div>
 <ul class="simple">
-<li>For regions around the world, were there are insufficient near-real time strong motion seismic stations to generate an adequate, strong-ground-motion data-controlled ShakeMap, we can still provide a very useful estimate of the shaking distribution using the ShakeMap software. Site amplification is approximated from a relationship developed between topographic gradient and shear-wave velocity. Additional constraints for these predictive maps come primarily from (1) additional earthquake source information, particularly fault rupture dimensions, (2) observed macroseismic intensities (including via the USGS &#8220;Did You Feel It?&#8221; system, and (3) observed strong ground motions, when and where available.</li>
-<li>There is no formal “final” version of any ShakeMap. Version Control is up to users. ShakeMap version numbers and time stamps are provided on the maps, web pages, and grid files, and metadata.</li>
+<li>For regions around the world, were there are insufficient near-real time strong motion seismic stations to generate an adequate, strong-ground-motion data-controlled ShakeMap, we can still provide a very useful estimate of the shaking distribution using the ShakeMap software. Site amplification is approximated from a relationship developed between topographic gradient and shear-wave velocity. Additional constraints for these predictive maps come primarily from  additional earthquake source information, particularly fault rupture dimensions, observed macroseismic intensities (including via the USGS &#8220;Did You Feel It?&#8221; system, and observed strong ground motions, when and where available.</li>
+<li>There is no formal “final” version of any ShakeMap. Version Control is up to users. ShakeMap version numbers and time  stamps are provided on the maps, web pages, and grid files, and metadata.</li>
 <li>Our strategy is to update ShakeMaps as warranted from a scientific perspective. We reserve the option to update ShakeMaps as needed to add data or to improve scientific merit and/or presentation of the maps in any way beneficial. This most typical update is after new data arrive, finite-fault models get established or revised, magnitude gets revised, or as improved site amplification maps, ground motion prediction equations, or even interpolation or other procedures become available.</li>
 </ul>
 <div class="sidebar">
