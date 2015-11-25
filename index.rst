@@ -27,6 +27,7 @@ Welcome to the ShakeMap Manual
    future_directions.rst
    acknowledgments.rst
    references.rst
+   glossary.rst
 
 
 .. Indices and tables

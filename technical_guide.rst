@@ -972,7 +972,7 @@ As mentioned above, some of the products of grind are grids of uncertainty for e
 parameter. This uncertainty is the result of a weighted average combination of the 
 uncertainties of the various inputs (observations, converted observations, and estimates) 
 at each point in the output. These gridded uncertainties are provided in the file 
-uncertainty.xml (see :ref:`sec_interpolated_grid_file` for a description of the 
+uncertainty.xml (see `sec_interpolated_grid_file`_ for a description of the 
 file format).
 
 Because we also know the GMPE uncertainty over the grid, we can compute the ratio of 
@@ -1009,7 +1009,7 @@ the near-fault areas and diminishing with distance. When a finite fault is avail
 ratio returns to 1.0. In areas where data are available, the ShakeMap uncertainty is less 
 than that of the GMPE (see the section "Interpolation," above), resulting in a ratio less 
 than 1.0. A grid of the uncertainty ratio (and the PGA uncertainty) is provided in the 
-output file *grid.xml* (see :ref:`sec_interpolated_grid_file` for a description of 
+output file *grid.xml* (see `sec_interpolated_grid_file`_ for a description of 
 this file). The uncertainty ratio is the basis for the uncertainty maps and the grading 
 system described in the :ref:`users-guide`.
 
