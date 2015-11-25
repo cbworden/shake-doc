@@ -132,8 +132,13 @@ Each of these products is described in more detail in the sections that follow.
 
 * FGDC-compliant metadata. [TBS]
 * XML file of processing parameters [TBS]
+
+.. _sec_interpolated_grid_file:
      
-**Interpolated Grid File**. As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.
+Interpolated Grid Files
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As described in the Technical Manual, the fundamental output product of the ShakeMap processing system is a finely sampled grid of latitude and longitude pairs with associated amplitude values of shaking parameters at each point.  These amplitude values are derived by interpolation of a combination of the recorded ground shaking observation and estimated amplitudes, with consideration of site amplification at all interpolated points.  The resulting grid of amplitude values provides the basis for generating color-coded intensity contour maps, for further interpolation to infer shaking at selected locations, and for generating GIS-formatted files for further analyses.
 
 **XML Grid**. The ShakeMap XML grid file is the basis for nearly all ShakeMap products, as well as for computerized post-processing in systems such as ShakeCast and PAGER [section refs??]. The XML grid is available as both plain text (grid.xml) and compressed as a zip file (grid.xml.zip).
 
@@ -429,18 +434,22 @@ GeoJSON Feeds
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Automatically Retrieving Earthquake Data and ShakeMap Files 
 In order to automatically ingest the above data, then use our automated feeds:
-	http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
 
 GeoJSON is an extension of the standard JavaScript Object Notation (JSON) format.  There are JSON parsers in most modern languages, including Python, Perl, Matlab, and R.
 
 Mike Hearne (USGS), provides `example python scripts <https://github.com/mhearne-usgs/>`_
 (e.g., *getevent.py*) for querying the USGS M2.5+ 30 day GeoJSON feed, and downloading the most recent version of the event products desired by the user.
 
-ShakeCast
+ShakeCast System
 ^^^^^^^^^^^^^^^^^^^^^^^^
-`ShakeCast <http://earthquake.usgs.gov/shakecast/>`_ delivers user-specified ShakeMap products to the user’s machine(s), and runs fragility-based damage (or inspection priority) calculations for specific portfolios. 
+:ref:`ShakeCast <sec_shakecast>` delivers user-specified
+ShakeMap products to the user’s machine(s), and runs fragility-based damage (or
+inspection priority) calculations for specific portfolios. 
 
-More advanced features of ShakeCast include a complete suite of damage estimation and mapping tools, coupled with sophisticated tools to notify responsible parties within an organization on a per-facility basis.
+More advanced features of ShakeCast include a complete suite of damage
+estimation and mapping tools, coupled with sophisticated tools to notify
+responsible parties within an organization on a per-facility basis.
 
 Product Delivery Layer (PDL) Client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -537,13 +546,35 @@ As discussed in detail the :ref:`technical-guide`, ShakeMap is augmented by DYFI
 
    Interational Atomic Enegery Agency (IAEA) ShakeCast Report
  
+.. _sec_shakecast:
+
 ShakeCast
 ---------------------------------------------------
-`ShakeCast <http://earthquake.usgs.gov/pager/>`_ is a freely available, post-earthquake situational awareness application that automatically retrieves earthquake shaking data from ShakeMap, compares intensity measures against users’ facilities, and generates potential damage assessment notifications, facility damage maps, and other Web-based products for emergency managers and responders.
 
-ShakeCast, short for ShakeMap Broadcast, is a fully automated system for delivering specific ShakeMap products to critical users and for triggering established post-earthquake response protocols. While ShakeMap was developed and is used primarily for emergency response, loss estimation, and public information, for an informed response to a serious earthquake, critical users must go beyond just looking at ShakeMap, and understand the likely extent and severity of impact on the facilities for which they are responsible. To this end the USGS has developed ShakeCast.
+`ShakeCast <http://earthquake.usgs.gov/shakecast/>`_ is a freely available,
+post-earthquake situational awareness application that automatically retrieves
+earthquake shaking data from ShakeMap, compares intensity measures against
+users’ facilities, and generates potential damage assessment notifications,
+facility damage maps, and other Web-based products for emergency managers and
+responders.
 
-ShakeCast allows utilities, transportation agencies, businesses, and other large organizations to control and optimize the earthquake information they receive. With ShakeCast, they can automatically determine the shaking value at their facilities, set thresholds for notification of damage states for each facility, and then automatically notify (by pager, cell phone, or email) specified operators and inspectors within their organizations who are responsible for those particular facilities so they can set priorities for response.
+ShakeCast, short for ShakeMap Broadcast, is a fully automated system for
+delivering specific ShakeMap products to critical users and for triggering
+established post-earthquake response protocols. While ShakeMap was developed
+and is used primarily for emergency response, loss estimation, and public
+information, for an informed response to a serious earthquake, critical users
+must go beyond just looking at ShakeMap, and understand the likely extent and
+severity of impact on the facilities for which they are responsible. To this
+end the USGS has developed ShakeCast.
+
+ShakeCast allows utilities, transportation agencies, businesses, and other
+large organizations to control and optimize the earthquake information they
+receive. With ShakeCast, they can automatically determine the shaking value at
+their facilities, set thresholds for notification of damage states for each
+facility, and then automatically notify (by pager, cell phone, or email)
+specified operators and inspectors within their organizations who are
+responsible for those particular facilities so they can set priorities for
+response.
 
 .. figure::  _static/Nepal.M7.8.onepager.V5.*
    :scale: 25%
