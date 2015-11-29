@@ -228,7 +228,9 @@ No. 2, pp. 441-462.
 
 .. _dewey1995:
 
-Dewey et al., 1995. 
+Dewey, J.W., Reagor, B.G., Dengler, L., and Moley, K., 1995, Intensity distribution and 
+isoseismal maps for the Northridge, California, earthquake of January 17, 1994: U.S. 
+Geological Survey Open-File Report 95-92, 35 p.
 
 Dewey, J., D. Wald, and L. Dengler (2000). Relating conventional USGS Modified Mercalli 
 Intensities to intensities assigned with data collected via the Internet. Seismological 
@@ -291,9 +293,10 @@ Godt, J., Wener, B., Verdin, K., Wald, D., Earle, P., Harp, E., and Jibson, R. (
 earthquake-induced landsliding. Proc. of the First World Landslide Forum, Tokyo, Japan, Parallel 
 Sessions Volume, International Program on Landslides.
 
-.. _grunthel1998:
+.. _grunthal1998:
 
-Grunthel et al (1998) EMS
+Grünthal, G.(editor) (1998). European Macroseismic Scale 1998 (EMS-98), (Cahiers du Centre Européen 
+de Géodynamique et de Séismologie; 15).
 
 Hauksson, E., Jones, L.M., Hutton, K. (2002). The 1999 Mw 7.1 Hector Mine, California, 
 Earthquake Sequence: Complex Conjugate Strike-Slip Faulting. Bull. Seism. Soc. Am., 
@@ -441,9 +444,11 @@ Proceedings of the 11th European Conference on Earthquake Engineering, A.A. Balk
 Smith, W. H. F., and P. Wessel (1990). Gridding with continuous curvature splines in tension, Geophysics 
 55, 293-305. .
 
-.. _so2011:
+.. _so2014:
 
-So et al (2011) GEMECD
+So, E. (2014). Introduction to the GEM Earthquake Consequences Database (GEMECD), GEM 
+Technical Report 2014-14 V1.0.0, 158 pp., GEM Foundation, Pavia, Italy, 
+doi: 10.13117/GEM.VULN-MOD.TR2014.14. http://www.globalquakemodel.org/resources/publications/technical-reports/introduction-gem-earthquake-consequences-database-/
 
 Sokolov, V. Y. and Y. K. Chernov (1998). On the correlation of Seismic Intensity with Fourier Amplitude 
 Spectra, Earthquake Spectra, Vol. 14, 679-694. 
