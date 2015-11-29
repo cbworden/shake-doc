@@ -1,3 +1,5 @@
+.. image:: _static/usgs_banner.*
+
 .. _technical-guide:
 
 ####################
@@ -1159,7 +1161,7 @@ basis of different individuals' descriptions of perceived shaking alone.
 ShakeMap is not unique in describing intensity VI as corresponding to strong shaking. In 
 the 7-point Japanese macroseismic scale, for which intensity 4 is equivalent to MMI VI, 
 intensity 4 is described as "strong." In the European Macroseismic Scale (:ref:`Grunthel et al., 
-1998 <grunthel1998>`), which is compatible MMI (:ref:`Musson et al., 2010 <musson2010>`), the bullet description of intensity 
+1998 <grunthal1998>`), which is compatible MMI (:ref:`Musson et al., 2010 <musson2010>`), the bullet description of intensity 
 V is  "strong."  Higher EMS-98 intensities are given bullet descriptions in terms of the 
 damage they produce, rather than the strength of perceived shaking.
 
@@ -1222,7 +1224,7 @@ ground-motion, as well as for seismic hazard, scenario, risk, and loss-model
 development. To this end, the Atlas provides a hazard base layer for 
 `PAGER <http://earthquake.usgs.gov/earthquakes/pager/>`_ loss 
 calibration and for the Earthquake Consequences Database within the Global Earthquake 
-Model initiative (GEMECD; :ref:`So et al., 2011 <so2011>`). The Atlas ShakeMaps, available online on 
+Model initiative (GEMECD; :ref:`So, 2014 <so2014>`). The Atlas ShakeMaps, available online on 
 the `ShakeMap homepage <http://earthquake.usgs.gov/shakemap/>`_ consists of all the 
 standardized ShakeMap products and formats. Output grids for the entire dataset can also 
 be obtained at that site.

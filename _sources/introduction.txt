@@ -1,3 +1,5 @@
+.. image:: _static/usgs_banner.*
+
 .. _introduction:
 
 ####################
