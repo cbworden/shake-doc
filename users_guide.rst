@@ -73,7 +73,6 @@ For each ShakeMap, all maps and associated products for that event are available
    * `Google Earth <http://earth.google.com>`_ KML files
    * Contour Files
 
-
 Metadata and Runtime Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Metadata**. FGDC-compliant geospatial metadata files are distributed via the earthquake-specific ShakeMap Web page for each earthquake under the *Download* page. The metadata are provided in text, HTML, and XML formats in the files *metadata.txt*, *metadata.html*, and *metadata.xml*, respectively. 
