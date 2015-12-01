@@ -13,8 +13,20 @@ ANSS
 California EMA
   The California Emergency Management Agency; formerly the California Office of Emergency Services.
 
+DYFI? 
+  Did You Feel It? 
+
+EHP 
+  U.S. Geological Survey's Earthquake Hazard Program.
+
+ENS 
+  Earthquake Notification System, earthquake notifications via txt/email from U.S. Geological Survey's Earthquake Hazard Program .
+
 FEMA
   Federal Emergency Management Agency; part of the U.S. Department of Homeland Security.
+
+GIS 
+  Geographic Information System
 
 GMICE
   Ground-Motion/Intensity Conversion Equation.
@@ -39,6 +51,9 @@ MMI
 
 NEIC
   The National Earthquake Information Center; part of the USGS.
+
+PAGER 
+  Prompt Assessment for Global Earthquake Response
 
 PGA
   Peak Ground Acceleration.

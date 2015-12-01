@@ -255,10 +255,22 @@ California, Electric Power Research Institute, prepared by Yankee Atomic Electri
 EPRI, 2003. CEUS Ground Motion Project: Model Development and Results, EPRI Report 1008910, 
 EPRI, Palo Alto, CA, 105 pp.
 
+.. _erdick2014 
+Erdik, M., K. Sesetyan, M.B. Demircioglu, C. Zulfikar, U. Hancılar, C. Tuzun, and E. Harmandar
+(2014). Rapid earthquake loss assessment after damaging earthquakes,
+in A. Ansal (ed.), Perspectives on European Earthquake Engineering and Seismology,
+Geotechnical, Geological and Earthquake Engineering 34, DOI 10.1007/978-3-319-07118-3_2, 2014.
+
+.. _erdick2011 
+Erdik, M., K. Sesetyan, M.B. Demircioglu, U. Hancılar, C. Zulfikar (2011). Rapid earthquake loss assessment after damaging earthquakes
+Soil Dynamics and Earthquake Engineering 31, 247–266.
+
 .. _faenza2010:
 
 Faenza, L. and Michilini, A. (2010). Regression analysis of MCS intensity and ground motion 
 parameters in Italy and its application in ShakeMap. Geophys. J. Int. (2010) 180, 1138–1152.
+
+.. _fema2006:
 
 Federal Emergency Management Agency, 2006, HAZUS-MH MR2 Technical Manual: Washington, D.C., 
 Federal Emergency Management Agency, last accessed August 22, 2008, at 
@@ -295,6 +307,10 @@ Godt, J., Wener, B., Verdin, K., Wald, D., Earle, P., Harp, E., and Jibson, R. (
 earthquake-induced landsliding. Proc. of the First World Landslide Forum, Tokyo, Japan, Parallel 
 Sessions Volume, International Program on Landslides.
 
+.. _gomberg2013:
+Gomberg, J., and Jakobitz, A. (2013). A collaborative user-producer assessment of earthquake-resoonse products: U.S. Geological Survey
+Open-File Report 2013–1103, 13 p., http://pubs.usgs.gov/of/2013/1103/.
+
 .. _grunthal1998:
 
 Grünthal, G.(editor) (1998). European Macroseismic Scale 1998 (EMS-98), (Cahiers du Centre Européen 
@@ -322,6 +338,10 @@ Japanese).
 Johnson, K., M., A. M. Nowicki, J. Zhu, R. Mah, D. Garcia, E. Harp, J. Godt, and 
 D. J. Wald (2014). An Atlas of ShakeMaps for Landslide and Liquefaction Modeling, 
 submitted to Earthquake Spectra.
+
+.. _jones2011:
+Jones, L., and Benthien, M., 2011, Preparing for a “Big One”—The great
+southern California ShakeOut, Earthquake Spectra, v. 27, p. 575–595. Lindell, M.K., Prater, C.S., and Peacock, W.G., 2007.
 
 Joyner, W. B. and Boore, D. M. (1988). Measurement, characterization, and prediction of 
 strong ground-motions, in Proc. Conf. on Earthq. Eng. & Soil Dyn. II, Geotechnical vision, 
@@ -548,9 +568,13 @@ the U.S. Geological Survey's PAGER system (Prompt Assessment of Global Earthquak
 Response), in World Conference on Earthquake Engineering, 14th,  Beijing, China, October 2008, 
 Proceedings: Beijing, China, World Conference on Earthquake Engineering, Paper No. 10-0008.
 
+.. _wald2011a:
+
 Wald, D. J., L. McWhirter, E. Thompson, and A. Hering (2011a). A New Strategy for Developing Vs30 
 Maps, Proc. of the 4th International Effects of Surface Geology on Seismic Motion Symp,, Santa 
 Barbara, 12 pp.
+
+.. _wald2011b:
 
 Wald, D.J., Jaiswal, K.S. Marano, K.D., and Bausch, D., (2011b). An Earthquake Impact Scale: Natural 
 Hazards Review, posted ahead of print at http://dx.doi.org/10.1061/(ASCE)NH.1527-6996.0000040. 
@@ -612,6 +636,10 @@ California. Bull. Seism. Soc. Am.  102:1, 204- 221. doi: 10.1785/0120110156.
 Worden, C.B., Wald, D.J., Thompson, E.M., (2015). Development of an Open-Source Hybrid 
 Global Vs30 Model. SSA Annual Meeting, Pasadena, CA. Seismological Research Letters, 
 Volume 86, Number 2B, p. 713.
+
+.. _worden2016:
+
+C. B. Worden, M. Hearne, D. J. Wald, and M. Pagani (2016). Complimentary Components of OpenQuake and ShakeMap, Proceedings of the 16WCEE, Santiago.
 
 Yamakawa, K. (1998). The Prime Minister and the earthquake: Emergency Management Leadership of 
 Prime Minister Marayama on the occasion of the Great Hanshin-Awaji earthquake disaster, Kansai 
