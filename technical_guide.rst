@@ -299,8 +299,8 @@ configuration parameters and command-line flags that control specific functional
 a complete description of configuring and running *grind*, see the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_ and the 
 configuration file *grind.conf*.)
 
-Below is an outline of the basic ShakeMap processing. Figure X provides a schematic of 
-the ShakeMap Workfow (Wald and Worden, 2016)
+Below is an outline of the ShakeMap processing workflow: :num:`Figure #figure_processing` provides 
+a schematic of the key steps in the processing.
 
 #. Data Preparation
 
@@ -324,8 +324,17 @@ the ShakeMap Workfow (Wald and Worden, 2016)
 
    #. Basin amplifications (optional)
    #. Vs30 site amplifications
+ 
+.. _figure_processing:
 
-The sections that follow provide a more complete description of these steps. 
+.. figure:: _static/ProcessingFigure.*
+   :align: left
+   :width: 650px
+
+   A schematic of the basic ShakeMap ground motion interpolation scheme. 
+
+The sections that follow provide a more complete description of the processing steps outlined 
+above. 
 
 Data preparation
 ======================
