@@ -1,3 +1,5 @@
+.. image:: _static/usgs_banner.*
+
 .. _users-guide:
 
 ####################
@@ -489,7 +491,7 @@ Finally, for academic and government users, ShakeMap products (and other earthqu
 Web Mapping (GIS) Services 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In addition to downloadable GIS formatted ShakeMaps (including shapefiles) are readily available for each ShakeMap event, USGS also hosts a real-time `30-day *Signficant* `Earthquake GIS ShakeMap Feed <http://geohazards.usgs.gov/arcgis/rest/services/ShakeMap/ShakeMap/MapServer>`_.
-`ESRI <http://www.esri.com/>`_ provides a separate `Disaster Response ArcGIS service <http://www.esri.com/>`_, providing live feeds to `live feeds <https://tmservices1.esri.com/arcgis/rest/services/LiveFeeds/USGS_Seismic_Data/MapServer>`_ to several USGS post-earthquake products. 
+`ESRI`_ provides a separate `Disaster Response ArcGIS service <http://www.esri.com/>`_, providing live feeds to `live feeds <https://tmservices1.esri.com/arcgis/rest/services/LiveFeeds/USGS_Seismic_Data/MapServer>`_ to several USGS post-earthquake products. 
 
 .. note:: `USGS 30-day `*Significant* Earthquake GIS ShakeMap Feed <http://geohazards.usgs.gov/arcgis/rest/services/ShakeMap/ShakeMap/MapServer>`_
 
@@ -1050,6 +1052,8 @@ As discussed in detail the :ref:`technical-guide`, ShakeMap is augmented by DYFI
    :target: Related Systems
 
    Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.	    
+
+.. _sec_shakecast:
 
 ShakeCast
 ---------------------------------------------------

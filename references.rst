@@ -260,12 +260,14 @@ EPRI, 2003. CEUS Ground Motion Project: Model Development and Results, EPRI Repo
 EPRI, Palo Alto, CA, 105 pp.
 
 .. _erdick2014:
+
 Erdik, M., K. Sesetyan, M.B. Demircioglu, C. Zulfikar, U. Hancılar, C. Tuzun, and E. Harmandar
 (2014). Rapid earthquake loss assessment after damaging earthquakes,
 in A. Ansal (ed.), Perspectives on European Earthquake Engineering and Seismology,
 Geotechnical, Geological and Earthquake Engineering 34, DOI 10.1007/978-3-319-07118-3_2, 2014.
 
 .. _erdick2011:
+
 Erdik, M., K. Sesetyan, M.B. Demircioglu, U. Hancılar, C. Zulfikar (2011). Rapid earthquake loss assessment after damaging earthquakes
 Soil Dynamics and Earthquake Engineering 31, 247–266.
 
@@ -349,6 +351,7 @@ D. J. Wald (2014). An Atlas of ShakeMaps for Landslide and Liquefaction Modeling
 submitted to Earthquake Spectra.
 
 .. _jones2011:
+
 Jones, L., and Benthien, M., 2011, Preparing for a “Big One”—The great
 southern California ShakeOut, Earthquake Spectra, v. 27, p. 575–595. Lindell, M.K., Prater, C.S., and Peacock, W.G., 2007.
 
