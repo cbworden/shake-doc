@@ -189,6 +189,10 @@ Caprio, M., B. Tarigan, C.B. Worden, D.J. Wald, S. Wiemer (2015). Ground Motion 
 Conversion Equations (GMICEs): A Global Relationship and Evaluation of Regional Dependency.
 Bull. Seism. Soc. Am., Vol. 105, No. 3.
 
+.. _celsi2005:
+
+Celsi, R., M. Wolfinbarger, and D. J. Wald (2005). The Effects of Magnitude Anchoring, Earthquake Attenuation Estimation, Measure Complexity, Hubris, and Experience Inflation on Individuals’ Perceptions of Felt Earthquake Experience and Perceptions of Earthquake Risk, Earthquake Spectra, 21[4], 987-1008. 
+
 Chiou, B.S.J, and R.R. Youngs (2008a). An NGA model for the average horizontal component of peak 
 ground motion and response spectra, Earthquake Spectra, 24(1): 173-215.
 
@@ -255,13 +259,13 @@ California, Electric Power Research Institute, prepared by Yankee Atomic Electri
 EPRI, 2003. CEUS Ground Motion Project: Model Development and Results, EPRI Report 1008910, 
 EPRI, Palo Alto, CA, 105 pp.
 
-.. _erdick2014 
+.. _erdick2014:
 Erdik, M., K. Sesetyan, M.B. Demircioglu, C. Zulfikar, U. Hancılar, C. Tuzun, and E. Harmandar
 (2014). Rapid earthquake loss assessment after damaging earthquakes,
 in A. Ansal (ed.), Perspectives on European Earthquake Engineering and Seismology,
 Geotechnical, Geological and Earthquake Engineering 34, DOI 10.1007/978-3-319-07118-3_2, 2014.
 
-.. _erdick2011 
+.. _erdick2011:
 Erdik, M., K. Sesetyan, M.B. Demircioglu, U. Hancılar, C. Zulfikar (2011). Rapid earthquake loss assessment after damaging earthquakes
 Soil Dynamics and Earthquake Engineering 31, 247–266.
 
@@ -280,6 +284,10 @@ http://www.fema.gov/plan/prevent/hazus/hz_manuals.shtm.
 
 Field, E.H. (2000). A modified ground-motion attenuation relationship for southern California that 
 accounts for detailed site classification and a basin-depth effect, Bull. Seism. Soc. Am., 90, S209-S221.
+
+.. _franco2015:
+Franco, G. (2015). Earthquake Mitigation Strategies Through Insurance,
+Encyclopedia of Earthquake, Engineering DOI 10.1007/978-3-642-36197-5_401-1
 
 Frankel, A. D., M. D., Petersen, C. S. Mueller, K. M. Haller, R. L. Wheeler, E. V. Leyendecker, 
 R. L.  Wesson, S. C. Harmsen, C. H. Cramer, D. M. Perkins, and K. S. Rukstales (2002). 
@@ -308,6 +316,7 @@ earthquake-induced landsliding. Proc. of the First World Landslide Forum, Tokyo,
 Sessions Volume, International Program on Landslides.
 
 .. _gomberg2013:
+
 Gomberg, J., and Jakobitz, A. (2013). A collaborative user-producer assessment of earthquake-resoonse products: U.S. Geological Survey
 Open-File Report 2013–1103, 13 p., http://pubs.usgs.gov/of/2013/1103/.
 
@@ -410,6 +419,15 @@ Washington, D.C.
 
 NIBS (1999), HAZUS Technical Manual, SR2 edition, Vols. I, II, and III, prepared by the National 
 Institute of Building Sciences for the Federal Emergency Management Agency, Washington, D.C.
+
+.. _NRC2006:
+
+National Research Council (NRC) (2006). Improved Seismic Monitoring -
+Improved Decision-Making:: Assessing the Value of Reduced Uncertainty,
+Couverture Committee on Seismology and Geodynamics, Committee on the
+Economic Benefits of Improved Seismic Monitoring, Board on Earth
+Sciences and Resources, Division on Earth and Life Studies, National Research Council
+National Academies Press, 4 janv. 2006 - 196 pp.
 
 .. _newmark1982:
 
@@ -588,6 +606,11 @@ Feel It?" internet-based macroseismic intensity maps. Annals of Geophysics 54:6,
 
 Wald et al 2012. Vs30 
 
+.. _wald2016:
+
+Wald, D. J., and G. Franco (2016). Applications of Near-Real time,
+Post-earthquake Financial Decision-Making, Proceedings of the 16th World Conference on Earthquake Engineering, Santiago, Chile. 
+
 .. _gmt_ref:
 
 Wessel, P., and W. H. F. Smith (1995). New Version of the Generic Mapping Tools Released, 
@@ -656,6 +679,11 @@ peak ground velocity following a strong earthquake, Bull. Seism. Soc. Am., 91, 1
 
 Wu, Y. M., T. L. Teng, T. C. Shin, and N. C. Hsiao (2003). Relationship between peak ground 
 acceleration, peak ground velocity and Intensity in Taiwan, Bull. Seism. Soc. Am., 93, 386-396.
+
+.. _yeats2004:
+
+Yeats, R. (2004). Living with Earthquakes in the Pacific Northwest A
+Survivor's Guide, Second Edition, 400 pp, ISBN 978-0-87071-024-7.
 
 Yong, A., S. E. Hough, J. Iwahashi, and A. Braverman (2012). A Terrain-Based Site-Conditions Map of 
 California with Implications for the Contiguous United States, Bull. Seism. Soc. Am. 102, 114-128.

@@ -515,6 +515,7 @@ Accessing ShakeMap GIS Files. While this GIS service only provides access to sig
 Acknowledgement: USGS appreciates guidance from the Esri Aggregated Live Feed team, more specifically Derrick Burke and Paul Dodd.  Their willingness to share best practices for robust real time sharing of GIS data enabled this project to be completed.
 
 .. _sec_shakemap-archives:
+
 =================================
 ShakeMap Archives
 =================================
@@ -572,7 +573,7 @@ an updated earthquake source catalogue that includes regional locations and fini
 models; (3) a refined strategy to select prediction and conversion equations based on a 
 new seismotectonic regionalization scheme (:ref:`Garcia et al., 2012b <garcia2012b>`); and (4) vastly more 
 macroseismic intensity and ground-motion data from international agencies.
- 
+
 In order to best replicate shaking that occurred during historic and recent earthquakes we 
 employ many of the ShakeMap tools described in the previous sections. For many older 
 events, the important constraints, in addition to the usual site condition map, are (1) the 
@@ -647,9 +648,15 @@ organizations are best served by conducting training exercises based on realisti
 earthquake situations-ones similar to those they are most likely to face. ShakeMap 
 Scenario earthquakes can fill this role. Scenario ShakeMaps can be used to examine 
 exposure of structures, lifelines, utilities, and transportation corridors to specified 
-potential earthquakes. ShakeMap web pages now display many earthquake scenarios and 
-we are working to develop a comprehensive suite of scenarios for all at-risk regions in 
-the United States. 
+potential earthquakes.
+
+ In the September, 2015, Report to NEHRP Agencies from the Advisory Committee on Earthquake Hazards Reduction (ACHER), recommends:   
+
+    USGS Recommendation 4 - ACEHR recommends the USGS expand earthquake scenario development in conjunction with stakeholder engagement in order to examine consequences of earthquakes in high-risk urban areas.
+
+To this end, USGS ShakeMap web pages now display many earthquake scenarios and we are working to develop a comprehensive suite of scenarios for all at-risk regions in the United States. 
+
+..    USGS Recommendation 5 - ACEHR recommends the USGS work with operators of critical infrastructure and lifeline systems to define and integrate near real-time earthquake data and other seismic information into system monitoring so that operators can quickly assess system impacts from earthquake movements and take appropriate actions.  This development should be linked with the EEW program.
 
 A ShakeMap earthquake scenario is simply a ShakeMap with an assumed magnitude and 
 location, and, optionally, specified fault geometry. For example, :num:`Figure #figure1-13` shows 
@@ -661,6 +668,16 @@ Different renditions of this particular scenario have been widely used for evalu
 region's capacity to respond to such a disaster among Federal, State, utility, business, and 
 local emergency response organizations. 
 
+.. _figure1-13:
+
+.. figure:: _static/Figure_1_13.*
+   :align: left
+   :width: 650px
+ 
+   ShakeMap scenario intensity (top) and peak velocity (bottom) maps for the M7.05 
+   Hayward Fault, CA, earthquake: A) Intensity; No directivity, B) Intensity; Directivity added, C) 
+   Peak Velocity; No Directivity, and D) Peak Velocity; Directivity added.
+
 The USGS and ANSS partners receive numerous requests for ShakeMap scenarios on an 
 annual basis. The NEIC Global ShakeMap (GSM) operators have also generated scores 
 of scenarios for colleagues, partners, other Federal Agencies, non-profit organizations 
@@ -670,28 +687,16 @@ can be easily used in response planning and loss estimation as well as for educa
 purposes. They can be found from the Map Archive link at the top of all ShakeMap Web 
 pages.
 
-ShakeMap earthquake scenarios are ordinary ShakeMaps, but made for specific potential earthquakes. By specifying a fault geometry and location, and earthquake magnitude, the ShakeMap system can generate predictive maps of potential median ground motions for that scenario. ShakeMap automatically includes local effects due to site conditions, and can include effects from basin depth and directivity, if desired.
-
-In planning and coordinating emergency response, utilities, local government, and other organizations are best served by conducting training exercises based on realistic earthquake situations—ones that they are most likely to face. Scenario earthquakes can fill this role. Scenario maps can be used to examine exposure of structures, lifelines, utilities, and transportation conduits to specific potential earthquakes. The ShakeMap Web pages now have a special section under the Archives pages that display selected earthquake scenarios.  Additional scenario events will be supplied as they are requested. To request a scenario, please contact the ShakeMap Development Team through the comment form available on the Web site.
-
-Given a selected event, we have developed tools to make it relatively easy to generate a ShakeMap earthquake scenario. First we need to assume a particular fault or fault segment will (or did) rupture over a certain length or segment. We then determine the magnitude of the earthquake based on assumed rupture dimensions. Next, we estimate the ground shaking at all locations in the chosen area around the fault, and then represent these motions visually by producing ShakeMaps. The scenario earthquake ground-motion maps are identical to those made for real earthquakes—with one exception: ShakeMap scenarios are labeled with the word “SCENARIO” prominently displayed to avoid potential confusion with real earthquake occurrences.  
-
-At present, ground-motions are estimated using empirical attenuation relationships (though we can use gridded ground motion estimates from other sources for those who wish to provide them). We then correct the amplitudes based on the local site soil (Vs30) conditions as we do in the general ShakeMap interpolation scheme.  Fault finiteness is included explicitly, basin depth can be incorporated where appropriate, and source directivity is included via the relationships developed by Rowshandel (2010).  Depending on the level of complexity needed for the scenario, event-specific factors, such as variable slip distribution, could also be incorporated in the amplitude estimates fed to ShakeMap.  
-
 ShakeMap earthquake scenarios can be an integral part of earthquake emergency response planning. ShakeMap scenarios are particularly useful in planning and exercises when combined with loss estimation systems, such as PAGER, HAZUS and ShakeCast, which provide ShakeMap-based estimates of overall social and economic impact, detailed loss estimates, and inspection priorities, respectively. Since its inception, ShakeMap operators have generated hundreds of earthquake scenarios that have been used in formal earthquake response exercises around the Nation and around the world. 
 
 .. sidebar:: **Finding Atlas ShakeMaps Online**
 
- * **Atlas Version 1.0** (:ref:`Allen et al., 2008 <allen2008>`) ShakeMaps, are available online on the
-   `ShakeMap homepage <http://earthquake.usgs.gov/shakemap/>`_ consists of all the standardized ShakeMap products and formats. Output grids for the entire dataset can also 
-   be obtained at that site.
- * **Atlas Version 2.0** (:ref:`Garcia et al. \(2012a\) <garcia2012a>`) are by searching the USGS `Comprehensive Catalogue
-   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Atlas from the *Contributor* from
-   the *Advanced Options*  dropdown menu. 
-
-The U.S. Geological Survey has evaluated the probabilistic hazard from active faults in the United States for the National Seismic Hazard Mapping Project.  From these maps it is possible to prioritize the best scenario earthquakes to be used in planning exercises by considering the most likely candidate earthquake fault first, followed by the next likely, and so on.  Such an analysis is easily accomplished by hazard disaggregation, in which the contributions of individual earthquakes to the total seismic hazard, their probability of occurrence, and the severity of the ground-motions are ranked.  Using the individual component earthquakes of these hazard maps, a user can properly select the appropriate scenarios given their location, regional extent, and specific planning requirements. As of this writing, we are in the process of generating scenario maps for all of the events in the current NSHMP hazard maps, and they should be available on the web site soon. Scenarios are of fundamental interest to scientific audiences interested in the nature of the ground shaking likely experienced in past earthquakes as well as the possible effects due to rupture on known faults in the future.  In addition, more detailed and careful analysis of the ground-motion time histories (seismograms) produced by such scenario earthquakes is highly beneficial for earthquake-engineering considerations.  Engineers require site-specific ground-motions for detailed structural response analysis of existing structures and future structures designed around specified performance levels. 
-
-They can also be used as a planning tool to identify shortcomings in the existing seismic networks to clarify where instrumentation should be focused.  
+ * **Scenarios 1.0**. ShakeMaps, are available online on the
+   `ShakeMap homepage <http://earthquake.usgs.gov/shakemap/>`_ consists of all the standardized ShakeMap products and formats.
+   Output  grids for the entire dataset can also be obtained at that site.
+ * **Scenarios 2.0**. The Next Generation Scenarios (NGS) will be available by searching the USGS `Comprehensive Catalogue
+   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Scenarios
+   from the *Contributor* from the *Advanced Options*  dropdown menu. The available *Catalogues* of scenarios will change over time.
 
 Our ShakeMap earthquake scenarios have become an integral part of emergency-response planning.  Primary users include city, county, State and Federal Government agencies (e.g., the California EMA, FEMA), and emergency-response planners and managers for utilities, businesses, and other large organizations. Scenarios are particularly useful in planning and exercises when combined with loss-estimation systems such as HAZUS, which provides scenario-based estimates of social and economic impacts.
 
@@ -710,7 +715,9 @@ external programs in the form of GMT grid files. As described in :ref:`amplify_g
 ShakeMap corrects the amplitudes based on the local site soil conditions unless 
 configured otherwise. 
 
-An example SC ShakeOut :NOTE:
+At present, ground-motions are estimated using empirical attenuation relationships (though we can use gridded ground motion estimates from other sources for those who wish to provide them). We then correct the amplitudes based on the local site soil (Vs30) conditions as we do in the general ShakeMap interpolation scheme.  Fault finiteness is included explicitly, basin depth can be incorporated where appropriate, and source directivity is included via the relationships developed by Rowshandel (2010).  Depending on the level of complexity needed for the scenario, event-specific factors, such as variable slip distribution, could also be incorporated in the amplitude estimates fed to ShakeMap.  
+
+The U.S. Geological Survey has evaluated the probabilistic hazard from active faults in the United States for the National Seismic Hazard Mapping Project.  From these maps it is possible to prioritize the best scenario earthquakes to be used in planning exercises by considering the most likely candidate earthquake fault first, followed by the next likely, and so on.  Such an analysis is easily accomplished by hazard disaggregation, in which the contributions of individual earthquakes to the total seismic hazard, their probability of occurrence, and the severity of the ground-motions are ranked.  Using the individual component earthquakes of these hazard maps, a user can properly select the appropriate scenarios given their location, regional extent, and specific planning requirements. As of this writing, we are in the process of generating scenario maps for all of the events in the current NSHMP hazard maps, and they should be available on the web site soon. Scenarios are of fundamental interest to scientific audiences interested in the nature of the ground shaking likely experienced in past earthquakes as well as the possible effects due to rupture on known faults in the future.  In addition, more detailed and careful analysis of the ground-motion time histories (seismograms) produced by such scenario earthquakes is highly beneficial for earthquake-engineering considerations.  Engineers require site-specific ground-motions for detailed structural response analysis of existing structures and future structures designed around specified performance levels. 
 
 In most cases, we do not consider the direction of rupture nor do we modify the peak 
 motions by a directivity term. Fault geometries are specified with a fault file that 
@@ -742,9 +749,12 @@ deliver the files to customers who are expecting real events.  To avoid these so
 errors, the Event IDs for all scenarios are tagged with the suffix "_se". Such events are 
 recognized by the processing and delivery software, which is configured to handle the 
 scenarios as special cases. Scenarios are also given their own separate space on the web 
-pages.
+pages. The scenario earthquake ground-motion maps are identical to those made for real earthquakes—with one exception: ShakeMap scenarios are labeled with the word “SCENARIO” prominently displayed to avoid potential confusion with real earthquake occurrences.  
 
 See the :ref:`software-guide` for additional information on generating earthquake scenarios.
+
+.. Scenarios can also be used as a planning tool to identify shortcomings in the existing seismic networks to clarify
+   where instrumentation should be focused. [TBS]
 
 .. Scenarios for Testing ShakeMap Operations and Seismic Network Station Coverage
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -772,10 +782,8 @@ See the :ref:`software-guide` for additional information on generating earthquak
 
 Standardizing Earthquake Scenarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 The U.S. Geological Survey has evaluated the probabilistic hazard from active faults in 
-the United States for the 
-`National Seismic Hazard Mapping Project <http://earthquake.usgs.gov/hazards/>`_. 
+the United States for the `National Seismic Hazard Mapping Project <http://earthquake.usgs.gov/hazards/>`_. 
 From these maps it is 
 possible to prioritize the best scenario earthquakes to be used in planning exercises by 
 considering the most likely candidate earthquake fault first, followed by the next likely, 
@@ -798,15 +806,10 @@ For areas outside of the regional networks, we will use the Global ShakeMap syst
 produce the scenarios. International ShakeMap operators may be able to follow a similar 
 disaggregation of their own seismic hazard maps to generate a suite of scenarios.
 
+.. Good example suite of scenarios and HAZUS loss products: https://fortress.wa.gov/dnr/seismicscenarios/
+.. In 2008, FEMA sponsored a project to produce a `catalog of loss estimate maps <https://www.fema.gov/media-library/assets/documents/16125>`_ for the State of Utah using ShakeMap-based earthquake scenarios. Loss estimates were generated using HAZUS-MH, FEMA's loss and risk analysis software.
 
- 
-.. figure::  _static/international_shakemaps.png
-   :width: 650px
-   :alt: International ShakeMap Systems
-   :align: left
-   :target: International ShakeMap Systems 
-
-   International ShakeMap Systems
+.. ShakeMap-HAZUS.Utah.png
 
 .. Scenarios for Evaluating Earthquake Early Warning Timing
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -834,24 +837,28 @@ Thus, they can allow emergency managers and responders to determine what areas w
 to the highest intensities and what the probable impacts were in those arease. Importantly, ShakeMap also allows
 descision-makers a rapid portrayal of those areas that received only weak motions and are likely to be undamaged. The latter areas can be potentially used for mutual aid. 
 
-Though initial developed primarily for emergency management, ShakeMaps has been shown to be highly beneficial in other use sectors. These include: improved loss estimation, public information and education through the media and web pages, finacial descision-making, and in engineering and seismological research. Some specific examples are provided below for these use cases. 
+Though initial developed primarily for emergency management, ShakeMaps have been shown to be highly beneficial for other user sectors. Other uses include: improved loss estimation, public information and education through the media and web pages, financial descision-making, and engineering and seismological research. Some specific examples are provided below for these use cases. 
 
-ShakeMap has been recognized as a top priority for disaster reduction in the U.S. according to a report by the National Science and Technology Council Subcommittee on Disaster Reduction (`Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions <www.sdr.gov/docs/185820_Earthquake_FINAL.pdf>`_). The report describes **GRAND CHALLENGE #1** includes: Provide hazard and disaster information where and when it is needed. [...] Expand the Advanced National Seismic System to improve seismic monitoring and deliver rapid, robust earthquake information products; For all urban areas with moderate to high seismic risk, produce ShakeMaps that show the variation of shaking intensity within minutes after an earthquake based on near real time data transmission from densely spaced seismic networks.
-
-SESAC Priorities? 
-
-General adoption of MMI scale beyond ShakeMap (move to Technical Manual?), for EEW (Allen, others), PSHA (R. Chen), UCERF2/3?; communicating risk
-http://www.shakealert.org/faq/
-
-Intensity maps for PSHA: Earthquake Probabilities in the San Francisco Bay Region: 2002–2031, By Working Group On California Earthquake Probabilities, Open-File Report 03-214, 2003.
-
+As a side benefit, an intensity-based depiction of shaking hazards through ShakeMap (and DYFI?) facilitates the adoption of the intensity scale more generally and can thus it can be used for other risk-reduction systems and purposes. That is, inculcating the populous to shaking using intensity scales (as opposed to magnitude alone), has becomes crucial not just for communicating post-earthquake shaking hazards, the color coding and utilization of intensity has more generally helped depict imminent and future shaking hazards. For example, the ShakeMap intensity color-palette has been adopted for Earthquake Early Warning (EEW; see for example `QuakeAlert <http://www.shakealert.org/faq/>`_) as well as for communicating future hazards through deterministic scenarios and with Probabilistic Seismic Hazard Maps (PSHA). 
 
 Emergency Management and Response
 -------------------------------------------------
-WESTERN STATES SEISMIC POLICY COUNCIL
-POLICY RECOMMENDATION 14-3, "ShakeMap has become a valuable tool to assist emergency responders in identifying the likely extent of earthquake damage. Strong-motion data (now increasingly available in real-time) can be correlated with documentation and evaluation of the performance of the built environment, leading to understanding the causes of earthquake damage and the occurrence of good structural and non-structural performance.."
+ShakeMap has been recognized as a top priority for disaster management and response in the U.S.:
+
+  "ShakeMap has become a valuable tool to assist emergency responders in identifying the likely extent of earthquake damage. Strong-motion data (now increasingly available in real-time) can be correlated with documentation and evaluation of the performance of the built environment, leading to understanding the causes of earthquake damage and the occurrence of good structural and non-structural performance" (`Western States Seismic Policy Council Policy Recommendation, 14-3, <www.wsspc.org/wp-content/.../PR_14-3_SeismicMonitoring_WebPub.pdf>`_). 
+
+Similarly, according to a report by the `National Science and Technology Council Subcommittee on Disaster Reduction* <www.sdr.gov>`_ (`Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions <www.sdr.gov/docs/185820_Earthquake_FINAL.pdf>`_). The report describes *Grand Challenge 1*:
+
+    "Provide hazard and disaster information where and when it is needed. [...] Expand the Advanced National Seismic System to improve seismic monitoring and deliver rapid, robust earthquake information products; For all urban areas with moderate to high seismic risk, produce ShakeMaps that show the variation of shaking intensity within minutes after an earthquake based on near real time data transmission from densely spaced seismic networks."
 
 "The very rapid availability of earthquake source data—including magnitude, location, depth, and fault geometry—provides basic orienting information for emergency responders, essential information for the news media and the public, and input data for other applications and response-relevant products. Maps of ground shaking intensity (ShakeMap) have many important applications in emergency management. Because ShakeMap is available via the Internet, all emergency responders at all levels of government and the private sector have access to the same rapidly available information. With this information, responders can quickly assess the scope of the emergency and mobilize resources accordingly. Early reconnaissance efforts can target areas known to have been shaken most severely, and key emergency services including search and rescue, emergency medical response, safety assessment of critical facilities, and shelter and mass care can be expedited based on a more rapid identification of incident location. Monitored information is also useful for rapidly assessing situations in which a large, widely felt earthquake occurs but causes little damage (such as the Hector Mine earthquake of October 16, 1999). Clearly, there are significant economic benefits in scaling a response to the consequences of an event, including no response for an earthquake that requires none."
+
+.. figure:: _static/Hector.Mine.ShakeMap.*
+   :align: left
+   :width: 650px
+ 
+   Instrumental Intensity ShakeMap for the October 16, 1999 magnitude 7.1 Hector Mine, California Earthquake.
+
 
 "Based on ground motion data from seismic networks, HAZUS can be used to generate estimates of economic losses, utility system damage, and population impacts. These data provide information useful for several response and recovery actions (discussed in the following section). For response actions, HAZUS outputs will supplement the ground shaking information from ShakeMap by estimating the level of damage to buildings, utilities, and transportation infrastructure; contribute to identifying the appropriate response activation level; provide guidance for initiating building safety assessments; help determine the number of shelters that must be opened to house the displaced; and provide an estimate of the amount of resources needed to care for people in temporary housing."
 
@@ -859,6 +866,11 @@ Committee on the Economic Benefits of Improved Seismic Monitoring (2006). Improv
 Assessing the Value of Reduced Uncertainty, National Research Council, 196 pp., DOI: 10.17226/11327
 
 "Seismic monitoring and the products that are derived from modern networks—including ShakeMap and HAZUS—offer significant benefits for emergency response and recovery. The benefits of enhanced seismic monitoring include rapid and accurate identification of the event, its location and magnitude, the extent of strong ground shaking, and estimates of damage and population impacts. This information expedites hazard identification, promotes rapid mobilization at levels appropriate to the emergency, and facilitates the rapid identification of buildings that are safe for continued occupation and those that must be evacuated. While it may be reasonable to surmise that—in the context of the $100 billion single-event estimate—improved (in particular, more targeted) emergency response would yield avoided costs in the range of tens of millions of dollars, there simply is insufficient information to provide a rigorous basis for quantitative estimate of potential benefits."
+
+.. sidebar:: USE CASE #1
+
+ The `California Department of Transportation <http://www.earthquakeauthority.com/‎>`_ (Caltrans) employs ShakeMap
+ for post-earthquake portfolio assessments for significant California earthquakes. [TBS; REF]
 
 One of the first examples of the use of ShakeMap for emergency management and response was the 
 the M7.1 Hector Mine earthquake of October 16, 1999. This event provides an important lesson in the use of
@@ -872,18 +884,7 @@ with infrastructure in the region and brief activations of emergency operations 
 San Bernardino and Riverside Counties and the California Office of Emergency Services
 (now the California Emergency Management Agency, or CalEMA), Southern Region.
 
-Unnecessary response in an effort to fully assess the potential effects of an earthquake, although not as costly as inadequate or misguided response in a real disaster, can be costly as well. Had the magnitude-7 earthquake occurred in urban Los Angeles or another urban area in California, ShakeMap could be employed to quickly identify the communities and jurisdictions
-requiring immediate response.  To help facilitate the use of ShakeMap in emergency response, ShakeMap is now provided
-to organizations with critical emergency response functions automatically through USGS web pages, ShakeCast and similar tools.
-
-.. sidebar:: USE CASE #1
-	     
-  The `California Earthquake Authority <http://www.earthquakeauthority.com/‎>`_ (CEA) employs ShakeMap for post-earthquake portfolio assessments for
-  significant California earthquakes. [TBS; REF]
-
-"The tangible impacts of an earthquake must be conveyed more simply and succinctly, employing a scale useful for decision-making at the regional and local levels. We produced a prototype Earthquake Impact Web page, which is a simplified, higher-resolution version of the USGS’s PAGER product (for example, showing losses by city and county; fig. 3). The ShakeMap serves as input to a rapidly executed economic loss estimation tool. The one-page Earthquake Impact document conveys impacts in terms of estimated population exposure to various shaking levels and dollar losses to specific counties and cities."
-
-:ref:`Gomberg and Jokobitz \(2013\) <gomberg2013>`)
+Unnecessary response in an effort to fully assess the potential effects of an earthquake, although not as costly as inadequate or misguided response in a real disaster, can be costly as well. Had the magnitude-7 earthquake occurred in urban Los Angeles or another urban area in California, ShakeMap could be employed to quickly identify the communities and jurisdictions requiring immediate response.  To help facilitate the use of ShakeMap in emergency response, ShakeMap is now provided to organizations with critical emergency response functions automatically through USGS web pages, ShakeCast and similar tools.
 
 "A catastrophic earthquake and tsunami event along the 800-mile-long Cascadia Subduction Zone, which lies off the northwest coast of the United States, presents a significant danger and a tremendous challenge to the State of California and FEMA Region IX, as well as to the states of Oregon and Washington and FEMA Region X. Earthquakes strike without warning and can forever alter people’s lives, cripple infrastructure, and disrupt the economic and social stability of communities."
 
@@ -893,146 +894,141 @@ September (2013).
 http://www.bicepp.org/
 BICEPP is a non-profit professional association of emergency management and business continuity professionals.
 
-Emergency Preparedness
--------------------------------------------------
-https://www.osha.gov/dts/earthquakes/preparedness.html
-
 
 Loss Estimation
 ----------------------------------------------------------
-Loss estimation ... [TBS]
 
-.. sidebar:: USE CASE #2
-	     
-  The `Federal Emergency Management Agency <http://www.fema.org/‎>`_ (FEMA) employs ShakeMap for post-earthquake damage assessments
-  using HAZUS-US :ref:`FEMA \(2006\) <fema2006>`). [2006 Parkfield example? TBS]
+The `Federal Emergency Management Agency <http://www.fema.org/‎>`_ (FEMA) employs ShakeMap for
+post-earthquake damage assessments using HAZUS-MH :ref:`FEMA \(2006\) <fema2006>` loss estimation software.
+USGS generates customized formatted ESRI shapefiles for direct input into the FEMA’s Hazards U.S. (`HAZUS-MH <http://www.fema.gov/hazus>`_ ; :ref:`FEMA \(2006\) <fema2006>`. The customization includes: specific contour intervals for all events, geometric mean ground motions (as opposed to ShakeMap standard maximum component, and peak ground velocity in units of inches/sec rather than cm/s. The HAZUS-formatted ShakeMaps are made available to FEMA for scenarios and all significant domestic (U.S.) earthquakes and become automatically available to FEMA via Web pages and ArcGIS services (see GIS section above). 
 
-
-ShakeMap ground-motion maps are also customized and formatted into Geographic Information Systems (GIS) shapefiles for direct input
-into the FEMA’s Hazards U.S.  (`HAZUS-MH <http://www.fema.gov/hazus>`_ ; :ref:`FEMA \(2006\) <fema2006>`)
-loss estimation software. These maps are rapidly and automatically distributed to 
-FEMA for computing HAZUS loss estimates and for coordinating State and Federal response efforts.
-This is a major improvement in loss-estimation accuracy
+The use of ShakeMaps as the shaking hazard input into HAZUS is a major improvement in loss-estimation accuracy
 because actual ground-motion observations are used directly to assess damage rather than relying on simpler
-estimates based on epicenter and magnitude alone, as was customary.
+estimates based on epicenter and magnitude alone, or from predefined earthquake scenarios built into HAZUS software.
 
-A ShakeMap-driven calculation of estimated regional losses can provide focus to the mobilization of resources and
+FEMA's HAZUS loss estimates can be important for coordinating State and Federal response efforts as well as Disaster Declarations. HAZUS's detailed impact reports can provide focus to the mobilization of resources and
 expedite the local, State, and Federal disaster declaration process, thus initiating the response and
-recovery machinery of Government.  ShakeMap, when overlaid with inventories of critical lifelines and 
+recovery machinery of Government. ShakeMap, when overlaid with inventories of critical lifelines and 
 facilities (e.g., hospitals, utilities, and substations, etc.), highways and bridges, and vulnerable structures,
-provides an important means of  prioritizing response. Such response activities include: shelter and mass care,
-emergency management, damage and safety assessment, utility and lifeline restoration, and emergency public information.
+provides an important means of  prioritizing response. Such response activities can include: shelter and mass care,
+mutual aid assignments, emergency management, damage and safety assessment, utility and lifeline restoration,
+and emergency public information.
 
-In addition to GIS-formatted maps specifically design for HAZUS, we also make shape files for more general GIS use.
-A number of new product formats are now provided to keep up with developments in web, GIS, imagery,
-and automated downloading and data parsing. These formats include: i) grid.xml, an XML file of the 
-latitude/longitude pairs that make up the ShakeMap grid, including all estimated parameters (intensity measures),
-along with the Vs30 values used at each grid point for site corrections, ii) an enhanced KML file for
-Google Earth allowing for overlays, zoom capabilities, station locations, fault files, and 
-parameter contour lines, iii) uncertainty grids for all ground-motion parameters, iv) ESRI raster grid files,
-and v) ground-motion contours and stations in text and GeoJSON format. These formats are described in detail below. 
+.. figure::  _static/parkfield.hazus.*
+   :width: 650px
+   :alt: Parkfield 2004 ShakeMap and HAZUS Losses
+   :align: left
+   :target: Parkfield 2004 ShakeMap and HAZUS Losses
+	    
+   2004 Parkfield M6.0 earthquake ShakeMap shapefiles (green polygons) and HAZUS estimated impact to selected
+   infrastructure (circles) examined. Figure courtesy of D. Bausch, FEMA.
 
-Public Information and Education
------------------------------------------
-The rapid availability of ShakeMap on the Internet combined with the urgent desire for information following a significant earthquake makes this mapping tool a source of emergency public information and education. In instances in which an earthquake receives significant
-news coverage, the ShakeMap site as well as the “Did You Feel It?” (DYFI) system receives an enormous increase in web site
-visitors (:ref:`Wald et al. \(2011\) <wald2011c>`)
+As of 2015, the HAZUS-MH software is run interactively, not automatically, so qualified FEMA personel must be on hand to initiate HAZUS calculations and post the results. In addition for heavily-populated areas (major cities in California, for example), HAZUS software typically can take a few hours to compute losses. Thus, initial HAZUS-based losses are well behind initial ShakeMap and PAGER results, and of course they are limited to domestic (U.S.) earthquakes. However, the HAZUS results provide much greater detail and information about infrastructure than PAGER-based aggregated losses. 
 
-ShakeMap's intensity scale is key for introducing and inculcating the public and the media to the importance of macroseismic intensity rather than the continuing overuse of magnitude as the scale of reference for earthquakes. In Japan, JMA...xs
+As described in the section on Scenarios, HAZUS-MH is the standard approach for delivering loss estimates for ShakeMap scenarios domestically. For real events, the USGS ShakeMap to FEMA HAZUS handoff has been formalized with a formal liaison agreement (a Memo of Understanding, MOU) involving Doug Bausch, formerly of FEMA Region VIII, and David Wald at the USGS NEIC. Because ShakeMap shaking estimates evolve with time, and HAZUS loss estimates take time to compute, it is essential that direct communications between the two agencies takes place immediately after a serious earthquake to allow for optimizing the loss estimates.
 
-Acknowledging the importance of ShakeMap as a tool for public information and education, we developed
+The USGS-FEMA partnership has been activated for several domestic earthquakes since this system was put into place including: 2004 M6.0 Parkfield, California; 2006 Kiholo Bay, Hawaii; 2010 Virginia, 2010 M7.2 Baja California; 2011 M5.6 Oklahoma; 2011 M5.8 Virginia, and the M6.0 2015 American Canyon (South Napa), Californa, and several other events. The same approach has been tested and applied retrospectively against the 1994 Northridge and 1989 Loma Pieta, California, and other events.
 
-A very widely used graphic, for example, compares ShakeMap-generated intensities for the 1994 Northridge earthquake, a shallow crustal earthquake near Los Angeles, with the 2001, deep, intraslab Nisqually, WA, earthquake: (Fig, REF). Reprinted in numerous textbooks, classes, reports, and briefings.
-
-"Simpler messaging and explanations are needed by some users, and this may be achieved by developing two styles of some products, one designed for nontechnical users and the other tailored for engineers and scientists." (Gomberg and Jakobitz, 2013).
-
-.. sidebar:: USE CASE #2
-	     
- L. Braile, `courses <http://web.ics.purdue.edu/~braile/edumod/eqhazard/eqhazard2.htm>`_
-
-.. sidebar:: USE CASE #2
-	     
- In 2008, FEMA sponsored a project to produce a `catalog of loss estimate maps <https://www.fema.gov/media-library/assets/documents/16125>`_
- for the State of Utah using ShakeMap-based earthquake scenarios. Loss estimates were generated using HAZUS-MH, FEMA's loss and risk analysis software.
-
-ShakeMap-HAZUS.Utah.png
-
-
-Loss Estimation and Financial Decision-Making
+Financial Sector Decision-Making
 ----------------------------------------------------------
+Post-earthquake financial decision-making has evolved considerably over the past decade. Insurers and reinsurers, private companies, governments, and aid organizations have shown increasing creativity in the utilization of near-real-time earthquake information for their own loss estimation, financial adjudication, and situational awareness. Such financial analyses can be of significant benefit to stakeholders, facilitating risk transfer operations, fostering sensible management of risk portfolios, and assisting disaster responders. Ultimately, these improvements translate to benefits for the public and those at risk (:ref:`Franco, 2015 <franco2015>`).
 
-.. sidebar:: USE CASE #3
-	     
- The Inter-American Development Bank `<http://www.iadb.org>`_ (IADB) employs ShakeMap for objective post-earthquake assessments for within 72 hours of
- any significant earthquake in Latin America and the Caribbean (LACR). IADB's Contingent Credit Facility Loans has set up disaster contingency
- loans for up to several hundred million USD, conditional on predefined levels of population exposed to ShakeMap intensity VI and higher. These
- loans are available in six LACR countries during the period of availability (J. Martinez, IADB, written communication, 2014). Typically, the loans
- can be distributed when the population over intensity VI has affected at least 2% of the population within the coverage area.
- 
-.. sidebar:: USE CASE #4
-
- The `California Department of Transportation <http://www.earthquakeauthority.com/‎>`_ (Caltrans) employs ShakeMap
- for post-earthquake portfolio assessments for significant California earthquakes. [TBS; REF]
+In general, there are three categories of post-earthquake financial services and decision-making: 1) analysis of expected losses arising from an actual event against a portfolio of exposures, 2) the triggering of payments for parametric insurance products, and 3) the use of quantitative loss estimates to manage disaster response and aid. Business and public sector portfolio managers can employ tools like ShakeCast or in-house applications to automatically retrieve and compute losses based on pre-assigned fragility curves. Within the (re)insurance sector, catastrophe (CAT) bonds and contingency loans based on earthquake risk models are often triggered via parametric analyses which are dependent on earthquake parameters or intensity-measure (IM) estimates as well as their uncertainties. Anticipating potential losses and acting rapidly and accordingly is also of utmost importance to emergency management and disaster aid communities. Estimated losses constitute vital input for rapid situational awareness, facilitating decision-making on whether or not to commit and deploy resources, and to what level.
 
 .. sidebar:: USE CASE #5
+	     
+  The Inter-American Development Bank `<http://www.iadb.org>`_ (IADB) employs ShakeMap for objective post-earthquake assessments for within 72 hours of  any significant earthquake in Latin America and the Caribbean (LACR). IADB's Contingent Credit Facility Loans has set up disaster contingency loans for up to several hundred million USD, conditional on predefined levels of population exposed to ShakeMap intensity VI and higher. Typically, loans can be distributed when the population over intensity VI reaches at least 2% of the population within the coverage area. Loans are available in six LACR countries during the period of availability (J. Martinez, IADB, written communication, 2014).
 
- The `International Atomic Energy Agency <http://www.iaea.org/‎>`_ (IAEA) employs ShakeMap
- for post-earthquake portfolio assessments for significant California earthquakes. [TBS; REF]
+To a large extent, the advancement of post-earthquake financial instruments has been facilitated by the availability of rapid and accurate earthquake parameters and more quantitative geospatial hazard information. Commensurately, USGS products like ShakeMap and PAGER have evolved to further accommodate specific requirements of the financial sector. For instance, improved approaches for quantifying uncertainty can better inform loss estimates and historical ShakeMap Atlas data can assist in loss model calibration. In addition, USGS now provides PAGER loss estimates broken down by country to fulfill the need required in the CAT bond and contingency loan arena, while still remaining within the confines of reasonable spatial accuracy. Similarly, requests have been made by U.S. State governments to further compute losses at the state level, although such resolution is not yet warranted, particularly in areas of sparse real-time strong-motion instrumentation. Lastly, for many uses, the automatic retrieval and processing of ShakeMaps has been facilitated via GeoJSON feeds, web-mapping servers, and the ShakeCast systems. 
+
+Several types of data and information products available or under development that may be of benefit to the financial sector. The generation of suites of standardized earthquake scenarios–both domestic and internationally–is underway, and an update of the global Atlas of ShakeMaps has been completed (see :ref:`sec_shakemap-archives`). 
+
+There are several continuing challenges that are actively under consideration and scrutiny: implementing directivity, computing and depicting spatial ground motion correlations, improved approaches for quantifying and conveying uncertainties, and a more explicit ShakeMap policy and version control documentation. :ref:`Wald and Franco \(2016\) <wald2016>` describe how these advances may in turn facilitate the appearance of new and more refined financial instruments.
  
+Public Information and Education
+---------------------------------------------
+The rapid availability of ShakeMap on the Internet combined with the urgent desire for information following a significant earthquake makes this mapping tool a huge potential source of public information and education. In instances in which an earthquake receives significant news coverage, the ShakeMap site as well as the “Did You Feel It?” (DYFI) system receives an enormous increase in web site visitors (:ref:`Wald et al., 2011 <wald2011c>`). Such opportunities are amplified by widespread adoption of ShakeMap into media and educational materials by other institutions. 
+
+ShakeMap's intensity scale is key for introducing and inculcating the public and the media to the importance of macroseismic intensity rather than the continuing sole dependence on magnitude as the scale of reference for earthquakes. Although Japanese Meterological Agency (JMA) Intensity (.e.g., :ref:`JMA, 1996 <jma1996>`) differs slightly from its U.S. MMI counterpart---JMA's is strictly instrumentally-derived---it is widely used and understood in Japan (e.g., :ref:`Celsi et al., 2005 <celsi2005>`). JMA has successfully made intensity the norm for communicating to the Japanese population about real-time and future earthquake hazards via television, smartphone, Web content, annual earthquake drills, and the educational system. Because JMA intensity is widely understood, public is be more attuned to earthquake risks than populations familiar only with magnitude descriptions of earthquakes (e.g., :ref:`Celsi et al., 2005 <celsi2005>`). 
+
+"Earthquake education also occurs through the media. The anchoring effect we report may be lessened signiﬁcantly if the press consistently used the Mercalli scale and helped to educate the public about the scale. Research should be conducted to better understand if and how news organizations can successfully utilize the Mercalli scale in communicating earthquake information. Alternative formats, for example, using letters rather than Roman numerals for the categories, may ameliorate the confusion between magnitude and Mercalli scales. The experience in Japan provides support for the idea that laypeople can learn to use the two scales side by side. The Japanese media report both intensities and magnitude, with viewers maintaining a clearer understanding of the relationship between magnitude and intensity. In Japan, the overall magnitude and the intensity are both instrument numbers, with the latter being location-specific."
+
+The inculcation of the public to intensity is inline with the findings of :ref:`Gomberg and Jokobitz \(2013\) <gomberg2013>` "Simpler messaging and explanations are needed by some users,
+and this may be achieved by developing two styles of some products, one designed for nontechnical users and the other tailored for engineers and scientists. The tangible impacts of an earthquake must be conveyed more simply and succinctly, employing a scale useful for decision-making at the regional and local levels."
+
+Acknowledging the importance of ShakeMap as a tool for public information and education, considerable effort was taken to provide the range of formats suitable for broadcast and Web pages. Initially, Media Maps, simplified versions of the Instrumental Intensity maps were packaged in a way that makes them more suitable for broadcast
+to low-resolution devices, such as TV monitors: roads and borders are thicker; fonts are
+larger; and the title and intensity scale are simplified, and "TV guide" information sheet intended to supplement the Media Maps was provided to allow easier delivery of basic earthquake information. These formats have naturally evolved to GIS, KML, and now interactive (zoomable) maps that allow customization of the basemap layers and other content.
+
+However, some of the static maps have made for the most widespread distribution. A very widely used graphic (:num:`Figure #northridge-nisqually`), for example, compares ShakeMap-generated intensities for the 1994 Northridge earthquake, a shallow crustal earthquake near Los Angeles, with the 2001, deep, intraslab Nisqually, WA, earthquake. This figure was reprinted in numerous reports, textbooks, classes, reports, and briefings including `Putting Down Roots <http://www.earthquakecountry.org/roots/shaking.html>`_ and the :ref:`National Research Council <NRC2006>`, for example.
+
+.. _northridge-nisqually:
+
+.. figure:: _static/Northridge.Nisqually.*
+   :align: left
+   :width: 650px
+ 
+   Widely adopted graphic of comparing ShakeMaps for the 2001 Nisqually, WA (M6.8), and 1994 Northridge, CA (M6.7) earthquakes showing how distance from an earthquake affects the level of shaking experienced. Even though the magnitude of the Nisqually earthquake was slightly larger than the Northridge earthquake, the shaking was lower on average primarily because the fault that ruptured during the Northridge earthquake was shallower (5-20 km deep) than that for the Nisqually earthquake (about 45-50 km deep).
+
+The continued long-term education of the populous to intensity continues through many TV and other channels,
+for instance, in education (e.g., `Larry Braile's undergraduate courses <http://web.ics.purdue.edu/~braile/edumod/eqhazard/eqhazard2.htm>`_), textbooks (e.g., :ref:`Yeats, 2004 <yeats2004>`
+"Living with Earthquakes in the Pacific Northwest"),
+and `Wikipedia <https://en.wikipedia.org/wiki/2001_Nisqually_earthquake>`_.
+
+Emergency Preparedness
+-------------------------------------------------
+[TBS]
+Department of Labor `Occupational Safety and Health Administration <https://www.osha.gov/dts/earthquakes/preparedness.html>`_ ; `ShakeOut <http://www.shakeout.org/home.html>`_
 
 Earthquake Engineering and Seismological Research
 -----------------------------------------------------
+
 For potentially damaging earthquakes, ShakeMap also produces response spectral acceleration values at three periods
-(0.3, 1.0, and 3.0 s) for use not only 
-in loss estimation as mentioned earlier, but also for earthquake engineering analyses.
-Response spectra for a given location are useful for portraying the 
-potential effects of shaking on particular types of buildings and structures.  Following a damaging earthquake,
-ShakeMaps of spectral response will be key 
-for prioritizing and focusing post-earthquake occupancy and damage inspection by civil engineers.
+(0.3, 1.0, and 3.0 s) for use not only in loss estimation as mentioned above, but these IMs also serve many earthquake engineering analysis purposes. In a post-earthquake environment, information from engineering analyses of structures (including via ShakeCast, see below) provides a framework for post-earthquake occupancy and damage inspection by civil engineers.
 
-In addition to providing information on recent events, ShakeMap Web pages provide maps of shaking and
-ground-motion parameters for past significant earthquakes.
-Engineers have found these maps helpful in evaluating the maximum and cumulative effects of seismic loading
-for the life of any particular structure.  
-This is particularly relevant given the discovery of the potential damage to column/beam welds in steel buildings
-following the 1994 Northridge earthquake.
+In addition to providing information on recent events, ShakeMap Web pages provide maps and aggregate shaking intensity measures (IMs) for numerous earthquakes, both for recent events (Archives)as well has historic and events (Atlas).
+In the long term---in conjunction with reported macroseismic data or specific damage observations---the parametric IMs provide the basis for analyses of ground motion observations and human behavior as well as response by both the natural and built environments. What follows is a short survey of several recent studies related to these data.  
 
-.. sidebar:: USE CASE #4
+[TBS] 
 
-  MONITORING FOR RESPONSE READINESS
-	   
-In seismological research, ShakeMap has been proven particularly effective in gaining a quick overview of the effects of geological structure and 
-earthquake rupture processes on the nature of recorded ground-motions.  ShakeMaps showing the distribution of recorded peak ground acceleration (PGA) and 
-peak ground velocity (PGV) overlain on regional topography maps allow scientists to gauge the effects of local site amplification because topography is 
-a simple proxy for rock versus deep-basin soil-site conditions.  This can lead to more detailed investigations into the nature of the controlling factors 
-in generating localized regions of damaging ground-motions.
+.. Engineers have found these maps helpful in evaluating the maximum and cumulative effects of seismic loading
+   for the life of any particular structure. This is particularly relevant given the discovery of the potential damage
+   to column/beam welds in steel buildings following the 1994 Northridge earthquake.
 
-ShakeMap is also a source frequently used by scientists developing Ground Motion Prediction Equations (GMPEs), Ground Motion/Intensity Conversation 
-Equations (GMICEs), and other studies where accumulated peak ground motion data are useful.
+.. In seismological research, ShakeMap has been proven particularly effective in gaining a quick overview of
+   the effects of geological structure and earthquake rupture processes on the nature of recorded ground-motions.
+   ShakeMaps showing the distribution of recorded peak ground acceleration (PGA) and peak ground velocity (PGV)
+   overlain on regional topography maps allow scientists to gauge the effects of local site amplification because
+   topography is a simple proxy for rock versus deep-basin soil-site conditions.  This can lead to more detailed
+   investigations into the nature of the controlling factors in generating localized regions of damaging
+   ground-motions.
 
-Many, many studies and theses, e.g., COMPARISON OF TWO VERSIONS OF MODIFIED MERCALLI INTENSITY FOR EARTHQUAKE EXPOSURE ASSESSMENT
-by Jamie L. Ratliff, APPROVED FOR THE DEPARTMENT OF GEOGRAPHY SAN JOSÉ STATE UNIVERSITY
-May 2012, 
+ShakeMap is also a source frequently used by scientists developing Ground Motion Prediction Equations (GMPEs), Ground Motion/Intensity Conversation Equations (GMICEs), and other studies where accumulated peak ground motion data are useful.
 
-[TBS] IPEs, loss modeling, L&L, Atlas uses, etc. (REFERENCES)
+.. Sum Mak (2015) Mah et al (2014).
 
 .. _sec_related-systems:
 
 ===================
 Related Systems
 ===================
+Here is a brief listing of rapid USGS Earthquake Hazards Program earthquake information products:
 
-Table 1. USGS Earthquake Hazards Program response products. Modified from Gomberg and Jokobitz (2013). 
-Product, Description, and URL (additional information) 
-
-Description Earthquake Notification System https://sslearthquake.usgs.gov/ens Sends automated, customizable notifications of earthquakes through email, pager, or cell phone
-ShakeMap http://earthquake.usgs.gov/earthquakes/shakemap/ Automatically generated maps displaying instrumentally measured shaking intensities
-Did You Feel It? http://earthquake.usgs.gov/earthquakes/dyfi/ Map of earthquake effects derived from citizen input via online Web forms
-PAGER http://earthquake.usgs.gov/research/pager/ Prompt Assessment of Global Earthquakes for Response rapidly compares the population exposed to various shaking intensities to estimate likely fatalities and economic losses
-Realtime Earthquake Map http://earthquake.usgs.gov/earthquakes/map/ Automatic maps and event information displayed online within minutes after earthquakes worldwide
-CISN Display http://www.cisn.org/software/cisndisplay.html Stand-alone application that graphically alerts users, in near real-time, of earthquakes and related hazards information.
-ShakeCast http://earthquake.usgs.gov/research/software/shakecast/ An application for automated delivery of ShakeMaps and probable damage to specific user-selected facilities. 
-
+* `Earthquake Notification System <https://sslearthquake.usgs.gov/ens>`_ sends automated, customizable notifications of earthquakes through email, pager, or cell phone. 
+* `Realtime Earthquake Map <http://earthquake.usgs.gov/earthquakes/map/>`_ Automatic maps and event information
+  displayed online within minutes after earthquakes worldwidema
+* `ShakeMap <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ automatically generated maps displaying
+  instrumentally measured shaking intensities.
+* `Did You Feel It? <http://earthquake.usgs.gov/earthquakes/dyfi/>`_ Map of earthquake effects derived from citizen
+  input via online Web forms
+* `PAGER <http://earthquake.usgs.gov/research/pager/>`_ Prompt Assessment of Global Earthquakes for Response rapidly
+  compares the population exposed to various shaking intensities to estimate likely fatalities and economic losses
+* `CISN Display <http://www.cisn.org/software/cisndisplay.html>`_ Stand-alone application that graphically alerts
+  users, in near real-time, of earthquakes and related hazards information.
+* `ShakeCast <http://earthquake.usgs.gov/research/software/shakecast/>`_ An application for automated delivery of
+  ShakeMaps and potential damage or inspection priority for specific user-selected facilities. 
+* `ShakeAlert <http://www.shakealert.org/faq/>`_ Prototype Earthquake Early Warning (EEW) System.
+  
 While ShakeMap has met with success as a standalone product for communicating earthquake effects to the public and the emergency response and recovery 
 community, it is increasingly being incorporated into value-added products that help in the assessment of earthquake impacts for response management and government officials.
 
@@ -1045,15 +1041,7 @@ While ShakeMap has met with success as a standalone product for communicating ea
 
 As discussed in detail the :ref:`technical-guide`, ShakeMap is augmented by DYFI? input for constraining intensities, and from those, estimates of peak ground motions (in some cases, and for some regions), as shown in Figure #related-systems. DYFI? and ShakeMap in conjuction then represent the shaking hazard input for two other primary systems that estimated losses: ShakeCast and PAGER. ShakeCast is intended for specific users to priority response for specific user-centric portfolios of facilities; PAGER is for more general society impact assessments, providing estimated loss-of-life and economic impacts for the region affected. 
 
-Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.	    
-
-.. figure::  _static/IAEA.ShakeCast.*
-   :scale: 35%
-   :alt: IAEA ShakeCast
-   :align: right
-   :target: IAEA ShakeCast
-
-   International Atomic Enegery Agency (IAEA) ShakeCast Report
+[TBS] Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.	    
  
 .. figure::  _static/SMap.SCast.DYFI.PAGER.png
    :width: 650px
@@ -1063,7 +1051,6 @@ Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.
 
    Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.	    
 
-.. _sec_shakecast:
 ShakeCast
 ---------------------------------------------------
 
@@ -1074,14 +1061,6 @@ users’ facilities, and generates potential damage assessment notifications,
 facility damage maps, and other Web-based products for emergency managers and
 responders.
 
-ShakeCast, short for ShakeMap Broadcast, is a fully automated system for
-delivering specific ShakeMap products to critical users and for triggering
-established post-earthquake response protocols. While ShakeMap was developed
-and is used primarily for emergency response, loss estimation, and public
-information, for an informed response to a serious earthquake, critical users
-must go beyond just looking at ShakeMap, and understand the likely extent and
-severity of impact on the facilities for which they are responsible. To this
-end the USGS has developed ShakeCast.
 
 .. figure::  _static/Caltrans.Napa.Report.*
    :width: 350px 
@@ -1090,6 +1069,15 @@ end the USGS has developed ShakeCast.
    :target: Caltrans Napa
 
    Example ShakeCast report for the 2011 M6.0 Napa (American Canyon) earthquake. 
+
+ShakeCast, short for ShakeMap Broadcast, is a fully automated system for
+delivering specific ShakeMap products to critical users and for triggering
+established post-earthquake response protocols. While ShakeMap was developed
+and is used primarily for emergency response, loss estimation, and public
+information, for an informed response to a serious earthquake, critical users
+must go beyond just looking at ShakeMap, and understand the likely extent and
+severity of impact on the facilities for which they are responsible. To this
+end the USGS has developed ShakeCast.
 
 ShakeCast allows utilities, transportation agencies, businesses, and other
 large organizations to control and optimize the earthquake information they
@@ -1100,12 +1088,8 @@ specified operators and inspectors within their organizations who are
 responsible for those particular facilities so they can set priorities for
 response.
 
-.. _sec_pager:
-
 PAGER
 ---------------------------------------------------
-Another important USGS product that uses ShakeMap output as its primary data source is `PAGER (Prompt Assessment of Global Earthquakes for Response) <http://earthquake.usgs.gov/pager/>`_, an automated system that produces content concerning the impact of significant earthquakes around the world, informing emergency responders, government and aid agencies, and the media of the scope of the potential disaster. PAGER rapidly assesses earthquake impacts by comparing the population exposed to each level of shaking intensity with models of economic and fatality losses based on past earthquakes in each country or region of the world. Earthquake alerts – which were formerly sent based only on event magnitude and location, or population exposure to shaking – now will also be generated based on the estimated range of fatalities and economic losses.
-
 .. figure::  _static/Nepal.M7.8.onepager.V5.*
    :width: 350px
    :alt: Nepal onePAGER 
@@ -1114,76 +1098,32 @@ Another important USGS product that uses ShakeMap output as its primary data sou
 
    Nepal OnePAGER Alert Example  
  
+Another important USGS product that uses ShakeMap output as its primary data source is `PAGER <http://earthquake.usgs.gov/pager/>`_ (Prompt Assessment of Global Earthquakes for Response), an automated system that produces content concerning the impact of significant earthquakes around the world, informing emergency responders, government and aid agencies, and the media of the scope of the potential disaster. PAGER rapidly assesses earthquake impacts by comparing the population exposed to each level of shaking intensity with models of economic and fatality losses based on past earthquakes in each country or region of the world. Earthquake alerts – which were formerly sent based only on event magnitude and location, or population exposure to shaking – now will also be generated based on the estimated range of fatalities and economic losses.
+
 PAGER alerts are based on the *Earthquake Impact Scale* developed by :ref:`Wald et al. \(2011\) <wald2011b>`.
 
 Public and Private Sector Tools
 ---------------------------------------------------
-Alternatives and modifications to the ShakeMap methodology are used widely around the world.
+[TBS WORK IN PROGRESS ] On the shaking hazard front, JMA, 
 
-Likewise, systems for loss estimation are widely employ, both in the public and private sector. :ref:`Erdick et al. \(2011\) <erdick2011>` and :ref:`Erdick et al. \(2014\) <erdick2014>` provide examples of operative rapid earthquake loss estimation systems including:
+Alternatives, modifications, and enhancements to the ShakeMap methodology are used widely around the world.
+Likewise, and downstream derivative products and systems for loss estimation are widely employ, both in the public and private sector. What follows is an brief (and incomplete) description of some of these systems. 
 
-Taiwan Earthquake Rapid Reporting System, Realtime
-Earthquake Assessment Disaster System in Yokohama, Real Time Earthquake
-Disaster Mitigation System of the Tokyo Gas Co., IGDAS Earthquake Protection
-System and Istanbul Earthquake Rapid Response System." GDACS, WAPMERR, PAGER, ELER and SELENA (ERDICK ET AL)
+:ref:`Erdick et al. \(2011\) <erdick2011>` and :ref:`Erdick et al. \(2014\) <erdick2014>` provide examples of operative rapid earthquake loss estimation systems including. 
+
+.. note:: Links and pointers to non-USGS sites are provided for information only and do not constitute endorsement by the USGS (see `USGS policy and disclaimers <http://www.usgs.gov/laws/info_policies.html>`_).
+
+Taiwan Earthquake Rapid Reporting System, Realtime Earthquake Assessment Disaster System in Yokohama, Real Time Earthquake Disaster Mitigation System of the Tokyo Gas Co., IGDAS Earthquake Protection
+System and Istanbul Earthquake Rapid Response System." GDACS, WAPMERR, PAGER, ELER and SELENA
+(:ref:`Erdick et al. \(2014\) <erdick2014>`)
 
 Some examples (not comprehensive) include: InLet, HAZUS-MH, ArcGIS online, OpenQuake (OQ, GEM Foundation)
-http://www.shakealert.org/faq/
 
-Capstone 2014 UpdatedPrivate Sector Workshop, March 7, 2014
-http://www.cusec.org/capstone14/documents/2014.03.06_PSW/2014.03.06_CAPSTONE_Private_Sector_GIS.pdf
+`Capstone 2014 <http://www.cusec.org/capstone14/documents/2014.03.06_PSW/2014.03.06_CAPSTONE_Private_Sector_GIS.pdf>`_
+UpdatedPrivate Sector Workshop, March 7, 2014.
 
-"Others have built in-house systems to organize, share and display observations using commercial applications like Microsoft’s Streets and Trips and SharePoint, Google’s GoogleEarth, or ESRI’s ArcGIS. WebEOC, a real-time Web-enabled crisis information management system developed commercially by ESi, is meant to be an official link among public sector emergency managers in Washington State (see http://www.esi911.com/esi). While used by many agencies, it always was just one of multiple communication tools. A commonly expressed desire was for a centralized, one-stop shop for all types of disaster information (like the Department of Homeland Security’s Virtual USA initiative; see http://www.firstresponder.gov/Pages/VirtualUSA.aspx),", :ref: `Gomberg and Jokobitz \(2013\) <gomberg2013>`
-
-Not an endorsement...
-
-Emergency Management and Response
--------------------------------------------------
-The distribution of shaking in a large earthquake, whether expressed as peak acceleration or intensity, provides responding organizations a significant increment of information beyond magnitude and epicenter.  Real-time ground-shaking maps provide an immediate opportunity to assess the scope of an event, that is, to determine what areas were subject to the highest intensities and probable impacts as well as those that received only weak motions and are likely to be undamaged.  These maps have found additional utility in supporting decision-making regarding mobilization of resources, mutual aid, damage assessment, and aid to victims
-
-For example, the M7.1 Hector Mine earthquake of October 16, 1999, provides an important lesson in the use of ShakeMap to assess the scope of the event and to determine the level of mobilization necessary.  This earthquake produced ground-motion that was widely felt in the Los Angeles basin and, at least in the immediate aftermath, required an assessment of potential impacts.  It was rapidly apparent, based on ShakeMap, that the Hector Mine earthquake was not a disaster and despite an extensive area of strong ground shaking, only a few small desert settlements were affected. Thus, mobilization of a response effort was limited to a small number of companies with infrastructure in the region and brief activations of emergency operations centers in San Bernardino and Riverside Counties and the California Office of Emergency Services (now the California Emergency Management Agency, or EMA), Southern Region.
-
-Unnecessary response in an effort to fully assess the potential effects of an earthquake, although not as costly as inadequate or misguided response in a real disaster, can be costly as well. Had a magnitude-7 earthquake occurred in urban Los Angeles or another urban area in California, ShakeMap could have been employed to quickly identify the communities and jurisdictions requiring immediate response.  To help facilitate the use of ShakeMap in emergency response, ShakeMap is now provided to organizations with critical emergency response functions automatically through ShakeCast.
-
-and other web-based tools. These organizations and utilities include, for example, the U. S. Nuclear Regulatory Commission, the International Atomic Energy Agency (IAEA), the State of California EMA, the Los Angeles County Office of Emergency Management, the California Department of Transportation, East Bay Metropolitan Utility District, and the Los Angeles Metropolitan Water District.  
-
-ShakeMap ground-motion maps are also customized and formatted into Geographic Information Systems (GIS) shapefiles for direct input into the FEMA’s Hazards U.S. (`HAZUS-MH <http://www.fema.gov/hazus>`_ ; :ref:`FEMA \(2006\) <fema2006>`) loss estimation software. These maps are rapidly and automatically distributed to FEMA for computing HAZUS loss estimates and for coordinating State and Federal response efforts.  This is a major improvement in loss-estimation accuracy because actual ground-motion observations are used directly to assess damage rather than relying on simpler estimates based on epicenter and magnitude alone, as was customary.
-
-A ShakeMap-driven calculation of estimated regional losses can provide focus to the mobilization of resources and expedite the local, State, and Federal disaster declaration process, thus initiating the response and recovery machinery of Government.  ShakeMap, when overlaid with inventories of critical lifelines and facilities (e.g., hospitals, utilities, and substations, etc.), highways and bridges, and vulnerable structures, provides an important means of prioritizing response. Such response activities include: shelter and mass care, emergency management, damage and safety assessment, utility and lifeline restoration, and emergency public information.
-
-In addition to GIS-formatted maps specifically design for HAZUS, we also make shape files for more general GIS use.  A number of new product formats are now provided to keep up with developments in web, GIS, imagery, and automated downloading and data parsing. These formats include: i) grid.xml, an XML file of the latitude/longitude pairs that make up the ShakeMap grid, including all estimated parameters (intensity measures), along with the Vs30 values used at each grid point for site corrections, ii) an enhanced KML file for Google Earth allowing for overlays, zoom capabilities, station locations, fault files, and parameter contour lines, iii) uncertainty grids for all ground-motion parameters, iv) ESRI raster grid files, and v) ground-motion contours and stations in text and GeoJSON format. These formats are described in detail below. 
-
-
-Financial Decision-Making
-----------------------------------------------------------
-
-.. sidebar:: USE CASE #1
-
- The `California Earthquake Authority <http://www.earthquakeauthority.com/‎>`_ (CEA) employs ShakeMap for post-earthquake portfolio
- assessments for significant California earthquakes. [TBS; REF]
- 
- 
-Earthquake Engineering and Seismological Research
------------------------------------------------------
-For potentially damaging earthquakes, ShakeMap also produces response spectral acceleration values at three periods (0.3, 1.0, and 3.0 s) for use not only in loss estimation as mentioned earlier, but also for earthquake engineering analyses.  Response spectra for a given location are useful for portraying the potential effects of shaking on particular types of buildings and structures.  Following a damaging earthquake, ShakeMaps of spectral response will be key for prioritizing and focusing post-earthquake occupancy and damage inspection by civil engineers.
-
-In addition to providing information on recent events, ShakeMap Web pages provide maps of shaking and ground-motion parameters for past significant earthquakes.  Engineers have found these maps helpful in evaluating the maximum and cumulative effects of seismic loading for the life of any particular structure.  This is particularly relevant given the discovery of the potential damage to column/beam welds in steel buildings following the 1994 Northridge earthquake.
- 
-In seismological research, ShakeMap has been proven particularly effective in gaining a quick overview of the effects of geological structure and earthquake rupture processes on the nature of recorded ground-motions.  ShakeMaps showing the distribution of recorded peak ground acceleration (PGA) and peak ground velocity (PGV) overlain on regional topography maps allow scientists to gauge the effects of local site amplification because topography is a simple proxy for rock versus deep-basin soil-site conditions.  This can lead to more detailed investigations into the nature of the controlling factors in generating localized regions of damaging ground-motions.
-
-ShakeMap is also a source frequently used by scientists developing Ground Motion Prediction Equations (GMPEs), Ground Motion/Intensity Conversation Equations (GMICEs), and other studies where accumulated peak ground motion data are useful.
-
- [TBS] IPEs, loss modeling, L&L, Atlas uses, etc. (REFERENCES)
-
-Public Information and Education
------------------------------------------
-The rapid availability of ShakeMap on the Internet combined with the urgent desire for information following a significant earthquake makes this mapping tool a source of emergency public information and education. In instances in which an earthquake receives significant news coverage, the ShakeMap site as well as the “Did You Feel It?” (DYFI) system receives an enormous increase in web site visitors (:ref:`Wald et al. \(2011\) <wald2011c>`)
-
-Acknowledging the importance of ShakeMap as a tool for public information and education, we developed
- [TBS]
-
-[Web page update 
- [TBS]
+"Others have built in-house systems to organize, share and display observations using commercial applications like Microsoft’s Streets and Trips and SharePoint, Google’s GoogleEarth, or ESRI’s ArcGIS. WebEOC, a real-time Web-enabled crisis information management system developed commercially by ESi, is meant to be an official link among public sector emergency managers in Washington State (see http://www.esi911.com/esi). While used by many agencies, it always was just one of multiple communication tools. A commonly expressed desire was for a centralized, one-stop shop for all types of disaster information (like the Department of Homeland Security’s `Virtual USA <https://www.dropbox.com/home/Correlation/figures/SanDiego?preview=economic+losses0.png>`_",
+:ref: `Gomberg and Jokobitz \(2013\) <gomberg2013>`
 
 ================
 Disclaimers
