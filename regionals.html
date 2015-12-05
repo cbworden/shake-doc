@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Glossary &mdash; ShakeMap Manual 2.0 documentation</title>
+  <title>Regional ShakeMap Specifications &mdash; ShakeMap Manual 2.0 documentation</title>
   
 
   
@@ -30,8 +30,7 @@
   
 
   
-    <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html"/>
-        <link rel="prev" title="References &amp; Bibliography" href="references.html"/> 
+    <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -80,7 +79,7 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="technical_guide.html">Technical Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="users_guide.html">User&#8217;s Guide</a></li>
@@ -88,7 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">Acknowledgments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 
             
@@ -119,11 +118,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Glossary</li>
+    <li>Regional ShakeMap Specifications</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/glossary.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/regionals.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -133,66 +132,62 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <img alt="_images/usgs_banner.png" src="_images/usgs_banner.png" />
-<div class="section" id="glossary">
-<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
-<p>Abbreviations Used in This Report</p>
-<dl class="docutils">
-<dt>ANSS</dt>
-<dd>Advanced National Seismic System; A USGS initiative to provide seismic monitoring for at-risk
-regions of the United States.</dd>
-<dt>California EMA</dt>
-<dd>The California Emergency Management Agency; formerly the California Office of Emergency Services.</dd>
-<dt>DYFI?</dt>
-<dd>Did You Feel It?</dd>
-<dt>EHP</dt>
-<dd>U.S. Geological Survey&#8217;s Earthquake Hazard Program.</dd>
-<dt>ENS</dt>
-<dd>Earthquake Notification System, earthquake notifications via txt/email from U.S. Geological Survey&#8217;s Earthquake Hazard Program .</dd>
-<dt>FEMA</dt>
-<dd>Federal Emergency Management Agency; part of the U.S. Department of Homeland Security.</dd>
-<dt>GIS</dt>
-<dd>Geographic Information System</dd>
-<dt>GMICE</dt>
-<dd>Ground-Motion/Intensity Conversion Equation.</dd>
-<dt>GMPE</dt>
-<dd>Ground-Motion Prediction Equation.</dd>
-<dt>GSM</dt>
-<dd>Global ShakeMap.</dd>
-<dt>HAZUS</dt>
-<dd>HAZards US; a loss-estimation program developed by FEMA.</dd>
-<dt>IPE</dt>
-<dd>Intensity Prediction Equation; the intensity equivalent of a GMPE.</dd>
-<dt>ISO</dt>
-<dd>International Standards Organization.</dd>
-<dt>MMI</dt>
-<dd>Modified Mercalli Intensity.</dd>
-<dt>NEIC</dt>
-<dd>The National Earthquake Information Center; part of the USGS.</dd>
-<dt>PAGER</dt>
-<dd>Prompt Assessment of Global Earthquakes for Response</dd>
-<dt>PGA</dt>
-<dd>Peak Ground Acceleration.</dd>
-<dt>PGM</dt>
-<dd>Peak Ground Motion, a generic term for PGA and PGV.</dd>
-<dt>PGV</dt>
-<dd>Peak Ground Velocity.</dd>
-<dt>USGS</dt>
-<dd>The United States Geological Survey, a bureau of the U.S. Department of the Interior.</dd>
-</dl>
+  <div class="section" id="regional-shakemap-specifications">
+<span id="sec-regionals"></span><h1>Regional ShakeMap Specifications<a class="headerlink" href="#regional-shakemap-specifications" title="Permalink to this headline">¶</a></h1>
+<p>In this section we summarize specific customization employed for ShakeMap systems running or
+throughout the Advanced National Seismic System (ANSS) regions
+nationwide. Specifications of input parameters, data, and other configurations
+used for any ShakeMap can be found in the event-specific summary files
+(info.xml).</p>
+<p>Although we developed ShakeMap
+with portability in mind, region-specific issues need to be addressed as a part of the installation.
+To add a new region, the following criteria must be met:
+1) Parametric Data. Peak ground-motions for both horizontal components of motion must
+be rapidly available following significant earthquakes. PGA and PGV are required
+(instrumental intensity is derived from these) and response spectral accelerations at
+0.3,1.0, and 3.0 s are highly recommended. These parametric data can be unassociated as
+long as individual station files contain timing information, but preferably they are
+consolidated into a flat file (later converted to XML format) or, most preferable, loaded
+directly into a relational database for query from ShakeMap software upon being alarmed
+for an event.
+2) Mapping Files for Coverage Area. The region over which ShakeMap can be properly
+constrained must be ascertained, and GMT formatted map files (roads, topography, cities,
+etc.) need to be collected for this region.
+3) Geology and Site Corrections. ShakeMap requires a uniformly spaced grid of site
+conditions over the coverage area from which to make site corrections when performing
+interpolations between stations. We rely on NEHRP Classification (A-E, given as an
+associated average 30m shear velocity) and their corresponding amplification factors.
+Typically, site conditions are derived from a GIS-based geology map (or at least digital)
+that can be correlated appropriately with NEHRP site classifications.
+4) Distance-Attenuation Relations. Ground-motion attenuation relationships (used for
+infilling data gaps) must be suitable for the regional attenuation and potential earthquake
+source locations and types. For example, for the Pacific Northwest, appropriate crustal
+and subduction event equations are required. New relations can be easily added as PERL</p>
+<p><strong>Northern California</strong>
+<strong>Southern California</strong>
+<strong>Pacific Northwest</strong>
+<strong>Intermountain West</strong>
+<strong>Mid-America</strong>
+<strong>Northeast</strong>
+<strong>Alaska</strong></p>
+<p><strong>Hawaii</strong>
+<em>Coverage Area</em>. [TBS]
+<em>Operations</em>
+Triggering and Data Flow. [TBS]
+Site Condition Map. [TBS]
+Ground Motion Prediction and Conversion Equations</p>
+<p>For deeper events, Youngs et al, (1997) is employed with coefficients for intraslab and interplate
+events assigned by choosing default event depth ranges. The defaults can also be manually
+overridden once independent information about the source is known. See Appendix A for more
+details.</p>
+<p>Other Local Characteristics: [TBS]</p>
+<p><strong>Puerto Rico</strong></p>
 </div>
 
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="references.html" class="btn btn-neutral" title="References &amp; Bibliography" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
