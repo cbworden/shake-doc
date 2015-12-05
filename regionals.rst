@@ -1,7 +1,8 @@
 .. _sec_regionals:
-================================
+
+===================================
  Regional ShakeMap Specifications
-================================
+===================================
 
 In this section we summarize specific customization employed for ShakeMap systems running or
 throughout the Advanced National Seismic System (ANSS) regions

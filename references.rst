@@ -288,6 +288,7 @@ Field, E.H. (2000). A modified ground-motion attenuation relationship for southe
 accounts for detailed site classification and a basin-depth effect, Bull. Seism. Soc. Am., 90, S209-S221.
 
 .. _franco2015:
+
 Franco, G. (2015). Earthquake Mitigation Strategies Through Insurance,
 Encyclopedia of Earthquake, Engineering DOI 10.1007/978-3-642-36197-5_401-1
 

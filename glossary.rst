@@ -53,7 +53,7 @@ NEIC
   The National Earthquake Information Center; part of the USGS.
 
 PAGER 
-  Prompt Assessment for Global Earthquake Response
+  Prompt Assessment of Global Earthquakes for Response
 
 PGA
   Peak Ground Acceleration.

@@ -463,7 +463,7 @@ ShakeMap products are distributed by a number of means immediately after they ar
 
 Interactive Web Downloads
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The easiest way to obtain ShakeMap products immediately following an earthquake is from the `ShakeMap <http://earthquake.usgs.gov/shakemap/>`_ or `USGS Earthquake Program web pages <http://earthquake.usgs.gov/>`_. The variety of formats for ShakeMap are described in the previous section.
+The easiest way to obtain ShakeMap products immediately following an earthquake is from the `ShakeMap <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ or `USGS Earthquake Program <http://earthquake.usgs.gov/>`_ web pages. The variety of formats for ShakeMap are described in the previous section.
 
 RSS Feeds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -560,7 +560,7 @@ development.
 .. sidebar:: **Finding Atlas ShakeMaps Online**
 
  * **Atlas Version 1.0** (:ref:`Allen et al., 2008 <allen2008>`) ShakeMaps, are available online on the
-   `ShakeMap homepage <http://earthquake.usgs.gov/shakemap/>`_ consists of all the standardized ShakeMap products and formats. Output grids for the entire dataset can also 
+   `ShakeMap homepage <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ consists of all the standardized ShakeMap products and formats. Output grids for the entire dataset can also 
    be obtained at that site.
  * **Atlas Version 2.0** (:ref:`Garcia et al. \(2012a\) <garcia2012a>`) are by searching the USGS `Comprehensive Catalogue
    (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Atlas from the *Contributor* from
@@ -606,7 +606,7 @@ The "GEMECD subset" is a collection of approximately 100 events which constitute
 events since about 1973. The purpose of the GEMECD subset is to provide the Global 
 Earthquake Model (GEM) Foundation---and hence the wider earthquake hazard and loss community---a common denominator hazard layer
 for calibration and testing earthquake damage and loss models. The Atlas is also the hazard layer calibration for the USGS
-`PAGER <http://earthquake.usgs.gov/earthquakes/>` system  (e.g., Wald et al., 2008; Jaiswal and Wald, 2010;
+`PAGER <http://earthquake.usgs.gov/research/pager/>`_ system  (e.g., Wald et al., 2008; Jaiswal and Wald, 2010;
 
 Pomonis and So, 2011).
 scientific analyses and for loss model calibration 
@@ -661,7 +661,7 @@ To this end, USGS ShakeMap web pages now display many earthquake scenarios and w
 ..    USGS Recommendation 5 - ACEHR recommends the USGS work with operators of critical infrastructure and lifeline systems to define and integrate near real-time earthquake data and other seismic information into system monitoring so that operators can quickly assess system impacts from earthquake movements and take appropriate actions.  This development should be linked with the EEW program.
 
 A ShakeMap earthquake scenario is simply a ShakeMap with an assumed magnitude and 
-location, and, optionally, specified fault geometry. For example, :num:`Figure #figure1-13` shows 
+location, and, optionally, specified fault geometry. For example, :num:`Figure #figure1-13u` shows 
 ShakeMap scenario intensity (top) and peak velocity (bottom) maps for a hypothetical 
 earthquake of M7.05 on the Hayward Fault in the eastern San Francisco Bay area. Due to 
 the proximity to populated regions of Oakland, Berkeley and surrounding cities, this 
@@ -670,7 +670,7 @@ Different renditions of this particular scenario have been widely used for evalu
 region's capacity to respond to such a disaster among Federal, State, utility, business, and 
 local emergency response organizations. 
 
-.. _figure1-13:
+.. _figure1-13u:
 
 .. figure:: _static/Figure_1_13.*
    :align: left
@@ -694,7 +694,7 @@ ShakeMap earthquake scenarios can be an integral part of earthquake emergency re
 .. sidebar:: **Finding Atlas ShakeMaps Online**
 
  * **Scenarios 1.0**. ShakeMaps, are available online on the
-   `ShakeMap homepage <http://earthquake.usgs.gov/shakemap/>`_ consists of all the standardized ShakeMap products and formats.
+   `ShakeMap homepage <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ consists of all the standardized ShakeMap products and formats.
    Output  grids for the entire dataset can also be obtained at that site.
  * **Scenarios 2.0**. The Next Generation Scenarios (NGS) will be available by searching the USGS `Comprehensive Catalogue
    (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Scenarios
@@ -740,7 +740,7 @@ variations are partially attributable to 2D and 3D wave propagation, path effect
 basin edge amplification and focusing), differences in motions among earthquakes of the 
 same magnitude, and complex site effects are not accounted for with our methodology. 
 For scenarios in which we wish to explore directivity explicitly, ShakeMap includes a 
-tool based on :ref:`Rowshandel \(2010\) <rowshandel2010>` as shown in :num:`Figure #figure1-13` and described 
+tool based on :ref:`Rowshandel \(2010\) <rowshandel2010>` as shown in :num:`Figure #figure1-13u` and described 
 in :ref:`sec_directivity`.
 
 In terms of generating scenarios with the ShakeMap system, a number of specific 
@@ -1019,11 +1019,11 @@ Here is a brief listing of rapid USGS Earthquake Hazards Program earthquake info
 * `Earthquake Notification System <https://sslearthquake.usgs.gov/ens>`_ sends automated, customizable notifications of earthquakes through email, pager, or cell phone. 
 * `Realtime Earthquake Map <http://earthquake.usgs.gov/earthquakes/map/>`_ Automatic maps and event information
   displayed online within minutes after earthquakes worldwidema
-* `ShakeMap <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ automatically generated maps displaying
+* `ShakeMap`_ automatically generated maps displaying
   instrumentally measured shaking intensities.
 * `Did You Feel It? <http://earthquake.usgs.gov/earthquakes/dyfi/>`_ Map of earthquake effects derived from citizen
   input via online Web forms
-* `PAGER <http://earthquake.usgs.gov/research/pager/>`_ Prompt Assessment of Global Earthquakes for Response rapidly
+* `PAGER`_ Prompt Assessment of Global Earthquakes for Response rapidly
   compares the population exposed to various shaking intensities to estimate likely fatalities and economic losses
 * `CISN Display <http://www.cisn.org/software/cisndisplay.html>`_ Stand-alone application that graphically alerts
   users, in near real-time, of earthquakes and related hazards information.
@@ -1058,7 +1058,7 @@ As discussed in detail the :ref:`technical-guide`, ShakeMap is augmented by DYFI
 ShakeCast
 ---------------------------------------------------
 
-`ShakeCast <http://earthquake.usgs.gov/shakecast/>`_ is a freely available,
+`ShakeCast`_ is a freely available,
 post-earthquake situational awareness application that automatically retrieves
 earthquake shaking data from ShakeMap, compares intensity measures against
 users’ facilities, and generates potential damage assessment notifications,
@@ -1102,7 +1102,7 @@ PAGER
 
    Nepal OnePAGER Alert Example  
  
-Another important USGS product that uses ShakeMap output as its primary data source is `PAGER <http://earthquake.usgs.gov/pager/>`_ (Prompt Assessment of Global Earthquakes for Response), an automated system that produces content concerning the impact of significant earthquakes around the world, informing emergency responders, government and aid agencies, and the media of the scope of the potential disaster. PAGER rapidly assesses earthquake impacts by comparing the population exposed to each level of shaking intensity with models of economic and fatality losses based on past earthquakes in each country or region of the world. Earthquake alerts – which were formerly sent based only on event magnitude and location, or population exposure to shaking – now will also be generated based on the estimated range of fatalities and economic losses.
+Another important USGS product that uses ShakeMap output as its primary data source is `PAGER`_ (Prompt Assessment of Global Earthquakes for Response), an automated system that produces content concerning the impact of significant earthquakes around the world, informing emergency responders, government and aid agencies, and the media of the scope of the potential disaster. PAGER rapidly assesses earthquake impacts by comparing the population exposed to each level of shaking intensity with models of economic and fatality losses based on past earthquakes in each country or region of the world. Earthquake alerts – which were formerly sent based only on event magnitude and location, or population exposure to shaking – now will also be generated based on the estimated range of fatalities and economic losses.
 
 PAGER alerts are based on the *Earthquake Impact Scale* developed by :ref:`Wald et al. \(2011\) <wald2011b>`.
 
