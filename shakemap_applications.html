@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Applications of ShakeMap &mdash; ShakeMap Manual 2.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ShakeMap Manual 2.0 documentation" href="index.html"/>
+        <link rel="up" title="User’s Guide" href="users_guide.html"/>
+        <link rel="next" title="Related Systems" href="related_systems.html"/>
+        <link rel="prev" title="ShakeMap Archives" href="shakemap_archives.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ShakeMap Manual
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technical_guide.html">Technical Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="users_guide.html">User&#8217;s Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="products.html">Products and Formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shakemap_archives.html">ShakeMap Archives</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Applications of ShakeMap</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#emergency-management-and-response">Emergency Management and Response</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loss-estimation">Loss Estimation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#financial-sector-decision-making">Financial Sector Decision-Making</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#public-information-and-education">Public Information and Education</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#emergency-preparedness">Emergency Preparedness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#earthquake-engineering-and-seismological-research">Earthquake Engineering and Seismological Research</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="related_systems.html">Related Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disclaimers.html">Disclaimers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="software_guide.html">Software &amp; Implementation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ShakeMap Manual</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="users_guide.html">User&#8217;s Guide</a> &raquo;</li>
+      
+    <li>Applications of ShakeMap</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/shakemap_applications.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="applications-of-shakemap">
+<span id="sec-shakemap-applications"></span><h1>Applications of ShakeMap<a class="headerlink" href="#applications-of-shakemap" title="Permalink to this headline">¶</a></h1>
+<p>The distribution of shaking from a significant earthquake, whether expressed as peak acceleration or intensity,
+provides responding organizations a significant increment of information beyond magnitude and epicenter.
+Real-time ground-shaking maps provide an immediate opportunity to assess the scope and impact of an event.
+Thus, they can allow emergency managers and responders to determine what areas were likely subjected
+to the highest intensities and what the probable impacts were in those arease. Importantly, ShakeMap also allows
+descision-makers a rapid portrayal of those areas that received only weak motions and are likely to be undamaged. The latter areas can be potentially used for mutual aid.</p>
+<p>Though initial developed primarily for emergency management, ShakeMaps have been
+shown to be highly beneficial for other user sectors. Other uses include:
+improved loss estimation, public information and education through the media and
+web pages, financial descision-making, and engineering and seismological
+research. Some specific examples are provided below for these use cases.</p>
+<p>As a side benefit, an intensity-based depiction of shaking hazards through
+ShakeMap (and DYFI?) facilitates the adoption of the intensity scale more
+generally and can thus it can be used for other risk-reduction systems and
+purposes. That is, inculcating the populous to shaking using intensity scales
+(as opposed to magnitude alone), has becomes crucial not just for communicating
+post-earthquake shaking hazards, the color coding and utilization of intensity
+has more generally helped depict imminent and future shaking hazards. For
+example, the ShakeMap intensity color-palette has been adopted for Earthquake
+Early Warning (EEW; see for example <a class="reference external" href="http://www.shakealert.org/faq/">QuakeAlert</a>) as well as for communicating future hazards
+through deterministic scenarios and with Probabilistic Seismic Hazard Maps
+(PSHA).</p>
+<div class="section" id="emergency-management-and-response">
+<h2>Emergency Management and Response<a class="headerlink" href="#emergency-management-and-response" title="Permalink to this headline">¶</a></h2>
+<p>ShakeMap has been recognized as a top priority for disaster management and response in the U.S.:</p>
+<blockquote>
+<div>&#8220;ShakeMap has become a valuable tool to assist emergency responders in identifying the likely extent of earthquake damage. Strong-motion data (now increasingly available in real-time) can be correlated with documentation and evaluation of the performance of the built environment, leading to understanding the causes of earthquake damage and the occurrence of good structural and non-structural performance&#8221; (<a class="reference external" href="www.wsspc.org/wp-content/.../PR_14-3_SeismicMonitoring_WebPub.pdf">Western States Seismic Policy Council Policy Recommendation, 14-3,</a>).</div></blockquote>
+<p>Similarly, according to a report by the <a class="reference external" href="www.sdr.gov">National Science and Technology Council Subcommittee on Disaster Reduction*</a> (<a class="reference external" href="www.sdr.gov/docs/185820_Earthquake_FINAL.pdf">Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions</a>). The report describes <em>Grand Challenge 1</em>:</p>
+<blockquote>
+<div>&#8220;Provide hazard and disaster information where and when it is needed. [...] Expand the Advanced National Seismic System to improve seismic monitoring and deliver rapid, robust earthquake information products; For all urban areas with moderate to high seismic risk, produce ShakeMaps that show the variation of shaking intensity within minutes after an earthquake based on near real time data transmission from densely spaced seismic networks.&#8221;</div></blockquote>
+<p>&#8220;The very rapid availability of earthquake source data—including magnitude,
+location, depth, and fault geometry—provides basic orienting information for
+emergency responders, essential information for the news media and the public,
+and input data for other applications and response-relevant products. Maps of
+ground shaking intensity (ShakeMap) have many important applications in
+emergency management. Because ShakeMap is available via the Internet, all
+emergency responders at all levels of government and the private sector have
+access to the same rapidly available information. With this information,
+responders can quickly assess the scope of the emergency and mobilize resources
+accordingly. Early reconnaissance efforts can target areas known to have been
+shaken most severely, and key emergency services including search and rescue,
+emergency medical response, safety assessment of critical facilities, and
+shelter and mass care can be expedited based on a more rapid identification of
+incident location. Monitored information is also useful for rapidly assessing
+situations in which a large, widely felt earthquake occurs but causes little
+damage (such as the Hector Mine earthquake of October 16, 1999). Clearly, there
+are significant economic benefits in scaling a response to the consequences of
+an event, including no response for an earthquake that requires none.&#8221;</p>
+<div class="figure align-left" id="id1">
+<a class="reference internal image-reference" href="_images/Hector.Mine.ShakeMap.jpg"><img alt="_images/Hector.Mine.ShakeMap.jpg" src="_images/Hector.Mine.ShakeMap.jpg" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: Instrumental Intensity ShakeMap for the October 16, 1999 magnitude 7.1 Hector Mine, California Earthquake.</span></p>
+</div>
+<p>&#8220;Based on ground motion data from seismic networks, HAZUS can be used to
+generate estimates of economic losses, utility system damage, and population
+impacts. These data provide information useful for several response and recovery
+actions (discussed in the following section). For response actions, HAZUS
+outputs will supplement the ground shaking information from ShakeMap by
+estimating the level of damage to buildings, utilities, and transportation
+infrastructure; contribute to identifying the appropriate response activation
+level; provide guidance for initiating building safety assessments; help
+determine the number of shelters that must be opened to house the displaced; and
+provide an estimate of the amount of resources needed to care for people in
+temporary housing.&#8221;</p>
+<p>Committee on the Economic Benefits of Improved Seismic Monitoring (2006). Improved Seismic Monitoring - Improved Decision-Making:
+Assessing the Value of Reduced Uncertainty, National Research Council, 196 pp., DOI: 10.17226/11327</p>
+<p>&#8220;Seismic monitoring and the products that are derived from modern
+networks—including ShakeMap and HAZUS—offer significant benefits for emergency
+response and recovery. The benefits of enhanced seismic monitoring include rapid
+and accurate identification of the event, its location and magnitude, the extent
+of strong ground shaking, and estimates of damage and population impacts. This
+information expedites hazard identification, promotes rapid mobilization at
+levels appropriate to the emergency, and facilitates the rapid identification of
+buildings that are safe for continued occupation and those that must be
+evacuated. While it may be reasonable to surmise that—in the context of the $100
+billion single-event estimate—improved (in particular, more targeted) emergency
+response would yield avoided costs in the range of tens of millions of dollars,
+there simply is insufficient information to provide a rigorous basis for
+quantitative estimate of potential benefits.&#8221;</p>
+<div class="sidebar">
+<p class="first sidebar-title">USE CASE #1</p>
+<p class="last">The <a class="reference external" href="http://www.earthquakeauthority.com/‎">California Department of Transportation</a> (Caltrans) employs ShakeMap
+for post-earthquake portfolio assessments for significant California earthquakes. [TBS; REF]</p>
+</div>
+<p>One of the first examples of the use of ShakeMap for emergency management and response was the
+the M7.1 Hector Mine earthquake of October 16, 1999. This event provides an important lesson in the use of
+ShakeMap to assess the scope of the event and to determine the level of mobilization necessary.
+The Hector Mine earthquake produced ground-motion that was widely felt in
+the Los Angeles basin and, at least in the immediate aftermath, required an assessment of potential impacts.
+It was rapidly apparent, based on ShakeMap, that the Hector Mine earthquake was not a disaster and despite an
+extensive area of strong ground shaking, only a few small desert settlements were affected. Thus,
+mobilization of a response effort was limited to a small number of companies
+with infrastructure in the region and brief activations of emergency operations centers in
+San Bernardino and Riverside Counties and the California Office of Emergency Services
+(now the California Emergency Management Agency, or CalEMA), Southern Region.</p>
+<p>Unnecessary response in an effort to fully assess the potential effects of an
+earthquake, although not as costly as inadequate or misguided response in a real
+disaster, can be costly as well. Had the magnitude-7 earthquake occurred in
+urban Los Angeles or another urban area in California, ShakeMap could be
+employed to quickly identify the communities and jurisdictions requiring
+immediate response.  To help facilitate the use of ShakeMap in emergency
+response, ShakeMap is now provided to organizations with critical emergency
+response functions automatically through USGS web pages, ShakeCast and similar
+tools.</p>
+<p>&#8220;A catastrophic earthquake and tsunami event along the 800-mile-long Cascadia
+Subduction Zone, which lies off the northwest coast of the United States,
+presents a significant danger and a tremendous challenge to the State of
+California and FEMA Region IX, as well as to the states of Oregon and Washington
+and FEMA Region X. Earthquakes strike without warning and can forever alter
+people’s lives, cripple infrastructure, and disrupt the economic and social
+stability of communities.&#8221;</p>
+<p>California Catastrophic Incident Base Plan: Concept of Operations (CONOP).
+California Cascadia Subduction Zone Earthquake and Tsunami Response Plan, US
+Department of Homeland Security, Federal Emergency Management Agency Region IX,
+California Governor’s Office of Emergency Services
+September (2013).</p>
+<p><a class="reference external" href="http://www.bicepp.org/">http://www.bicepp.org/</a>
+BICEPP is a non-profit professional association of emergency management and business continuity professionals.</p>
+</div>
+<div class="section" id="loss-estimation">
+<h2>Loss Estimation<a class="headerlink" href="#loss-estimation" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://www.fema.org/‎">Federal Emergency Management Agency</a> (FEMA) employs ShakeMap for
+post-earthquake damage assessments using HAZUS-MH <a class="reference internal" href="references.html#fema2006"><span>FEMA (2006)</span></a> loss estimation software.
+USGS generates customized formatted ESRI shapefiles for direct input into the
+FEMA’s Hazards U.S. (<a class="reference external" href="http://www.fema.gov/hazus">HAZUS-MH</a> ; <a class="reference internal" href="references.html#fema2006"><span>FEMA
+(2006)</span></a>. The customization includes: specific contour intervals for
+all events, geometric mean ground motions (as opposed to ShakeMap standard
+maximum component, and peak ground velocity in units of inches/sec rather than
+cm/s. The HAZUS-formatted ShakeMaps are made available to FEMA for scenarios and
+all significant domestic (U.S.) earthquakes and become automatically available
+to FEMA via Web pages and ArcGIS services (see GIS section above).</p>
+<p>The use of ShakeMaps as the shaking hazard input into HAZUS is a major improvement in loss-estimation accuracy
+because actual ground-motion observations are used directly to assess damage rather than relying on simpler
+estimates based on epicenter and magnitude alone, or from predefined earthquake scenarios built into HAZUS software.</p>
+<p>FEMA&#8217;s HAZUS loss estimates can be important for coordinating State and Federal
+response efforts as well as Disaster Declarations. HAZUS&#8217;s detailed impact
+reports can provide focus to the mobilization of resources and
+expedite the local, State, and Federal disaster declaration process, thus
+initiating the response and
+recovery machinery of Government. ShakeMap, when overlaid with inventories of
+critical lifelines and
+facilities (e.g., hospitals, utilities, and substations, etc.), highways and
+bridges, and vulnerable structures,
+provides an important means of  prioritizing response. Such response activities
+can include: shelter and mass care,
+mutual aid assignments, emergency management, damage and safety assessment,
+utility and lifeline restoration,
+and emergency public information.</p>
+<div class="figure align-left" id="id2">
+<a class="reference external image-reference" href="Parkfield2004ShakeMapandHAZUSLosses"><img alt="Parkfield 2004 ShakeMap and HAZUS Losses" src="_images/parkfield.hazus.png" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">Figure 2: 2004 Parkfield M6.0 earthquake ShakeMap shapefiles (green polygons) and HAZUS estimated impact to selected
+infrastructure (circles) examined. Figure courtesy of D. Bausch, FEMA.</span></p>
+</div>
+<p>As of 2015, the HAZUS-MH software is run interactively, not automatically, so
+qualified FEMA personel must be on hand to initiate HAZUS calculations and post
+the results. In addition for heavily-populated areas (major cities in
+California, for example), HAZUS software typically can take a few hours to
+compute losses. Thus, initial HAZUS-based losses are well behind initial
+ShakeMap and PAGER results, and of course they are limited to domestic (U.S.)
+earthquakes. However, the HAZUS results provide much greater detail and
+information about infrastructure than PAGER-based aggregated losses.</p>
+<p>As described in the section on Scenarios, HAZUS-MH is the standard approach for
+delivering loss estimates for ShakeMap scenarios domestically. For real events,
+the USGS ShakeMap to FEMA HAZUS handoff has been formalized with a formal
+liaison agreement (a Memo of Understanding, MOU) involving Doug Bausch, formerly
+of FEMA Region VIII, and David Wald at the USGS NEIC. Because ShakeMap shaking
+estimates evolve with time, and HAZUS loss estimates take time to compute, it is
+essential that direct communications between the two agencies takes place
+immediately after a serious earthquake to allow for optimizing the loss
+estimates.</p>
+<p>The USGS-FEMA partnership has been activated for several domestic earthquakes
+since this system was put into place including: 2004 M6.0 Parkfield, California;
+2006 Kiholo Bay, Hawaii; 2010 Virginia, 2010 M7.2 Baja California; 2011 M5.6
+Oklahoma; 2011 M5.8 Virginia, and the M6.0 2015 American Canyon (South
+Napa), Californa, and several other events. The same approach has been
+tested and applied retrospectively against the 1994 Northridge and 1989
+Loma Pieta, California, and other events.</p>
+</div>
+<div class="section" id="financial-sector-decision-making">
+<h2>Financial Sector Decision-Making<a class="headerlink" href="#financial-sector-decision-making" title="Permalink to this headline">¶</a></h2>
+<p>Post-earthquake financial decision-making has evolved considerably over the past
+decade. Insurers and reinsurers, private companies, governments, and aid
+organizations have shown increasing creativity in the utilization of
+near-real-time earthquake information for their own loss estimation, financial
+adjudication, and situational awareness. Such financial analyses can be of
+significant benefit to stakeholders, facilitating risk transfer operations,
+fostering sensible management of risk portfolios, and assisting disaster
+responders. Ultimately, these improvements translate to benefits for the public
+and those at risk (<a class="reference internal" href="references.html#franco2015"><span>Franco, 2015</span></a>).</p>
+<p>In general, there are three categories of post-earthquake financial services and
+decision-making: 1) analysis of expected losses arising from an actual event
+against a portfolio of exposures, 2) the triggering of payments for parametric
+insurance products, and 3) the use of quantitative loss estimates to manage
+disaster response and aid. Business and public sector portfolio managers can
+employ tools like ShakeCast or in-house applications to automatically retrieve
+and compute losses based on pre-assigned fragility curves. Within the
+(re)insurance sector, catastrophe (CAT) bonds and contingency loans based on
+earthquake risk models are often triggered via parametric analyses which are
+dependent on earthquake parameters or intensity-measure (IM) estimates as well
+as their uncertainties. Anticipating potential losses and acting rapidly and
+accordingly is also of utmost importance to emergency management and disaster
+aid communities. Estimated losses constitute vital input for rapid situational
+awareness, facilitating decision-making on whether or not to commit and deploy
+resources, and to what level.</p>
+<div class="sidebar">
+<p class="first sidebar-title">USE CASE #5</p>
+<p class="last">The Inter-American Development Bank <a class="reference external" href="http://www.iadb.org">http://www.iadb.org</a> (IADB) employs ShakeMap for objective post-earthquake assessments for within 72 hours of  any significant earthquake in Latin America and the Caribbean (LACR). IADB&#8217;s Contingent Credit Facility Loans has set up disaster contingency loans for up to several hundred million USD, conditional on predefined levels of population exposed to ShakeMap intensity VI and higher. Typically, loans can be distributed when the population over intensity VI reaches at least 2% of the population within the coverage area. Loans are available in six LACR countries during the period of availability (J. Martinez, IADB, written communication, 2014).</p>
+</div>
+<p>To a large extent, the advancement of post-earthquake financial instruments has
+been facilitated by the availability of rapid and accurate earthquake parameters
+and more quantitative geospatial hazard information. Commensurately, USGS
+products like ShakeMap and PAGER have evolved to further accommodate specific
+requirements of the financial sector. For instance, improved approaches for
+quantifying uncertainty can better inform loss estimates and historical ShakeMap
+Atlas data can assist in loss model calibration. In addition, USGS now provides
+PAGER loss estimates broken down by country to fulfill the need required in the
+CAT bond and contingency loan arena, while still remaining within the confines
+of reasonable spatial accuracy. Similarly, requests have been made by U.S. State
+governments to further compute losses at the state level, although such
+resolution is not yet warranted, particularly in areas of sparse real-time
+strong-motion instrumentation. Lastly, for many uses, the automatic retrieval
+and processing of ShakeMaps has been facilitated via GeoJSON feeds, web-mapping
+servers, and the ShakeCast systems.</p>
+<p>Several types of data and information products available or under development
+that may be of benefit to the financial sector. The generation of suites of
+standardized earthquake scenarios–both domestic and internationally–is underway,
+and an update of the global Atlas of ShakeMaps has been completed (see
+<a class="reference internal" href="shakemap_archives.html#sec-shakemap-archives"><span>ShakeMap Archives</span></a>).</p>
+<p>There are several continuing challenges that are actively under consideration
+and scrutiny: implementing directivity, computing and depicting spatial ground
+motion correlations, improved approaches for quantifying and conveying
+uncertainties, and a more explicit ShakeMap policy and version control
+documentation. <a class="reference internal" href="references.html#wald2016"><span>Wald and Franco (2016)</span></a> describe how these
+advances may in turn facilitate the appearance of new and more refined financial
+instruments.</p>
+</div>
+<div class="section" id="public-information-and-education">
+<h2>Public Information and Education<a class="headerlink" href="#public-information-and-education" title="Permalink to this headline">¶</a></h2>
+<p>The rapid availability of ShakeMap on the Internet combined with the urgent
+desire for information following a significant earthquake makes this mapping
+tool a huge potential source of public information and education. In instances
+in which an earthquake receives significant news coverage, the ShakeMap site as
+well as the “Did You Feel It?” (DYFI) system receives an enormous increase in
+web site visitors (<a class="reference internal" href="references.html#wald2011c"><span>Wald et al., 2011</span></a>). Such opportunities are
+amplified by widespread adoption of ShakeMap into media and educational
+materials by other institutions.</p>
+<p>ShakeMap&#8217;s intensity scale is key for introducing and inculcating the public and
+the media to the importance of macroseismic intensity rather than the continuing
+sole dependence on magnitude as the scale of reference for earthquakes. Although
+Japanese Meterological Agency (JMA) Intensity (.e.g., <a class="reference internal" href="references.html#jma1996"><span>JMA, 1996</span></a>) differs slightly from its U.S. MMI counterpart&#8212;JMA&#8217;s is strictly
+instrumentally-derived&#8212;it is widely used and understood in Japan (e.g.,
+<a class="reference internal" href="references.html#celsi2005"><span>Celsi et al., 2005</span></a>). JMA has successfully made intensity the
+norm for communicating to the Japanese population about real-time and future
+earthquake hazards via television, smartphone, Web content, annual earthquake
+drills, and the educational system. Because JMA intensity is widely understood,
+public is be more attuned to earthquake risks than populations familiar only
+with magnitude descriptions of earthquakes (e.g., <a class="reference internal" href="references.html#celsi2005"><span>Celsi et al., 2005</span></a>).</p>
+<p>&#8220;Earthquake education also occurs through the media. The anchoring effect we
+report may be lessened signiﬁcantly if the press consistently used the Mercalli
+scale and helped to educate the public about the scale. Research should be
+conducted to better understand if and how news organizations can successfully
+utilize the Mercalli scale in communicating earthquake information. Alternative
+formats, for example, using letters rather than Roman numerals for the
+categories, may ameliorate the confusion between magnitude and Mercalli scales.
+The experience in Japan provides support for the idea that laypeople can learn
+to use the two scales side by side. The Japanese media report both intensities
+and magnitude, with viewers maintaining a clearer understanding of the
+relationship between magnitude and intensity. In Japan, the overall magnitude
+and the intensity are both instrument numbers, with the latter being
+location-specific.&#8221;</p>
+<p>The inculcation of the public to intensity is inline with the findings of
+<a class="reference internal" href="references.html#gomberg2013"><span>Gomberg and Jokobitz (2013)</span></a> &#8220;Simpler messaging and
+explanations are needed by some users,
+and this may be achieved by developing two styles of some products, one designed
+for nontechnical users and the other tailored for engineers and scientists. The
+tangible impacts of an earthquake must be conveyed more simply and succinctly,
+employing a scale useful for decision-making at the regional and local levels.&#8221;</p>
+<p>Acknowledging the importance of ShakeMap as a tool for public information and
+education, considerable effort was taken to provide the range of formats
+suitable for broadcast and Web pages. Initially, Media Maps, simplified versions
+of the Instrumental Intensity maps were packaged in a way that makes them more
+suitable for broadcast
+to low-resolution devices, such as TV monitors: roads and borders are thicker;
+fonts are
+larger; and the title and intensity scale are simplified, and &#8220;TV guide&#8221;
+information sheet intended to supplement the Media Maps was provided to allow
+easier delivery of basic earthquake information. These formats have naturally
+evolved to GIS, KML, and now interactive (zoomable) maps that allow
+customization of the basemap layers and other content.</p>
+<p>However, some of the static maps have made for the most widespread distribution.
+A very widely used graphic (<a class="pageref" href="#northridge-nisqually">Figure  3</a>), for example,
+compares ShakeMap-generated intensities for the 1994 Northridge earthquake, a
+shallow crustal earthquake near Los Angeles, with the 2001, deep, intraslab
+Nisqually, WA, earthquake. This figure was reprinted in numerous reports,
+textbooks, classes, reports, and briefings including <a class="reference external" href="http://www.earthquakecountry.org/roots/shaking.html">Putting Down Roots</a> and the <a class="reference internal" href="references.html#nrc2006"><span>National
+Research Council</span></a>, for example.</p>
+<div class="figure align-left" id="id3">
+<span id="northridge-nisqually"></span><a class="reference internal image-reference" href="_images/Northridge.Nisqually.png"><img alt="_images/Northridge.Nisqually.png" src="_images/Northridge.Nisqually.png" style="width: 650px;" /></a>
+<p class="caption"><span class="caption-text">Figure 3: Widely adopted graphic of comparing ShakeMaps for the 2001 Nisqually, WA (M6.8), and 1994 Northridge, CA (M6.7) earthquakes showing how distance from an earthquake affects the level of shaking experienced. Even though the magnitude of the Nisqually earthquake was slightly larger than the Northridge earthquake, the shaking was lower on average primarily because the fault that ruptured during the Northridge earthquake was shallower (5-20 km deep) than that for the Nisqually earthquake (about 45-50 km deep).</span></p>
+</div>
+<p>The continued long-term education of the populous to intensity continues through many TV and other channels,
+for instance, in education (e.g., <a class="reference external" href="http://web.ics.purdue.edu/~braile/edumod/eqhazard/eqhazard2.htm">Larry Braile&#8217;s undergraduate courses</a>), textbooks (e.g., <a class="reference internal" href="references.html#yeats2004"><span>Yeats, 2004</span></a>
+&#8220;Living with Earthquakes in the Pacific Northwest&#8221;),
+and <a class="reference external" href="https://en.wikipedia.org/wiki/2001_Nisqually_earthquake">Wikipedia</a>.</p>
+</div>
+<div class="section" id="emergency-preparedness">
+<h2>Emergency Preparedness<a class="headerlink" href="#emergency-preparedness" title="Permalink to this headline">¶</a></h2>
+<p>[TBS]
+Department of Labor <a class="reference external" href="https://www.osha.gov/dts/earthquakes/preparedness.html">Occupational Safety and Health Administration</a> ; <a class="reference external" href="http://www.shakeout.org/home.html">ShakeOut</a></p>
+</div>
+<div class="section" id="earthquake-engineering-and-seismological-research">
+<h2>Earthquake Engineering and Seismological Research<a class="headerlink" href="#earthquake-engineering-and-seismological-research" title="Permalink to this headline">¶</a></h2>
+<p>For potentially damaging earthquakes, ShakeMap also produces response spectral
+acceleration values at three periods
+(0.3, 1.0, and 3.0 s) for use not only in loss estimation as mentioned above,
+but these IMs also serve many earthquake engineering analysis purposes. In a
+post-earthquake environment, information from engineering analyses of structures
+(including via ShakeCast, see below) provides a framework for post-earthquake
+occupancy and damage inspection by civil engineers.</p>
+<p>In addition to providing information on recent events, ShakeMap Web pages
+provide maps and aggregate shaking intensity measures (IMs) for numerous
+earthquakes, both for recent events (Archives)as well has historic and events
+(Atlas).
+In the long term&#8212;in conjunction with reported macroseismic data or specific
+damage observations&#8212;the parametric IMs provide the basis for analyses of
+ground motion observations and human behavior as well as response by both the
+natural and built environments. What follows is a short survey of several recent
+studies related to these data.</p>
+<p>[TBS]</p>
+<p>ShakeMap is also a source frequently used by scientists developing Ground Motion
+Prediction Equations (GMPEs), Ground Motion/Intensity Conversation Equations
+(GMICEs), and other studies where accumulated peak ground motion data are
+useful.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="related_systems.html" class="btn btn-neutral float-right" title="Related Systems" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="shakemap_archives.html" class="btn btn-neutral" title="ShakeMap Archives" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, C. Bruce Worden, David Wald.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
