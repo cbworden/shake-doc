@@ -1,10 +1,8 @@
-.. image:: _static/usgs_banner.*
-
 ================
 Glossary
 ================
 
-Abbreviations Used in This Report
+Abbreviations used in this report
 
 ANSS
   Advanced National Seismic System; A USGS initiative to provide seismic monitoring for at-risk 
