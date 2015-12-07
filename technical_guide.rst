@@ -1,5 +1,3 @@
-.. image:: _static/usgs_banner.*
-
 .. _technical-guide:
 
 ####################
