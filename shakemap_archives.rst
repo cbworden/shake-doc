@@ -34,16 +34,11 @@ More details on regional, national, and international ShakeMap system
 implementation and operations are provided in ref:`sec_regionals`).
 
 **Internationally**, USGS ShakeMap is installed and is operational in Italy,
-France, Portugal, Switzerland, New Zealand, Romania, Indonesia, Iran, Iceland
-and several other nations
-(see :num:`Figure #international-shakemaps`). Several instances are in testing
-or operational mode in the Middle East (including Oman, Morocco, and the UAE; M.
-Franke, written comm., 2015). In addition, other ShakeMap installations are in
-testing in Latin America and the Caribbean (Chile, Costa Rica, Columbia, Mexico,
-Costa Rica), and in Southeast Asia (Malaysia and Korea). Discussions have taken
-place with several other interested countries. 
+France, Portugal, Switzerland, New Zealand, Romania, Indonesia, Iran, Iceland,
+Panama, and several other nations
+(see :num:`Figure #international-shakemaps`). 
 
-.. _figureinternational-shakemaps:
+.. _international-shakemaps:
 
 .. figure:: _static/International_shakemaps.*
    :width: 650px
@@ -52,8 +47,16 @@ place with several other interested countries.
 
    International ShakeMap Systems
 
-It should be noted that very impressive systems analogous to ShakeMap operate in
-Japan (JMA), Taiwan, China, New Zealand, Turkey, and several other countries. 
+Several instances of ShakeMap are in testing
+or operational mode in the Middle East (including Oman, Morocco, and the UAE; M.
+Franke, written comm., 2015). In addition, other ShakeMap installations are in
+testing in Latin America and the Caribbean (Chile, Costa Rica, Columbia, Mexico,
+Costa Rica), and in Southeast Asia (Malaysia and Korea). Discussions have taken
+place with several other interested countries. 
+
+.. note::
+   Very impressive systems analogous to ShakeMap operate in
+   Japan (JMA), Taiwan, China, New Zealand, Turkey, and several other countries. 
    
 ShakeMap Atlas
 ---------------------------------------------------
@@ -121,11 +124,9 @@ Earthquake Model (GEM) Foundation---and hence the wider earthquake hazard and
 loss community---a common denominator hazard layer
 for calibration and testing earthquake damage and loss models. The Atlas is also
 the hazard layer calibration for the USGS
-`PAGER <http://earthquake.usgs.gov/research/pager/>`_ system  (e.g., Wald et
-al., 2008; Jaiswal and Wald, 2010;
-
-Pomonis and So, 2011).
-scientific analyses and for loss model calibration 
+`PAGER <http://earthquake.usgs.gov/research/pager/>`_ system  (e.g., :ref:`Wald et
+al., 2008 <wald2008>`; :ref:`Jaiswal and Wald, 2010 <jaiswal2010>`; :ref:`Pomonis and So, 2011 
+<pomonis2011>`).
 
 A subset of the Atlas was also employed by :ref:`Zhu et al. \(2014\) <zhu2014>`
 for the calibration of near-real 
@@ -151,30 +152,32 @@ and intensity data as well as detailed fault geometry.
    :width: 650px
 
    Example of the ShakeMaps for the 2008 M 7.9 Wenchuan, China earthquake for (a) 
-   Intensity and (b) PGA. Green polygons show areas of landsliding mapped out by Dai et al. 
-   (2010). Black rectangles delineate the surface projection of the different fault segments involved 
+   Intensity and (b) PGA. Green polygons show areas of landsliding mapped out by :ref:`Dai et al. 
+   (2010) <dai2010>`. Black rectangles delineate the surface projection of the different fault segments involved 
    in the rupture. Triangles: native strong motion stations; circles: MMI data converted to GM 
    values via an GMICE (here Worden et al., 2012), the choice of which automatically redefines the 
    legend scale. 
+
+.. _sec_scenarios:
 
 Earthquake Scenarios
 -----------------------------------
 In addition to historical and near-real-time applications, ShakeMap has become widely 
 used for earthquake mitigation and planning exercises through earthquake scenarios. 
-Scenarios represent one realization of a potential future earthquake by assuming a 
+A scenario represents one realization of a potential future earthquake by assuming a 
 particular magnitude, location, and fault-rupture geometry and estimating shaking using a 
 variety of strategies (including ShakeMap with GMPEs). 
-Some of the technical issues related to scenario generation in the :ref:`technical-guide`.
+Some of the technical issues related to scenario generation are discussed in the :ref:`technical-guide`.
 Here we cover the many uses for earthquake scenarios from the users' perspective. 
 
 In planning and coordinating emergency response, utilities, local government, and other 
 organizations are best served by conducting training exercises based on realistic 
-earthquake situations-ones similar to those they are most likely to face. ShakeMap 
+earthquake situations--ones similar to those they are most likely to face. ShakeMap 
 Scenario earthquakes can fill this role. Scenario ShakeMaps can be used to examine 
 exposure of structures, lifelines, utilities, and transportation corridors to specified 
 potential earthquakes.
 
-In the September, 2015, Report to NEHRP Agencies from the Advisory Committee on
+The September, 2015, Report to NEHRP Agencies from the Advisory Committee on
 Earthquake Hazards Reduction (ACHER), recommends:   
 
     USGS Recommendation 4 - ACEHR recommends the USGS expand earthquake scenario development in conjunction with stakeholder engagement in order to examine consequences of earthquakes in high-risk urban areas.
@@ -202,11 +205,11 @@ local emergency response organizations.
    :width: 650px
  
    ShakeMap scenario intensity (top) and peak velocity (bottom) maps for the M7.05 
-   Hayward Fault, CA, earthquake: A) Intensity; No directivity, B) Intensity; Directivity added, C) 
-   Peak Velocity; No Directivity, and D) Peak Velocity; Directivity added.
+   Hayward Fault, CA, earthquake: A) intensity; no directivity, B) intensity; directivity added, C) 
+   peak velocity; no directivity, and D) peak velocity; directivity added.
 
-The USGS and ANSS partners receive numerous requests for ShakeMap scenarios on an 
-annual basis. The NEIC Global ShakeMap (GSM) operators have also generated scores 
+The USGS and ANSS partners receive numerous requests for ShakeMap scenarios 
+annually. The NEIC Global ShakeMap (GSM) operators have also generated scores 
 of scenarios for colleagues, partners, other Federal Agencies, non-profit organizations 
 and other governments around the globe. These and other scenarios are available online 
 at the ShakeMap Web pages. They are formatted the same as other ShakeMaps, so they 
@@ -215,30 +218,33 @@ purposes. They can be found from the Map Archive link at the top of all ShakeMap
 pages.
 
 ShakeMap earthquake scenarios can be an integral part of earthquake emergency
-response planning. ShakeMap scenarios are particularly useful in planning and
+response planning. 
+Primary users include city, county, State and
+Federal Government agencies (e.g., the California EMA, FEMA), and
+emergency-response planners and managers for utilities, businesses, and other
+large organizations.
+ShakeMap scenarios are particularly useful in planning and
 exercises when combined with loss estimation systems, such as PAGER, HAZUS and
 ShakeCast, which provide ShakeMap-based estimates of overall social and economic
 impact, detailed loss estimates, and inspection priorities, respectively. Since
 its inception, ShakeMap operators have generated hundreds of earthquake
 scenarios that have been used in formal earthquake response exercises around the
-Nation and around the world. 
+nation and around the world. 
 
-.. sidebar:: **Finding Atlas ShakeMaps Online**
+.. sidebar:: **Finding ShakeMap Scenarios Online**
 
  * **Scenarios 1.0**. ShakeMaps, are available online on the
-   `ShakeMap homepage <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ consists of all the standardized ShakeMap products and formats.
+   `ShakeMap homepage <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ which 
+   consists of all the standardized ShakeMap products and formats.
    Output  grids for the entire dataset can also be obtained at that site.
- * **Scenarios 2.0**. The Next Generation Scenarios (NGS) will be available by searching the USGS `Comprehensive Catalogue
-   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Scenarios
-   from the *Contributor* from the *Advanced Options*  dropdown menu. The available *Catalogues* of scenarios will change over time.
+ * **Scenarios 2.0**. The Next Generation Scenarios (NGS) will be available by 
+   searching the USGS `Comprehensive Catalogue
+   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure 
+   to select the ShakeMap Scenarios
+   from the *Contributor* from the *Advanced Options*  dropdown menu. The 
+   available *Catalogues* of scenarios will change over time.
 
-Our ShakeMap earthquake scenarios have become an integral part of
-emergency-response planning.  Primary users include city, county, State and
-Federal Government agencies (e.g., the California EMA, FEMA), and
-emergency-response planners and managers for utilities, businesses, and other
-large organizations. Scenarios are particularly useful in planning and exercises
-when combined with loss-estimation systems such as HAZUS, which provides
-scenario-based estimates of social and economic impacts.
+
 
 Generating Earthquake Scenarios
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -261,32 +267,10 @@ sources for those who wish to provide them). We then correct the amplitudes
 based on the local site soil (Vs30) conditions as we do in the general ShakeMap
 interpolation scheme.  Fault finiteness is included explicitly, basin depth can
 be incorporated where appropriate, and source directivity is included via the
-relationships developed by Rowshandel (2010).  Depending on the level of
+relationships developed by :ref:`Rowshandel \(2010\) <rowshandel2010>`.  Depending on the level of
 complexity needed for the scenario, event-specific factors, such as variable
 slip distribution, could also be incorporated in the amplitude estimates fed to
 ShakeMap.  
-
-The U.S. Geological Survey has evaluated the probabilistic hazard from active
-faults in the United States for the National Seismic Hazard Mapping Project.
-From these maps it is possible to prioritize the best scenario earthquakes to be
-used in planning exercises by considering the most likely candidate earthquake
-fault first, followed by the next likely, and so on.  Such an analysis is easily
-accomplished by hazard disaggregation, in which the contributions of individual
-earthquakes to the total seismic hazard, their probability of occurrence, and
-the severity of the ground-motions are ranked.  Using the individual component
-earthquakes of these hazard maps, a user can properly select the appropriate
-scenarios given their location, regional extent, and specific planning
-requirements. As of this writing, we are in the process of generating scenario
-maps for all of the events in the current NSHMP hazard maps, and they should be
-available on the web site soon. Scenarios are of fundamental interest to
-scientific audiences interested in the nature of the ground shaking likely
-experienced in past earthquakes as well as the possible effects due to rupture
-on known faults in the future.  In addition, more detailed and careful analysis
-of the ground-motion time histories (seismograms) produced by such scenario
-earthquakes is highly beneficial for earthquake-engineering considerations.
-Engineers require site-specific ground-motions for detailed structural response
-analysis of existing structures and future structures designed around specified
-performance levels. 
 
 In most cases, we do not consider the direction of rupture nor do we modify the peak 
 motions by a directivity term. Fault geometries are specified with a fault file that 
@@ -298,7 +282,7 @@ different motions for the same magnitude earthquake and fault segment.
 
 Rather, our approach is to generally show the average effect because it is difficult to justify a 
 particular choice of hypocenter or to show the results for every possible hypocentral 
-location. Our empirical predictive approach also only gives average peak ground-motion 
+location. Our empirical predictive approach also only gives median peak ground-motion 
 values so it does not account for all the expected variability in motions, other than the 
 aforementioned site amplification variations. Actual ground-motions show significant 
 variability for a given distance, magnitude, and site condition and, hence, the scenario 

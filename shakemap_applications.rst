@@ -3,14 +3,18 @@
 =================================
 Applications of ShakeMap
 =================================
-The distribution of shaking from a significant earthquake, whether expressed as peak acceleration or intensity,
-provides responding organizations a significant increment of information beyond magnitude and epicenter.
-Real-time ground-shaking maps provide an immediate opportunity to assess the scope and impact of an event. 
-Thus, they can allow emergency managers and responders to determine what areas were likely subjected
-to the highest intensities and what the probable impacts were in those arease. Importantly, ShakeMap also allows
-descision-makers a rapid portrayal of those areas that received only weak motions and are likely to be undamaged. The latter areas can be potentially used for mutual aid. 
+The distribution of shaking from a significant earthquake, whether expressed as
+peak acceleration or intensity, provides responding organizations a significant
+increment of information beyond magnitude and epicenter.
+Real-time ground-shaking maps provide an immediate opportunity to assess the
+scope and impact of an event.  Thus, they can allow emergency managers and
+responders to determine what areas were likely subjected to the highest
+intensities and what the probable impacts were in those areas.  Importantly,
+ShakeMap also allows descision-makers a rapid portrayal of those areas that
+received only weak motions and are likely to be undamaged. The latter areas can
+be potentially used for mutual aid. 
 
-Though initial developed primarily for emergency management, ShakeMaps have been
+Though initially developed primarily for emergency management, ShakeMaps have been
 shown to be highly beneficial for other user sectors. Other uses include:
 improved loss estimation, public information and education through the media and
 web pages, financial descision-making, and engineering and seismological
@@ -19,7 +23,7 @@ research. Some specific examples are provided below for these use cases.
 As a side benefit, an intensity-based depiction of shaking hazards through
 ShakeMap (and DYFI?) facilitates the adoption of the intensity scale more
 generally and can thus it can be used for other risk-reduction systems and
-purposes. That is, inculcating the populous to shaking using intensity scales
+purposes. That is, inculcating the populace to shaking using intensity scales
 (as opposed to magnitude alone), has becomes crucial not just for communicating
 post-earthquake shaking hazards, the color coding and utilization of intensity
 has more generally helped depict imminent and future shaking hazards. For
@@ -27,15 +31,20 @@ example, the ShakeMap intensity color-palette has been adopted for Earthquake
 Early Warning (EEW; see for example `QuakeAlert
 <http://www.shakealert.org/faq/>`_) as well as for communicating future hazards
 through deterministic scenarios and with Probabilistic Seismic Hazard Maps
-(PSHA). 
+(see :ref:`sec_scenarios`). 
 
 Emergency Management and Response
 -------------------------------------------------
+
+[TBS]
+
+.. David is going to sort out the quotes and attributions below
+
 ShakeMap has been recognized as a top priority for disaster management and response in the U.S.:
 
   "ShakeMap has become a valuable tool to assist emergency responders in identifying the likely extent of earthquake damage. Strong-motion data (now increasingly available in real-time) can be correlated with documentation and evaluation of the performance of the built environment, leading to understanding the causes of earthquake damage and the occurrence of good structural and non-structural performance" (`Western States Seismic Policy Council Policy Recommendation, 14-3, <www.wsspc.org/wp-content/.../PR_14-3_SeismicMonitoring_WebPub.pdf>`_). 
 
-Similarly, according to a report by the `National Science and Technology Council Subcommittee on Disaster Reduction* <www.sdr.gov>`_ (`Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions <www.sdr.gov/docs/185820_Earthquake_FINAL.pdf>`_). The report describes *Grand Challenge 1*:
+Similarly, a report by the `National Science and Technology Council Subcommittee on Disaster Reduction* <www.sdr.gov>`_ (`Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions <www.sdr.gov/docs/185820_Earthquake_FINAL.pdf>`_) describes *Grand Challenge 1*:
 
     "Provide hazard and disaster information where and when it is needed. [...] Expand the Advanced National Seismic System to improve seismic monitoring and deliver rapid, robust earthquake information products; For all urban areas with moderate to high seismic risk, produce ShakeMaps that show the variation of shaking intensity within minutes after an earthquake based on near real time data transmission from densely spaced seismic networks."
 
@@ -57,6 +66,8 @@ situations in which a large, widely felt earthquake occurs but causes little
 damage (such as the Hector Mine earthquake of October 16, 1999). Clearly, there
 are significant economic benefits in scaling a response to the consequences of
 an event, including no response for an earthquake that requires none."
+
+.. _hector-mine-shakemap:
 
 .. figure:: _static/Hector.Mine.ShakeMap.*
    :align: left
@@ -100,7 +111,8 @@ quantitative estimate of potential benefits."
  for post-earthquake portfolio assessments for significant California earthquakes. [TBS; REF]
 
 One of the first examples of the use of ShakeMap for emergency management and response was the 
-the M7.1 Hector Mine earthquake of October 16, 1999. This event provides an important lesson in the use of
+the M7.1 Hector Mine earthquake of October 16, 1999 (see :num:`Figure #hector-mine-shakemap`). 
+This event provides an important lesson in the use of
 ShakeMap to assess the scope of the event and to determine the level of mobilization necessary.
 The Hector Mine earthquake produced ground-motion that was widely felt in
 the Los Angeles basin and, at least in the immediate aftermath, required an assessment of potential impacts.
@@ -149,9 +161,9 @@ FEMA’s Hazards U.S. (`HAZUS-MH <http://www.fema.gov/hazus>`_ ; :ref:`FEMA
 \(2006\) <fema2006>`. The customization includes: specific contour intervals for
 all events, geometric mean ground motions (as opposed to ShakeMap standard
 maximum component, and peak ground velocity in units of inches/sec rather than
-cm/s. The HAZUS-formatted ShakeMaps are made available to FEMA for scenarios and
-all significant domestic (U.S.) earthquakes and become automatically available
-to FEMA via Web pages and ArcGIS services (see GIS section above). 
+cm/s). The HAZUS-formatted ShakeMap shape files are made available to FEMA for scenarios and
+all significant domestic (U.S.) earthquakes 
+via Web pages and ArcGIS services (see :ref:`gis_services`). 
 
 The use of ShakeMaps as the shaking hazard input into HAZUS is a major improvement in loss-estimation accuracy
 because actual ground-motion observations are used directly to assess damage rather than relying on simpler

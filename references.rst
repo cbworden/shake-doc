@@ -220,6 +220,8 @@ Cua, G., D. J. Wald, T. I. Allen, D. Garcia, C. B. Worden, M. Gerstenberger, K. 
 Conversion Equations for Hazard and Loss Models, GEM Technical Report 2010-4, Report Series, 
 69 pp., http://www.globalquakemodel.org/node/747.
 
+.. _dai2010:
+
 Dai, F. C., C. Xu, X. Yao, L. Xu, X. B. Tu, and Q. M. Gong (2010). Spatial distribution of 
 landslides triggered by the 2008 MS 8.0 Wenchuan earthquake, China, J. Asian Earth Sci. 40, 
 883-895. 
@@ -665,6 +667,8 @@ Volume 86, Number 2B, p. 713.
 .. _worden2016:
 
 C. B. Worden, M. Hearne, D. J. Wald, and M. Pagani (2016). Complimentary Components of OpenQuake and ShakeMap, Proceedings of the 16WCEE, Santiago.
+
+.. _yamakawa1998:
 
 Yamakawa, K. (1998). The Prime Minister and the earthquake: Emergency Management Leadership of 
 Prime Minister Marayama on the occasion of the Great Hanshin-Awaji earthquake disaster, Kansai 
