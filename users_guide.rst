@@ -6,11 +6,11 @@ User's Guide
 
 ShakeMap originated primarily as an internet-based system for real-time display.
 Although the online color-coded intensity maps are the most visible result of
-ShakeMap system and constitute the most commonly accessed and downloaded
-product, they are just one representation of the ShakeMap output. ShakeMap also
+the ShakeMap system and are the most commonly accessed and downloaded
+products, they are just one representation of the ShakeMap output. ShakeMap also
 produces grids of peak ground acceleration and velocity amplitudes, peak
 spectral response values, instrumental intensities, seismic station files, fault
-files, metadata, regression plots, contours, metadata, and uncertainty
+files, regression plots, contours, metadata, and uncertainty
 estimates. The ShakeMap web pages also serve a variety of formats including:
 PDF, KML, XML, GeoJSON, HAZUS-MH,  GIS files, ESRI Raster, and a host of other
 formats and products for the varied user needs and applications.
@@ -29,7 +29,7 @@ quickly assessing the overall domain of shaking, ShakeMap is used across many
 sectors: planning and response, loss estimation, financial services, education
 and outreach, and engineering and seismological research. We provide examples of
 each. The section that follows expands on how ShakeMap integrates with related
-systems of DYFI, ShakeCast and PAGER. Lastly, and importantly, **Disclaimers**
+systems of DYFI, ShakeCast and PAGER. Lastly, and importantly, are **Disclaimers**
 that users should be aware of and refer to when employing ShakeMap for
 decision-making.
 
