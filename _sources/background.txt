@@ -16,7 +16,7 @@ earthquakes (magnitudes 6.9 and 6.7, respectively) that were either distant from
 the epicentral region or out of the immediate media limelight were not fully
 appreciated until long after the initial reports of damage. The full extent of
 damage from the magnitude-6.9 1995 Kobe, Japan, earthquake was not recognized by
-the central government in Tokyo until many hours later (e.g., Yamakawa, 1997),
+the central government in Tokyo until many hours later (e.g., :ref:`Yamakawa, 1998 <yamakawa1998>`),
 seriously delaying rescue and recovery efforts.
 
 A ShakeMap is a representation of ground shaking produced by an earthquake. The
