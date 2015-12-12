@@ -53,8 +53,6 @@ specific user-centric portfolios of facilities; PAGER is for more general
 society impact assessments, providing estimated loss-of-life and economic
 impacts for the region affected. 
 
-[TBS] Interplay between ShakeMap, DYFI?, ShakeCast and PAGER.	    
- 
 .. figure::  _static/SMap.SCast.DYFI.PAGER.png
    :width: 650px
    :alt: Related Systems
@@ -75,7 +73,6 @@ users’ facilities, and generates potential damage assessment notifications,
 facility damage maps, and other Web-based products for emergency managers and
 responders.
 
-
 .. figure::  _static/Caltrans.Napa.Report.*
    :width: 350px 
    :alt: Caltrans
@@ -93,6 +90,18 @@ must go beyond just looking at ShakeMap, and understand the likely extent and
 severity of impact on the facilities for which they are responsible. To this
 end the USGS has developed ShakeCast.
 
+.. sidebar:: USE CASE #1
+	     
+ The `California Department of Transportation <http://www.earthquakeauthority.com/‎>`_ (Caltrans) employs ShakeMap
+ for post-earthquake overpass and bridge assessments for significant California earthquakes. “The Caltrans
+ ShakeCast system performed reliably and as expected during the Napa earthquake. The system delivered key
+ information on the potential impacts to the state bridge inventory within 11 minutes of the event.
+ Of a total of 2720 state bridges within the ShakeMap region, 87 state
+ bridges were identified by ShakeCast as having undergone significant ground shaking and were
+ assigned an inspection priority state. Of the 87 state bridges
+ identified, 9 were later confirmed to have sustained minor damage. These 9 state bridges were ranked in the top 40% of the ShakeCast
+ list.” (:ref:'Turner, 2014 <turner2014>`)
+  
 ShakeCast allows utilities, transportation agencies, businesses, and other
 large organizations to control and optimize the earthquake information they
 receive. With ShakeCast, they can automatically determine the shaking value at
@@ -128,39 +137,72 @@ PAGER alerts are based on the *Earthquake Impact Scale* developed by :ref:`Wald 
 
 Public and Private Sector Tools
 ---------------------------------------------------
-[TBS WORK IN PROGRESS ] On the shaking hazard front, JMA, 
-
 Alternatives, modifications, and enhancements to the ShakeMap methodology are
-used widely around the world.
-Likewise, and downstream derivative products and systems for loss estimation are
-widely employ, both in the public and private sector. What follows is an brief
-(and incomplete) description of some of these systems. 
+used widely around the world. Likewise, and downstream derivative products and systems for loss estimation are
+widely employ, both in the public and private sector. What follows is
+a brief (and incomplete) description of some of these systems. Many
+proprietary hazard and loss modeling systems exist in the private
+sector, and typically they are openly described or referenced. 
 
-:ref:`Erdick et al. \(2011\) <erdick2011>` and :ref:`Erdick et al. \(2014\) <erdick2014>` provide examples of operative rapid earthquake loss estimation systems including. 
+On the shaking hazard front, domestically, some public/private sector
+utilities run in-house shaking aggregation and estimation systems 
+including East Bay Metropolitan Utility District (EBMUD's Marconi
+system) and Pacific Gas and Electric (PG&E).
 
+Impressive systems also exist in Japan, Taiwan, New Zealand, Turkey,
+among other countries.
+
+* JMA
+* GNS
+* INGV
+  
+On the rapid loss estimation front, several systems are in place in the U.S. 
+
+Internationally, :ref:`Erdick et al. \(2011\) <erdick2011>`
+and :ref:`Erdick et al. \(2014\) <erdick2014>` provide examples of
+operative rapid earthquake loss estimation systems.
+
+* Taiwan Earthquake Rapid Reporting System,
+* Realtime Earthquake Assessment Disaster System in Yokohama,
+* Real Time Earthquake Disaster Mitigation System of the Tokyo Gas
+  Co.,
+* IGDAS Earthquake Protection System
+* Istanbul Earthquake Rapid Response System." 
+* ELER
+* SELENA
+* OpenQuake (OQ, GEM Foundation)
+* GDACS
+* QuakeLoss (WAPMERR)
+* PAGER (USGS)
+  
 .. note:: Links and pointers to non-USGS sites are provided for information only and do not constitute endorsement by the USGS (see `USGS policy and disclaimers <http://www.usgs.gov/laws/info_policies.html>`_).
 
-Taiwan Earthquake Rapid Reporting System, Realtime Earthquake Assessment
-Disaster System in Yokohama, Real Time Earthquake Disaster Mitigation System of
-the Tokyo Gas Co., IGDAS Earthquake Protection
-System and Istanbul Earthquake Rapid Response System." GDACS, WAPMERR, PAGER,
-ELER and SELENA
-(:ref:`Erdick et al. \(2014\) <erdick2014>`)
+Lastly, many systems are available and in operations in the U.S. for
+aggregating hazard and impact information for emergency response and
+awareness. Many are multihazard oriented, and only those with focus on
+earthquake information are mentioned here. Some examples (not
+comprehensive) include:
 
-Some examples (not comprehensive) include: InLet, HAZUS-MH, ArcGIS online,
-OpenQuake (OQ, GEM Foundation)
+* InLet,
+* HAZUS-MH,
+* ArcGIS online
 
-`Capstone 2014 <http://www.cusec.org/capstone14/documents/2014.03.06_PSW/2014.03.06_CAPSTONE_Private_Sector_GIS.pdf>`_
-UpdatedPrivate Sector Workshop, March 7, 2014.
-
-"Others have built in-house systems to organize, share and display observations
+As summarized by :ref: `Gomberg and Jokobitz \(2013\) <gomberg2013>`_,
+"others have built in-house systems to organize, share and display observations
 using commercial applications like Microsoft’s Streets and Trips and SharePoint,
 Google’s GoogleEarth, or ESRI’s ArcGIS. WebEOC, a real-time Web-enabled crisis
-information management system developed commercially by ESi, is meant to be an
+information management system developed commercially by Esri, is meant to be an
 official link among public sector emergency managers in Washington State (see
 http://www.esi911.com/esi). While used by many agencies, it always was just one
 of multiple communication tools. A commonly expressed desire was for a
 centralized, one-stop shop for all types of disaster information (like the
 Department of Homeland Security’s `Virtual USA
 <https://www.dropbox.com/home/Correlation/figures/SanDiego?preview=economic+losses0.png>`_",
-:ref: `Gomberg and Jokobitz \(2013\) <gomberg2013>`
+
+Further information on some other slides on private sector tools can
+be found in the slides provided by the Department of Homeland Security
+(DHS) in a summary for the `Capstone 2014
+<http://www.cusec.org/capstone14/documents/2014.03.06_PSW/2014.03.06_CAPSTONE_Private_Sector_GIS.pdf>`_
+National Level (scenario) Exercise. 
+
+

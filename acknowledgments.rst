@@ -127,4 +127,4 @@ ShakeMap relies extensively on the Generic Mapping Tools
 
 Thank you, all.
 
-David Wald and Bruce Worden, December, 2015
+Bruce Worden & David Wald, December, 2015
