@@ -86,6 +86,7 @@
 <li class="toctree-l1"><a class="reference internal" href="technical_guide.html">Technical Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="users_guide.html">User&#8217;s Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software_guide.html">Software &amp; Implementation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regionals.html">Regional Operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="future_directions.html">Future Directions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Acknowledgments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References &amp; Bibliography</a></li>
@@ -137,79 +138,55 @@
   <div class="section" id="acknowledgments">
 <span id="id1"></span><h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h1>
 <p>Many contributions in a variety of forms have greatly helped in the development,
-implementation, and use of ShakeMap. ShakeMap is typically just one important end
+implementation, and use of ShakeMap. ShakeMap is just one  end
 product of a very sophisticated seismic network. Credit is given to all involved
 with the regional and national networks in the United States working under the
 auspices of the USGS Advanced National Seismic System (ANSS).</p>
 <p>Much of the early conceptual development of ShakeMap benefited greatly from
-discussions with Professors Kanamori and Heaton at Caltech.  Both the TriNet
+discussions with Professors Kanamori and Heaton at Caltech. Both the TriNet
 Steering and Advisory Committees also provided ongoing oversight and feedback in
-the early years of TriNet.  Discussions with many colleagues, including W.
+the early years of TriNet. Discussions with many colleagues, including W.
 Savage, K. Campbell, R. Nigbor, and M. Petersen, provided additional guidance.
 Early trips to the Japanese Meteorological Agency (JMA), and in particular
-discussions with Keiji Doi, were very helpful.</p>
+discussions with K. Doi, were also  helpful.</p>
 <p>Early ShakeMap web pages survived substantial traffic spikes due to the
-ingenuity and vigilance of Stan Schwarz (USGS, Pasadena). Aesthetic improvements
+ingenuity and vigilance of S. Schwarz (USGS, Pasadena). Many aesthetic improvements
 and integration of the ShakeMap Web pages into the USGS Earthquake Hazards Team
-Web Page standard templates were guided by Lisa Wald (USGS, Golden). Craig
-Scrivner, then at the California Department of Mines and Geology (CDMG),
-contributed greatly to the initial ShakeMap software development.</p>
-<p>At regional network centers, Kris Pankow (University of Utah), Steve Malone
-(University of Washington), Kuo-wan Lin (formerly CGS, now USGS, Golden),
-Douglas Dreger, Peter Lombard (U.C. Berkeley), and Lind Gee (formerly U.C.
-Berkeley, now USGS, Menlo Park), Glenn Biasi (University of Nevada, Reno), and
-Howard Bundock (ret.), Tim MacDonald, David Oppenheimer, and Jack Boatwright
-(USGS, Menlo Park) all played a critical role in system testing, providing
-feedback, and improving the ShakeMap software.  In addition, a number of other
+Web Page standard templates were guided by L. Wald (USGS, Golden). Later
+implementations were greatly improved by the Haz-Dev Web Team, particularly by
+J. Fee and E. Martinez.</p>
+<p>C. Scrivner, then at the CA Dept of Mines &amp; Geology (CDMG),
+contributed greatly to the initial ShakeMap software development. P.
+Lombard (U.C. Berkeley) contributed to several important aspects
+of ShakeMap code development and Q/A, including developing <em>plot_reg</em>.</p>
+<div class="sidebar">
+<p class="first sidebar-title">ANSS National ShakeMap Coordinators:</p>
+<ul class="last simple">
+<li>Bruce Worden: Synergetics Inc., Golden, Colorado, <a class="reference external" href="mailto:cbworden&#37;&#52;&#48;usgs&#46;gov">cbworden<span>&#64;</span>usgs<span>&#46;</span>gov</a></li>
+<li>David Wald: USGS, Golden, Colorado, <a class="reference external" href="mailto:wald&#37;&#52;&#48;usgs&#46;gov">wald<span>&#64;</span>usgs<span>&#46;</span>gov</a></li>
+</ul>
+</div>
+<p>Global ShakeMap (GSM) is run out of NEIC, Golden, CO, and is operated
+primarily by C.B. Worden, K. Lin, K. Marano,
+E. Thompson, V. Quitoriano, and D. Wald.</p>
+<p>At regional network centers, K. Pankow (University of Utah), S. Malone
+(University of Washington), K. Lin (formerly CGS, now USGS, Golden),
+D. Dreger, P. Lombard (U.C. Berkeley), and L. Gee (USGS, Menlo Park),
+E. Hauksson (Caltech), G. Biasi (Univ Nevada, Reno), and
+H. Bundock (ret.), T. MacDonald, D.Oppenheimer, and J. Boatwright
+(USGS, Menlo Park) all played a critical role in testing, providing
+feedback, and improving the ShakeMap system. In addition, a number of other
 people assisted the above colleagues in the regional ShakeMap implementation and
-operation.  Ned Field at the USGS in Pasadena has been very helpful in software
-calibration and validation and overall advice.</p>
-<p>In interfacing with HAZUS with we wish to thank Douglas Huls, Dave Kehrlein, and
-Lisa Christiansen of the California Office of Emergency Services, Jawhar Bouabid
-at Durham Technology, and Charles Kircher of Charlie Kircher Assoc.</p>
-<p>We received extremely important feedback regarding the user interface from
-participants through a number of meetings and workshops in California for
-scientific and engineering perspectives, as well as for a very wide variety of
-users’ perspectives.  These workshops were organized by James Goltz and Margaret
-Vinci.  In addition, ongoing feedback has always been abundant and provides
-critical advice and ideas that seeds ongoing, iterative improvements to the
-ShakeMap system.</p>
-<p>Over the years, numerous students contributed greatly to the operation,
-development, user support and many other aspects of ShakeMap. The students
-include undergraduates, Chloe Gustafson, Paul Geimer, Alicia Hotovec, Kendra
-Johnson, Rebecca Johnson, Russell Mah, Tanya Slota, graduate students Lily
-Seidman, and post-doctoral residents Trevor Allen and Daniel Garcia.</p>
-<p>International collaborators include Alberto Michelini, and Licia Faenca (INGV,
-Rome). ShakeMap Workshops help at U.C. Berkeley and at the Erice, Sicily, Summer
-School were very helpful in improving ShakeMap implementations around the
-country and around the world.</p>
-<p>USGS colleagues Vincent Quitoriano and Kuo-Wan Lin have long operated,
-supported, and greatly added to the development of ShakeMap. Mike Hearne and
-Kristin Marano of the PAGER team have also provided support for ShakeMap.</p>
-<p>Most of all, we are also extremely grateful for the recognition of the
-importance of ShakeMap and the ongoing internal and external support for its
-development at all levels within the U.S. Geological Survey.  The support of
-John Filson, David Applegate, William Leith, Harley Benz, and Woody Savage, Jill
-McCarthy, and many others has been critical.</p>
-<p>ShakeMap relies extensively on the Generic Mapping Tools (<a class="reference internal" href="references.html#gmt-ref"><span>Wessel and Smith, 1995</span></a>).</p>
-<p>ANSS ShakeMap Coordinators:</p>
-<div class="line-block">
-<div class="line">Kuo-Wan Lin: U.S. Geological Survey, Golden, Colorado, <a class="reference external" href="mailto:klin&#37;&#52;&#48;usgs&#46;gov">klin<span>&#64;</span>usgs<span>&#46;</span>gov</a></div>
-<div class="line">Vincent Quitoriano: Private Contractor, San Diego, CA, <a class="reference external" href="mailto:vinceq&#37;&#52;&#48;usgs&#46;gov">vinceq<span>&#64;</span>usgs<span>&#46;</span>gov</a></div>
-<div class="line">David Wald: U.S. Geological Survey, Golden, Colorado, <a class="reference external" href="mailto:wald&#37;&#52;&#48;usgs&#46;gov">wald<span>&#64;</span>usgs<span>&#46;</span>gov</a></div>
-<div class="line">Bruce Worden: Synergetics Inc., Golden, Colorado, <a class="reference external" href="mailto:cbworden&#37;&#52;&#48;usgs&#46;gov">cbworden<span>&#64;</span>usgs<span>&#46;</span>gov</a></div>
-</div>
-<div class="line-block">
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-<table border="1" class="docutils">
+operation.</p>
+<div class="sidebar">
+<p class="first sidebar-title">ANSS Regional ShakeMap Coordinators:</p>
+<table border="1" class="last docutils">
 <colgroup>
 <col width="31%" />
 <col width="69%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td colspan="2">ShakeMap Regional Coordinators</td>
+<tr class="row-odd"><td colspan="2"><strong>ShakeMap Regional Coordinators</strong></td>
 </tr>
 <tr class="row-even"><td rowspan="2">Southern California:</td>
 <td>Robert Graves, <a class="reference external" href="mailto:rgraves&#37;&#52;&#48;caltech&#46;edu">rgraves<span>&#64;</span>caltech<span>&#46;</span>edu</a></td>
@@ -228,28 +205,65 @@ McCarthy, and many others has been critical.</p>
 <tr class="row-even"><td>Utah:</td>
 <td>Kris Pankow, <a class="reference external" href="mailto:pankow&#37;&#52;&#48;seis&#46;utah&#46;edu">pankow<span>&#64;</span>seis<span>&#46;</span>utah<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-odd"><td rowspan="3">Alaska:</td>
-<td>Roger Hansen, <a class="reference external" href="mailto:roger&#37;&#52;&#48;giseis&#46;alaska&#46;edu">roger<span>&#64;</span>giseis<span>&#46;</span>alaska<span>&#46;</span>edu</a></td>
+<tr class="row-odd"><td rowspan="2">Alaska:</td>
+<td>Natalia Ruppert, <a class="reference external" href="mailto:natasha&#37;&#52;&#48;gi&#46;alaska&#46;edu">natasha<span>&#64;</span>gi<span>&#46;</span>alaska<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-even"><td>Natalia Ruppert, <a class="reference external" href="mailto:natasha&#37;&#52;&#48;gi&#46;alaska&#46;edu">natasha<span>&#64;</span>gi<span>&#46;</span>alaska<span>&#46;</span>edu</a></td>
+<tr class="row-even"><td>Matt Gardine, <a class="reference external" href="mailto:mgardin2&#37;&#52;&#48;alaska&#46;edu">mgardin2<span>&#64;</span>alaska<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-odd"><td>Matt Gardine, <a class="reference external" href="mailto:mgardin2&#37;&#52;&#48;alaska&#46;edu">mgardin2<span>&#64;</span>alaska<span>&#46;</span>edu</a></td>
-</tr>
-<tr class="row-even"><td rowspan="2">Pacific Northwest:</td>
+<tr class="row-odd"><td rowspan="2">Pacific Northwest:</td>
 <td>Paul Bodin, <a class="reference external" href="mailto:bodin&#37;&#52;&#48;uw&#46;edu">bodin<span>&#64;</span>uw<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-odd"><td>Renate Hartog, <a class="reference external" href="mailto:jrhartog&#37;&#52;&#48;uw&#46;edu">jrhartog<span>&#64;</span>uw<span>&#46;</span>edu</a></td>
+<tr class="row-even"><td>Renate Hartog, <a class="reference external" href="mailto:jrhartog&#37;&#52;&#48;uw&#46;edu">jrhartog<span>&#64;</span>uw<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-even"><td rowspan="2">Nevada:</td>
+<tr class="row-odd"><td rowspan="2">Nevada:</td>
 <td>Ken Smith, <a class="reference external" href="mailto:ken&#37;&#52;&#48;seismo&#46;unr&#46;edu">ken<span>&#64;</span>seismo<span>&#46;</span>unr<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-odd"><td>Gabe Plank, <a class="reference external" href="mailto:gabe&#37;&#52;&#48;seismo&#46;unr&#46;edu">gabe<span>&#64;</span>seismo<span>&#46;</span>unr<span>&#46;</span>edu</a></td>
+<tr class="row-even"><td>Gabe Plank, <a class="reference external" href="mailto:gabe&#37;&#52;&#48;seismo&#46;unr&#46;edu">gabe<span>&#64;</span>seismo<span>&#46;</span>unr<span>&#46;</span>edu</a></td>
 </tr>
-<tr class="row-even"><td>Puerto Rico:</td>
+<tr class="row-odd"><td>Puerto Rico:</td>
 <td>Victor Huerfano, <a class="reference external" href="mailto:victor&#37;&#52;&#48;prsn&#46;uprm&#46;edu">victor<span>&#64;</span>prsn<span>&#46;</span>uprm<span>&#46;</span>edu</a></td>
 </tr>
 </tbody>
 </table>
+</div>
+<p>We received extremely important feedback regarding the user interface from
+participants through a number of meetings and workshops in CA for
+scientific and engineering perspectives, as well as for a very wide variety of
+users’ perspectives. These workshops were organized by J. Goltz and M.
+Vinci. In addition, ongoing feedback has always been abundant and provides
+critical advice and ideas that seeds ongoing, iterative improvements to the
+ShakeMap system.</p>
+<p>Over the years, numerous student researchers contributed greatly to the operation,
+development, user support and many other aspects of ShakeMap, particularly
+developing the ShakeMap Atlas. The students include undergraduates, C. Gustafson,
+P. Geimer, A. Hotovec, K. Johnson, R. Johnson, R. Mah, T. Slota;
+graduate students L. Seidman, S Verros, L. McWhirter;
+and post-doctoral fellows T. Allen and D. Garcia.</p>
+<p>International collaborators include A. Michelini, and L. Faenza (INGV,
+Rome) and C. Cauzzi (ETH Zurich). ShakeMap Workshops help at U.C. Berkeley
+and at the Erice, Sicily, Summer School were very helpful in improving ShakeMap
+implementations around the country and around the world.</p>
+<p>D. Bausch, (formerly FEMA) played a vital role in standardizing HAZUS loss
+estimates using ShakeMap input, responding to numerous national earthquake
+responses, and promoting the use of ShakeMap among the earthquake
+response and planning communities. In interfacing with HAZUS software
+and loss estimates, contributions from J. Bouabid at
+Durham Technology, and C. Kircher of Charlie Kircher Assoc were key.</p>
+<p>USGS colleagues V. Quitoriano and K. Lin have long operated,
+supported, and greatly added to the development of ShakeMap. M. Hearne and
+K. Marano of the PAGER team have also provided support for ShakeMap. E. Thompson
+has contributed greatly to the development of scenarios and advancing ShakeMap
+science. K. Jaiswal, N. Field, N. Luco, M. Petersen have all been very helpful
+in software calibration and validation and overall advice.</p>
+<p>Lastly, we are also extremely grateful for the recognition of the
+importance of ShakeMap and the ongoing internal and external support for its
+development at all levels within the USGS. Along the way, the support of
+J. Filson, D. Applegate, B. Leith, H. Benz, C. Wolfe, W. Savage, J.
+McCarthy, and many others has been critical.</p>
+<p>ShakeMap relies extensively on the Generic Mapping Tools
+(<a class="reference internal" href="references.html#gmt-ref"><span>Wessel and Smith, 1995</span></a>).</p>
+<p>Thank you, all.</p>
+<p>Bruce Worden &amp; David Wald, December, 2015</p>
 </div>
 
 

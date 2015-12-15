@@ -79,7 +79,7 @@ ShakeMap Update Policy
 
    * **Scenario Revisions**. ShakeMap Scenario collections also uses version
      numbers for each event, yet the overall scenario collections is also named
-     according to their source. The latest collection is [TBS]. Currently
+     according to their source. Currently
      ShakeMap Atlas Version 2.0 is online in the USGS `Comprehensive Catalogue
      (ComCat) Earthquake database
      <http://earthquake.usgs.gov/earthquakes/search/>`_, Some archival (older)
