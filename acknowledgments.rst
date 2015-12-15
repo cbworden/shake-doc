@@ -50,37 +50,38 @@ people assisted the above colleagues in the regional ShakeMap implementation and
 operation.
 
 .. sidebar:: ANSS Regional ShakeMap Coordinators:
-+---------------------------------------------------------------------+
-|**ShakeMap Regional Coordinators**                                   |
-+---------------------+-----------------------------------------------+
-|Southern California: | Robert Graves, rgraves@caltech.edu            |
-|                     +-----------------------------------------------+
-|                     | Gary Gann, agann@usgs.gov                     |
-+---------------------+-----------------------------------------------+
-|Northern California: | John Boatwright, boat@usgs.gov                |
-|                     +-----------------------------------------------+
-|                     | Peggy Hellweg, peggy@seismo.berkeley.edu      |
-|                     +-----------------------------------------------+
-|                     | Tim MacDonald, tmacdonald@usgs.gov            |
-|                     +-----------------------------------------------+
-|                     | Pete Lombard, lombard@seismo.berkeley.edu     |
-+---------------------+-----------------------------------------------+
-|Utah:                | Kris Pankow, pankow@seis.utah.edu             |
-+---------------------+-----------------------------------------------+
-|Alaska:              | Natalia Ruppert, natasha@gi.alaska.edu        |
-|                     +-----------------------------------------------+
-|                     | Matt Gardine, mgardin2@alaska.edu             |
-+---------------------+-----------------------------------------------+
-|Pacific Northwest:   | Paul Bodin, bodin@uw.edu                      |
-|                     +-----------------------------------------------+
-|                     | Renate Hartog, jrhartog@uw.edu                |
-+---------------------+-----------------------------------------------+
-|Nevada:              | Ken Smith, ken@seismo.unr.edu                 |
-|                     +-----------------------------------------------+
-|                     | Gabe Plank, gabe@seismo.unr.edu               |
-+---------------------+-----------------------------------------------+
-|Puerto Rico:         | Victor Huerfano, victor@prsn.uprm.edu         |
-+---------------------+-----------------------------------------------+
+
+   +---------------------------------------------------------------------+
+   |**ShakeMap Regional Coordinators**                                   |
+   +---------------------+-----------------------------------------------+
+   |Southern California: | Robert Graves, rgraves@caltech.edu            |
+   |                     +-----------------------------------------------+
+   |                     | Gary Gann, agann@usgs.gov                     |
+   +---------------------+-----------------------------------------------+
+   |Northern California: | John Boatwright, boat@usgs.gov                |
+   |                     +-----------------------------------------------+
+   |                     | Peggy Hellweg, peggy@seismo.berkeley.edu      |
+   |                     +-----------------------------------------------+
+   |                     | Tim MacDonald, tmacdonald@usgs.gov            |
+   |                     +-----------------------------------------------+
+   |                     | Pete Lombard, lombard@seismo.berkeley.edu     |
+   +---------------------+-----------------------------------------------+
+   |Utah:                | Kris Pankow, pankow@seis.utah.edu             |
+   +---------------------+-----------------------------------------------+
+   |Alaska:              | Natalia Ruppert, natasha@gi.alaska.edu        |
+   |                     +-----------------------------------------------+
+   |                     | Matt Gardine, mgardin2@alaska.edu             |
+   +---------------------+-----------------------------------------------+
+   |Pacific Northwest:   | Paul Bodin, bodin@uw.edu                      |
+   |                     +-----------------------------------------------+
+   |                     | Renate Hartog, jrhartog@uw.edu                |
+   +---------------------+-----------------------------------------------+
+   |Nevada:              | Ken Smith, ken@seismo.unr.edu                 |
+   |                     +-----------------------------------------------+
+   |                     | Gabe Plank, gabe@seismo.unr.edu               |
+   +---------------------+-----------------------------------------------+
+   |Puerto Rico:         | Victor Huerfano, victor@prsn.uprm.edu         |
+   +---------------------+-----------------------------------------------+
 
 We received extremely important feedback regarding the user interface from
 participants through a number of meetings and workshops in CA for
