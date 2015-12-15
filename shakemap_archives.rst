@@ -374,7 +374,8 @@ State, they can be processed through HAZUS-MH, FEMA's loss and risk estimation s
 develop associated damage estimates and other loss information products.
 Both Utah and Washington State officials have worked with USGS, FEMA,
 and other collaborators to produce online collections for scenario exercises and mitigation efforts,
-shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-washington`, respectively. 
+shown in :num:`Figure #shakemap-hazus-utah`, and :num:`Figures #shakemap-hazus-washington`
+and :num:`#shakemap-hazus-railways`, respectively. 
 
 .. _shakemap-hazus-utah:
 
@@ -385,7 +386,8 @@ shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-was
 
    State of Utah using ShakeMap-based earthquake scenario collection. More details can be found online
    at the `FEMA <https://www.fema.gov/media-library/assets/documents/16125>`_
-   and `ShakeOut.org <http://www.shakeout.org/utah/scenarios/>`_ Web sites.
+   and `ShakeOut.org <http://www.shakeout.org/utah/scenarios/>`_ Web sites .
+
 
 .. _shakemap-hazus-washington:
 
@@ -395,7 +397,8 @@ shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-was
    :align: left
 
    Washington State ShakeMap-based earthquake scenario collection. More details can be found online
-   at the `Washington State (DNR) <https://fortress.wa.gov/dnr/seismicscenarios/>`_ Web site.
+   at the `Washington State (DNR) Web site <https://fortress.wa.gov/dnr/seismicscenarios/>`_.
+
 
 .. _shakemap-hazus-railways:
 
@@ -404,16 +407,17 @@ shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-was
    :alt: Washington Scenario with Railway impact
    :align: left
 
-   Example Washington State ShakeMap-based magnitude 9.0 Cascadia
-   earthquake scenario. The selected layer (left) shows railways.
-   More details can be found online at the `Washington State (DNR)
-   <https://fortress.wa.gov/dnr/seismicscenarios/>`_ Web site.
-   
+   Example Washington State ShakeMap-based magnitude 9.0 Cascadia earthquake
+   scenario. The selected layer (left) shows railways.  
+   More details can be found online at the 
+   at the Washington State (DNR) Web site.
 
+.. Removed this link from the final line of the paragraph above because it seems to cause
+.. problems with sphinx. Don't know how to fix it...
+.. at the `Washington State (DNR) Web site <https://fortress.wa.gov/dnr/seismicscenarios/>`_.
 
-  
 .. EERI 
-   
+.. 
 .. Scenarios for Evaluating Earthquake Early Warning Timing
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. :ref:`Allen et al. \(2006\) <allen2006>` makes clever use of a suite of scenarios for San Francisco Bay Area
@@ -423,9 +427,10 @@ shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-was
 .. ShakeMap shaking intensities, the rupture likelihoods and the potential warning times for
 .. each event to determine the probability of receiving a range of warning times at particular
 .. sites within the Bay area for specific thresholds of intensities.
-
+..
 .. Allen's conclusion based on these statistics were that an Earthquake Early Warning
 .. system could provide warning to at least some of the affected population in a damaging
 .. earthquake. This strategy could be applied in other regions where Earthquake Early
 .. Warning systems are being contemplated given a suite of ShakeMap scenarios and their
 .. likelihoods.
+
