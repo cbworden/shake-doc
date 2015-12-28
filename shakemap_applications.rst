@@ -4,7 +4,7 @@
 Applications of ShakeMap
 =================================
 The distribution of shaking from a significant earthquake, whether expressed as
-peak acceleration or intensity, provides responding organizations a significant
+PGA, PGV, or intensity, provides responding organizations a significant
 increment of information beyond magnitude and epicenter.
 Real-time ground-shaking maps provide an immediate opportunity to assess the
 scope and impact of an event.  Thus, they can allow emergency managers and
@@ -23,9 +23,9 @@ research. Some specific examples are provided below for these use cases.
 As a side benefit, an intensity-based depiction of shaking hazards through
 ShakeMap (and DYFI?) facilitates the adoption of the intensity scale more
 generally and can thus it can be used for other risk-reduction systems and
-purposes. That is, inculcating the populace to shaking using intensity scales
-(as opposed to magnitude alone), has becomes crucial not just for communicating
-post-earthquake shaking hazards, the color coding and utilization of intensity
+purposes. That is, inculcating the populace to earthquake shaking using intensity scales
+(as opposed to magnitude alone) has becomes crucial not just for communicating
+post-earthquake shaking hazards; the color coding and utilization of intensity
 has more generally helped depict imminent and future shaking hazards. For
 example, the ShakeMap intensity color-palette has been adopted for Earthquake
 Early Warning (EEW; see for example `QuakeAlert
@@ -38,7 +38,8 @@ Emergency Management and Response
 The value of seismic monitoring and ShakeMap was addressed by a report by the National Research Council's
 (NRC) ad-hoc "Committee on the Economic Benefits of Improved Seismic
 Monitoring"(:ref:`National Research Council, 20006 <NRC2006>`). In Chapter 7, "Benefits for Emergency Response and Recovery" the
-committee describes: 
+committee referes to the 1999 Hector Mine earthquake (ShakeMap shown
+in :num:`Figure #hector-mine-shakemap`). 
 
 .. _nrc-committee-report:
 
@@ -47,7 +48,7 @@ committee describes:
    :scale: 50%
    :alt: NRC Report
 	 
-   NRC Report on Seismic Monitoring
+   NRC Seismic Monitoring Report
 
 "The very rapid availability of earthquake source data—including
 magnitude, location, depth, and fault geometry—provides basic
@@ -93,17 +94,7 @@ and the occurrence of good structural and non-structural performance"
 Similarly, a report by the National Science and Technology Council `Subcommittee on Disaster Reduction* <www.sdr.gov>`_ (`Grand Challenges for Disaster Reduction: Priority Interagency Earthquake Implementation Actions <www.sdr.gov/docs/185820_Earthquake_FINAL.pdf>`_) describes *Grand Challenge 1*:
 "Provide hazard and disaster information where and when it is needed. [...] Expand the Advanced National Seismic System to improve seismic monitoring and deliver rapid, robust earthquake information products; For all urban areas with moderate to high seismic risk, produce ShakeMaps that show the variation of shaking intensity within minutes after an earthquake based on near real time data transmission from densely spaced seismic networks."
 
-.. sidebar:: USE CASE #1
-
-  “Thought you might like to see the [Division of Safety of Dams]
-  ShakeCast message for the recent Napa [Aug, 2014] Earthquake.  We have since
-  divided the 1250 dams into three fragility classes (called levels of concern).  The message provides explicit instructions on what action
-  to take for each dam and transmits owner contact information. The message was received in my inbox 16 minutes after the earthquake,
-  which was about 10 minutes after the ShakeMap version 1 was released. The technology has become very well accepted by the field
-  inspectors. Thanks for such a great product.” W. A. Fraser, C.E.G.,
-  Chief, Geology Branch, CA Division of Safety of Dams, Sacramento, CA.
-
-One of the first examples of the use of ShakeMap for emergency management and response was the 
+One of the earliest examples of the use of ShakeMap for emergency management and response was the 
 the magnitude 7.1 Hector Mine earthquake of October 16, 1999 (see :num:`Figure #hector-mine-shakemap`). 
 This event provides an important lesson in the use of
 ShakeMap to assess the scope of the event and to determine the level of mobilization necessary.
@@ -223,9 +214,9 @@ aid communities. Estimated losses constitute vital input for rapid situational
 awareness, facilitating decision-making on whether or not to commit and deploy
 resources, and to what level.
 
-.. sidebar:: USE CASE #2
+.. sidebar:: USE CASE #1
 	     
-  The Inter-American Development Bank `<http://www.iadb.org>`_ (IADB) employs ShakeMap for objective post-earthquake assessments for within 72 hours of  any significant earthquake in Latin America and the Caribbean (LACR). IADB's Contingent Credit Facility Loans has set up disaster contingency loans for up to several hundred million USD, conditional on predefined levels of population exposed to ShakeMap intensity VI and higher. Typically, loans can be distributed when the population over intensity VI reaches at least 2% of the population within the coverage area. Loans are available in six LACR countries during the period of availability (J. Martinez, IADB, written communication, 2014).
+  The Inter-American Development Bank `<http://www.iadb.org>`_ (IADB) employs ShakeMap for objective post-earthquake assessments for within 72 hours of  any significant earthquake in Latin America and the Caribbean (LACR). IADB's Contingent Credit Facility Loans has set up disaster contingency loans for up to several hundred million USD, conditional on predefined levels of population exposed to ShakeMap intensity VI and higher. Typically, loans can be distributed when the population over intensity VI reaches at least 2% of the population within the coverage area. Loans are available in six LACR countries during the period of availability (J. Martinez, IADB, written comm., 2014).
 
 To a large extent, the advancement of post-earthquake financial instruments has
 been facilitated by the availability of rapid and accurate earthquake parameters
@@ -255,7 +246,7 @@ motion correlations, improved approaches for quantifying and conveying
 uncertainties, and a more explicit ShakeMap policy and version control
 documentation. :ref:`Wald and Franco \(2016\) <wald2016>` describe how these
 advances may in turn facilitate the appearance of new and more refined financial
-instruments.
+instruments and insurance products.
  
 Public Information and Education
 ---------------------------------------------
@@ -278,7 +269,7 @@ instrumentally-derived---it is widely used and understood in Japan (e.g.,
 norm for communicating to the Japanese population about real-time and future
 earthquake hazards via television, smartphone, Web content, annual earthquake
 drills, and the educational system. Because JMA intensity is widely understood,
-public is be more attuned to earthquake risks than populations familiar only
+the public is be more attuned to earthquake risks than populations familiar only
 with magnitude descriptions of earthquakes (e.g., :ref:`Celsi et al., 2005
 <celsi2005>`). 
 
@@ -315,7 +306,8 @@ larger; and the title and intensity scale are simplified, and "TV guide"
 information sheet intended to supplement the Media Maps was provided to allow
 easier delivery of basic earthquake information. These formats have naturally
 evolved to GIS, KML, and now interactive (zoomable) maps that allow
-customization of the basemap layers and other content.
+customization of the basemap layers and other content. Such
+interactive maps are in favor in newsrooms and educational visualizations. 
 
 However, some of the static maps have made for the most widespread distribution.
 A very widely used graphic (:num:`Figure #northridge-nisqually`), for example,
@@ -348,10 +340,10 @@ planning scenarios. In many of these cases, ShakeMap is employed for
 developing both the framework for portraying each earthquake in its
 hazard context, and also for computing loss estimates to examine and
 communicate its potential societal impact. The initial success of the
-Great Southern California ShakeOut (:ref: `Jones et al. (2011
+Great Southern California ShakeOut (:ref:`Jones et al. (2011
 <jones2011>`) has been built by SCEC, USGS, and others into a
 worldwide `annual exercise <http://www.shakeout.org/home.html>`_
-(Oct 15th each year) involving millions of participants.
+(on Oct 15th of each year) involving millions of participants.
 
 On a statewide basis, exercises take place in several of the more
 tectonically active areas of the country, for example, `ShakeOuts in
@@ -360,7 +352,7 @@ Utah <http://www.shakeout.org/utah/scenarios/>`_ and the 2012
 in Washington State.
 
 Nationwide, FEMA's `National Level Exercises (NLE's)
-<http://www.fema.gov/national-exercise-program>` program is
+<http://www.fema.gov/national-exercise-program>`_ program is
 another source for planning for complex, whole-community, large-scale disasters and emergencies.
 Here, too, NLE's often employ ShakeMap as the basis for the
 exercises. The ShakeMap/HAZUS combination was used for support of the `New Madrid 2011 NLE
@@ -378,17 +370,15 @@ same ShakeMap input in order for DOD to focus on defense support to civilian aut
 .. _caribewave-nle:
 
 .. figure:: _static/caribewave.onepager.*
-   :align: left
-   :width: 550px
+   :align: center
+   :width: 650px
    :alt: Caribe Wave OnePAGER
 	 
    Annual "Caribe Wave" earthquake and tsunami exercise for the Caribbean region.
 	   
 Internationally, USGS participates through (NOAA) in an annual "Caribe
-Wave" earthquake and tsunami exercise for the Caribbean region, most
-recently,  (:ref:`IOC, 2012 <ioc2012>`; see :num:`Figure #caribewave-nle`).
-
-The USGS ShakeMap and PAGER group also work directly with the U.S.
+Wave" earthquake and tsunami exercise for the Caribbean region
+(:ref:`IOC, 2012 <ioc2012>`; see :num:`Figure #caribewave-nle`). The USGS ShakeMap and PAGER group also work directly with the U.S.
 Agency for International Development (USAID) Office of Foreign
 Disaster Assistance (OFDA), the World Bank, Geohazards International (GHI), among other agencies, countries, and NGO's to
 develop global planning exercises and scenarios. 
@@ -422,32 +412,31 @@ sampling of the range of studies these data and products motivate and facilitate
 **Example Engineering Research and Analyses:**
 
 * Analyses of potential damage to column/beam welds in steel
-  buildings following the 1994Northridge earthquake*
+  buildings following the 1994 Northridge earthquake. :ref:`ATC 2002 <atc2002>`.
 * ATC-54: Guidelines for using strong-motion data and ShakeMaps in
-  Post-Earthquake Response.*; :ref:`ATC 2002 <atc2002>`.
+  Post-Earthquake Response.  :ref:`ATC 2002 <atc2002>`.
 * An Empirical Model for Global Earthquake Fatality
-  Estimation*; :ref:`Jaiswal and Wald (2010) <jaiswal2010>`.
-* Pomonis, A. and So. E. (2011) Guidelines for the Collection of
-  Consequence Data, Global Earthquake Consequences Database Global
-  Component Project; :ref:`Pomonis and So (2011) <pomonis2011>`.
+  Estimation. :ref:`Jaiswal and Wald (2010) <jaiswal2010>`.
+* Guidelines for the Collection of Consequence Data, Global Earthquake Consequences Database Global
+  Component Project. :ref:`Pomonis and So (2011) <pomonis2011>`.
+* ShakeCast Case Study on Nevada Bridges. :ref:`Biasi et al \(2016\) <biasi2016>`.
    
 **Example Seismological Research and Analyses:**
 
-* Intensity attenuation for active crustal regions*; :ref:`Allen et al, 2012 <allen2012>`. 
+* Intensity attenuation for active crustal regions. :ref:`Allen et al, 2012 <allen2012>`. 
 * Ground Motion to Intensity Conversion Equations (GMICEs): A Global
-  Relationship and Evaluation of Regional Dependency.*; :ref:`Caprio
+  Relationship and Evaluation of Regional Dependency. :ref:`Caprio
   et al. (2015) <caprio2015>`.
 * Fault extent estimation for near-real time ground shaking map
-  computation purposes*; :ref:`Convertito et al. (2011)
+  computation purposes. :ref:`Convertito et al. (2011)
   <convertito2011>`.
 * Bayesian Estimations of Peak Ground Acceleration and 5% Damped
-  Spectral Acceleration from Modified Mercalli Intensity Data*;
+  Spectral Acceleration from Modified Mercalli Intensity Data*.
   :ref:`Ebel and Wald (2003) <ebel2003>`.
 * Regression analysis of MCS intensity and ground motion parameters
-  in Italy and its application in ShakeMap*; :ref:`Faenza and Michilini (2010) <faenza2010>`
-* A Global Earthquake Discrimination Scheme to
-  Optimize Ground-Motion Prediction Equation Selection*; :ref:`Garcia
-  et al. (2012) <garcia2002b>`.
+  in Italy and its application in ShakeMap. :ref:`Faenza and Michilini (2010) <faenza2010>`
+* A Global Earthquake Discrimination Scheme to Optimize Ground-Motion
+  Prediction Equation Selection. :ref:`Garcia et al. (2012b) <garcia2012b>`.
   
 
 

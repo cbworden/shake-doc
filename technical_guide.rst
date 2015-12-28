@@ -9,7 +9,7 @@ Introduction
 *************
 
 This ShakeMap Technical Guide is meant as the definitive source of information 
-pertaining to the generation of ShakeMaps.  Many of initial descriptions in :ref:`Wald et al. 
+pertaining to the generation of ShakeMaps.  Many of the initial descriptions in :ref:`Wald et al. 
 \(1999a\) <wald1999a>` are outdated and are superseded by this current report.  Technical users of 
 ShakeMap should also consult the :ref:`users-guide` for additional information 
 pertaining to the format, availability, and the range of available ShakeMap products.
@@ -92,7 +92,7 @@ nearby.
 It should be mentioned that mathematically, or algorithmically, geospatial interpolation 
 can take many forms. There are some good reasons to employ geospatial kriging (with a 
 trend). However, considerations of the complexity of the trends (GMPE, inter-event bias 
-corrections per parameter) the use of multiply-weighted strong-motion and macroseimic 
+corrections per Intensity Measure, or IM), the use of multiply-weighted strong-motion and macroseimic 
 data, and the real-time nature of the processing require other considerations. Effectively, 
 the approach ShakeMap currently employs for interpolation (:ref:`Worden et al., 2010 <worden2010>`), which 
 employs a predetermined spatial correlation function, approaches `kriging-with-a-trend <https://en.wikipedia.org/wiki/Kriging>`_
@@ -110,12 +110,12 @@ Recorded Ground-motion Parameters
 Data Acquisition
 =================
 
-ShakeMap requires estimates of magnitude and location and (optionally but preferably) 
-shaking parameters at seismic stations. As such, ShakeMap has been interfaced with 
+ShakeMap requires estimates of magnitude and location and (optionally, but preferably) 
+shaking IM's at seismic stations. As such, ShakeMap has been interfaced with 
 several types of seismic processing systems in wide use at numerous networks across the U.S. and 
 around the world, including Antelope, SeisComP 3, and AQMS. The ShakeMap system, 
 however, is a stand-alone software package and is really a passive consumer of seismic 
-data. In other words, the ShakeMap software contains no data acquisition component. It is 
+data. In other words, the ShakeMap software itself contains no data acquisition component. It is 
 assumed that ShakeMap earthquake source information and parametric data are packaged 
 for delivery to ShakeMap and that that delivery will trigger a ShakeMap run. The 
 required format is in XML, as fully described in the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_. 
@@ -129,7 +129,7 @@ additional outlier and data quality checks are performed within ShakeMap (see
 responsibility of the contributing seismic network.
 
 For global and historic earthquake ShakeMap generation, we have developed scripts to 
-preprocess various forms of are seismic waveform (as well as macroseismic) data that are 
+preprocess various forms of seismic waveform (as well as macroseismic) data which are 
 openly available around the world. For example, we provide a Python script *getstrong* 
 run independently of ShakeMap, as described in the :ref:`software-guide`.
 
@@ -140,12 +140,12 @@ USGS/Caltech collaboration. In addition, the California Geological Survey, CGS,
 contributes nearly 350 strong motion stations in near real-time, utilizing an automated 
 telephone dial-up procedure (:ref:`Shakal et al, 1998 <shakal1998>`) and the USGS National Strong Motion 
 Instrumentation Program (NSMP) contributes dial-up station parameters as well, with 
-nearly 50 stations in southern California alone.  Lastly, the "NetQuakes" program, a 
+nearly 50 stations in southern California alone.  Lastly, the
+`"NetQuakes" <http://earthquake.usgs.gov/monitoring/netquakes/map>`_ program, a 
 relatively low cost seismograph USGS installs in homes, businesses, buildings, and 
-schools (http://earthquake.usgs.gov/monitoring/netquakes/map/) contributes close to 100 
-additional stations in southern California. 
+schools contributes close to 100 additional stations in Southern California. 
 
-Generation of ShakeMap in southern California is automatic, triggered by the event 
+Generation of ShakeMap in Southern California is automatic, triggered by the event 
 associator of the seismic network.  Within the first 2 minutes of an earthquake, ground-
 motion parameters are available from the USGS-Caltech component of the network, and 
 within minutes most of the important near-source CGS and NSMP stations contribute.  A 
@@ -259,22 +259,23 @@ Ground Motion and Intensity Predictions
 
 In areas distant from the control of seismic instrumentation or reported intensity, ground 
 motions must be estimated using the available earthquake source parameters and GMPEs 
-or IPEs. GMPEs are available for a wide range of magnitudes, source mechanisms, 
+or Intensity Prediction Equations (IPEs). GMPEs are available for a wide range of magnitudes, source mechanisms, 
 and tectonic settings. IPEs are still comparatively uncommon, with only a handful of 
 published relations, focused on active tectonic and stable shield (cratonic) environments 
 (e.g., :ref:`Atkinson and Wald, 2007 <atkinson_wald2007>`; :ref:`Allen et al., 2012 <allen2012>`). To supplement the available IPEs, we 
 have developed a "virtual IPE" which is a combination of the operator's selected GMPE 
 and Ground Motion/Intensity Conversion Equation (GMICE), which work together to 
-present the same interface and behaviors as a literal IPE, while being available for a 
+present the same interface and behaviors as a direct IPE, while being available for a 
 wider range of regional and tectonic environments.
 
 We describe the way ShakeMap employs ground-motion and intensity predictions in 
 :ref:`sec_shakemap_processing`. An up-to-date list of the GMPEs and IPEs available for ShakeMap can be 
 found in the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_.
 
-***********************
-Spatial Correlations
-***********************
+..  ***********************
+..   Spatial Correlations
+..   *********************** 
+
 
 .. _sec_shakemap_processing:
 
@@ -292,18 +293,18 @@ shaking-parameter uncertainty, and Vs30, are also produced as separate
 products or for later analyses of each intermediate processing step, if so desired.
 
 The ShakeMap program responsible for producing the interpolated grids is called 
-*"grind."* This section is a description of the way *grind* works, and some of the 
+*"grind."*  This section is a description of the way *grind* works, and some of the 
 configuration parameters and command-line flags that control specific functionality. (For 
 a complete description of configuring and running *grind*, see the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_ and the 
 configuration file *grind.conf*.)
 
-Below is an outline of the ShakeMap processing workflow: :num:`Figure #figure_processing` provides 
-a schematic of the key steps in the processing.
+Below is an outline of the ShakeMap processing workflow. :num:`Figure #figure-processing` provides 
+a schematic of the key processing steps.
 
 #. Data Preparation
 
    #. Remove flagged stations
-   #. Convert intensities to PGM and vice versa
+   #. Convert intensities to peak ground motions (PGMs) and vice versa
    #. Correct data to "rock" using Vs30-based amplification terms
    #. Remove estimated basin response (optional)
 
@@ -323,7 +324,7 @@ a schematic of the key steps in the processing.
    #. Basin amplifications (optional)
    #. Vs30 site amplifications
  
-.. _figure_processing:
+.. _figure-processing:
 
 .. figure:: _static/ProcessingFigure.*
    :align: left
@@ -351,21 +352,23 @@ consist of a network identifier concatenated (using a '.') with the station ID (
 
 Each station may have one or more 'channels' each of which is denoted by an ID code 
 (often called a 'seedchan'). The last character of the ID is assumed to be the orientation 
-of the instrument (east-west, north-south, vertical). ShakeMap uses the peak horizontal 
-component, and thus ignores amplitudes with a 'Z' as the final character. Note that some 
+of the instrument (east-west, north-south, vertical). ShakeMap only
+uses the peak horizontal component. Thus, ShakeMap does not consider amplitudes with a 'Z' as the
+final character, though it does carry the vertical amplitude
+values through to the output station files. Note that some 
 stations in some networks are given orientations of '1', '2', and '3' (rather than the more 
 standard 'N', 'E', and 'Z') where any of the components may be vertical. Because of 
 non-standardized nature of these component labels, ShakeMap does not attempt to 
-discern their orientation and assumes that they are all horizontal. This is extremely 
-undesirable. It is the network operator's responsibility to ensure that the vertical channel 
+discern their orientation and assumes that they are all horizontal. This is 
+undesirable: It become the network operator's responsibility to ensure that the vertical channel 
 is either a) excluded, or b) labeled with a 'Z', before the data are presented to ShakeMap. 
 Similarly, many networks co-locate broadband instruments with strong-motion 
-instruments, and produce amps for both. Again, it is the network operator's responsibility 
-to select the instrument that best represents the data for the amps in question. Aside from 
+instruments, and produce PGMs for both. Again, it is the network operator's responsibility 
+to select the instrument that best represents the data for the PGMs in question. Aside from 
 the station flagging discussed below, ShakeMap makes no attempt to discern which of a 
 set of components is superior, it will simply use the largest value it finds (i.e., if 
 ShakeMap sees channels 'HNE' and 'HHE' for the same station, it will simply uses the 
-larger of the two amps without regard to the possibility that one may be off-scale or 
+larger of the two PGMS without regard to the possibility that one may be off-scale or 
 below-noise).
 
 Currently, ShakeMap is location-code agnostic. Because the current SNCL (Station, 
@@ -432,7 +435,7 @@ configured (see the parameters 'pgm2mi' and 'mi2pgm' in *grind.conf*). Small val
 observed intensities (MMI < III for PGA, and MMI < IV for other parameters) are not 
 converted to PGM for inclusion in the PGM maps. Our testing indicated that including 
 these low intensities introduced a significant source of error in the interpolation, likely 
-due to the very wide range (and overlap) of ground motions that can produce MMIs less than III or IV.
+due to the very wide range (and overlap) of ground motions that can produce MMIs lower than III or IV.
 
 
 Site Corrections
@@ -451,22 +454,23 @@ explanatory variable for modern GMPEs (e.g., :ref:`Abrahamson et al., 2014 <abra
 of GMPEs for ground motion estimation is fundamental to ShakeMap, we follow this 
 convention and use Vs30-based amplification terms for accounting for site amplification. 
 In :ref:`future-directions`, we suggest alternative approaches that require additional 
-site information beyond Vs30. . 
+site information beyond Vs30.
 
 Site Characterization Map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each region wishing to implement ShakeMap should have a Vs30 map that covers the 
-entire area they wish to map.  Using the 1994, Northridge (southern California) 
+entire area they wish to map.  Using the 1994, Northridge (Southern California) 
 earthquake ShakeMap as an example (:num:`Figure #figure1-4`), we present, 
 in :num:`Figure #figure1-5`, the Vs30 map used. 
 Until 2015, the California site-condition map was based on geologic base maps as 
 introduced by :ref:`Wills et al. \(2000\) <wills2000>`, and modified by Howard Bundock and Linda Seekins 
-of the USGS Menlo Park (H. Bundock, written comm., 2002). The Wills' map extent is 
+of the USGS Menlo Park (H. Bundock, written comm., 2002). The Wills et
+al. map extent is 
 that of the State boundary; however, ShakeMap requires a rectangular grid, so fixed 
 velocity regions were inserted to fill the grid areas representing the ocean and land 
 outside of California. Unique values were chosen to make it easy to replace those values 
-in the future. The southern boundary of the Wills map coincides with the U.S.A./Mexico 
+in the future. The southern boundary of the Wills et al. map coincides with the U.S.A./Mexico 
 border.  However, due to the abundant seismic activity in Imperial Valley and northern 
 Mexico, we have continued the trend of the Imperial Valley and Peninsular Ranges south 
 of the border by approximating the geology based on the topography; classification BC 
@@ -527,7 +531,9 @@ ShakeMap.
 :ref:`Worden et al. \(2015\) <worden2015>` further consolidate readily-available Vs30 map grids used for 
 ShakeMaps at regional seismic networks of the ANSS with background, Thompson et 
 al.'s California Vs30 map, and the topographic-based Vs30 proxy to develop a 
-consistently-scaled, mosaic of Vs30 maps with smooth transitions from tile to tile.  It is 
+consistently-scaled, mosaic of `Vs30 maps for the globe
+<https://github.com/cbworden/earthquake-global_vs30>`_
+with smooth transitions from tile to tile.  It is 
 anticipated that aggregated Vs30 data provided by 
 :ref:`Yong et al. \(2015\) <yong2015>` will facilitate further map development of other portions of the U.S. 
 
@@ -536,8 +542,9 @@ Amplification Factors
 
 ShakeMap provides two operator-selectable methods for determining the factors used to 
 amplify and de-amplify ground motions based on Vs30. The first is to apply the 
-frequency- and amplitude-dependent factors determined by :ref:`Borcherdt \(1994\) <borcherdt1994>`. 
-Amplification of PGA employs Borcherdt's short-period factors; PGV uses mid-period 
+frequency- and amplitude-dependent factors such as those determined by
+:ref:`Borcherdt \(1994\) <borcherdt1994>` or :ref:`Seyhan and Stewart \(2014\) <seyhan2014>`.
+By default, amplification of PGA employs Borcherdt's short-period factors; PGV uses mid-period 
 factors and PSA at 0.3, 1.0, and 3.0 sec uses the short- mid- and long-period factors, 
 respectively. The second method uses the site correction terms supplied with the user's 
 chosen GMPE (if such terms are supplied for that GMPE). The differences between these 
@@ -606,7 +613,7 @@ data. Currently, basin amplifications are not applied to MMI.
 Event Bias
 =============
 
-ShakeMap uses ground motion prediction equations (GMPEs) and intensity prediction 
+ShakeMap uses ground motion prediction equations (GMPEs) and, optionally, intensity prediction 
 equations (IPEs) to supplement sparse data in its interpolation and estimation of ground 
 motions. If sufficient data are available, we compute an event bias that effectively 
 removes the inter-event uncertainty from the selected GMPE (IPE). This approach has 
@@ -621,7 +628,7 @@ estimates.
 
 In computing the total misfit, primary observations are weighted as if they were GMPE 
 predictions, whereas converted observations are down-weighted by treating them as if 
-they were GMPE predictions converted using the GMICE. (i.e., primary observations are 
+they were GMPE predictions converted using the GMICE (i.e., primary observations are 
 given full weighting, whereas the converted observations are given a substantially lower 
 weight.) Once a bias has been obtained, we flag (as outliers) any data that exceeds a user-
 specified threshold (often three times the nominal sigma of the GMPE). The bias is then 
@@ -635,7 +642,7 @@ for a complete discussion of these parameters.)
 
 The biased GMPE is then used to create estimates for the entire output grid.  If the user 
 has opted to include directivity effects, they are applied to these 
-estimates. See the `sec_interpolation`_  section for the way the GMPE-based estimates are used.
+estimates. See the :ref:`sec_interpolation` section for the way the GMPE-based estimates are used.
 
 The 1994 Northridge earthquake ShakeMap provides an excellent example of the effect 
 of bias correction. Overall, the ground motions for the Northridge earthquake exceed 
@@ -648,7 +655,7 @@ inter-event bias term (see :num:`Figure #nr-pga-regr` and :num:`Figure #nr-pgv-r
    :align: left
    :width: 650px
 
-   Plot of 1994 Northridge earthquake peak accelerations as a function of distance. The triangles
+   Plot of 1994 Northridge earthquake PGAs as a function of distance. The triangles
    show recorded ground motions; the red line shows the unbiased :ref:`Boore and Atkinson 
    \(2008\) <ba2008>` (BA08) GMPE; the dark green lines show BA08 following the bias 
    correction described in the text; the faint green lines show the biased GMPE +/- three
@@ -660,17 +667,18 @@ inter-event bias term (see :num:`Figure #nr-pga-regr` and :num:`Figure #nr-pgv-r
    :align: left
    :width: 650px
 
-   Plot of 1994 Northridge earthquake peak velocities as a function of distance. The triangles
+   Plot of 1994 Northridge earthquake PGVs as a function of distance. The triangles
    show recorded ground motions; the red line shows the unbiased :ref:`Boore and Atkinson 
    \(2008\) <ba2008>` (BA08) GMPE; the dark green lines show BA08 following the bias 
    correction described in the text; the faint green lines show the biased GMPE +/- three
    standard deviations.
 
-The ShakeMap bias correction accommodates this behavior once 
-sufficient ground motion or intensity data are added (e.g., :num:`Figure #figure1-9` 
+The ShakeMap bias correction accommodates this behavior once a 
+sufficient number of PGMs or intensity data are added (e.g., :num:`Figure #figure1-9` 
 and :num:`Figure #figure1-10` A and C, 
-show before and after bias correction, respectively). The addition of the stations of course 
-adds shaking constraints to the map at those locations, but the bias correction additionally 
+show before and after bias correction, respectively). The addition of
+the stations not only provides direct shaking constraints at those
+locations, the bias correction additionally 
 affects the map wherever ground motion estimates dominate (i.e., away from the stations). 
  
 .. _figure1-9:
@@ -707,7 +715,7 @@ Interpolation
 ===============
 
 The interpolation procedure is described in detail in :ref:`Worden et al. \(2010\) <worden2012>`. Here we 
-summarize it briefly. 
+summarize it only briefly. 
 
 To compute an estimate of ground motion at a given point in the latitude-longitude grid, 
 ShakeMap finds an uncertainty-weighted average of 1) direct observations of ground 
@@ -725,7 +733,7 @@ have a non-zero uncertainty due to the spatially averaged nature of intensity as
 The uncertainty for estimates from 
 GMPEs (and IPEs) is the stated uncertainty given in the generative publication or 
 document. The GMPE uncertainty is often spatially constant, but this is not always the 
-case, especially with more recent GMPEs..
+case, especially with more recent GMPEs.
 
 For converted observations, a third uncertainty is combined with zero-distance 
 uncertainty and the uncertainty due to spatial separation: the uncertainty associated with 
@@ -771,8 +779,8 @@ Amplify Ground Motions
 
 At this point ShakeMap has produced interpolated grids of ground motions (and 
 intensities) at a site class specified as "rock." If the operator has specified the -basement 
-option to grind (and supplied the necessary depth-to-basement file), the basin 
-amplification function (:ref:`Field et al., 2000 <field2000>`) is applied to the grids. Then, if the user has 
+option to *rind* (and supplied the necessary depth-to-basement file), a
+basin amplification function (currently :ref:`Field et al., 2000 <field2000>`) is applied to the grids. Then, if the user has 
 specified *-qtm*, site amplifications are applied to the grids, creating the final output.
 
 Differences handling MMI
@@ -787,8 +795,8 @@ few differences remain:
    not particularly satisfying.
 
 2. Because there are relatively few IPEs available at this time, we have introduced 
-   the idea of a virtual IPE (VIPE). If the user does not specify an IPE in grind.conf, 
-   grind will use the configured GMPE in combination with the GMICE to simulate 
+   the idea of a virtual IPE (VIPE). If the user does not specify an IPE in *grind.conf*, 
+   *grind* will use the configured GMPE in combination with the GMICE to simulate 
    the functionality of an IPE. In particular, a) the bias is computed as a magnitude 
    adjustment to the VIPE to produce the best fit to the intensity observations (and 
    converted observations) as described in :ref:`sec_event_bias`, and b) the 
@@ -814,7 +822,10 @@ few differences remain:
 
 5. As mentioned above, we currently have no function for applying basin 
    amplification to the intensity data. We hope to remedy this shortly with a solution 
-   similar to #4, above, where we apply the basin effects through a VIPE.
+   similar to #4, above, where we apply the basin effects through a
+   VIPE. In practice, the main areas where basin depth models are
+   available are also those within which station density is great
+   (e.g., Los Angeles and San Francisco, California).
 
 Fault Considerations
 =============================
@@ -840,13 +851,14 @@ Median Distance and Finite Faults
 As discussed in the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_, the user may specify a 
 finite fault to guide the 
 estimates of the GMPE, but often a fault model is not available for some time following 
-an earthquake. For larger events, this becomes problematic because the distance-to-
-source term ShakeMap provides to the GMPE in order to predict ground motions comes 
+an earthquake. For larger events, this becomes problematic because the
+distance-to-source
+term ShakeMap provides to the GMPE in order to predict ground motions comes 
 from the hypocenter (or epicenter, depending on the GMPE) rather than the actual rupture 
 plane (or its surface projection), and for a large fault, these distances can be quite 
-different. For a non-point source, in fact, the hypocentral distance is the greatest distance 
-possible -- the true distance to source will almost always be less than the hypocentral
-distance.
+different. For a non-point source, in fact, the hypocentral distance
+can equal the closest distance, but it can also be significantly greater than the
+closest distance. 
 
 ShakeMap addresses this issue by introducing the concept of median distance. Following 
 a study by :ref:`EPRI \(2003\) <epri2003>`, we assume that an unknown fault of appropriate size could have 
@@ -865,12 +877,12 @@ the hypocentral-distance regression coefficients and switch to fault-distance te
 fault geometry was established. The median-distance approximation described above 
 could then be discarded. 
 
-:ref:`Bommer and Akkar \(2012\) <bommer2012>`,have made the case for deriving both sets of coefficients: 
+:ref:`Bommer and Akkar \(2012\) <bommer2012>`, have made the case for deriving both sets of coefficients: 
 "The most simple, consistent, efficient and elegant solution to this problem is for all 
 ground-motion prediction equations to be derived and presented in pairs of models, one 
-using the analysts' preferred extended source metric ... -- and another using a point-
-source metric, for which our preference would be hypocentral distance, Rhyp" (from 
-:ref:`Bommer and Akkar, 2012 <bommer2012>`). Indeed, :ref:`Akkar et al. \(2014\) <akkar2014>` provide such multiple coefficients 
+using the analysts' preferred extended source metric ... ---and another using a point-
+source metric, for which our preference would be hypocentral distance,
+Rhyp". Indeed, :ref:`Akkar et al. \(2014\) <akkar2014>` provide such multiple coefficients 
 for their GMPEs for the Middle East and Europe. However, despite its utility, this 
 strategy has not been widely adopted among the requirements for modern GMPEs (e.g., 
 :ref:`Powers et al., 2008 <powers2008>`; :ref:`Abrahamson et al., 2008 <abrahamson2008>`; :ref:`2014 <abrahamson2014>`).
@@ -880,11 +892,11 @@ Northridge, even when the fault is unknown and there are no data, the median dis
 correction (:num:`Figure #figure1-7` and :num:`Figure #figure1-8`, panels B and C) brings the shaking estimates more in line 
 with those constrained by knowledge of the fault. As mentioned earlier, the shaking for 
 this event exhibits a positive inter-event bias term, so even with the fault location 
-constrained, estimates still tend to under-predict the actual recordings on average. 
+constrained, estimates still tend to under-predict the actual recordings, on average. 
 
 While the effect of this correction for the Northridge earthquake example is noticeable, 
 for events with larger finite faults, the median distance correct becomes crucial while 
-awaiting constraints from finite-fault modeling, aftershocks, and surface slip.
+awaiting constraints on rupture geometry from finite-fault modeling, aftershocks, and surface slip.
 
 .. _sec_fault_dimensions:
 
@@ -897,7 +909,7 @@ faults are one or more (connected or disconnected) planar quadrilaterals. The fa
 geometry is used by ShakeMap to compute distance-to-source for the GMPE, IPE, and 
 GMICE as well as to visualize the fault geometry in map view (for example, see red-line 
 rectangles in :num:`Figure #figure1-7` and :num:`Figure #figure1-8`). This distance is either to the surface projection of the 
-fault (for the so-called Joyner-Boore distance), or to the rupture plane, depending on the 
+fault (for the so-called Joyner-Boore, or JB distance), or to the rupture plane, depending on the 
 requirements of the prediction equation. In this case the dimensions of the Northridge 
 rupture are constrained from analyses of the earthquake source (e.g., :ref:`Wald et al., 1996 <wald1996>`).
 
@@ -905,7 +917,7 @@ While a finite fault is important for estimating the shaking from larger earthqu
 typically not necessary to develop an extremely precise fault model, or to know the 
 rupture history. One or two fault planes usually suffice, except for very large or complex 
 surface-rupturing faults. In the immediate aftermath of a large earthquake, a first-order 
-model based on tectonic environment, known faults, aftershock distribution, and 
+fault model based on tectonic environment, known faults, aftershock distribution, and 
 empirical estimates based on the magnitude (e.g., :ref:`Wells and Coppersmith, 1994 <wells1994>`) is often 
 sufficient to greatly improve the ShakeMap estimates in poorly instrumented areas. In 
 many cases this amounts to an "educated guess," and seismological expertise and 
@@ -933,8 +945,11 @@ An example of the effect of the :ref:`Rowshandel \(2010\) <rowshandel2010>` dire
 :num:`Figure #figure1-13` for a strike-slip faulting scenario along the Hayward Fault in the East Bay 
 area of San Francisco. Unilateral rupture southeastward results in stronger shaking, 
 particularly along the southern edge of the rupture. The frequency dependence of the 
-directivity term provided by :ref:`Rowshandel \(2010\) <rowshandel2010>` can be examined in detail by viewing 
-the intermediate grids produced and stored in the ShakeMap output directory. 
+directivity terms provided by :ref:`Rowshandel \(2010\) <rowshandel2010>` can be examined in detail by viewing 
+the intermediate grids produced and stored in the ShakeMap output
+directory. In general, longer-period IMs (PGV, PSA1.0 and PSA3.0,
+and MMI) are more strongly affected by the directivity function
+employed. 
  
 .. _figure1-13:
 
@@ -942,18 +957,18 @@ the intermediate grids produced and stored in the ShakeMap output directory.
    :align: left
    :width: 650px
  
-   ShakeMap scenario intensity (top) and peak velocity (bottom) maps for the M7.05 
+   ShakeMap scenario intensity (top) and PGV (bottom) maps for the M7.05 
    Hayward Fault, CA, earthquake: A) Intensity; No directivity, B) Intensity; Directivity added, C) 
-   Peak Velocity; No Directivity, and D) Peak Velocity; Directivity added.
+   PGV; No Directivity, and D) PGV; Directivity added.
 
 Additional Considerations
 ==========================
 
 There are a great number of details and options when running *grind*. The operator should 
 familiarize himself with grind's behavior by reading the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_, 
-the configuration file (*grind.conf*), and the program's self-documentation (run "grind -
-help"). Below are a few other characteristics of grind that the operator should be familiar 
-with:
+the configuration file (*grind.conf*), and the program's
+self-documentation (run *"grind -help"*).
+Below are a few other characteristics of *grind* that the operator should be familiar with. 
 
 User-supplied Estimate Grids
 ------------------------------
@@ -961,36 +976,39 @@ User-supplied Estimate Grids
 Much of the discussion above was centered on the use of GMPEs (and IPEs) and getting 
 the best set of estimates from them (through bias, basin corrections, finite faults, and directivity). 
 But the users may also supply their own grids of estimates for any or all of the ground motion 
-parameters. ShakeMap is indifferent as to the way these estimates are generated - as long 
+parameters. ShakeMap is indifferent as to the way these estimates are generated---as long 
 as they appear in a GMT grid in the event's input directory, they will be used in place of 
 the GMPE's estimates. (See the `Software Guide <_static/SoftwareGuideV3_5.pdf>`_ for the 
 specifications of these input 
 files.) If available, the user should also supply grids of uncertainties for the corresponding 
-parameters - if not, ShakeMap will use the uncertainties produced by the GMPE.
+parameters---if not, ShakeMap will use the uncertainties produced by
+the GMPE.
 
-This facility allows the user to employ more sophisticated numerical ground-motion 
+User-supplied input motions allow the user to employ more sophisticated numerical ground-motion 
 modeling techniques, ones that may include fault slip distribution and 3-D propagation 
-effects, for example, not achievable using empirical GMPEs. The peak-ground motion 
+effects, for example, not achievable using empirical GMPEs. The PGM 
 output grid of such calculations can be rendered with ShakeMap, allowing users to 
-visualize and employ familiar ShakeMap products.
+visualize and employ familiar ShakeMap products. For instance, see the
+ShakeCast scenario described in :ref:`sec_shakemap_applications`. 
+
 
 Uncertainty
 ------------
 
-As mentioned above, some of the products of grind are grids of uncertainty for each 
+As mentioned above, some of the products of *grind* are grids of uncertainty for each 
 parameter. This uncertainty is the result of a weighted average combination of the 
 uncertainties of the various inputs (observations, converted observations, and estimates) 
 at each point in the output. These gridded uncertainties are provided in the file 
-uncertainty.xml (see :ref:`sec_interpolated_grid_file` for a description of the 
+*uncertainty.xml* (see :ref:`sec_interpolated_grid_file` for a description of the 
 file format).
 
 Because we also know the GMPE uncertainty over the grid, we can compute the ratio of 
 the total ShakeMap uncertainty to the GMPE uncertainty. For the purposes of computing 
-this uncertainty ratio, we use PGA as the reference ground motion parameter.
+this uncertainty ratio, we use PGA as the reference IM.
 
 Continuing with the Northridge earthquake ShakeMap example, :num:`Figure #figure1-12` presents the 
 uncertainty maps for a variety of constraints. The sequence of four maps progresses 
-hypocenter-  only; finite fault added (red rectangle), hypocenter and strong motion 
+hypocenter-only; finite fault added (red rectangle), hypocenter and strong motion 
 stations (triangles) only and finally finite fault and strong motion stations.
  
 .. _figure1-12:
@@ -1007,13 +1025,12 @@ stations (triangles) only and finally finite fault and strong motion stations.
    reduces overall uncertainty; D) Finite fault and strong motion stations. Notes: Average 
    uncertainty is computed by averaging uncertainty at grids that lie within the MMI=VI contour 
    (bold contour line), so panel D is marginally higher than C despite added constraint (fault model). 
-   For more details see Wald et al. (2008) and Worden et al. (2010). 
-
+   For more details see :ref:`Wald et al. \(2008\) <wald2008>` and :ref:`Worden et al. \(2010\) <worden2010>`.   
 
 For a purely predictive map (of small magnitude) the uncertainty ratio will be 1.0 
 everywhere. For larger magnitude events, when a finite fault is not available, the 
 ShakeMap uncertainty is greater than the nominal GMPE uncertainty (as discussed above 
-in the section "Median Distance and Finite Faults"), leading to a ratio greater than 1.0 in 
+in the section :ref:`sec_median_distance`), leading to a ratio greater than 1.0 in 
 the near-fault areas and diminishing with distance. When a finite fault is available, the 
 ratio returns to 1.0. In areas where data are available, the ShakeMap uncertainty is less 
 than that of the GMPE (see the section "Interpolation," above), resulting in a ratio less 
@@ -1027,7 +1044,7 @@ Representing Macroseismic Intensity on Maps
 *********************************************
 
 :ref:`Wald et al. \(1999b\) <wald1999b>` relates recorded ground motions to Modified Mercalli Intensities in 
-California. While not the first work of its type, Wald, et al. had the advantage of using 
+California. While not the first work of its type, Wald et al. had the advantage of using 
 several earthquakes that were both very well surveyed for MMI, and also well 
 instrumented for recorded ground motions. By relating the ground motions to MMI, Wald 
 et al. made possible the rapid calculation of expected intensities from recorded ground 
@@ -1036,11 +1053,14 @@ represented on a map.
 
 As part of the original implementation of ShakeMap, :ref:`Wald, et al. \(1999a\) <wald1999a>` developed a 
 color scale to represent expected intensities over the mapped area. This scale gives users 
-an easy to understand, intuitive depiction of the ground shaking for a given earthquake. 
+an easy---to---understand, intuitive depiction of the ground shaking for a given earthquake. 
 By mapping intensity to color, we also make the hardest-hit areas stand out for 
 emergency responders and members of the media. Along with the color scale, we 
 developed simplified two-word descriptions of the felt intensity as well as the likely 
-damage.
+damage. These abridged two-word descriptions are not meant to replace
+more comprehensive descriptions provided in the MMI (e.g.,
+:ref:`Dewey et al., 2000 <dewey2000>`; :ref:`Dewey et al., 1995<dewey1995>`),
+or EMS-98 (:ref:`Grunthal et al., 1998<grunthal1998>`) scales. 
 
 By relating recorded peak ground-motions to Modified Mercalli Intensities, we can 
 generate instrumental intensities within a few minutes of an earthquake. In the current 
@@ -1063,8 +1083,11 @@ addition, we saturate intensity X+ with dark red; observed ground-motions alone 
 sufficient to warrant any higher intensities given that the available empirical relationships 
 do not have any values of intensity greater than IX. In recent years, the USGS has limited 
 observed Modified Mercalli intensities to IX, reserving intensity X for possible future 
-observations (see :ref:`Dewey et al., 1995 <dewey1995>`, for more details); they no 
-longer assign intensity XI and XII.
+observations (see :ref:`Dewey et al., 1995 <dewey1995>`, for more details); USGS no 
+longer assigns intensity XI and XII. We note that there only 
+were only two intensity IX assignments for the 1994 Northridge (:ref:`Dewey et al., 1995 <dewey1995>`)
+earthquake and only two-or-three proper intensity IX assignments for the
+1989 Loma Prieta earthquake (J. Dewey, 2015, personal communication). 
 
       
 +-----------+-----+-------+------+-----------+-----+-------+------+
@@ -1118,7 +1141,9 @@ to columns 6-8.
 We drape the color-coded Instrumental Intensity values on the topography to maximize 
 the information available in terms of both geographic location and likely site conditions.  
 Topography does serve as a simple yet effective proxy for examining site and basin 
-amplification.
+amplification, yet, we recognize that many users do not necessarily
+benefit intuitively from having topography as a basemap (as users
+learned in the Earth Sciences). 
 
 ShakeMap Instrumental Intensity Scale Text Descriptions
 ========================================================
@@ -1158,7 +1183,7 @@ structures to damage and people to experience the earthquake.
 
 The ShakeMap descriptions of felt shaking begin to lose meaning above VII or VIII. In 
 the :ref:`Dengler and Dewey \(1998\) <dengler1998>` study, peoples' perception of shaking began to saturate in 
-the intensity VII -- VIII range, with more than half the people at VII-VIII and above 
+the intensity VII-VIII range, with more than half the people at VII-VIII and above 
 reporting the shaking as "violent" on a scale from "weak" to "violent."  In the ShakeMap 
 descriptions, we intensified the descriptions of shaking with increases of intensity above 
 VII, because the evidence from instrumental data is that the shaking is stronger.  But we 
@@ -1175,8 +1200,8 @@ damage they produce, rather than the strength of perceived shaking.
 ShakeMap Intensity Scale and Peak Ground Motions
 ===================================================
 
-The ShakeMap Instrumental Intensity Scale Legend provides the Peak Ground 
-Acceleration and Peak Ground Velocity associated with the central value in each 
+The ShakeMap Instrumental Intensity Scale Legend provides the PGA and PGV
+associated with the central value in each 
 intensity box (see :num:`Figure #figure1-16`). For all current GMICE, the ground motion scale is 
 logarithmic, with an increase of one intensity unit resulting from approximately a 
 doubling of peak ground motion. Nevertheless, each GMICE has its own mapping of 
@@ -1211,7 +1236,7 @@ calling the program *mapping* with the flag *-pgminten*.
    ShakeMap for the M6.7 Northridge, CA, earthquake with a finite fault (red 
    rectangle), strong motion data (triangles) and intensity data (circles). Stations and macroseismic 
    data are color-coded according to their intensity value, either as observed (for macroseismic data) 
-   or as converted as derived by Worden et al. (2011) and indicated by the scales shown. Note: 
+   or as converted as derived by :ref:`Worden et al. \(2011\) <worden2011>` and indicated by the scales shown. Note: 
    Macroseismic data do not change colors from map to map, but seismic stations do since the 
    estimated intensity by conversion depends on which parameter is used. 
 
@@ -1227,8 +1252,9 @@ Use of Peak Values Rather than Mean
 With ShakeMap, we chose to represent peak ground-motions as recorded. We depict the 
 larger of the two horizontal components, rather than as either a vector sum, or as a 
 geometric mean value. The initial choice of peak values was necessitated by the fact that 
-roughly two thirds of the TriNet (now the southern California portion of CISN) strong 
-motion data (the CGS data) are delivered as peak values for individual components of 
+roughly two thirds of the TriNet (now the Southern California portion of CISN) strong 
+motion data (the California Geological Survey, or CGS, data)
+are delivered as peak values for individual components of 
 motion, that is, as parametric data, not waveforms. This left two options: provide peak 
 values or median of the peak values; determining vector sums of the two horizontal 
 components was not an option because the peak values on each component do not 
@@ -1260,9 +1286,10 @@ Initially, our use of PGA and PGV for estimating intensities was also simply pra
 We were only retrieving peak values from a large subset of the network, so it was 
 impractical to compute more specific ground-motion parameters, such as average 
 response spectral values, kinetic energy, cumulative absolute velocities (CAV, :ref:`EPRI, 
-1991 <epri1991>`), or the JMA intensity algorithm (:ref:`JMA, 1996 <jma1996>`) for example. However, because near-
-source strong ground-motions are often dominated by short-duration, pulse-like ground-
-motions (usually associated with source directivity), PGV appears to be a robust measure 
+1991 <epri1991>`), or the JMA intensity algorithm (:ref:`JMA, 1996
+<jma1996>`) for example. However, because
+near-source strong ground-motions are often dominated by short-duration, pulse-like
+ground-motions (usually associated with source directivity), PGV appears to be a robust measure 
 of intensity for strong shaking. In other words, the kinetic energy (proportional to 
 velocity squared) available for damage is well characterized by PGV. In addition, the 
 close correspondence of the JMA intensities and peak ground velocity (:ref:`Kaezashi and 
@@ -1274,13 +1301,13 @@ for the 1999 Chi-Chi earthquake. More recent work on Ground-Motion/Intensity
 Conversion Equations (e.g., :ref:`Atkinson and Kaka, 2007 <atkinson2007>`; :ref:`Worden, et al., 2012 <worden2012>`) has also 
 confirmed the strong relationship between PGV and intensity. 
 
-Nonetheless, for large distant earthquakes, the peak values may be less informative, and 
-duration and spectral content may become key parameters.  Although we may eventually 
+Nonetheless, for large distant earthquakes, peak motions may be less informative, and 
+spectral content and perhaps duration become key parameters.  Although we may eventually 
 adopt corrections for these situations, it is difficult to assign intensities in such cases. For 
 instance, it is difficult to assign the intensity in the zone of Mexico City where numerous 
 high-rises collapsed during the 1985 Michoacan earthquake. There was obviously high 
-intensity shaking for high-rise buildings, however, the majority of smaller buildings were 
-unaffected, suggesting a much lower intensity.  Whereas the peak ground velocities were 
+intensity shaking for high-rise buildings; however, the majority of smaller buildings were 
+unaffected, suggesting a much lower intensity.  Whereas PGVs were 
 moderate and would imply intensity VIII, resonance and duration conspired to cause a 
 more substantial damage than peak values would indicate. Although this is, in part, a 
 shortcoming of using peak parameters alone, it is more a limitation imposed by 

@@ -7,10 +7,18 @@ All ShakeMaps are available for viewing and download online. The ShakeMap
 Archives consist of three primary repositories: **Recent ShakeMaps**, the
 **ShakeMap Atlas** for historic earthquakes (primarily 1970-2012), and a
 collection of hypothetical earthquake **ShakeMap Scenarios**. For example,
-scenario earthquakes compiled for northern and southern California represent
+scenario earthquakes compiled for Northern and Southern California represent
 over 200 different earthquake ruptures studied for California, as detailed
 below. Formats for all ShakeMaps, whether near-real time, historic, or for
 future scenarios are uniform.
+
+.. note::
+   Some older archival ShakeMaps
+   online were generated with earlier versions of the ShakeMap
+   software; hence, they do not contain up-to-date formats and all
+   products. This will be remedied as older events are rerun and
+   updated. One can tell from the *processed time* on the bottom of
+   any ShakeMap when it was run. 
 
 Real-time ShakeMaps
 ---------------------------------------------------
@@ -29,24 +37,12 @@ Separate independent systems running in Puerto Rico and New England generate
 ShakeMaps, but these instances do not deliver them through the USGS Earthquake
 Program Web pages (at the time of this writing). GSM covers these regions, but
 GSM does not yet access the full set of data available to these regional
-systems.
-More details on regional, national, and international ShakeMap system
-implementation and operations are provided in ref:`sec_regionals`).
+systems. For more information on the ANSS regional and the national
+ShakeMap system implementations and operations, see the section on :ref:`sec_regionals`.
 
 **Internationally**, USGS ShakeMap is installed and is operational in Italy,
 France, Portugal, Switzerland, New Zealand, Romania, Indonesia, Iran, Iceland,
-Panama, and several other nations
-(see :num:`Figure #international-shakemaps`).
-
-.. _international-shakemaps:
-
-.. figure:: _static/International_shakemaps.*
-   :width: 650px
-   :alt: International ShakeMap Systems
-   :align: left
-
-   International ShakeMap Systems
-
+Panama, and several other nations (see :num:`Figure #international-shakemaps`).
 Several instances of ShakeMap are in testing
 or operational mode in the Middle East (including Oman, Morocco, and the UAE; M.
 Franke, written comm., 2015). In addition, other ShakeMap installations are in
@@ -57,6 +53,18 @@ place with several other interested countries.
 .. note::
    Very impressive systems analogous to ShakeMap operate in
    Japan (JMA), Taiwan, China, New Zealand, Turkey, and several other countries.
+
+
+.. _international-shakemaps:
+
+.. figure:: _static/International_shakemaps.*
+   :width: 650px
+   :alt: International ShakeMap Systems
+   :align: left
+
+   International ShakeMap Systems
+
+
 
 ShakeMap Atlas
 ---------------------------------------------------
@@ -73,11 +81,12 @@ development.
 
 .. sidebar:: **Finding Atlas ShakeMaps Online**
 
- * **Atlas Version 1.0** (:ref:`Allen et al., 2008 <allen2008>`) ShakeMaps, are available online on the
+ * **Atlas Version 1.0** (:ref:`Allen et al., 2008 <allen2008>`) ShakeMaps are available online on the
    `ShakeMap homepage <http://earthquake.usgs.gov/earthquakes/shakemap/>`_ consists of all the standardized ShakeMap products and formats. Output grids for the entire dataset can also
    be obtained at that site.
- * **Atlas Version 2.0** (:ref:`Garcia et al. \(2012a\) <garcia2012a>`) are by searching the USGS `Comprehensive Catalogue
-   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_, Be sure to select from the ShakeMap Atlas from the *Contributor* from
+ * **Atlas Version 2.0** (:ref:`Garcia et al. \(2012a\) <garcia2012a>`
+   ShakeMaps are by searching the USGS `Comprehensive Catalogue
+   (ComCat) Earthquake database <http://earthquake.usgs.gov/earthquakes/search/>`_. Be sure to select from the ShakeMap Atlas from the *Contributor* from
    the *Advanced Options*  dropdown menu.
 
 The original (2009) Atlas is a compilation of nearly 5,000 ShakeMaps for the most
@@ -155,7 +164,7 @@ and intensity data as well as detailed fault geometry.
    Intensity and (b) PGA. Green polygons show areas of landsliding mapped out by :ref:`Dai et al.
    (2010) <dai2010>`. Black rectangles delineate the surface projection of the different fault segments involved
    in the rupture. Triangles: native strong motion stations; circles: MMI data converted to GM
-   values via an GMICE (here Worden et al., 2012), the choice of which automatically redefines the
+   values via an GMICE (here :ref:`Worden et al., \(2012\) <worden2012>`, the choice of which automatically redefines the
    legend scale.
 
 .. _sec_scenarios:
@@ -173,13 +182,13 @@ Here we cover the many uses for earthquake scenarios from the users' perspective
 In planning and coordinating emergency response, utilities, local government, and other
 organizations are best served by conducting training exercises based on realistic
 earthquake situations--ones similar to those they are most likely to face. ShakeMap
-Scenario earthquakes can fill this role. Scenario ShakeMaps can be used to examine
+Scenario earthquakes can fill this role. They can also be used to examine
 exposure of structures, lifelines, utilities, and transportation corridors to specified
 potential earthquakes.
 
 The September, 2015, `Report to NEHRP Agencies from the Advisory Committee on
 Earthquake Hazards Reduction (ACHER) <http://nehrp.gov/pdf/2015ACEHRReportFinal.pdf>`_,
-recommends:
+notes:
 
     *USGS Recommendation 4 - ACEHR recommends the USGS expand earthquake scenario
     development in conjunction with stakeholder engagement in order to examine
@@ -224,8 +233,7 @@ of scenarios for colleagues, partners, other Federal Agencies, non-profit organi
 and other governments around the globe. These and other scenarios are available online
 at the ShakeMap Web pages. They are formatted the same as other ShakeMaps, so they
 can be easily used in response planning and loss estimation as well as for educational
-purposes. They can be found from the Map Archive link at the top of all ShakeMap Web
-pages.
+purposes.
 
 ShakeMap earthquake scenarios can be an integral part of earthquake emergency
 response planning.
@@ -300,8 +308,10 @@ variations are partially attributable to 2D and 3D wave propagation, path effect
 basin edge amplification and focusing), differences in motions among earthquakes of the
 same magnitude, and complex site effects are not accounted for with our methodology.
 For scenarios in which we wish to explore directivity explicitly, ShakeMap includes a
-tool based on :ref:`Rowshandel \(2010\) <rowshandel2010>` as shown in :num:`Figure #figure1-13u` and described
-in :ref:`sec_directivity`.
+tool based on :ref:`Rowshandel \(2010\) <rowshandel2010>` as shown in
+:num:`Figure #figure1-13u` and described in :ref:`sec_directivity`. We
+are also exploring delivery of scenarios with multiple realizations of
+spatial variability (see :ref:`future-directions` and :ref:`Verros et al. \(2016\) <verros2016>`.
 
 In terms of generating scenarios with the ShakeMap system, a number of specific
 considerations and a number of configuration changes are made for scenario events as
@@ -370,7 +380,7 @@ produce the scenarios. International ShakeMap operators may be able to follow a 
 disaggregation of their own seismic hazard maps to generate a suite of scenarios.
 
 After a suite of standardized ShakeMap scenarios is developed for a region or
-State, they can be processed through HAZUS-MH, FEMA's loss and risk estimation software to
+a State, they can be processed through HAZUS-MH, FEMA's loss and risk estimation software to
 develop associated damage estimates and other loss information products.
 Both Utah and Washington State officials have worked with USGS, FEMA,
 and other collaborators to produce online collections for scenario exercises and mitigation efforts,
@@ -401,22 +411,24 @@ shown in :num:`Figure #shakemap-hazus-utah` and :num:`Figure #shakemap-hazus-was
 
 .. figure:: _static/ShakeMap-Washington.railways.*
    :width: 650px
-   :alt: Washington Scenario with Railway impact
+   :alt: Washington Scenario with Railway impact.
    :align: left
 
-   Example Washington State ShakeMap-based magnitude 9.0 Cascadia
-   earthquake scenario. The selected layer (left) shows railways.
-   More details can be found online at the `Washington State (DNR)
-   <https://fortress.wa.gov/dnr/seismicscenarios/>`_ Web site.
-   
+   Washington State ShakeMap-based earthquake scenario collection.
+   The selected layer (left) shows railways. Washington State
+   ShakeMap-based earthquake scenario collection. 
 
+:num:`Figure #shakemap-hazus-railways` provides an example Washington
+State ShakeMap-based magnitude 9.0 Cascadia earthquake scenario.
+More details can be found online at the
+`Washington State (DNR) <https://fortress.wa.gov/dnr/seismicscenarios/>`_ Web site.
 
   
 .. EERI 
-   
 .. Scenarios for Evaluating Earthquake Early Warning Timing
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. :ref:`Allen et al. \(2006\) <allen2006>` makes clever use of a suite of scenarios for San Francisco Bay Area
+.. :ref:`Allen et al. \(2006\) <allen2006>` makes clever use of a
+.. suite of scenarios for the San Francisco Bay Area
 .. developed by the Northern California ShakeMap operators. The ShakeMap scenarios
 .. constitute those given significant likelihoods of occurrence over the next 30 years by the
 .. Working Group on California Earthquake Probabilities (:ref:`WGCEP, 2003 <wgcep2003>`). Allen used the

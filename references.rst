@@ -98,7 +98,7 @@ Applied Technology Council (2002). ATC-54: Guidelines for using strong-motion da
 Post-Earthquake Response. 
 
 Boatwright, J., H. Bundock, J. Luetgert, L. Seekins, L. Gee and P. Lombard (2003). The dependence of 
-PGA and PGV on distance and magnitude inferred from Northern California ShakeMap data. Bull. 
+sPGA and PGV on distance and magnitude inferred from Northern California ShakeMap data. Bull. 
 Seism. Soc. Am., 93, no. 5, 2043-2055.
 
 Boatwright, J., K. Thywissen, and L. Seekins (2001). Correlation of ground-motion and intensity for the 
@@ -106,8 +106,12 @@ January 17, 1994, Northridge, California earthquake, Bull. Seism. Soc. Am. 91, 7
 
 .. _beyer2006:
 Beyer, K., and Bommer, J. (2006). Relationships between Median Values and between Aleatory 
-Variabilities for Different Definitions of the Horizontal Component of Motion, Bull. Seism. Soc. Am., 96, 
-No. 4A, pp. 1512-1522.
+Variabilities for Different Definitions of the Horizontal Component of Motion, Bull. Seism. Soc. Am., 96, No. 4A, pp. 1512-1522.
+
+.. _biasi2016:
+Biasi, G., M.S. Mohammed, and D.H. Sanders (2016). Earthquake Damage
+Estimations: ShakeCast Case Study on Nevada Bridges, Earthquake
+Spectra, submitted. 
 
 .. _bommer2012:
 Bommer JJ, Akkar S (2012). Consistent source-to-site distance metrics in ground-motion prediction 
@@ -218,6 +222,7 @@ Dewey, J.W., Reagor, B.G., Dengler, L., and Moley, K., 1995, Intensity distribut
 isoseismal maps for the Northridge, California, earthquake of January 17, 1994: U.S. 
 Geological Survey Open-File Report 95-92, 35 p.
 
+.. _dewey2000:
 Dewey, J., D. Wald, and L. Dengler (2000). Relating conventional USGS Modified Mercalli 
 Intensities to intensities assigned with data collected via the Internet. Seismological 
 Research Letters, 71, 264.
@@ -379,6 +384,7 @@ in press.
 Musson, R. M. W., Grunthal G, and Stucchi, M. (2010). The comparison of macroseismic intensity scales, 
 Journal of Seismology (2010) 14:413-
 
+.. _nibs1997:
 National Institute of Building Sciences (NIBS), 1997. Earthquake Loss Estimation Methodology: 
 HAZUS97 Technical Manual, Report prepared for the Federal Emergency Management Agency, 
 Washington, D.C. 
@@ -432,6 +438,10 @@ Relations. Earthquake Spectra, Volume 26, No. 2, pages 525–559.
 Scrivner, C. W., C. B. Worden, and D. J. Wald (2000), Use of TriNet ShakeMap to Manage Earthquake 
 Risk, Proceedings of the Sixth International Conference on Seismic Zonation, Palm Springs.
 
+.. _seyhan2014:
+Seyhan, E. and J. P. Stewart (2014) Semi-Empirical Nonlinear Site Amplification from NGA-West2 Data and Simulations. Earthquake
+Spectra: August 2014, Vol. 30, No. 3, pp. 1241-1256.
+
 .. _shakal1998:
 Shakal, A., C. Peterson, and V. Grazier (1998). Near-real-time strong motion data recovery and automated 
 processing for post-earthquake utilization, Sixth Nat'l Conference on Earth. Eng., Seattle. 
@@ -471,6 +481,7 @@ Turner, L. (2014). Performance of the Caltrans ShakeCast System in the
 2014 Napa M6.0 Earthquake”, Caltrans Report, Division of Research,
 Innovation, and System Information, September 2014, 14 pp.
 
+.. _turner2010: 
 Turner, Loren L., D. J. Wald, and K. Lin (2010). ShakeCast - Developing a Tool for Rapid 
 Post-Earthquake Response, Final Report No. CA09-0734, 325 pp. 
 
@@ -599,6 +610,10 @@ Worden, C.B., Wald, D.J., Allen, T.I., Lin, K.W., Garcia, D., and Cua, G. (2010)
 ground-motion and intensity interpolation scheme for ShakeMap, Bull. Seism. Soc. Am., 
 100:6, 3083-3096. 
 
+.. _worden2011:
+(See Worden et al, 2012, the actual publication date. Software was
+written prior to publication.)
+
 .. _worden2012:
 Worden, C.B., Gerstenberger, M.C., Rhoades, D.A., and Wald, D.J. (2012). Probabilistic 
 relationships between ground-motion parameters and Modified Mercalli intensity in 
@@ -607,10 +622,15 @@ California. Bull. Seism. Soc. Am.  102:1, 204- 221. doi: 10.1785/0120110156.
 .. _worden2015:
 Worden, C.B., Wald, D.J., Thompson, E.M., (2015). Development of an Open-Source Hybrid 
 Global Vs30 Model. SSA Annual Meeting, Pasadena, CA. Seismological Research Letters, 
-Volume 86, Number 2B, p. 713.
+Volume 86, Number 2B, p. 713. https://github.com/cbworden/earthquake-global_vs30
 
 .. _worden2016:
 C. B. Worden, M. Hearne, D. J. Wald, and M. Pagani (2016). Complimentary Components of OpenQuake and ShakeMap, Proceedings of the 16WCEE, Santiago.
+
+.. _worden2016b:
+C. B. Worden, and D. J. Wald (2016). ShakeMap Manual Online: technical manual, user's guide, and software guide, 
+U. S. Geological Survey, usgs.github.com/shakemap-docs/, doi: 10.1234/012345678.
+
 
 .. _yamakawa1998:
 Yamakawa, K. (1998). The Prime Minister and the earthquake: Emergency Management Leadership of 

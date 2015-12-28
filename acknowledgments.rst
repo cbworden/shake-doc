@@ -23,7 +23,8 @@ ingenuity and vigilance of S. Schwarz (USGS, Pasadena). Many aesthetic improveme
 and integration of the ShakeMap Web pages into the USGS Earthquake Hazards Team
 Web Page standard templates were guided by L. Wald (USGS, Golden). Later
 implementations were greatly improved by the Haz-Dev Web Team, particularly by
-J. Fee and E. Martinez.
+J. Fee and E. Martinez. They also provide the GeoJSON and other feeds
+needed for automatic ShakeMap downloads.
 
 C. Scrivner, then at the CA Dept of Mines & Geology (CDMG),
 contributed greatly to the initial ShakeMap software development. P.

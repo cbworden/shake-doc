@@ -38,6 +38,9 @@ GSM
 HAZUS
   HAZards US; a loss-estimation program developed by FEMA.
 
+IM
+  Intensity Measure; often used for generic reference to Peak Ground Motions (PGMs).
+
 IPE
   Intensity Prediction Equation; the intensity equivalent of a GMPE.
 

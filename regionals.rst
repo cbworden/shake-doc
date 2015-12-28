@@ -43,11 +43,12 @@ ANSS regional operators see the :ref:`acknowledgments`.
 * **Alaska**
 * **Puerto Rico**
 * **Hawaii**
- * *Coverage Area*. State of Hawaii (Bounds:)
- * *Operations*. ShakeMap operated at NEIC in conjunction with HVO RSN operators
- * *Triggering and Data Flow*.
- * *Site Condition Map*. Vs30 from topographic slope-based (:ref:`Allen and Wald, 2009b) <allen2009b>` 
- * *Ground Motion Prediction and Conversion Equations (GMPE/IPE/GMICE)*.
- * *Other Local Characteristics*.
+  
+  - *Coverage Area*. State of Hawaii (Bounds:)
+  - *Operations*. ShakeMap operated at NEIC in conjunction with HVO RSN operators
+  - *Triggering and Data Flow*.
+  - *Site Condition Map*. Vs30 from topographic slope-based (:ref:`Allen and Wald, 2009b) <allen2009b>` 
+  - *Ground Motion Prediction and Conversion Equations (GMPE/IPE/GMICE)*.
+  - *Other Local Characteristics*.
 
 

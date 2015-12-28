@@ -90,18 +90,6 @@ must go beyond just looking at ShakeMap, and understand the likely extent and
 severity of impact on the facilities for which they are responsible. To this
 end the USGS has developed ShakeCast.
 
-.. sidebar:: USE CASE #1
-	     
- The `California Department of Transportation <http://www.earthquakeauthority.com/‎>`_ (Caltrans) employs ShakeMap
- for post-earthquake overpass and bridge assessments for significant California earthquakes. “The Caltrans
- ShakeCast system performed reliably and as expected during the Napa earthquake. The system delivered key
- information on the potential impacts to the state bridge inventory within 11 minutes of the event.
- Of a total of 2720 state bridges within the ShakeMap region, 87 state
- bridges were identified by ShakeCast as having undergone significant ground shaking and were
- assigned an inspection priority state. Of the 87 state bridges
- identified, 9 were later confirmed to have sustained minor damage. These 9 state bridges were ranked in the top 40% of the ShakeCast
- list.” (:ref:'Turner, 2014 <turner2014>`)
-  
 ShakeCast allows utilities, transportation agencies, businesses, and other
 large organizations to control and optimize the earthquake information they
 receive. With ShakeCast, they can automatically determine the shaking value at
@@ -110,6 +98,36 @@ facility, and then automatically notify (by pager, cell phone, or email)
 specified operators and inspectors within their organizations who are
 responsible for those particular facilities so they can set priorities for
 response.
+
+
+.. sidebar:: USE CASE #2
+	     
+ The `California Department of Transportation
+ <http://www.earthquakeauthority.com/‎>`_ (Caltrans) employs ShakeMap
+ for post-earthquake overpass and bridge assessments for significant
+ California earthquakes. “The Caltrans ShakeCast system performed
+ reliably and as expected during the Napa earthquake. The system delivered key
+ information on the potential impacts to the state bridge inventory
+ within 11 minutes of the event.  Of a total of 2720 state bridges
+ within the ShakeMap region, 87 state bridges were identified by
+ ShakeCast as having undergone significant ground shaking and were
+ assigned an inspection priority state. Of the 87 state bridges
+ identified, 9 were later confirmed to have sustained minor damage.
+ These 9 state bridges were ranked in the top 40% of the ShakeCast
+ list.” (:ref:`Turner, 2014 <turner2014>`)
+  
+.. sidebar:: USE CASE #3
+
+  “Thought you might like to see the [Division of Safety of Dams]
+  ShakeCast message for the recent Napa [Aug, 2014] Earthquake.  We have since
+  divided the 1250 dams into three fragility classes (called levels of
+  concern). The message provides explicit instructions on what action
+  to take for each dam and transmits owner contact information. The
+  message was received in my inbox 16 minutes after the earthquake,
+  which was about 10 minutes after the ShakeMap version 1 was
+  released. The technology has become very well accepted by the field
+  inspectors. Thanks for such a great product.” W. A. Fraser, C.E.G.,
+  Chief, Geology Branch, CA Division of Safety of Dams, Sacramento, CA.
 
 PAGER
 ---------------------------------------------------
@@ -183,11 +201,11 @@ awareness. Many are multihazard oriented, and only those with focus on
 earthquake information are mentioned here. Some examples (not
 comprehensive) include:
 
-* InLet,
+* InLet (ImageCat,Inc.)
 * HAZUS-MH,
 * ArcGIS online
 
-As summarized by :ref: `Gomberg and Jokobitz \(2013\) <gomberg2013>`_,
+As summarized by :ref:`Gomberg and Jokobitz \(2013\) <gomberg2013>`,
 "others have built in-house systems to organize, share and display observations
 using commercial applications like Microsoft’s Streets and Trips and SharePoint,
 Google’s GoogleEarth, or ESRI’s ArcGIS. WebEOC, a real-time Web-enabled crisis
@@ -197,8 +215,7 @@ http://www.esi911.com/esi). While used by many agencies, it always was just one
 of multiple communication tools. A commonly expressed desire was for a
 centralized, one-stop shop for all types of disaster information (like the
 Department of Homeland Security’s `Virtual USA
-<https://www.dropbox.com/home/Correlation/figures/SanDiego?preview=economic+losses0.png>`_",
-
+<https://www.dropbox.com/home/Correlation/figures/SanDiego?preview=economic+losses0.png>`_).
 Further information on some other slides on private sector tools can
 be found in the slides provided by the Department of Homeland Security
 (DHS) in a summary for the `Capstone 2014

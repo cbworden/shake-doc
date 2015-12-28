@@ -8,7 +8,7 @@ Until the development of ShakeMap, the most common information available
 immediately following a significant earthquake was typically its magnitude and
 epicenter.  However, the damage pattern is not a simple function of these two
 parameters alone, and more detailed information must be provided to properly
-ascertain the situation.  For example, for the magnitude-6.7 February 9, 1971,
+ascertain the situation.  For example, for the magnitude 6.7 1971 San Fernando
 California earthquake, the northern San Fernando Valley was the region with the
 most damage, even though it was more than 15 km from the epicenter.  Likewise,
 areas strongly affected by the 1989 Loma Prieta and 1994 Northridge, California,
@@ -19,7 +19,8 @@ damage from the magnitude-6.9 1995 Kobe, Japan, earthquake was not recognized by
 the central government in Tokyo until many hours later (e.g., :ref:`Yamakawa, 1998 <yamakawa1998>`),
 seriously delaying rescue and recovery efforts.
 
-A ShakeMap is a representation of ground shaking produced by an earthquake. The
+In contrasts, a ShakeMap is a representation of actual
+ground shaking produced by an earthquake. The
 information it presents is different from the earthquake magnitude and epicenter
 that are released after an earthquake because ShakeMap focuses on the
 ground-shaking produced by the earthquake, rather than the parameters describing
@@ -34,26 +35,29 @@ Part of the strategy for generating rapid-response ground-motion maps was to
 determine the best format for reliable presentation of the maps given the
 diverse audience, which includes scientists, businesses, emergency response
 agencies, media, and the general public.  In an effort to simplify and maximize
-the flow of information to the public, we have developed a means of generating
-not only peak ground acceleration and velocity maps, but also an
+the flow of information to general users, we have developed a means of generating
+not only PGA and PGV maps, but also an
 instrumentally-derived, estimated Modified Mercalli Intensity (MMI) map.  This
 “instrumental intensity” map makes it easier to relate the recorded
 ground-motions to the expected felt and damage distribution. At the same time,
 we preserve a full range of utilities of recorded ground-motion data by
 producing maps of response spectral acceleration, which are not particularly
-useful to the general public, but which provide fundamental data for loss
+useful to the general public, yet which provide fundamental data for loss
 estimation and earthquake engineering assessments.
 
-ShakeMap provides maps of **peak** ground-acceleration, velocity and spectral
+As mentioned, ShakeMap provides maps of **peak** ground-acceleration, velocity and spectral
 acceleration maps as well as Modified Mercalli Intensity. Intensity ShakeMaps
 depict estimated intensities derived from peak ground motions as well as
 (optionally) from reported intensities. Intensity maps make it easier to relate
 the recorded and estimated ground motions to the expected felt and damage
-distributions. Estimating intensities from ground shaking is based on analyses
-of intensities reported near recorded seismic stations for past earthquakes. The
+distributions. Estimating intensities from ground shaking is done
+using equations based on analyses
+of intensities reported near recorded seismic stations for past
+earthquakes, e.g., :ref:`Wald et al. \(1999b\) <wald1999b>` or
+:ref:`Worden et al. \(2012\) <worden2012>`. The
 legend on the ShakeMap indicates which relationship was used to estimate
 intensities from ground motions, and vice versa (see the ShakeMap
-:ref:`technical-guide`).
+:ref:`technical-guide` for more details).
 
 Station locations are the best indicator of where the map is most accurate: Near
 seismic stations the shaking is well constrained by data; far from such
@@ -62,7 +66,7 @@ geospatial interpolation. Details about the interpolation, uncertainty maps, and
 codes for the seismic station components, network contributors, and potential
 outlier or clipped flag codes are provided in the :ref:`technical-guide`. Peak
 horizontal acceleration and spectral acceleration values are in units of
-percent-g (where g = acceleration due to the force of gravity = 981 cm/s/s). The
+percent-g (or %g, where g = acceleration due to the force of gravity = 981 cm/s/s). The
 peak values of the vertical components are not used in the construction of the
 maps. Peak velocity values are given (in cm/sec) at each station. Acceleration
 spectra are the response of a 5% critically damped, single-degree-of-freedom
