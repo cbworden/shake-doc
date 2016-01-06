@@ -2,66 +2,69 @@
 Glossary
 ================
 
-Abbreviations used in this report
+Abbreviations, acronyms, and initialisms used in this report
 
 ANSS
-  Advanced National Seismic System; A USGS initiative to provide seismic monitoring for at-risk 
-  regions of the United States.
+  Advanced National Seismic System: A USGS initiative to provide seismic monitoring for at-risk 
+  regions of the United States
 
 California EMA
-  The California Emergency Management Agency; formerly the California Office of Emergency Services.
+  The California Emergency Management Agency (formerly the California Office of Emergency Services)
 
-DYFI? 
+DYFI 
   Did You Feel It? 
 
 EHP 
-  U.S. Geological Survey's Earthquake Hazard Program.
+  USGS Earthquake Hazard Program
 
 ENS 
-  Earthquake Notification System, earthquake notifications via txt/email from U.S. Geological Survey's Earthquake Hazard Program .
+  Earthquake Notification System: earthquake notifications via text/email from USGS’s Earthquake Hazard Program
 
 FEMA
-  Federal Emergency Management Agency; part of the U.S. Department of Homeland Security.
+  Federal Emergency Management Agency: part of the U.S. Department of Homeland Security
 
 GIS 
   Geographic Information System
 
 GMICE
-  Ground-Motion/Intensity Conversion Equation.
+  Ground-Motion--Intensity Conversion Equation
 
 GMPE
-  Ground-Motion Prediction Equation.
+  Ground-Motion Prediction Equation
 
 GSM
-  Global ShakeMap.
+  Global ShakeMap
 
 HAZUS
-  HAZards US; a loss-estimation program developed by FEMA.
+  HAZards US: a loss-estimation program developed by FEMA
+
+IM
+  Intensity Measure: often used as a generic reference to Peak Ground Motions
 
 IPE
-  Intensity Prediction Equation; the intensity equivalent of a GMPE.
+  Intensity Prediction Equation
 
 ISO
-  International Standards Organization.
+  International Standards Organization
 
 MMI
-  Modified Mercalli Intensity.
+  Modified Mercalli Intensity
 
 NEIC
-  The National Earthquake Information Center; part of the USGS.
+  the National Earthquake Information Center; part of the USGS, located in Golden, Colorado
 
 PAGER 
   Prompt Assessment of Global Earthquakes for Response
 
 PGA
-  Peak Ground Acceleration.
+  Peak Ground Acceleration
 
 PGM
-  Peak Ground Motion, a generic term for PGA and PGV.
+  Peak Ground Motion: a generic term for PGA and PGV
 
 PGV
-  Peak Ground Velocity.
+  Peak Ground Velocity
 
 USGS
-  The United States Geological Survey, a bureau of the U.S. Department of the Interior.
+  the United States Geological Survey, a bureau of the U.S. Department of the Interior.
       
