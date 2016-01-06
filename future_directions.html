@@ -141,7 +141,7 @@
             
   <div class="section" id="future-directions">
 <span id="id1"></span><h1>Future Directions<a class="headerlink" href="#future-directions" title="Permalink to this headline">¶</a></h1>
-<p>ShakeMap is continually work-in-progress. We note several ongoing developments and &#8220;To-Do&#8221; lists. Please make suggestion if you would like to weigh in.</p>
+<p>ShakeMap is a continual work-in-progress. We note several ongoing developments and &#8220;To-Do&#8221; lists. Please make suggestions if you would like to weigh in.</p>
 <div class="sidebar">
 <p class="first sidebar-title">Feedback? Suggestions?</p>
 <p class="last">Please <a class="reference external" href="http://earthquake.usgs.gov/contactus/?to=cbworden,klin,wald&amp;subject=ShakeMap">let us know</a> what you&#8217;re thinking!</p>
@@ -150,14 +150,14 @@
 <h2>Research &amp; Development<a class="headerlink" href="#research-development" title="Permalink to this headline">¶</a></h2>
 <p><strong>Feature Requests:</strong></p>
 <ul class="simple">
-<li>Add NGA-West2, NGA-East, and NGA-Subduction GMPE&#8217;s, including basin terms for NGA-West 2 GMPEs.</li>
-<li>Improved and additional site amplification approaches and tables in addition to native GMPE (Vs30) site corrections (e.g., Choi and Stewart,
+<li>Add NGA-West2, NGA-East, and NGA-Subduction GMPEs, including basin terms for NGA-West 2 GMPEs.</li>
+<li>Improved and additional site amplification approaches and tables, in addition to native GMPE (Vs30) site corrections (e.g., Choi and Stewart,
 2005).</li>
-<li>R&amp;D to improve PGV to MMI conversion for large magnitude and high-velocity ranges. May require switch to long-period spectral acceleration-based
-conversion to MMI. Simulated ground motion time histories may be useful to augment sparse data at high PGV/MMI.</li>
-<li>Consideration of vector-compone IM&#8217;s, static displacements, and duration-based IM&#8217;s (Arias Intensity; Cumulative Average Velocity, or CAV) <a class="footnote-reference" href="#f1" id="id2">[1]</a></li>
+<li>R&amp;D to improve PGV-to-MMI conversion for large-magnitude and high-velocity ranges. May require switch to converting long-period spectral acceleration
+to MMI. Simulated ground motion time histories may be useful to augment sparse data at high PGV/MMI.</li>
+<li>Consideration of vector-component IMs, static displacements, and duration-based IMs (Arias Intensity; Cumulative Average Velocity, or CAV) <a class="footnote-reference" href="#f1" id="id2">[1]</a></li>
 </ul>
-<p><strong>Work-In-Progress:</strong></p>
+<p><strong>In Progress:</strong></p>
 <ul class="simple">
 <li>Spatial variability. Implement optimization methods to compute the spatial correlation field for ShakeMap
 using successive conditional simulations (<a class="reference external" href="verros2016">Verros et al., 2016)</a>.
@@ -166,21 +166,21 @@ Deliver ShakeMap scenarios with multiple realizations of variability.</li>
 <li>Landslide and liquefaction likelihood grid (<em>sechaz.grid.xml</em>). Computing probability and distribution of landsliding and liquefaction per
 ShakeMap grid cell. Delivery via Product Distribution Layer (PDL) for ShakeCast, PAGER, and open access.</li>
 <li>Scenario update for all U.S. regions. Delivery to ComCat/Web and allow users a variety of search capabilities (site- or fault-specific).</li>
-<li>Interactive (dynamic) Web pages plots (Regression, bias, outliers, stations amplitudes).</li>
-<li>Improved content and rendering ShakeMap Metadata (<em>info.xml</em>; see <a class="reference internal" href="references.html#thompson2016"><span>Thompson et al., 2016</span></a>).</li>
+<li>Interactive (dynamic) webpages plots (regression, bias, outliers, station amplitudes).</li>
+<li>Improved content and rendering of ShakeMap metadata (<em>info.xml</em>; see <a class="reference internal" href="references.html#thompson2016"><span>Thompson et al., 2016</span></a>).</li>
 </ul>
 </div>
 <div class="section" id="software-shakemap-4-0-python">
 <h2>Software: ShakeMap 4.0 (Python)<a class="headerlink" href="#software-shakemap-4-0-python" title="Permalink to this headline">¶</a></h2>
-<p>The release of ShakeMap version 4.0 will represent a major departure from previous versions. All of the important computational modules have been refactored into the Python programming language, and make use of the tools in the widely available Python “scientific distribution.” The core ShakeMap code, approaching fifteen years old, was due for a major overhaul to more organically incorporate the many extensions that had been added over its lifetime, and to facilitate several new demands from ShakeMap software and ShakeMap’s expanded role as a global provider of post-earthquake information, earthquake scenarios, and as the input to loss modeling software.</p>
-<p>One of the advantages of the rewrite of ShakeMap into the Python language was the availability of the GEM OpenQuake (OQ) library of Ground Motion Prediction Equations (GMPEs). The OQ hazard library provided us with a broad range of well-tested, high performance, open source GMPEs. Due to constraints imposed by the software architecture of earlier implementations of ShakeMap, the development of GMPE modules was time consuming and difficult, which restricted the number and timeliness of the available modules. The OQ library provides a broad array of current GMPE modules, as well as a framework for easily adding new modules (whether by GEM or ShakeMap staff), jumpstarting our efforts to re-implement ShakeMap.</p>
-<p>The OQ hazard library also provides supporting functions for using the GMPE modules, including a set of software classes for computing the various distance measures required by the GMPEs. The ShakeMap fault model, however, was somewhat more general than allowed for by the OQ planar surface modules, so we sub-classed the OQ “surface” class and implemented our own high performance module. The open-source, cooperative nature of the OQ project allowed us to contribute our new module back to the OQ repository, and thus make it available to other users.</p>
-<p>In addition to the GEM OQ library, there are a number of other advantages to using Python in an application like ShakeMap.  The dynamic nature of the language means that development time is much reduced, allowing a small team to generate useful code in a short amount of time.  Also, there is an active scientific computing Python community that has created many tools that solve common problems, including an array object for vectorized operations, input/output routines for common data formats, and plotting/mapping libraries.  These tools again help to reduce development time and effort.
+<p>The release of ShakeMap version 4.0 will represent a significant departure from previous versions. All of the important computational modules have been refactored into the Python programming language and make use of the tools in the widely available Python “scientific distribution”. The core ShakeMap code, approaching fifteen years old, was due for a major overhaul&#8212;to more organically incorporate the many extensions that had been added over its lifetime, and to facilitate several new demands from ShakeMap software and ShakeMap’s expanded role as a global provider of post-earthquake information, earthquake scenarios, and inputs for loss-modeling software.</p>
+<p>One of the advantages of the rewrite of ShakeMap into the Python language was the availability of the GEM OpenQuake (OQ) library of Ground Motion Prediction Equations (GMPEs). The OQ hazard library provided us with a broad range of well-tested, high-performance, open-source GMPEs. Due to constraints imposed by the software architecture of earlier implementations of ShakeMap, the development of GMPE modules was time-consuming and difficult, which restricted the number and timeliness of the available modules. The OQ library provides a broad array of current GMPE modules, as well as a framework for easily adding new modules (whether by GEM or ShakeMap staff), jumpstarting our efforts to re-implement ShakeMap.</p>
+<p>The OQ hazard library also provides supporting functions for using the GMPE modules, including a set of software classes for computing the various distance measures required by the GMPEs. The ShakeMap fault model, however, was somewhat more general than allowed for by the OQ planar surface modules, so we sub-classed the OQ “surface” class and implemented our own high-performance module. The open-source, cooperative nature of the OQ project allowed us to contribute our new module back to the OQ repository, and thus make it available to other users.</p>
+<p>In addition to making use of the GEM OQ library, there are a number of other advantages to using Python for an application like ShakeMap.  The dynamic nature of the language means that development time is much reduced, allowing a small team to generate useful code in a short amount of time.  Also, there is an active scientific computing Python community that has created many tools that solve common problems, including an array object for vectorized operations, input/output routines for common data formats, and plotting/mapping libraries.  These tools further help to reduce development time and effort.
 [<strong>Delivery Date: 2016</strong>]</p>
 <table class="docutils footnote" frame="void" id="f1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>We are continuously considering the use of additional ground-motion parameters (IM&#8217;s)
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>We are continuously considering the use of additional ground-motion parameters (IMs)
 for ShakeMap. However, any such additions cannot be made lightly. In part, this is
 due to the fact that this requires upgrading process seismic network processing streams
 that produce parametric and these processes vary significantly among ANSS data sources.</td></tr>

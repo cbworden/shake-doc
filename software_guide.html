@@ -154,7 +154,7 @@
 <p>Installing and operating a ShakeMap system is a non-trivial endeavor. While the software
 can be easily obtained, and installed and configured with a few hours work, there are a
 great many issues that need to be addressed when an organization considers deploying a
-ShakeMap system. In this section we will discuss a number of these issues.</p>
+ShakeMap system. In this section, we will discuss a number of these issues.</p>
 <div class="section" id="implementation-considerations">
 <h2>Implementation Considerations<a class="headerlink" href="#implementation-considerations" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="seismic-network">
@@ -162,25 +162,25 @@ ShakeMap system. In this section we will discuss a number of these issues.</p>
 <p>The single most important prerequisite for operating a ShakeMap system is the existence
 of a seismic network capable of determining the location and magnitude of significant
 earthquakes within minutes of their occurrence. This network must also produce
-parametric data for ShakeMap also within minutes of the earthquake. The parametric data
-should come from free field strong motion sensors with real time or near-real time
-telemetry, and minimally consists of the horizontal components of Peak Ground
-Acceleration (PGA) and Peak Ground Velocity (PGV), and (ideally) 5% damped pseudo-
-spectral acceleration at 0.3, 1.0, and 3.0 s periods.</p>
+parametric data for ShakeMap within minutes of the earthquake. The parametric data
+should come from free-field strong motion sensors with real-time or near&#8211;real-time
+telemetry, and minimally consist of the horizontal components of Peak Ground
+Acceleration (PGA) and Peak Ground Velocity (PGV), as well as (ideally) 5% damped pseudo-
+spectral acceleration (PSA) at 0.3, 1.0, and 3.0 sec periods.</p>
 <p>In the absence of such a network, there is little reason to operate ShakeMap locally. The
 USGS operates a ShakeMap system that produces maps for significant global
 earthquakes within a few minutes of their occurrence, and incorporates any available data
-from the Global Seismic Network (GSN), DYFI, and any other parametric data to which
+from the Global Seismic Network (GSN), “Did You Feel It?” (DYFI), and any other parametric data to which
 we have access. These maps are immediately delivered to the PAGER system and
 ShakeCast. It would be far simpler in many cases to obtain the
-ShakeMap products from the USGS (through the web site or ShakeCast) and use them for
+ShakeMap products from the USGS (through the website or ShakeCast) and use them for
 local or regional response and recovery efforts, perhaps even hosting them on local
 servers, than to attempt to duplicate our existing system.</p>
 <p>Even where a seismic network is operational, it may be preferable to work with the
 USGS to produce ShakeMaps. As the following sections will illustrate, running a
 ShakeMap system is a considerable operational undertaking, and in many instances it will
 strain the resources of local or regional networks. The USGS operates a fully-staffed,
-24x7 operations center for global earthquakes, and produces ShakeMaps on a daily basis.
+24/7 operations center for global earthquakes and produces ShakeMaps on a daily basis.
 If a regional network&#8217;s parametric data can be made available to the USGS, the USGS&#8217;s
 global ShakeMap system will include that data in the processing, and finished ShakeMap
 products can be delivered via ShakeCast for local consumption. Please contact us if you
@@ -189,41 +189,41 @@ are interested in this kind of arrangement.</p>
 <div class="section" id="seismic-stations-and-parametric-data">
 <h3>Seismic Stations and Parametric Data<a class="headerlink" href="#seismic-stations-and-parametric-data" title="Permalink to this headline">¶</a></h3>
 <p>As mentioned above, seismic waveform or parametric data must be communicated to the
-processing center in real time or near-real time. The sensors must be &#8220;free field&#8221; (i.e., not
-located in, or adjacent to, large structures), and installed in accordance with modern
-practice. Strong motion instruments are preferred for ShakeMap as broadband
+processing center in real-time or near&#8212;real&#8211;time. The sensors must be &#8220;free field&#8221; (i.e., not
+located in, or adjacent to, large structures) and installed in accordance with modern standard
+practices. Strong-motion instruments are preferred for ShakeMap, as broadband
 instruments typically clip when ground motions reach the level of interest to ShakeMap.
-Co-located strong motion and broadband instruments can, however, increase the dynamic
+Co-located strong-motion and broadband instruments can, however, increase the dynamic
 range of a station and its overall usefulness, but the network operator is responsible for
 specifying the crossover from broadband to strong motion, and ShakeMap should be
 presented only with the amplitudes from the favored instrument. Off-scale, clipped,
 below-noise, or otherwise unreliable data must be flagged or omitted from the ShakeMap
-input files. Horizontal components are mandatory - ShakeMap does not use vertical
+input files. Horizontal components are mandatory&#8212;ShakeMap does not use vertical
 components.</p>
 <p>At a minimum, the network must produce PGA and PGV for the ShakeMap stations, but
-pseudo-spectral acceleration at 0.3, 1.0, and 3.0 s period is also desirable. The algorithms
-used to compute the parametric data should be consistent with modern practice, and the
-outputs should be verified against known standards. ShakeMap can be quite helpful in
-highlighting grossly miscalibrated stations, but it is best to find these (and more subtle)
+PSA (at 0.3, 1.0, and 3.0 sec) is also desirable. The algorithms
+used to compute the parametric data should be should be verified against known standards.
+ShakeMap can be quite helpful in
+highlighting grossly mis-calibrated stations, but it is best to find these (and more subtle)
 errors before a large earthquake strikes.</p>
-<p>Intensity data from the USGS&#8217;s &#8220;Did You Feel It?&#8221; (DYFI) system (or an equivalent
-regional internet intensity system) is acceptable as input to ShakeMap, however care
-should be exercised with international DYFI data as it is often aggregated by city and
-therefore possibly too coarse-grained for large-scale maps.</p>
+<p>Intensity data from the USGS&#8217;s DYFI system (or an equivalent
+regional internet intensity system) is acceptable as input to ShakeMap; however, care
+should be exercised with international DYFI data, as it is often aggregated by city and
+therefore may be too coarse-grained for large-scale maps.</p>
 </div>
 <div class="section" id="triggering-shakemap">
 <h3>Triggering ShakeMap<a class="headerlink" href="#triggering-shakemap" title="Permalink to this headline">¶</a></h3>
 <p>The operator must give careful consideration to the way ShakeMap will be triggered.
 Unless an operator is constantly standing by to run ShakeMap, the system must be
 automatic to be useful. The operator must select the boundaries of the region ShakeMap
-will cover, and the minimum earthquake magnitude that will trigger a run. These choices
+will cover and the minimum earthquake magnitude that will trigger a run. These choices
 will be influenced by the reliability of the network&#8217;s earthquake location and magnitude
-over the region in question. The operator must also consider that a large earthquake may
+data over the region in question. The operator must also consider that a large earthquake may
 occur outside their region of responsibility, but have effects inside their region.</p>
 <p>The ShakeMap software is distributed with a program for responding to event triggers
 and queuing events to be processed, but it is only applicable to the AQMS network
-software. While this software can serve as a guide, users of other systems (Antelope,
-Earthworm, etc.) will need to develop their own triggering systems.</p>
+software. While this software can serve as a guide, users of other systems (e.g., Antelope,
+Earthworm) will need to develop their own triggering systems.</p>
 <p>Once triggered, ShakeMap will expect to find event and parametric data files in the
 event&#8217;s input directory. Whether the amplitudes are retrieved from a database or stored in
 files, it is the operator&#8217;s responsibility to provide ShakeMap with properly formatted
@@ -235,21 +235,20 @@ anticipate that some coding may be necessary.</p>
 <p>While it is relatively easy to install and run the ShakeMap software, a great deal of
 consideration is needed to properly configure the system for a particular region.
 ShakeMap presents the operator with a large number of configuration options, and these
-options will directly affect the accuracy and reliability of the products produced. The
+options will directly affect the accuracy and reliability of the products. The
 operator must select the proper GMPE or GMPEs for the region, and specify under which
-conditions they will be used. An appropriate Ground-Motion/Intensity Conversion
-equation must likewise be chosen. The operator may also elect to use an Intensity
-Prediction Equation (IPE), or to use the default virtual IPE. For best results, the operator
+conditions they will be used. An appropriate Ground-Motion&#8211;Intensity Conversion
+Equation (GMICE) must likewise be chosen. The operator may also elect to use an Intensity
+Prediction Equation (IPE) or to use the default virtual IPE. For best results, the operator
 will need to provide a Vs30 grid, and while the <a class="reference external" href="http://earthquake.usgs.gov/hazards/apps/vs30/">USGS&#8217;s Vs30 server</a> can supply such a
-grid based on topographic slope, and grid based on regional geology is preferable <a class="footnote-reference" href="#id2" id="id1">[1]</a>. The
+grid based on topographic slope, a grid based on regional geology is preferable <a class="footnote-reference" href="#id2" id="id1">[1]</a>. The
 user must also decide whether to use GMPE-native or Borcherdt-style site correction
-factors. This is just a partial list of configuration choices, there are numerous other
-configurable parameters - grid spacing, bias parameters, outlier detection and flagging,
-basin response files, etc. - all of which must be carefully chosen.</p>
-<p>While the default ShakeMap web pages are configurable, they are fairly rudimentary and
-outdated. In addition, the web pages and ShakeMap products are all in English. Operators
-wishing more sophisticated web pages or non-English support can anticipate a substantial
-investment in bringing the system on line. Some modifications of the ShakeMap software
+factors. This is just a partial list of configuration choices. There are numerous other
+configurable parameters, all of which must be carefully chosen.</p>
+<p>While the default ShakeMap webpages are configurable, they are fairly rudimentary and
+outdated. In addition, the webpages and ShakeMap products are all in English. Operators
+wishing more sophisticated webpages or non-English support can anticipate a substantial
+investment in bringing the system online. Some modifications of the ShakeMap software
 may be required for languages other than English, but such modifications may make it
 more difficult to update the software.</p>
 <p>For further information on ShakeMap configuration, see the <a class="reference internal" href="#sm35-software-guide"><span>Software Guide</span></a> and the
@@ -258,19 +257,19 @@ ShakeMap configuration files themselves.</p>
 <div class="section" id="operations">
 <h3>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">¶</a></h3>
 <p>Once an organization begins producing and distributing ShakeMaps, end users will begin
-to depend upon them, and develop systems that incorporate ShakeMap products into their
+to depend upon them and develop systems that incorporate ShakeMap products into their
 response and recovery operations. This means that it essentially becomes mandatory to
-produce ShakeMaps following significant earthquakes, and failures to do so are
-extremely conspicuous. A robust ShakeMap operation requires the 24x7 availability of
+produce ShakeMaps following significant earthquakes, and failure to do so is
+extremely conspicuous. A robust ShakeMap operation requires the 24/7 availability of
 operational personnel. If the facility is not continuously manned, on-call staff must be
 designated, and those staff must have the ability to access and operate the ShakeMap
 system remotely. Significant earthquakes almost always require some manual
 intervention (changing map scale, re-centering, addition of finite fault,
-inclusion/exclusion of data, etc.) and experienced personnel are required to evaluate the
+inclusion/exclusion of data, etc.), and experienced personnel are required to evaluate the
 situation and perform the necessary tasks.</p>
 <p>There are additional, more routine, operational considerations. An experienced
-seismologist should routinely review all of the ShakeMaps produced by the system, and
-initiate action to correct any deficiencies. A network seismologist should also review the
+seismologist should routinely review all of the ShakeMaps produced by the system and
+take action to correct any deficiencies. A network seismologist should also review the
 inputs and outputs of ShakeMap to insure that all stations are producing appropriate data.
 A ShakeMap operator should routinely review all ShakeMap processes, logs, databases,
 and outputs to insure the system is operating as expected.</p>
@@ -283,10 +282,10 @@ to rerun earlier events or scenarios to take advantage of the capabilities of th
 clock availability. This includes not just the seismic network and ShakeMap systems, but
 also web servers and other network hardware and software required for delivering
 products to end users. The personnel responsible for these systems must be on-call and
-able to access the necessary systems remotely. Automatic monitoring of mission critical
+able to access the necessary systems remotely. Automatic monitoring of mission-critical
 hardware and software is strongly encouraged. These systems should also have several
-hours of backup power in the event of an outage. Periodic outage tests should be
-conducted to insure that all necessary systems remain operational.</p>
+hours of backup power in case of an outage. Periodic outage tests should be
+conducted to ensure that all necessary systems remain operational.</p>
 <p>As mentioned above, users can be expected to make use of ShakeMaps in a variety of
 ways. However, many organizations that could make use of ShakeMap products are
 unaware of ShakeMap and the ways it could serve their earthquake response and
@@ -296,17 +295,17 @@ public utilities, government and private transportation companies, police and fi
 departments, regional and national emergency response organizations, private companies
 with distributed facilities (e.g., banks, chain stores, telecoms), insurance companies,
 investment houses, and many others. Not only can ShakeMap-improved response efforts
-benefit post-earthquake recovery, these organizations can provide much needed support
+benefit post-earthquake recovery, these organizations can provide much-needed support
 for network and ShakeMap operations. It is highly recommended that regional networks
 considering the implementation of ShakeMap develop a detailed outreach plan.</p>
 </div>
 <div class="section" id="scenarios">
 <h3>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h3>
 <p>One important use of ShakeMap is the generation of earthquake scenarios. Scenarios are
-predictive maps of the potential shaking resulting from future (or past) earthquakes.
-Scenarios can be used for planning exercises, public information, research, etc. Some
+predictive maps of the potential shaking resulting from hypothetical future (or past) earthquakes.
+Scenarios can be used for planning exercises, public information, or research. Some
 users may request specific scenarios, but it is generally worthwhile to develop a suite of
-scenarios to cover the likely earthquake hazards of a region. At the USGS we have begun
+scenarios to cover the likely earthquake hazards of a region. At the USGS, we have begun
 using disaggregated hazard maps as the basis for our nationwide scenario project. In other
 words, we separate out the individual earthquakes (and causative faults) that together
 comprise the hazard in a probabilistic hazard map. The disaggregated maps represent the
@@ -317,32 +316,32 @@ magnitude. In most cases, one of the disaggregated hazard scenarios should suffi
 </div>
 <div class="section" id="backup">
 <h3>Backup<a class="headerlink" href="#backup" title="Permalink to this headline">¶</a></h3>
-<p>Because of the importance of ShakeMap, it is advisable to redundant systems. Most
+<p>Because of the importance of ShakeMap, it is advisable to run redundant systems. Most
 ShakeMap operations have a primary and backup machine. The backup machine runs
 events as if it were the primary, except it does not transfer its products to the web or other
-destinations. If the primary server fails, the backup can be switched over to primary by
-merely changing the transfer configuration. This arrangement is also useful when
+destinations. If the primary server fails, the backup can be switched over to primary
+merely by changing the transfer configuration. This arrangement is also useful when
 software updates are available. The update can be applied and tested on the backup
 system. Once it is deemed to be operating correctly, it can be made primary, and the
 primary server can be updated.</p>
-<p>Since most seismic networks are operated from earthquake prone regions, there is also
-the potential that the entire facility will be taken off line. For this reason, it is desirable to
+<p>Since most seismic networks are operated from earthquake-prone regions, there is also
+the potential that the entire facility will be taken offline. For this reason, it is desirable to
 have a backup system operating in a remote location, preferably many kilometers away.</p>
-<p>As we have mentioned elsewhere, the USGS makes ShakeMaps for global earthquakes,
+<p>As we have mentioned elsewhere, the USGS makes ShakeMaps for global earthquakes
 and provides backup to U.S. regional networks. If you would like to discuss remote
 backup for your ShakeMap system, please contact us.</p>
 </div>
 </div>
 <div class="section" id="shakemap-implementation-checklist">
 <h2>ShakeMap Implementation Checklist<a class="headerlink" href="#shakemap-implementation-checklist" title="Permalink to this headline">¶</a></h2>
-<p>Below is a checklist we use when discussing ShakeMap operations with active or
+<p>The checklist below is based on the one we use when discussing ShakeMap operations with active or
 potential producers within the USGS&#8217;s Advanced National Seismic System (ANSS).
-While some of the issues seem ANSS-specific, there may be analogous considerations for
+While some of the issues are ANSS-specific, there may be analogous considerations for
 other regional or national networks.</p>
 <ol class="arabic simple">
-<li>Triggering<ol class="upperalpha">
+<li><strong>Triggering</strong><ol class="upperalpha">
 <li>Automatic Triggering System.  How is ShakeMap triggered and how does it
-access or receive parametric data?  How is the robustness of this approach
+access or receive parametric data?  How is robustness of this approach
 achieved?</li>
 <li>Location &amp; Magnitude Reliability.  Are there limitations to location and
 magnitude determination by the regional network that would adversely affect
@@ -355,35 +354,35 @@ initiated?  Under what conditions?</li>
 convention?  If not, can they be easily associated with the authoritative ID?</li>
 </ol>
 </li>
-<li>Station Coverage and Parametric Data<ol class="upperalpha">
-<li>Real time or near-real time data flow.  What are the types and distribution of
-stations contributing to ShakeMap? Are all stations &#8220;ShakeMap quality?&#8221;</li>
+<li><strong>Station Coverage and Parametric Data</strong><ol class="upperalpha">
+<li>Real-time or near&#8211;real-time data flow.  What are the types and distribution of
+stations contributing to ShakeMap? Are all stations &#8220;ShakeMap-quality”?</li>
 <li>Parametric Data.  How are the parametric data computed? (Five parameters:
-PGA, PGV, SA at three periods).</li>
-<li>Are parametric data imported from other sources (NSMP triggered stations,
+PGA, PGV, and three periods of PSA.)</li>
+<li>Are parametric data imported from other sources (NSMP-triggered stations,
 state or commercial agencies, neighboring networks, etc.)? How are these
 integrated with the ShakeMap input?</li>
-<li>DYFI data. Are &#8220;Did You Feel It?&#8221; data used as input?</li>
+<li>Are &#8220;Did You Feel It?&#8221; data used as input?</li>
 <li>Co-location of different sensor types, priorities, and preventing redundant
 input data. How are co-located instruments resolved by the network to
 produce only a single (best) set of amplitudes for ShakeMap?</li>
 </ol>
 </li>
-<li>System Specifications<ol class="upperalpha">
-<li>Grind parameters. Review the parameters in grind.conf. How were they
+<li><strong>System Specifications</strong><ol class="upperalpha">
+<li>Grind parameters. Review the parameters in <em>grind.conf</em>. How were they
 determined?<ol class="loweralpha">
 <li>GMPEs. Which Ground-Motion Prediction Equations are used, and
 under what conditions?</li>
 <li>IPEs. Which Intensity Prediction Equations are used, and under what
 circumstances?</li>
-<li>GMICEs. Which Ground-Motion/Intensity Conversion Equations are
+<li>GMICEs. Which Ground-Motion&#8211;Intensity Conversion Equations are
 used?</li>
 <li>Site Amplification.  How are site conditions established and what
 amplifications are used (GMPE-native, Borcherdt-style)?</li>
 <li>Other parameters. Grid spacing, map area, outlier levels, bias
 parameters. Have all parameters been evaluated for optimal
 performance?</li>
-<li>Shake.conf. When is map size increased, psa and hazus output
+<li><em>Shake.conf</em>. When is map size increased, PSA and HAZUS output
 produced, etc.?</li>
 </ol>
 </li>
@@ -393,9 +392,9 @@ basin depth file produced, and are predicted ground motions consistent with
 reality?</li>
 </ol>
 </li>
-<li>Operations<ol class="upperalpha">
+<li><strong>Operations</strong><ol class="upperalpha">
 <li>Which version of ShakeMap is operational? Who is responsible for updating
-the software when updates are released? When are the updates performed?</li>
+the software when updates are released? When and how are the updates performed?</li>
 <li>Who is responsible for routine scientific review of ShakeMaps produced by
 the network? Do these people receive alarms when ShakeMaps are produced?</li>
 <li>Who is responsible for routine operational review of the ShakeMap system
@@ -404,7 +403,7 @@ performed?</li>
 <li>Reprocessing. Under what circumstances are events reprocessed (new data,
 change in source parameters, etc.)? What about in the longer term (ShakeMap
 software updates, changes in operational parameters)?</li>
-<li>Finite faults. For larger earthquakes who is responsible for producing a finite
+<li>Finite faults. For larger earthquakes, who is responsible for producing a finite
 fault model for inclusion in ShakeMap? What procedures are in place for
 assuring this is done?</li>
 <li>Aftershock exclusion. How will you change the triggering threshold
@@ -417,19 +416,19 @@ distribution for easier upgrades? If not, how can they be structured to
 accommodate easy upgrades of ShakeMap?</li>
 <li>What is the hardware for ShakeMap processing and for local web service?</li>
 <li>How is hardware redundancy achieved?</li>
-<li>Are the hardware &amp; software systems automatically monitored? Do they
+<li>Are the hardware and software systems automatically monitored? Do they
 generate alerts when problems are detected?</li>
 </ol>
 </li>
-<li>Product Distribution and Uniformity<ol class="upperalpha">
+<li><strong>Product Distribution and Uniformity</strong><ol class="upperalpha">
 <li>Are products delivered to Earthquake Program Web Servers via PDL?</li>
-<li>Are local web pages produced? Where do they reside? How is ShakeMap
-transferred? Are redundant web servers and 24x7 support available?</li>
-<li>Are regional ShakeMap web pages customized to reflect regional
+<li>Are local webpages produced? Where do they reside? How is ShakeMap
+transferred? Are redundant web servers and 24/7 support available?</li>
+<li>Are regional ShakeMap webpages customized to reflect regional
 configurations and implementation specifics?</li>
 </ol>
 </li>
-<li>ANSS Coordination<ol class="upperalpha">
+<li><strong>ANSS Coordination</strong><ol class="upperalpha">
 <li>Provide Software/Feedback to ANSS.  To benefit current operators and to
 ensure compatibility and ease of installing new ShakeMap software releases,
 changes to ShakeMap software (above and beyond configuration changes)
@@ -437,82 +436,77 @@ should be provided to Bruce Worden for review, standardization, and
 inclusion in new releases.</li>
 <li>Provide contacts, their background, and roles in implementation, coordination,
 and operations.</li>
-<li>Are all responsible parties subscribed to the shake-dev mailing list?</li>
+<li>Are all responsible parties subscribed to the <em>shake-dev</em> mailing list?</li>
 </ol>
 </li>
 <li>User Coordination:
 List significant users and outline any outreach efforts or plans. It is very useful to
-have a feeling for which users will rely on ShakeMap in each region as well as to
+have a feeling for which users will rely on ShakeMap in each region, as well as to
 coordinate efforts for users of ShakeMaps for multiple regions (e.g., FEMA,
-DHS, Military, etc.).</li>
-<li>Scenarios and Archives<ol class="upperalpha">
+DHS, Military).</li>
+<li><strong>Scenarios and Archives</strong><ol class="upperalpha">
 <li>Scenario earthquakes should be made to be consistent with USGS National
 Hazard Maps, both with attenuation relations and in source parameterization.
-Coordination with Golden is essential.</li>
+Coordination with the National Earthquake Information Center (NEIC) is essential.</li>
 <li>Is a copy of scenarios also available on the USGS web site?</li>
 <li>How and when will scenarios be reprocessed?</li>
-<li>Archive &#8220;Final&#8221; ShakeMaps for significant events.  Many users want
+<li>Archive “final&#8221; ShakeMaps for significant events.  Many users want
 ShakeMaps for significant events &#8220;frozen in time&#8221;. Once a ShakeMap gets
 used as a reference for damage-loss modelers, insurance investigators, and
 researchers, there needs to be an archival version of these events. Once all the
 available ground-motion data have been collected and included in ShakeMap,
 that Version of the map needs to be kept available even if additional updates
-are made. This process has not yet been fully vetted.</li>
+are made. (This process has not yet been fully vetted.)</li>
 </ol>
 </li>
-<li>Backup Strategy<ol class="upperalpha">
+<li><strong>Backup Strategy</strong><ol class="upperalpha">
 <li>If the primary system fails, what provisions exist for a backup system or
 another network to take over ShakeMap operations? Is this backup automatic
 or manual?</li>
-<li>If the entire facility is off-line, is there an off-site backup?</li>
+<li>If the entire facility goes offline, is there an off-site backup?</li>
 <li>Are waveform or parametric data transmitted to NEIC for national-level
 backup?</li>
 </ol>
 </li>
-<li>Feedback:
+<li><strong>Feedback</strong>:
 Do you have any recommendations for further support, software, features, etc.?</li>
 </ol>
 </div>
 <div class="section" id="software-availability-software-guide">
 <span id="sm35-software-guide"></span><h2>Software Availability &amp; Software Guide<a class="headerlink" href="#software-availability-software-guide" title="Permalink to this headline">¶</a></h2>
-<p>ShakeMap requires the freely-available PERL, MySQL, and GMT (Generic Mapping Tools)
-and a few other packages. PERL and GMT are used quite extensively so any background
-with them is advantageous. You will need to assemble the basic GMT-formatted base maps,
+<p>ShakeMap requires the freely available PERL, MySQL, and GMT (Generic Mapping Tools),
+as well as a few other packages. PERL and GMT are used quite extensively, so any background
+with them is advantageous. You will need to assemble the basic GMT-formatted basemaps,
 road, city data files, etc., but such data may already be available for your area.</p>
-<p>Before you even begin with the installation note the following: Do not attempt to
-install ShaekMap on Ubuntu Linux. Again: Do not attempt to install ShakeMap on
-Ubuntu Linux. It has been nothing but a problem for everyone who has tried it,
-and we will no longer provide any support. So again: Do not attempt the install on
-Ubuntu. You will very likely have problems and we can not help you with them.</p>
-<p>The ShakeMap software is freely available, open source, and distributed under a Public
-Domain License. It runs on Solaris, FreeBSD, Mac OSX, and various versions of Linux. It
-does not run on Windows. The software is available as a <a class="reference external" href="http://subversion.apache.org/">SubVersion</a> checkout from:</p>
+<p>The ShakeMap software is freely available, open-source, and distributed under a Public
+Domain License. It runs on Solaris, FreeBSD, Mac OS X, (U)nix, and numerous versions of Linux (including Red Hat and Debian). It
+does not run on Windows. See the Software Guide for more information. The software is available as a <a class="reference external" href="http://subversion.apache.org/">SubVersion</a> checkout from:</p>
 <p><a class="reference external" href="https://vault.gps.caltech.edu/repos/products/shakemap/tags/release-3.5/">https://vault.gps.caltech.edu/repos/products/shakemap/tags/release-3.5/</a></p>
-<p>The Software Guide included in the &#8216;doc&#8217; directory of the distribution will always be the
-most up to date, and should be consulted when installing and configuring ShakeMap. The
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do not attempt to install ShakeMap on Ubuntu Linux. It has been nothing
+but a problem for everyone who has tried it, and we will no longer provide
+support for this operating system.</p>
+</div>
+<p>The Software Guide included in the <em>doc</em> directory of the distribution will always be the
+most up-to-date and should be consulted when installing and configuring ShakeMap. The
 Software Guide may also be obtained by <a class="reference external" href="_static/SoftwareGuideV3_5.pdf">download</a>.
-This version of Guide is not guaranteed to be the most up to date, however. It should be
+This version of Guide is not guaranteed to be the most up-to-date, however. It should be
 used only to familiarize oneself with the general requirements of installing and operating
-ShakeMap. When installing the software, the Guide in the &#8216;doc&#8217; directory of the software
+ShakeMap. When installing the software, the Guide in the <em>doc</em> directory of the software
 distribution should be followed.</p>
-<p>We strongly recomment that ShakeMap operators and users sign up for the <em>shake-dev</em> mailing list:</p>
+<p>We strongly recommend that ShakeMap operators and users sign up for the <em>shake-dev</em> mailing list:</p>
 <p><a class="reference external" href="https://geohazards.usgs.gov/mailman/listinfo/shake-dev">https://geohazards.usgs.gov/mailman/listinfo/shake-dev</a></p>
 <p>We use this mailing list to communicate software updates, as well as provide support
 when users have problems, suggestions, etc.</p>
-<p>ShakeMap currently runs on various flavors of the (U)nix operating system. We are
-currently running ShakeMap on PC’s running Red Hat and Debian Linux, and on
-Macintosh computers running MAC OSX. Others have been successful with FreeBSD
-and Solaris. Again, we strongly recommend that you not use Ubuntu Linux &#8211; it has proven
-problematic for a number of users, and we cannot provide support. Windows
-is not supported. See the Software Guide for more information.</p>
 <table class="docutils footnote" frame="void" id="id2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><p class="first">The VS30 server currently provides GMT grd files in pixel node registration and
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><p class="first">The VS30 server currently provides GMT <em>grd</em> files in pixel node registration and
 ShakeMap works in gridline node registration. You can fix your Vs30 file by:</p>
 <p>grdsample your_vs30_grid.grd -Gnew_file_name.grd –T</p>
-<p class="last">You then configure grind.conf to look at &#8220;new_file_name.grd&#8221; and it should work.
-See grind.conf for details.</p>
+<p class="last">You then configure <em>grind.conf</em> to look at <em>new_file_name.grd</em>.
+See <em>grind.conf</em> for details.</p>
 </td></tr>
 </tbody>
 </table>
